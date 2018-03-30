@@ -2,10 +2,10 @@ import * as React from 'react'
 import styled from 'styled-components'
 import Datamap from 'datamaps'
 import 'topojson'
-import 'd3'
+import { geoPath, geoEquirectangular } from 'd3-geo';
 
 const MapContainer = styled.div`
-    border: 2px solid red;
+    background-color: lightblue;
     height: 100%;
     position: absolute;
     width: 100%;
@@ -95,6 +95,17 @@ export default class Map extends React.Component <Props, State> {
             fills: {
                 'STANDARD': '#1f77b4',
                 defaultFill: '#7f7f7f'
+            },
+            setProjection: (element: {offsetWidth: number, offsetHeight: number}) => {
+                const projection = geoEquirectangular()
+                    .center([0, 0])
+                    .rotate([0, 0])
+                    .scale(150)
+                    .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
+                const path = geoPath()
+                    .projection(projection);
+            
+                return {path: path, projection: projection};
             },
             data: {
                 'USA': {fillKey: 'STANDARD'}
