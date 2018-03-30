@@ -5,9 +5,10 @@ import 'topojson'
 import 'd3'
 
 const MapContainer = styled.div`
-    width: 100%;
+    border: 2px solid red;
     height: 100%;
     position: absolute;
+    width: 100%;
 `
 
 interface Props {
@@ -23,7 +24,7 @@ export default class Map extends React.Component <Props, State> {
         country: 'USA'
     }
 
-    private container: HTMLInputElement
+    private mapContainer: HTMLInputElement
 
     constructor (props: Props) {
         super (props)
@@ -33,76 +34,81 @@ export default class Map extends React.Component <Props, State> {
     }
 
     componentDidMount() {
-        var bombMap = new Datamap({
-            element: this.container,
+        const doctorsData = [{
+            name: 'Doctor Name 1',
+            radius: 10,
+            info: 100,
+            country: 'USSR',
+            fillKey: 'USA',
+            latitude: 50.07,
+            longitude: 60.43
+        }, {
+            name: 'Doctor Name 2',
+            radius: 10,
+            info: 100,
+            country: 'USSR',
+            fillKey: 'FRA',
+            latitude: 50.07,
+            longitude: 78.43
+
+        }, {
+            name: 'Doctor Name 3',
+            radius: 10,
+            info: 100,
+            country: 'USSR',
+            fillKey: 'PAK',
+            latitude: 73.482,
+            longitude: 54.5854
+        }]
+
+        const doctorsMap = new Datamap({
+            element: this.mapContainer,
             scope: 'world',
             geographyConfig: {
-                popupOnHover: false,
-                highlightOnHover: false
+                borderColor: '#fff',
+                borderWidth: 0.5,
+                // highlightBorderColor: 'rgba(250, 15, 160, 0.2)',
+                highlightBorderWidth: 0.5,
+                highlightBorderOpacity: 1,
+                highlightFillColor: 'yellow',
+                highlightOnHover: true,
+                popupOnHover: true
+                // dataJson: topoJsonData
+            },
+            bubblesConfig: {
+                borderWidth: 2,
+                borderOpacity: 1,
+                borderColor: '#000',
+                popupOnHover: true, // True to show the popup while hovering
+                radius: null,
+                fillOpacity: 0.75,
+                animate: true,
+                highlightOnHover: true,
+                highlightFillColor: '#000',
+                // highlightBorderColor: 'rgba(250, 15, 160, 0.2)',
+                highlightBorderWidth: 2,
+                highlightBorderOpacity: 1,
+                highlightFillOpacity: 0.85,
+                exitDelay: 100 // Milliseconds
+                // key: JSON.stringify
             },
             fills: {
-                'USA': '#1f77b4',
-                'RUS': '#9467bd',
-                'PRK': '#ff7f0e',
-                'PRC': '#2ca02c',
-                'IND': '#e377c2',
-                'GBR': '#8c564b',
-                'FRA': '#d62728',
-                'PAK': '#7f7f7f',
-                defaultFill: '#EDDC4E'
+                'STANDARD': '#1f77b4',
+                defaultFill: '#7f7f7f'
             },
             data: {
-                'RUS': {fillKey: 'RUS'},
-                'PRK': {fillKey: 'PRK'},
-                'PRC': {fillKey: 'PRC'},
-                'IND': {fillKey: 'IND'},
-                'GBR': {fillKey: 'GBR'},
-                'FRA': {fillKey: 'FRA'},
-                'PAK': {fillKey: 'PAK'},
-                'USA': {fillKey: 'USA'}
+                'USA': {fillKey: 'STANDARD'}
             }
         })
 
-        var bombs = [{
-            name: 'Joe 4',
-            radius: 25,
-            yield: 400,
-            country: 'USSR',
-            fillKey: 'RUS',
-            significance: 'First fusion weapon test by the USSR (not "staged")',
-            date: '1953-08-12',
-            latitude: 50.07,
-            longitude: 78.43
-        }, {
-            name: 'RDS-37',
-            radius: 40,
-            yield: 1600,
-            country: 'USSR',
-            fillKey: 'RUS',
-            significance: 'First "staged" thermonuclear weapon test by the USSR (deployable)',
-            date: '1955-11-22',
-            latitude: 50.07,
-            longitude: 78.43
-
-        }, {
-            name: 'Tsar Bomba',
-            radius: 75,
-            yield: 50000,
-            country: 'USSR',
-            fillKey: 'RUS',
-            significance: 'Largest thermonuclear weapon ever tested—scaled down from its initial 100 Mt design by 50%',
-            date: '1961-10-31',
-            latitude: 73.482,
-            longitude: 54.5854
-        }
-        ]
-        bombMap.bubbles(bombs, {
-            popupTemplate: function (geo: string, data: {name: string, yield: string, country: string, date: string}) {
-                return ['<div class="hoverinfo">' +  data.name,
-                    '<br/>Payload: ' +  data.yield + ' kilotons',
-                    '<br/>Country: ' +  data.country + '',
-                    '<br/>Date: ' +  data.date + '',
-                    '</div>'].join('');
+        doctorsMap.bubbles(doctorsData, {
+            popupTemplate: (geo: string, data: {name: string, info: string, country: string, date: string}) => {
+                return [
+                    '<div class="hoverinfo">' +  data.name,
+                    '<br/>Country: ' +  data.country,
+                    '<br/>Info: ' +  data.info,
+                    '</div>'
+                ].join('');
             }
         })
 
@@ -110,7 +116,7 @@ export default class Map extends React.Component <Props, State> {
 
     render () {
         return (
-            <MapContainer innerRef={el => this.container = el}/>
+            <MapContainer innerRef={element => this.mapContainer = element}/>
         )
     }
 }
