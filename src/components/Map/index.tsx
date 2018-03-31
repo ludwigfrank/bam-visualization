@@ -10,6 +10,7 @@ import { geoPath, geoEquirectangular } from 'd3-geo'
 import 'topojson'
 
 const MapContainer = styled.div`
+    border: 2px solid red;
     background-color: lightblue;
     height: 100%;
     position: absolute;
@@ -113,7 +114,7 @@ export default class Map extends React.Component <Props, State> {
                 return {path: path, projection: projection};
             },
             done: (datamap: any) => { // tslint:disable-line: no-any
-                const zoomMap = () => {
+                const handleMapZoom = () => {
                     const { k, x, y } = d3Event.transform;
                     datamap.svg
                         .selectAll('g')
@@ -123,7 +124,7 @@ export default class Map extends React.Component <Props, State> {
                         )
                 }
 
-                d3Select('svg').call(d3Zoom().on('zoom', zoomMap));
+                d3Select('svg').call(d3Zoom().on('zoom', handleMapZoom));
             },
             data: {
                 'USA': {fillKey: 'STANDARD'}
