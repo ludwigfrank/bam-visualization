@@ -1,8 +1,13 @@
 import * as React from 'react'
 import styled from 'styled-components'
 import Datamap from 'datamaps'
+// import * as d3 from 'd3';
+import { event as d3Event } from 'd3-selection';
+import { zoom as d3Zoom } from 'd3-zoom';
+// import { drag as d3Drag } from 'd3-drag';
+import { select as d3Select } from 'd3-selection';
+import { geoPath, geoEquirectangular } from 'd3-geo'
 import 'topojson'
-import { geoPath, geoEquirectangular } from 'd3-geo';
 
 const MapContainer = styled.div`
     background-color: lightblue;
@@ -107,6 +112,19 @@ export default class Map extends React.Component <Props, State> {
             
                 return {path: path, projection: projection};
             },
+            done: (datamap: any) => { // tslint:disable-line: no-any
+                const zoomMap = () => {
+                    const { k, x, y } = d3Event.transform;
+                    datamap.svg
+                        .selectAll('g')
+                        .attr(
+                            'transform', 
+                            `translate(${x}, ${y}) scale(${k})`
+                        )
+                }
+
+                d3Select('svg').call(d3Zoom().on('zoom', zoomMap));
+            },
             data: {
                 'USA': {fillKey: 'STANDARD'}
             }
@@ -122,12 +140,18 @@ export default class Map extends React.Component <Props, State> {
                 ].join('');
             }
         })
-
+    }
+    log(msg: any) { // tslint:disable-line: no-any
+        let f = console.log.bind(console);
+        f(msg);
     }
 
     render () {
         return (
-            <MapContainer innerRef={element => this.mapContainer = element}/>
+            <MapContainer
+                id={'world-map'}
+                innerRef={element => this.mapContainer = element}
+            />
         )
     }
 }
