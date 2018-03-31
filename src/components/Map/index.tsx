@@ -9,6 +9,9 @@ import { select as d3Select } from 'd3-selection';
 import { geoPath, geoEquirectangular } from 'd3-geo'
 import 'topojson'
 
+// import doctorsBiographicalData from '../../data/doctorsBiographicalData.json'
+import saturatedLocations from '../../data/saturatedLocations.json'
+
 const MapContainer = styled.div`
     border: 2px solid red;
     background-color: lightblue;
@@ -40,32 +43,45 @@ export default class Map extends React.Component <Props, State> {
     }
 
     componentDidMount() {
-        const doctorsData = [{
-            name: 'Doctor Name 1',
-            radius: 10,
-            info: 100,
-            country: 'USSR',
-            fillKey: 'USA',
-            latitude: 50.07,
-            longitude: 60.43
-        }, {
-            name: 'Doctor Name 2',
-            radius: 10,
-            info: 100,
-            country: 'USSR',
-            fillKey: 'FRA',
-            latitude: 50.07,
-            longitude: 78.43
+        // const locationsData = [{
+        //     name: 'Doctor Name 1',
+        //     radius: 5,
+        //     info: 100,
+        //     country: 'USSR',
+        //     fillKey: 'USA',
+        //     latitude: 50.07,
+        //     longitude: 60.43
+        // }, {
+        //     name: 'Doctor Name 2',
+        //     radius: 5,
+        //     info: 100,
+        //     country: 'USSR',
+        //     fillKey: 'FRA',
+        //     latitude: 50.07,
+        //     longitude: 78.43
 
-        }, {
-            name: 'Doctor Name 3',
-            radius: 10,
-            info: 100,
-            country: 'USSR',
-            fillKey: 'PAK',
-            latitude: 73.482,
-            longitude: 54.5854
-        }]
+        // }, {
+        //     name: 'Doctor Name 3',
+        //     radius: 5,
+        //     info: 100,
+        //     country: 'USSR',
+        //     fillKey: 'PAK',
+        //     latitude: 73.482,
+        //     longitude: 54.5854
+        // }]
+
+        const locationsData = saturatedLocations.map((location: any, index: number) => { // tslint:disable-line: no-any
+            const [latitude, longitude] = location.coordinates
+            return {
+                name: `Doctor Name ${index}`,
+                latitude,
+                longitude,
+                radius: 5,
+                fillKey: 'USA',
+                info: 100
+            }
+        })
+        this.log(locationsData)
 
         const doctorsMap = new Datamap({
             element: this.mapContainer,
@@ -131,7 +147,7 @@ export default class Map extends React.Component <Props, State> {
             }
         })
 
-        doctorsMap.bubbles(doctorsData, {
+        doctorsMap.bubbles(locationsData, {
             popupTemplate: (geo: string, data: {name: string, info: string, country: string, date: string}) => {
                 return [
                     '<div class="hoverinfo">' +  data.name,
