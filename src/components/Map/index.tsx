@@ -10,7 +10,8 @@ import { geoPath, geoEquirectangular } from 'd3-geo'
 import 'topojson'
 
 // import doctorsBiographicalData from '../../data/doctorsBiographicalData.json'
-import saturatedLocations from '../../data/saturatedLocations.json'
+// import saturatedLocations from '../../data/saturatedLocations.json'
+import saturatedLocations from '../../data/saturatedLocations_02.json'
 
 const MapContainer = styled.div`
     border: 2px solid red;
@@ -76,7 +77,7 @@ export default class Map extends React.Component <Props, State> {
                 name: `Doctor Name ${index}`,
                 latitude,
                 longitude,
-                radius: 5,
+                radius: .2,
                 fillKey: 'USA',
                 info: 100
             }
