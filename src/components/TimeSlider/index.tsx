@@ -2,13 +2,13 @@ import * as React from 'react'
 import { Range } from 'rc-slider';
 import 'rc-slider/assets/index.css';
 
-export default class TimeSlider extends React.Component {
-    constructor(props: object) {
-        super(props)
+interface TimeSliderProps {
+    sliderValuesCallback: (sliderValues: Array<number>) => void;
+}
 
-        this.state = {
-            sliderValues: [0, 0]
-        }
+export default class TimeSlider extends React.Component<TimeSliderProps> {
+    constructor(props: TimeSliderProps) {
+        super(props)
     }
     log(msg: any) { // tslint:disable-line: no-any
         const f = console.log.bind(console);
@@ -16,20 +16,17 @@ export default class TimeSlider extends React.Component {
     }
     render() {
         return (
-            <div>
-                <Range
-                    min={0}
-                    max={1}
-                    defaultValue={[0, 1]}
-                    step={0.01}
-                    // value={this.state.sliderValues}
-                    onChange={value => {
-                        this.log(value)
-                        this.setState({ sliderValues: value })
-                    }}
-                    disabled={false}
-                />
-            </div>
+            <Range
+                min={0}
+                max={1}
+                defaultValue={[0, 1]}
+                step={0.01}
+                // value={[]}
+                onChange={sliderValues => {
+                    this.props.sliderValuesCallback(sliderValues)
+                }}
+                disabled={false}
+            />
         )
     }
 }
