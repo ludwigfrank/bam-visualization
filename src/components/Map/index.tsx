@@ -177,9 +177,10 @@ export default class Map extends React.Component <Props, State> {
 
     render () {
         if (this.state.filtered) {
-            // const test = saturatedLocations.splice(0, saturatedLocations.length * this.state.sliderValues[1] - 10)
-            this.log(this.locationsData)
-            this.doctorsMap.bubbles(this.locationsData)
+            const filteredLocations = this.locationsData.slice(
+                0, this.locationsData.length * this.state.sliderValues[1]
+            )
+            this.doctorsMap.bubbles(filteredLocations)
         }
 
         return (
