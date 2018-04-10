@@ -25,18 +25,17 @@ class Brush extends Component {
             .range([10, 450])
 
         const brush = d3.svg.brush()
-        brush.x(scale)
-        brush.extent([22, 28])
-
-        brush.on('brushend', function() {
-            console.log(brush.extent())
-        })
+            .x(scale)
+            .extent([22, 28])
+            .on('brushend', function() {
+                console.log(brush.extent())
+            })
 
         const g = svg.append('g')
 
         brush(g)
 
-        g.attr('transform', 'translate(50, 50)')
+        // g.attr('transform', 'translate(50, 50)')
         g.selectAll('rect').attr('height', 30)
         g.selectAll('.background')
             .style({ fill: '#4b9e9e', visibility: 'visible' })

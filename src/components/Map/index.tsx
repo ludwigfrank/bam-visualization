@@ -121,7 +121,7 @@ export default class Map extends React.Component <Props, State> {
                         )
                 }
 
-                d3Select('svg').call(d3Zoom().on('zoom', handleMapZoom));
+                d3Select(this.mapContainer).call(d3Zoom().on('zoom', handleMapZoom));
             },
             data: {
                 'USA': {fillKey: 'STANDARD'}
