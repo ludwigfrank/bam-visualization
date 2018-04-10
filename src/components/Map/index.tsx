@@ -61,36 +61,6 @@ export default class Map extends React.Component <Props, State> {
                 info: 100
             }
         })
-
-        // const locationsData = [{
-        //     name: 'Doctor Name 1',
-        //     radius: 5,
-        //     info: 100,
-        //     country: 'USSR',
-        //     fillKey: 'USA',
-        //     latitude: 50.07,
-        //     longitude: 60.43,
-        //     date: [0, 1]
-        // }, {
-        //     name: 'Doctor Name 2',
-        //     radius: 5,
-        //     info: 100,
-        //     country: 'USSR',
-        //     fillKey: 'FRA',
-        //     latitude: 50.07,
-        //     longitude: 78.43,
-        //     date: [0, 1]
-
-        // }, {
-        //     name: 'Doctor Name 3',
-        //     radius: 5,
-        //     info: 100,
-        //     country: 'USSR',
-        //     fillKey: 'PAK',
-        //     latitude: 73.482,
-        //     longitude: 54.5854,
-        //     date: [0, 1]
-        // }]
     }
 
     componentDidMount() {
@@ -180,6 +150,7 @@ export default class Map extends React.Component <Props, State> {
             const filteredLocations = this.locationsData.slice(
                 0, this.locationsData.length * this.state.sliderValues[1]
             )
+            // this.log(filteredLocations.length)
             this.doctorsMap.bubbles(filteredLocations)
         }
 
@@ -187,6 +158,7 @@ export default class Map extends React.Component <Props, State> {
             <div>
                 <TimeSlider
                     sliderValuesCallback={(sliderValues: Array<number>) => {
+                        // const totalSelectedRange = sliderValues[1] - sliderValues[0]; 
                         this.setState({
                             sliderValues,
                             filtered: true
