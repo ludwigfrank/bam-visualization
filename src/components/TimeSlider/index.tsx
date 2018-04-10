@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { Range } from 'rc-slider'
 // import BarChart from '../Chart'
 import Brush from '../Brush'
 import styled from 'styled-components'
@@ -49,20 +48,6 @@ export default class TimeSlider extends React.Component<TimeSliderProps, TimeSli
                         })
                     }}
                     extend={this.state.sliderValues}
-                />
-                <Range
-                    min={0}
-                    max={1}
-                    defaultValue={[0, 1]}
-                    step={0.01}
-                    // value={[]}
-                    onChange={sliderValues => {
-                        this.props.sliderValuesCallback(sliderValues)
-                        this.setState({
-                            sliderValues
-                        })
-                    }}
-                    disabled={false}
                 />
             </Slider>
         )
