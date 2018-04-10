@@ -21,14 +21,15 @@ class Brush extends Component {
         const svg = d3.select('svg')
 
         const scale = d3.scale.linear()
-            .domain([20, 30])
-            .range([10, 450])
+            .domain([0, 1]) // [startValue, endValue]
+            .range([100, window.innerWidth - 100])
 
         const brush = d3.svg.brush()
             .x(scale)
-            .extent([22, 28])
-            .on('brushend', function() {
+            .extent(this.props.extend) // start range
+            .on('brushend', () => {
                 console.log(brush.extent())
+                this.props.testCallback(brush.extent())
             })
 
         const g = svg.append('g')

@@ -42,6 +42,13 @@ export default class TimeSlider extends React.Component<TimeSliderProps, TimeSli
                 <Brush
                     data={data.splice(0, 10)}
                     size={[window.innerWidth, 200]}
+                    testCallback={(sliderValues: any) => { // tslint:disable-line: no-any
+                        this.props.sliderValuesCallback(sliderValues)
+                        this.setState({
+                            sliderValues
+                        })
+                    }}
+                    extend={this.state.sliderValues}
                 />
                 <Range
                     min={0}
