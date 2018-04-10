@@ -146,8 +146,9 @@ export default class Map extends React.Component <Props, State> {
     }
 
     render () {
+        let filteredLocations;
         if (this.state.filtered) {
-            const filteredLocations = this.locationsData.slice(
+            filteredLocations = this.locationsData.slice(
                 0, this.locationsData.length * this.state.sliderValues[1]
             )
             // this.log(filteredLocations.length)
@@ -164,6 +165,7 @@ export default class Map extends React.Component <Props, State> {
                             filtered: true
                         })
                     }}
+                    data={saturatedLocations}
                 />
                 <MapContainer
                     id={'world-map'}

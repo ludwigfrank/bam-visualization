@@ -35,7 +35,7 @@ class Chart extends Component {
     select(node)
         .selectAll('rect')
         .data(this.props.data)
-        .style('fill', '#fe9922')
+        .style('fill', '#666')
         .attr('x', (d,i) => i * (this.props.size[0] / this.props.data.length))
         .attr('y', d => this.props.size[1] - yScale(d))
         .attr('height', d => yScale(d))
@@ -46,7 +46,7 @@ class Chart extends Component {
             <svg
                 ref={node => this.node = node}
                 width={window.innerWidth}
-                height={500}
+                height={this.props.size[1]}
             >
             </svg>
         )

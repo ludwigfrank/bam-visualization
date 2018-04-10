@@ -1,14 +1,24 @@
 import * as React from 'react'
 import { Range } from 'rc-slider'
-import BarChart from '../Chart'
+// import BarChart from '../Chart'
+import Brush from '../Brush'
+import styled from 'styled-components'
 import 'rc-slider/assets/index.css'
 
 interface TimeSliderProps {
-    sliderValuesCallback: (sliderValues: Array<number>) => void
+    sliderValuesCallback: (sliderValues: Array<number>) => void,
+    data: Array<number>
 }
 interface TimeSliderStates {
     sliderValues: Array<number>
 }
+
+const Slider = styled.div`
+    bottom: 50px;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+`;
 
 export default class TimeSlider extends React.Component<TimeSliderProps, TimeSliderStates> {
     constructor(props: TimeSliderProps) {
@@ -26,16 +36,12 @@ export default class TimeSlider extends React.Component<TimeSliderProps, TimeSli
         f(msg)
     }
     render() {
+        const data = this.props.data.map(d => Math.random().toFixed(1))
         return (
-            <div>
-                <BarChart
-                    data={[
-                        5 * this.state.sliderValues[1],
-                        10,
-                        1,
-                        3
-                    ]}
-                    size={[600, 400]}
+            <Slider>
+                <Brush
+                    data={data.splice(0, 10)}
+                    size={[window.innerWidth, 200]}
                 />
                 <Range
                     min={0}
@@ -51,7 +57,7 @@ export default class TimeSlider extends React.Component<TimeSliderProps, TimeSli
                     }}
                     disabled={false}
                 />
-            </div>
+            </Slider>
         )
     }
 }
