@@ -15,8 +15,8 @@ import TimeSlider from '../TimeSlider'
 import saturatedLocations from '../../data/saturatedLocations_02.json'
 
 const MapContainer = styled.div`
-    border: 2px solid red;
-    background-color: lightblue;
+    // border: 2px solid red;
+    background-color: #222;
     height: 100%;
     position: absolute;
     width: 100%;
@@ -71,9 +71,9 @@ export default class Map extends React.Component <Props, State> {
                 borderColor: '#fff',
                 borderWidth: 0.5,
                 // highlightBorderColor: 'rgba(250, 15, 160, 0.2)',
-                highlightBorderWidth: 0.5,
+                highlightBorderWidth: 2,
                 highlightBorderOpacity: 1,
-                highlightFillColor: 'yellow',
+                highlightFillColor: '#9f9f9f',
                 highlightOnHover: true,
                 popupOnHover: true
                 // dataJson: topoJsonData
@@ -81,23 +81,23 @@ export default class Map extends React.Component <Props, State> {
             bubblesConfig: {
                 borderWidth: 2,
                 borderOpacity: 1,
-                borderColor: '#000',
+                borderColor: '#ff0',
                 popupOnHover: true, // True to show the popup while hovering
                 radius: null,
                 fillOpacity: 0.75,
                 animate: true,
                 highlightOnHover: true,
-                highlightFillColor: '#000',
-                // highlightBorderColor: 'rgba(250, 15, 160, 0.2)',
-                highlightBorderWidth: 2,
-                highlightBorderOpacity: 1,
+                highlightFillColor: '#ff9',
+                highlightBorderColor: '#fff',
+                // highlightBorderWidth: 2,
+                // highlightBorderOpacity: 1,
                 highlightFillOpacity: 0.85,
                 exitDelay: 100 // Milliseconds
                 // key: JSON.stringify
             },
             fills: {
-                'STANDARD': '#1f77b4',
-                defaultFill: '#7f7f7f'
+                'STANDARD': '#7f7f7f',
+                defaultFill: '#1f1f1f'
             },
             setProjection: (element: {offsetWidth: number, offsetHeight: number}) => {
                 const projection = geoEquirectangular()

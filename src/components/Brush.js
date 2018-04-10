@@ -24,6 +24,9 @@ class Brush extends Component {
             .domain([0, 1]) // [startValue, endValue]
             .range([100, window.innerWidth - 100])
 
+        const xAxis = d3.svg.axis()
+            .scale(scale);
+
         const brush = d3.svg.brush()
             .x(scale)
             .extent(this.props.extend) // start range
@@ -33,25 +36,24 @@ class Brush extends Component {
             })
 
         const g = svg.append('g')
-
+            .call(xAxis);
         brush(g)
 
-        // g.attr('transform', 'translate(50, 50)')
-        g.selectAll('rect').attr('height', 30)
+        g.selectAll('rect').attr('height', 50)
         g.selectAll('.background')
-            .style({ fill: '#4b9e9e', visibility: 'visible' })
+            .style({ fill: '#999', visibility: 'visible' })
         g.selectAll('.extent')
-            .style({ fill: '#78c5c5', visibility: 'visible' })
+            .style({ fill: 'yellow', visibility: 'visible', opacity: '0.5' })
         g.selectAll('.resize rect')
-            .style({ fill: '#276c86', visibility: 'visible' })
+            .style({ fill: '#00f', visibility: 'visible' })
     }
     render() {
         return (
             <svg
-                style={{ border: '2px solid red' }}
+                // style={{ border: '2px solid yellow' }}
                 ref={node => this.node = node}
                 width={window.innerWidth}
-                height={300}
+                height={50}
             >
             </svg>
         )

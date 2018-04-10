@@ -13,7 +13,7 @@ interface TimeSliderStates {
 }
 
 const Slider = styled.div`
-    bottom: 50px;
+    bottom: 0;
     left: 0;
     position: absolute;
     z-index: 1;
