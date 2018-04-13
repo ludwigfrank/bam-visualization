@@ -2,10 +2,10 @@ import * as React from 'react'
 import styled from 'styled-components'
 import Datamap from 'datamaps'
 // import * as d3 from 'd3';
-import { event as d3Event } from 'd3-selection';
-import { zoom as d3Zoom } from 'd3-zoom';
-// import { drag as d3Drag } from 'd3-drag';
-import { select as d3Select } from 'd3-selection';
+import { event as d3Event } from 'd3-selection'
+import { zoom as d3Zoom } from 'd3-zoom'
+// import { drag as d3Drag } from 'd3-drag'
+import { select as d3Select } from 'd3-selection'
 import { geoPath, geoEquirectangular } from 'd3-geo'
 import 'topojson'
 
@@ -127,7 +127,7 @@ export default class Map extends React.Component <Props, State> {
                     .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
                 const path = geoPath()
                     .projection(projection);
-            
+
                 return {path: path, projection: projection};
             },
             done: (datamap: any) => { // tslint:disable-line: no-any
@@ -136,7 +136,7 @@ export default class Map extends React.Component <Props, State> {
                     datamap.svg
                         .selectAll('g')
                         .attr(
-                            'transform', 
+                            'transform',
                             `translate(${x}, ${y}) scale(${k})`
                         )
                 }
