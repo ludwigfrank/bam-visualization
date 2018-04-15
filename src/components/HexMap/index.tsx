@@ -1,19 +1,19 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import { select as d3Select } from 'd3-selection'
 import {
-    geoPath as d3GeoPath,
-    geoNaturalEarth1 as d3GeoNaturalEarth,
+    geoAlbers,
     GeoProjection,
-    ExtendedFeatureCollection, ExtendedFeature
+    ExtendedFeatureCollection, ExtendedFeature, GeoGeometryObjects
 } from 'd3-geo'
 import { Hexbin, hexbin as d3Hexbin } from 'd3-hexbin'
 // import { polygonContains as d3PolygonContains } from 'd3-polygon'
-import usJson from '../../data/world.json'
+import usJson from '../../data/us-states.json'
 import * as topojson from 'topojson-client'
 import { MultiPolygon, Polygon, Position } from 'geojson'
 import { DataPoint } from '../../types'
-import { calculatePointGrid, renderPoints, getPointsInPolygon } from './util'
+import { calculatePointGrid, getPointsInPolygon, renderHexagons } from './util'
+
+import Map from './Map'
 
 const Canvas = styled.svg`
     height: 100vh;
@@ -27,12 +27,13 @@ interface Props {
 }
 
 interface State {
-    hoveredCountry: string
+    featureCollection: ExtendedFeatureCollection<ExtendedFeature<GeoGeometryObjects, any>>
+    projection: GeoProjection
 }
 
 const width = window.innerWidth
 const height = window.innerHeight
-const cols = 160
+const cols = 273
 const hexDistance = width / cols
 const hexRadius = hexDistance / 1.5
 
@@ -40,10 +41,6 @@ const hexBin: Hexbin<DataPoint> = d3Hexbin<DataPoint>()
     .radius(hexRadius)
     .x(function(d: any) { return d.x })
     .y(function(d: any) { return d.y })
-
-const projection: GeoProjection = d3GeoNaturalEarth()
-    .scale(240)
-    .translate([(width - 75) / 2, height / 2])
 
 const pointGrid = calculatePointGrid(cols, width, height)
 
@@ -54,6 +51,15 @@ interface FeatureProperties {
 export default class HexMap extends React.Component <Props, State> {
     canvas: HTMLElement
 
+    constructor(props: Props) {
+        super(props)
+
+        this.state = {
+            featureCollection: usJson,
+            projection: geoAlbers().scale(800).translate([(width - 75) / 2, height / 2])
+        }
+    }
+
     /*
     *  Transforms GeoJson to FeatureCollection
     *
@@ -62,47 +68,13 @@ export default class HexMap extends React.Component <Props, State> {
         return topojson.feature(data, data.objects.usa)
     }
 
-    getPolygonPoints = (data: ExtendedFeatureCollection<ExtendedFeature<Polygon, any>>) => {
-        const polygonPoints: Array<[number, number] | null> = []
-        data.features.map((feature, i) => {
-            feature.geometry.coordinates.map(coordinates => {
-                coordinates.map(coordinate => {
-                    polygonPoints.push(projection([coordinate[0], coordinate[1]]))
-                })
-            })
-        })
-
-        const points: Array<[number, number]> = []
-        data.features.map(feature => {
-            if (feature.geometry.type === 'Polygon') {
-                feature.geometry.coordinates.map(coordinates => {
-                    coordinates.map(coordinate => {
-                        points.push(projection([coordinate[0], coordinate[1]]) as [number, number])
-                    })
-                })
-            } else if (feature.geometry.type === 'MultiPolygon') {
-                console.log(feature)
-            } else {
-                throw new Error(`The specified feature type is not valid: ${feature.geometry.type}.
-                    Make sure the data contains only Polygon or MultiPolygon geometry.`)
-            }
-        })
-
-        const po: Array<[number, number]> = []
-        console.log(data.features[168].properties)
-        data.features[168].geometry.coordinates[5][0].map(coordinate => {
-            po.push(projection([coordinate[0], coordinate[1]]) as [number, number])
-        })
-        return points
+    renderPolygonPoints = (points: Array<DataPoint>, polygon: Array<[number, number]>, data: any): void => {
+        const pointsInPolygon = getPointsInPolygon(points, polygon, data)
+        renderHexagons(pointsInPolygon, this.canvas, hexBin, data)
     }
 
-    renderPolygonPoints = (points: Array<DataPoint>, polygon: Array<[number, number]>): void => {
-        const pointsInPolygon = getPointsInPolygon(points, polygon)
-        renderPoints(pointsInPolygon, this.canvas)
-    }
-
-    renderFeature = (feature: ExtendedFeature<Polygon | MultiPolygon, FeatureProperties>, geoProjection: GeoProjection) => {
-        // const name = feature.properties.name
+    renderFeature = (feature: ExtendedFeature<any, FeatureProperties>, geoProjection: GeoProjection) => {
+        const name = feature.properties.name
         const geometryCoordinates = feature.geometry.coordinates
         const geometryType = feature.geometry.type
         let polygon: Array<[number, number]> = []
@@ -111,12 +83,12 @@ export default class HexMap extends React.Component <Props, State> {
             coordinates.map((coordinate: Position) => {
                 polygon.push(geoProjection([coordinate[0], coordinate[1]]) as [number, number])
             })
-            this.renderPolygonPoints(pointGrid, polygon)
+            this.renderPolygonPoints(pointGrid, polygon, {name})
             polygon = []
         }
 
         if (geometryType === 'Polygon') {
-            geometryCoordinates.map((coordinates: Position[][]) => {
+            geometryCoordinates.map((coordinates: Position[]) => {
                 render(coordinates)
             })
         } else if (geometryType === 'MultiPolygon') {
@@ -131,48 +103,32 @@ export default class HexMap extends React.Component <Props, State> {
         }
     }
 
-    getHexPoints = (points: DataPoint[]) => {
-        return hexBin(points)
-    }
+    drawGeo = async (data: ExtendedFeatureCollection<ExtendedFeature<Polygon | MultiPolygon, FeatureProperties>>) => {
+        let i = 0
 
-    drawGeo = (data: ExtendedFeatureCollection<ExtendedFeature<Polygon | MultiPolygon, FeatureProperties>>) => {
-        const geoPath = d3GeoPath()
-            .projection(projection)
-
-        d3Select(this.canvas)
-            .append('path')
-            .datum(data)
-            .attr('d', geoPath)
-            .attr('fill', '#ccc')
-
-        this.renderFeature(data.features[0], projection)
-        // const points = getPointsInPolygon(calculatePointGrid(160, width, height), this.getPolygonPoints(usJson))
-        const hexPoints = [[1, 1]]
-
-        d3Select(this.canvas)
-            .append('g').attr('id', 'hexes')
-            .selectAll('.hex').data(hexPoints)
-            .enter().append('path')
-            .attr('class', 'hex')
-            .attr('transform', function(d: any) {
-                return 'translate(' + d.x + ', ' + d.y + ')'; })
-            .attr('d', hexBin.hexagon())
-            .style('fill', '#fff')
-            .style('stroke', '#ccc')
-            .style('stroke-width', 1)
-
+        setInterval(() => {
+            if (i < data.features.length) {this.renderFeature(data.features[i], this.state.projection)}
+            i++
+            }, 0.1
+        )
     }
 
     componentDidMount() {
-        this.drawGeo(usJson)
+        this.setState({
+            featureCollection: usJson
+        })
+        this.drawGeo(usJson).catch(e => {
+            console.log(e)
+        })
     }
 
     render () {
+        const { featureCollection, projection } = this.state
+
         return (
-            <Canvas
-                id={'world-map'}
-                innerRef={element => this.canvas = element}
-            />
+            <Canvas id={'map'} innerRef={element => this.canvas = element}>
+                <Map projection={projection} featureCollection={featureCollection} />
+            </Canvas>
         )
     }
 }

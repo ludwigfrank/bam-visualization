@@ -1,7 +1,8 @@
 import { range as d3Range } from 'd3-array'
-import { select as d3Select } from 'd3-selection'
+import { select as d3Select, selectAll as d3SelectAll } from 'd3-selection'
 import { polygonContains as d3PolygonContains } from 'd3-polygon'
 import { DataPoint } from '../../types'
+import { Hexbin } from 'd3-hexbin'
 
 export const calculatePointGrid = (cols: number, width: number, height: number): Array<DataPoint> => {
     const hexDistance = width / cols
@@ -30,11 +31,41 @@ export const renderPoints = (data: Array<DataPoint>, element: HTMLElement) => {
             .attr('fill', 'tomato');
 }
 
-export const getPointsInPolygon = (points: Array<DataPoint>, polygon: Array<[number, number]>): Array<DataPoint> => {
+export const renderHexagons = (
+    points: Array<DataPoint>, element: HTMLElement, hexbin: Hexbin<DataPoint>, data: any) => {
+    if (points.length < 1) { return }
+    d3Select(element)
+        .append('g')
+            .attr('id', 'hexes')
+            .attr('class', data.name)
+        .selectAll('.hex').data(hexbin(points))
+            .enter().append('path')
+            .attr('class', `hex`)
+            .attr('class', `hex-${data.name.replace(/ /g, '_')} hex`)
+            .attr('transform', function(d: any) {
+                return 'translate(' + d.x + ', ' + d.y + ')'; })
+            .attr('d', hexbin.hexagon())
+            .style('fill', '#fff')
+            .style('stroke', '#ccc')
+            .style('stroke-width', 1)
+
+    d3SelectAll('.hex').on('mouseover', function (d: any, i: number) {
+        const name = d3Select(this).data()[0][0].data.name.replace(/ /g, '_')
+        d3SelectAll(`.hex-${name}`)
+            .style('fill', 'red')
+    })
+
+}
+
+export const getPointsInPolygon = (
+    points: Array<DataPoint>, polygon: Array<[number, number]>, data: any): Array<DataPoint> => {
     const pointsInPolygon: Array<DataPoint> = []
     points.map((point) => {
         const inPolygon = d3PolygonContains(polygon, [point.x, point.y])
-        if (inPolygon) { pointsInPolygon.push(point) }
+        if (inPolygon) {
+            point.data = data
+            pointsInPolygon.push(point)
+        }
     })
     return pointsInPolygon
 }
