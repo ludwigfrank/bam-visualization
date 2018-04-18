@@ -37,7 +37,7 @@ const getPointGrid = (cols: number, width: number, height: number): Array<DataPo
 
     return d3Range(rows * cols).map((el, i) => {
         return {
-            x: Math.floor(i % cols * hexDistance),
+            x: i % cols * hexDistance,
             y: Math.floor(i / cols) * hexDistance,
             data: {
                 value: 0
@@ -52,46 +52,37 @@ export default class HexagonMap extends React.Component <Props, State> {
         super(props)
     }
 
-/*    d3Select(element)
-    .append('g')
-    .attr('id', 'hexes')
-    .attr('class', data.name)
-    .selectAll('.hex').data(hexbin(points))
-    .enter().append('path')
-    .attr('class', `hex`)
-    .attr('class', `hex-${data.name.replace(/ /g, '_')} hex`)
-        .attr('transform', function(d: any) {
-        return 'translate(' + d.x + ', ' + d.y + ')'; })
-        .attr('d', hexbin.hexagon())
-        .style('fill', 'rgba(255,255,255,0.5)')
-        .style('stroke', '#ccc')
-        .style('stroke-width', 1)*/
-
-    render () {
-        const columns = 273
+    renderHexagons = () => {
+        const columns = 100
         const pointGrid = getPointGrid(columns, this.props.dimensions[0], this.props.dimensions[1])
         const hexProperties = getHexProperties(columns, this.props.dimensions)
         const hexBinData = hexProperties.hexBin(pointGrid)
 
         return (
+            <g>
+                {
+                    hexBinData.map((bin, i) => {
+                        return (
+                            <path
+                                key={i}
+                                className={'hex'}
+                                transform={`translate(${bin.x}, ${bin.y})`}
+                                style={{ fill: 'none', stroke: 'rgb(204, 204, 204)', strokeWidth: 1 }}
+                                d={hexProperties.hexBin.hexagon()}
+                            />
+                        )
+                    })
+                }
+            </g>
+        )
+    }
+
+    render () {
+
+        return (
             <svg>
                 <g>
-                    {
-                        hexBinData.map((bin, i) => {
-                            return (
-                                <path
-                                    key={i}
-                                    className={'hex'}
-                                    transform={`translate(${bin.x}, ${bin.y})`}
-                                    style={{
-                                        fill: '#ccc'
-                                    }}
-                                    d={hexProperties.hexBin.hexagon()}
-                                />
-                            )
-                        })
-                    }
-
+                    {this.renderHexagons()}
                 </g>
             </svg>
         )

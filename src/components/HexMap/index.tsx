@@ -28,8 +28,8 @@ interface State {
     projection: GeoProjection
 }
 
-const width = window.innerWidth
-const height = window.innerHeight
+const width = 700
+const height = 400
 
 export default class HexMap extends React.Component <Props, State> {
     canvas: HTMLElement
@@ -56,7 +56,7 @@ export default class HexMap extends React.Component <Props, State> {
 
         return (
             <Canvas id={'map'} innerRef={element => this.canvas = element}>
-                <Map projection={projection} featureCollection={featureCollection} />
+                <Map projection={projection} featureCollection={featureCollection} dimensions={[width, height]}/>
                 <HexagonMap projection={projection} featureCollection={featureCollection} dimensions={[width, height]}/>
             </Canvas>
         )
