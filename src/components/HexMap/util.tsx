@@ -47,14 +47,19 @@ export const renderHexagons = (
             .attr('transform', function(d: any) {
                 return 'translate(' + d.x + ', ' + d.y + ')'; })
             .attr('d', hexbin.hexagon())
-            .style('fill', '#fff')
+            .style('fill', 'rgba(255, 255, 255, .5)')
             .style('stroke', '#ccc')
             .style('stroke-width', 1)
 
-    d3SelectAll('.hex').on('mouseover', function (d: any, i: number) {
+    d3SelectAll('.hex').on('mouseenter', function (d: any, i: number) {
         const name = d3Select(this).data()[0][0].data.name.replace(/ /g, '_')
         d3SelectAll(`.hex-${name}`)
-            .style('fill', 'red')
+            .style('fill', 'rgba(255, 255, 255, 1)')
+    })
+    d3SelectAll('.hex').on('mouseleave', function (d: any, i: number) {
+        const name = d3Select(this).data()[0][0].data.name.replace(/ /g, '_')
+        d3SelectAll(`.hex-${name}`)
+            .style('fill', 'rgba(255, 255, 255, .5)')
     })
 
 }

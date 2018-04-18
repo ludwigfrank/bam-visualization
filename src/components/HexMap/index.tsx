@@ -36,7 +36,7 @@ const width = window.innerWidth
 const height = window.innerHeight
 const cols = 273
 const hexDistance = width / cols
-const hexRadius = hexDistance / 1.5
+const hexRadius = hexDistance / .5
 
 const hexBin: Hexbin<DataPoint> = d3Hexbin<DataPoint>()
     .radius(hexRadius)

@@ -2,9 +2,9 @@ import * as React from 'react'
 import {
     geoPath,
     ExtendedFeature, ExtendedFeatureCollection, GeoGeometryObjects, GeoProjection } from 'd3-geo'
-import {DataPoint} from "../../types";
-import {calculatePointGrid} from "./util";
-import { Hexbin, hexbin as d3Hexbin } from "d3-hexbin"
+import { DataPoint } from '../../types';
+import { calculatePointGrid } from './util';
+import { Hexbin, hexbin as d3Hexbin } from 'd3-hexbin'
 
 interface Props {
     featureCollection: ExtendedFeatureCollection<ExtendedFeature<GeoGeometryObjects, any>>

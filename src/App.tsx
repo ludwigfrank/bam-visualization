@@ -1,5 +1,6 @@
 import * as React from 'react'
 import HexMap from './components/HexMap'
+// import HexagonMap from './components/HexagonMap'
 import './App.css'
 
 class App extends React.Component {
@@ -7,6 +8,7 @@ class App extends React.Component {
         return (
             <div className="App">
                 <HexMap />
+                {/* <HexagonMap /> */}
             </div>
         )
     }
