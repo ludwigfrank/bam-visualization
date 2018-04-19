@@ -1,16 +1,16 @@
 import * as React from 'react'
 import styled from 'styled-components'
 import {
-    geoAlbers,
+    geoEquirectangular,
     GeoProjection,
-    ExtendedFeatureCollection, ExtendedFeature, GeoGeometryObjects
+    ExtendedFeatureCollection, ExtendedFeature
 } from 'd3-geo'
 // import { polygonContains as d3PolygonContains } from 'd3-polygon'
-import usJson from '../../data/us-states.json'
+import worldGeoJson from '../../data/world.json'
 import * as topojson from 'topojson-client'
-
 import Map from './Map'
 import HexagonMap from './HexagonMap'
+import { MultiPolygon, Polygon } from 'geojson'
 
 const Canvas = styled.svg`
     height: 100vh;
@@ -24,12 +24,12 @@ interface Props {
 }
 
 interface State {
-    featureCollection: ExtendedFeatureCollection<ExtendedFeature<GeoGeometryObjects, any>>
+    featureCollection: ExtendedFeatureCollection<ExtendedFeature<Polygon | MultiPolygon, any>>
     projection: GeoProjection
 }
 
-const width = 700
-const height = 400
+const width = window.innerWidth
+const height = window.innerHeight
 
 export default class HexMap extends React.Component <Props, State> {
     canvas: HTMLElement
@@ -38,8 +38,8 @@ export default class HexMap extends React.Component <Props, State> {
         super(props)
 
         this.state = {
-            featureCollection: usJson,
-            projection: geoAlbers().scale(800).translate([(width - 75) / 2, height / 2])
+            featureCollection: worldGeoJson,
+            projection: geoEquirectangular().scale(200).translate([(width - 75) / 2, height / 2])
         }
     }
 
