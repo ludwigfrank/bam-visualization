@@ -27,7 +27,7 @@ export default class Map extends React.Component <Props, State> {
             <path
                 key={i}
                 d={pathGenerator(d)}
-                style={{ fill: '#cfcfd9' }}
+                style={{ fill: '#f8f4f9' }}
             />
         ))
         return (

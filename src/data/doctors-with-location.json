@@ -1,1 +1,5042 @@
-[{"key":"10001","name":"Cade A. E.","location":{"formattedAddress":"Camden, AR, United States","coordinates":[33.58699,-92.82957],"country":"United States","state":"Arkansas","city":"Camden"}},{"key":"10002","name":"Williams Lawrence A.","location":{"formattedAddress":"St Louis, MO, United States","coordinates":[38.62775,-90.19956],"country":"United States","state":"Missouri","city":"St Louis"}},{"key":"10003","name":"Durrah Frederick Davis","location":{"formattedAddress":"Plainfield, NJ, United States","coordinates":[40.61781,-74.41748],"country":"United States","state":"New Jersey","city":"Plainfield"}},{"key":"10004","name":"Grose Jerome","location":{"formattedAddress":"Philadelphia, PA, United States","coordinates":[39.95223,-75.16218],"country":"United States","state":"Pennsylvania","city":"Philadelphia"}},{"key":"10005","name":"DuVall Byron Vernal","location":{"formattedAddress":"St Louis, MO, United States","coordinates":[38.62775,-90.19956],"country":"United States","state":"Missouri","city":"St Louis"}},{"key":"10008","name":"Edwards Mildred Florine","location":{"formattedAddress":"Nashville, TN, United States","coordinates":[36.16785,-86.77816],"country":"United States","state":"Tennessee","city":"Nashville"}},{"key":"10009","name":"Seawell L. A.","location":{"formattedAddress":"Topeka, KS, United States","coordinates":[39.04928,-95.67118],"country":"United States","state":"Kansas","city":"Topeka"}},{"key":"10010","name":"Chapman Samuel M.","location":{"formattedAddress":"Baton Rouge, LA, United States","coordinates":[30.44335,-91.18664],"country":"United States","state":"Louisiana","city":"Baton Rouge"}},{"key":"10012","name":"Brown Grant Gratz","location":{"formattedAddress":"Atchison, KS, United States","coordinates":[39.56086,-95.12842],"country":"United States","state":"Kansas","city":"Atchison"}},{"key":"10013","name":"Allen Alphonso T.","location":{"formattedAddress":"Palatka, FL, United States","coordinates":[29.64858,-81.63737],"country":"United States","state":"Florida","city":"Palatka"}},{"key":"10014","name":"Keenan R. R.","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"10015","name":"Wood Henry Grant","location":{"formattedAddress":"Clarksville, VA, United States","coordinates":[36.62435,-78.55712],"country":"United States","state":"Virginia","city":"Clarksville"}},{"key":"10016","name":"Sumpter David F.","location":{"formattedAddress":"Plant City, FL, United States","coordinates":[28.01732,-82.12539],"country":"United States","state":"Florida","city":"Plant City"}},{"key":"10019","name":"Wiggins Roland Lee","location":{"formattedAddress":"Columbia, MO, United States","coordinates":[38.95222,-92.33416],"country":"United States","state":"Missouri","city":"Columbia"}},{"key":"10024","name":"Tait Noel E. H.","location":{"formattedAddress":"Hyattsville, MD, United States","coordinates":[38.95259,-76.9421],"country":"United States","state":"Maryland","city":"Hyattsville"}},{"key":"10025","name":"Davis DeWayne France","location":{"formattedAddress":"Covington, KY, United States","coordinates":[39.08398,-84.51027],"country":"United States","state":"Kentucky","city":"Covington"}},{"key":"10027","name":"Proctor Edgar A.","location":{"formattedAddress":"Norfolk, VA, United States","coordinates":[36.84682,-76.28506],"country":"United States","state":"Virginia","city":"Norfolk"}},{"key":"10033","name":"Smith Clifford C.","location":{"formattedAddress":"Waterloo, IA, United States","coordinates":[42.49329,-92.34195],"country":"United States","state":"Iowa","city":"Waterloo"}},{"key":"10035","name":"Rohrer Kate J.","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"10038","name":"Fisher Judith","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"10045","name":"Coles Alfred Lee","location":{"formattedAddress":"Morgantown, WV, United States","coordinates":[39.63038,-79.95785],"country":"United States","state":"West Virginia","city":"Morgantown"}},{"key":"10052","name":"Carey Albert","location":{"formattedAddress":"Montgomery, AL, United States","coordinates":[32.38015,-86.30008],"country":"United States","state":"Alabama","city":"Montgomery"}},{"key":"10053","name":"Lewis Mollie V.","location":{"formattedAddress":"New Orleans, LA, United States","coordinates":[29.9537,-90.07775],"country":"United States","state":"Louisiana","city":"New Orleans"}},{"key":"10054","name":"Terry Garland B.","location":{"formattedAddress":"Norfolk, VA, United States","coordinates":[36.84682,-76.28506],"country":"United States","state":"Virginia","city":"Norfolk"}},{"key":"10055","name":"Benson Georgia Walker","location":{"formattedAddress":"Jacksonville, FL, United States","coordinates":[30.33147,-81.65622],"country":"United States","state":"Florida","city":"Jacksonville"}},{"key":"10056","name":"Lindsay Alvin","location":{"formattedAddress":"Charleston, SC, United States","coordinates":[32.78115,-79.93161],"country":"United States","state":"South Carolina","city":"Charleston"}},{"key":"10058","name":"Jackson Victor","location":{"formattedAddress":"Markham, IL, United States","coordinates":[41.59263,-87.69421],"country":"United States","state":"Illinois","city":"Markham"}},{"key":"10061","name":"Douglass Henry Francis","location":{"formattedAddress":"Baltimore, MD, United States","coordinates":[39.29058,-76.60926],"country":"United States","state":"Maryland","city":"Baltimore"}},{"key":"10062","name":"Street Kenneth Anthony","location":{"formattedAddress":"St Louis, MO, United States","coordinates":[38.62775,-90.19956],"country":"United States","state":"Missouri","city":"St Louis"}},{"key":"10064","name":"Thomas Albert Daniel","location":{"formattedAddress":"Whistler, Mobile, AL, United States","coordinates":[30.75552,-88.10398],"country":"United States","state":"Alabama","city":"Mobile"}},{"key":"10066","name":"Smith Elliott Reginald","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"10067","name":"Freeman E. Lamar","location":{"formattedAddress":"Athens, GA, United States","coordinates":[33.95813,-83.37326],"country":"United States","state":"Georgia","city":"Athens"}},{"key":"10071","name":"Baucom Baron Von","location":{"formattedAddress":"Kansas City, MO, United States","coordinates":[39.10345,-94.58311],"country":"United States","state":"Missouri","city":"Kansas City"}},{"key":"10075","name":"Harris William Willis","location":{"formattedAddress":"Jersey City, NJ, United States","coordinates":[40.71748,-74.04385],"country":"United States","state":"New Jersey","city":"Jersey City"}},{"key":"10076","name":"Bryant Bernard E.","location":{"formattedAddress":"Boston, MA, United States","coordinates":[42.35866,-71.05675],"country":"United States","state":"Massachusetts","city":"Boston"}},{"key":"10079","name":"Neal Ronald Brian","location":{"formattedAddress":"Chicago, IL, United States","coordinates":[41.88425,-87.63245],"country":"United States","state":"Illinois","city":"Chicago"}},{"key":"10080","name":"Garrett Frederick J.","location":{"formattedAddress":"Norfolk, VA, United States","coordinates":[36.84682,-76.28506],"country":"United States","state":"Virginia","city":"Norfolk"}},{"key":"10081","name":"Chilcoat William J.","location":{"formattedAddress":"Memphis, TN, United States","coordinates":[35.14977,-90.04926],"country":"United States","state":"Tennessee","city":"Memphis"}},{"key":"10082","name":"Erwin Herbert J.","location":{"formattedAddress":"Gastonia, NC, United States","coordinates":[35.2622,-81.18676],"country":"United States","state":"North Carolina","city":"Gastonia"}},{"key":"10083","name":"Duke Leslie D.","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"10084","name":"Brooks Willie","location":{"formattedAddress":"Charleston, SC, United States","coordinates":[32.78115,-79.93161],"country":"United States","state":"South Carolina","city":"Charleston"}},{"key":"10085","name":"Shaw Benjamin F.","location":{"formattedAddress":"Pittsburgh, PA, United States","coordinates":[40.43851,-79.99734],"country":"United States","state":"Pennsylvania","city":"Pittsburgh"}},{"key":"10087","name":"Larkins Alvin Wayne","location":{"formattedAddress":"Beaumont, TX, United States","coordinates":[30.08616,-94.10135],"country":"United States","state":"Texas","city":"Beaumont"}},{"key":"10089","name":"Blaney Lilton D.","location":{"formattedAddress":"Baltimore, MD, United States","coordinates":[39.29058,-76.60926],"country":"United States","state":"Maryland","city":"Baltimore"}},{"key":"10102","name":"Laning John T.","location":{"formattedAddress":"Hopewell, NJ, United States","coordinates":[40.38805,-74.75812],"country":"United States","state":"New Jersey","city":"Hopewell"}},{"key":"10103","name":"Batipps Percy Oliver","location":{"formattedAddress":"Chester, PA, United States","coordinates":[39.84845,-75.35944],"country":"United States","state":"Pennsylvania","city":"Chester"}},{"key":"10104","name":"Clayton Finus Uron","location":{"formattedAddress":"Floyd, VA, United States","coordinates":[36.91182,-80.32032],"country":"United States","state":"Virginia","city":"Floyd"}},{"key":"10105","name":"Brown Sterling P.","location":{"formattedAddress":"Atlanta, GA, United States","coordinates":[33.74832,-84.39111],"country":"United States","state":"Georgia","city":"Atlanta"}},{"key":"10107","name":"Gilbert Artishia Garcia","location":{"formattedAddress":"Louisville, KY, United States","coordinates":[38.25489,-85.76666],"country":"United States","state":"Kentucky","city":"Louisville"}},{"key":"10108","name":"Polk Donald G.","location":{"formattedAddress":"Chicago, IL, United States","coordinates":[41.88425,-87.63245],"country":"United States","state":"Illinois","city":"Chicago"}},{"key":"10109","name":"Brown William Leonard","location":{"formattedAddress":"Sumter, SC, United States","coordinates":[33.92439,-80.34319],"country":"United States","state":"South Carolina","city":"Sumter"}},{"key":"10113","name":"Petioni Julio A.","location":{"formattedAddress":"New York, NY, United States","coordinates":[40.71455,-74.00714],"country":"United States","state":"New York","city":"New York"}},{"key":"10119","name":"Marshall Ernest Jones","location":{"formattedAddress":"Kansas City, MO, United States","coordinates":[39.10345,-94.58311],"country":"United States","state":"Missouri","city":"Kansas City"}},{"key":"10131","name":"Higgins Clarence Ronald","location":{"formattedAddress":"Cleveland, OH, United States","coordinates":[41.50473,-81.69075],"country":"United States","state":"Ohio","city":"Cleveland"}},{"key":"10132","name":"Charles Lloyd M.","location":{"formattedAddress":"Hyattsville, MD, United States","coordinates":[38.95259,-76.9421],"country":"United States","state":"Maryland","city":"Hyattsville"}},{"key":"10133","name":"King John Quill Taylor","location":{"formattedAddress":"Austin, TX, United States","coordinates":[30.26759,-97.74299],"country":"United States","state":"Texas","city":"Austin"}},{"key":"10137","name":"Lane Francis Burleson","location":{"formattedAddress":"Jackson, TN, United States","coordinates":[35.6139,-88.8194],"country":"United States","state":"Tennessee","city":"Jackson"}},{"key":"10142","name":"Bryant F. H.","location":{"formattedAddress":"Oxford, MS, United States","coordinates":[34.36403,-89.51894],"country":"United States","state":"Mississippi","city":"Oxford"}},{"key":"10144","name":"Jones T. Crawford","location":{"formattedAddress":"Perry, GA, United States","coordinates":[32.46087,-83.73476],"country":"United States","state":"Georgia","city":"Perry"}},{"key":"10148","name":"Williams Lafayette W.","location":{"formattedAddress":"Valdosta, GA, United States","coordinates":[30.83473,-83.28093],"country":"United States","state":"Georgia","city":"Valdosta"}},{"key":"10150","name":"Adams William B.","location":{"formattedAddress":"Clarksville, TN, United States","coordinates":[36.53122,-87.35992],"country":"United States","state":"Tennessee","city":"Clarksville"}},{"key":"10151","name":"Harrison Howard Kenneth","location":{"formattedAddress":"Asheville, NC, United States","coordinates":[35.59844,-82.55312],"country":"United States","state":"North Carolina","city":"Asheville"}},{"key":"10154","name":"Sandstrom Ray Henry","location":{"formattedAddress":"Takoma Park, MD, United States","coordinates":[38.98127,-77.00988],"country":"United States","state":"Maryland","city":"Takoma Park"}},{"key":"10161","name":"Westbrooks Orlando L.","location":{"formattedAddress":"Wadesboro, NC, United States","coordinates":[34.96578,-80.07691],"country":"United States","state":"North Carolina","city":"Wadesboro"}},{"key":"10164","name":"Burruss George S.","location":{"formattedAddress":"Martin, GA, United States","coordinates":[34.48541,-83.18486],"country":"United States","state":"Georgia","city":"Martin"}},{"key":"10166","name":"Reid Edward J.","location":{"formattedAddress":"Madison, GA, United States","coordinates":[33.59588,-83.46774],"country":"United States","state":"Georgia","city":"Madison"}},{"key":"10171","name":"Robinson Luther Wentworth","location":{"formattedAddress":"Remington, VA, United States","coordinates":[38.53317,-77.80741],"country":"United States","state":"Virginia","city":"Remington"}},{"key":"10173","name":"Seaton Earle E.","location":{"formattedAddress":"Pembroke, Bermuda","coordinates":[32.30105,-64.79621],"country":"Bermuda","state":null,"city":null}},{"key":"10175","name":"Green James P.","location":{"formattedAddress":"Henderson, NC, United States","coordinates":[36.32993,-78.39868],"country":"United States","state":"North Carolina","city":"Henderson"}},{"key":"10181","name":"Jones James R.","location":{"formattedAddress":"Houston, TX, United States","coordinates":[29.76059,-95.36968],"country":"United States","state":"Texas","city":"Houston"}},{"key":"10187","name":"Ford Florence T.","location":{"formattedAddress":"Vicksburg, MS, United States","coordinates":[32.35004,-90.88155],"country":"United States","state":"Mississippi","city":"Vicksburg"}},{"key":"10192","name":"Sanford Johnson W.","location":{"formattedAddress":"Oklahoma City, OK, United States","coordinates":[35.47204,-97.52107],"country":"United States","state":"Oklahoma","city":"Oklahoma City"}},{"key":"10197","name":"Bowling E. W.","location":{"formattedAddress":"Nashville, TN, United States","coordinates":[36.16785,-86.77816],"country":"United States","state":"Tennessee","city":"Nashville"}},{"key":"10200","name":"Pierre Samuel Madden","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"10201","name":"Carter John","location":{"formattedAddress":"Winston-Salem, NC, United States","coordinates":[36.10002,-80.24116],"country":"United States","state":"North Carolina","city":"Winston-Salem"}},{"key":"10202","name":"Allen James Calvin","location":{"formattedAddress":"Eastville Station, Cape Charles, VA, United States","coordinates":[37.34743,-75.93143],"country":"United States","state":"Virginia","city":"Cape Charles"}},{"key":"10204","name":"Monroe George Elmer","location":{"formattedAddress":"Boston, MA, United States","coordinates":[42.35866,-71.05675],"country":"United States","state":"Massachusetts","city":"Boston"}},{"key":"10205","name":"Burke Denzer","location":{"formattedAddress":"Atlanta, GA, United States","coordinates":[33.74832,-84.39111],"country":"United States","state":"Georgia","city":"Atlanta"}},{"key":"10208","name":"Hudson Henry Claude","location":{"formattedAddress":"Alexandria, LA, United States","coordinates":[31.31266,-92.44568],"country":"United States","state":"Louisiana","city":"Alexandria"}},{"key":"10215","name":"Simms Earl Sebran","location":{"formattedAddress":"Pocahontas, VA, United States","coordinates":[37.30422,-81.34077],"country":"United States","state":"Virginia","city":"Pocahontas"}},{"key":"10218","name":"Slowe William Myers","location":{"formattedAddress":"Philadelphia, PA, United States","coordinates":[39.95223,-75.16218],"country":"United States","state":"Pennsylvania","city":"Philadelphia"}},{"key":"10219","name":"Porter Jesse Jennings","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"10221","name":"Shorter Henry Franklin","location":{"formattedAddress":"Atlanta, GA, United States","coordinates":[33.74832,-84.39111],"country":"United States","state":"Georgia","city":"Atlanta"}},{"key":"10222","name":"Raicht Raymond","location":{"formattedAddress":"Marcellus, NY, United States","coordinates":[42.98245,-76.34145],"country":"United States","state":"New York","city":"Marcellus"}},{"key":"10223","name":"Buckner George W.","location":{"formattedAddress":"Evansville, IN, United States","coordinates":[37.97708,-87.56405],"country":"United States","state":"Indiana","city":"Evansville"}},{"key":"10255","name":"Moore Randall","location":{"formattedAddress":"Asheville, NC, United States","coordinates":[35.59844,-82.55312],"country":"United States","state":"North Carolina","city":"Asheville"}},{"key":"10285","name":"Clement Wesley Dobbs","location":{"formattedAddress":"Durham, NC, United States","coordinates":[35.99542,-78.89644],"country":"United States","state":"North Carolina","city":"Durham"}},{"key":"10394","name":"Goode H. D.","location":{"formattedAddress":"Pensacola, FL, United States","coordinates":[30.42085,-87.21723],"country":"United States","state":"Florida","city":"Pensacola"}},{"key":"10395","name":"Banks George Edward","location":{"formattedAddress":"Greensboro, AL, United States","coordinates":[32.70355,-87.59549],"country":"United States","state":"Alabama","city":"Greensboro"}},{"key":"10396","name":"Wood James Herman","location":{"formattedAddress":"Harrisonburg, VA, United States","coordinates":[38.45164,-78.8697],"country":"United States","state":"Virginia","city":"Harrisonburg"}},{"key":"10397","name":"Taft George H.","location":{"formattedAddress":"Greenville, NC, United States","coordinates":[35.61215,-77.38076],"country":"United States","state":"North Carolina","city":"Greenville"}},{"key":"10449","name":"Miller Claude Louis","location":{"formattedAddress":"Ciudad de Colón, Colón, Panamá","coordinates":[9.3617,-79.89965],"country":"Panamá","state":"Colón","city":"Ciudad de Colón"}},{"key":"10492","name":"Garnes Earnest Q.","location":{"formattedAddress":"Circleville, OH, United States","coordinates":[39.60092,-82.94192],"country":"United States","state":"Ohio","city":"Circleville"}},{"key":"10493","name":"Clark William Henry","location":{"formattedAddress":"Shreveport, LA, United States","coordinates":[32.51487,-93.74689],"country":"United States","state":"Louisiana","city":"Shreveport"}},{"key":"10520","name":"Tucker Marcus O.","location":{"formattedAddress":"Hutchinson, KS, United States","coordinates":[38.05725,-97.93268],"country":"United States","state":"Kansas","city":"Hutchinson"}},{"key":"10534","name":"Callahan Henry Richard","location":{"formattedAddress":"Level Land, Iva, SC, United States","coordinates":[34.3295,-82.47828],"country":"United States","state":"South Carolina","city":"Iva"}},{"key":"10535","name":"Suggs Haywood W.","location":{"formattedAddress":"Forrest City, AR, United States","coordinates":[35.01143,-90.7861999],"country":"United States","state":"Arkansas","city":"Forrest City"}},{"key":"10536","name":"Watkins Robert C.","location":{"formattedAddress":"Cleveland, OH, United States","coordinates":[41.50473,-81.69075],"country":"United States","state":"Ohio","city":"Cleveland"}},{"key":"10551","name":"Woods Clarence Charles","location":{"formattedAddress":"Memphis, TN, United States","coordinates":[35.14977,-90.04926],"country":"United States","state":"Tennessee","city":"Memphis"}},{"key":"10623","name":"Adams Charles Francis","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"10624","name":"Dumas Albert Woods","location":{"formattedAddress":"Natchez, MS, United States","coordinates":[31.55922,-91.39821],"country":"United States","state":"Mississippi","city":"Natchez"}},{"key":"10625","name":"Freeman T. J.","location":{"formattedAddress":"Chattanooga, TN, United States","coordinates":[35.04672,-85.30947],"country":"United States","state":"Tennessee","city":"Chattanooga"}},{"key":"10626","name":"Rickman Lewis Daniel","location":{"formattedAddress":"Middleport, OH, United States","coordinates":[39.00095,-82.04977],"country":"United States","state":"Ohio","city":"Middleport"}},{"key":"10627","name":"Rajan Yasmin A.","location":{"formattedAddress":"Mombasa, Kenya","coordinates":[-4.05738,39.66275],"country":"Kenya","state":null,"city":"Mombasa"}},{"key":"10628","name":"Tolbert Jesse C.","location":{"formattedAddress":"Detroit, MI, United States","coordinates":[42.33168,-83.048],"country":"United States","state":"Michigan","city":"Detroit"}},{"key":"10651","name":"Jackson Cephas G.","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"10652","name":"Jordan Ronald Douglas","location":{"formattedAddress":"Pine Bluff, AR, United States","coordinates":[34.22354,-92.0034],"country":"United States","state":"Arkansas","city":"Pine Bluff"}},{"key":"10665","name":"Adams Samuel P.","location":{"formattedAddress":"Chicago, IL, United States","coordinates":[41.88425,-87.63245],"country":"United States","state":"Illinois","city":"Chicago"}},{"key":"10669","name":"Screen Robert Lewis","location":{"formattedAddress":"Augusta, GA, United States","coordinates":[33.4793,-81.97522],"country":"United States","state":"Georgia","city":"Augusta"}},{"key":"10683","name":"Allen Maurice Alonzo","location":{"formattedAddress":"Baltimore, MD, United States","coordinates":[39.29058,-76.60926],"country":"United States","state":"Maryland","city":"Baltimore"}},{"key":"10685","name":"Howley Eugene E.","location":{"formattedAddress":"Cambridge, MA, United States","coordinates":[42.3668,-71.10602],"country":"United States","state":"Massachusetts","city":"Cambridge"}},{"key":"10687","name":"Kershaw A. J.","location":{"formattedAddress":"Tallahassee, FL, United States","coordinates":[30.43977,-84.28065],"country":"United States","state":"Florida","city":"Tallahassee"}},{"key":"10716","name":"Shane Sylvan M.","location":{"formattedAddress":"Baltimore, MD, United States","coordinates":[39.29058,-76.60926],"country":"United States","state":"Maryland","city":"Baltimore"}},{"key":"10718","name":"Stevenson Chaplin McCabe","location":{"formattedAddress":"Lexington, KY, United States","coordinates":[38.0486,-84.50032],"country":"United States","state":"Kentucky","city":"Lexington"}},{"key":"10719","name":"Thurman Frank S.","location":{"formattedAddress":"Jackson, MI, United States","coordinates":[42.24555,-84.4005],"country":"United States","state":"Michigan","city":"Jackson"}},{"key":"10721","name":"Tollett Harrel E.","location":{"formattedAddress":"Muskogee, OK, United States","coordinates":[35.74848,-95.36905],"country":"United States","state":"Oklahoma","city":"Muskogee"}},{"key":"10750","name":"Cooper Wellington Watson","location":{"formattedAddress":"Waco, TX, United States","coordinates":[31.57182,-97.14951],"country":"United States","state":"Texas","city":"Waco"}},{"key":"10753","name":"Crombie Booker T.","location":{"formattedAddress":"Knoxville, TN, United States","coordinates":[35.96068,-83.92103],"country":"United States","state":"Tennessee","city":"Knoxville"}},{"key":"10754","name":"Bowles James Harold","location":{"formattedAddress":"Columbia, VA, United States","coordinates":[37.75247,-78.16151],"country":"United States","state":"Virginia","city":"Columbia"}},{"key":"10755","name":"Lee Gladys","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"10760","name":"Jones Yolanda I.","location":{"formattedAddress":"Red Bank, NJ, United States","coordinates":[40.34921,-74.07014],"country":"United States","state":"New Jersey","city":"Red Bank"}},{"key":"10761","name":"Richardson Robert Maxwell","location":{"formattedAddress":"Cleveland, OH, United States","coordinates":[41.50473,-81.69075],"country":"United States","state":"Ohio","city":"Cleveland"}},{"key":"10784","name":"Williams Will L.","location":{"formattedAddress":"Garland, Mobile, AL, United States","coordinates":[30.76051,-88.2007],"country":"United States","state":"Alabama","city":"Mobile"}},{"key":"10785","name":"Johnson Jarone William","location":{"formattedAddress":"Mansfield, LA, United States","coordinates":[32.03505,-93.71082],"country":"United States","state":"Louisiana","city":"Mansfield"}},{"key":"10786","name":"Rice George","location":{"formattedAddress":"Lexington, KY, United States","coordinates":[38.0486,-84.50032],"country":"United States","state":"Kentucky","city":"Lexington"}},{"key":"10787","name":"Davenport Harold Stevenson","location":{"formattedAddress":"Norfolk, VA, United States","coordinates":[36.84682,-76.28506],"country":"United States","state":"Virginia","city":"Norfolk"}},{"key":"10788","name":"Ashley William W.","location":{"formattedAddress":"Bayside, NY, United States","coordinates":[40.76176,-73.76842],"country":"United States","state":"New York","city":"Bayside"}},{"key":"10789","name":"Bellan Joseph L.","location":{"formattedAddress":"New York, NY, United States","coordinates":[40.71455,-74.00714],"country":"United States","state":"New York","city":"New York"}},{"key":"10837","name":"Porter Willis","location":{"formattedAddress":"Waco, TX, United States","coordinates":[31.57182,-97.14951],"country":"United States","state":"Texas","city":"Waco"}},{"key":"10850","name":"Prather T. W.","location":{"formattedAddress":"Evanston, IL, United States","coordinates":[42.05702,-87.68645],"country":"United States","state":"Illinois","city":"Evanston"}},{"key":"10851","name":"Burns David E.","location":{"formattedAddress":"Nolensville, TN, United States","coordinates":[35.95697,-86.67181],"country":"United States","state":"Tennessee","city":"Nolensville"}},{"key":"10852","name":"Harris Percy Gene","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"10853","name":"Mitchell Janet L.","location":{"formattedAddress":"Lexington, KY, United States","coordinates":[38.0486,-84.50032],"country":"United States","state":"Kentucky","city":"Lexington"}},{"key":"10854","name":"Durham Jacob J.","location":{"formattedAddress":"Columbia, SC, United States","coordinates":[33.99882,-81.04537],"country":"United States","state":"South Carolina","city":"Columbia"}},{"key":"10855","name":"Nicholson Arthur","location":{"formattedAddress":"Memphis, TN, United States","coordinates":[35.14977,-90.04926],"country":"United States","state":"Tennessee","city":"Memphis"}},{"key":"10856","name":"Logan William J. J.","location":{"formattedAddress":"Belmont, NC, United States","coordinates":[35.24431,-81.03809],"country":"United States","state":"North Carolina","city":"Belmont"}},{"key":"10877","name":"Dawson F. E.","location":{"formattedAddress":"Nashville, TN, United States","coordinates":[36.16785,-86.77816],"country":"United States","state":"Tennessee","city":"Nashville"}},{"key":"10883","name":"Crawford Roger G.","location":{"formattedAddress":"Detroit, MI, United States","coordinates":[42.33168,-83.048],"country":"United States","state":"Michigan","city":"Detroit"}},{"key":"10923","name":"Thomas James E.","location":{"formattedAddress":"Wilmington, NC, United States","coordinates":[34.23497,-77.946],"country":"United States","state":"North Carolina","city":"Wilmington"}},{"key":"10951","name":"Beguesse E. Conway","location":{"formattedAddress":"Chicago, IL, United States","coordinates":[41.88425,-87.63245],"country":"United States","state":"Illinois","city":"Chicago"}},{"key":"10971","name":"Schechtman Jay C.","location":{"formattedAddress":"Bronx, NY, United States","coordinates":[40.82601,-73.92309],"country":"United States","state":"New York","city":"Bronx"}},{"key":"10972","name":"Brooks David D.","location":{"formattedAddress":"Hammond, LA, United States","coordinates":[30.50418,-90.45846],"country":"United States","state":"Louisiana","city":"Hammond"}},{"key":"10974","name":"Phillips Charles H.","location":{"formattedAddress":"Milledgeville, GA, United States","coordinates":[33.0815,-83.22557],"country":"United States","state":"Georgia","city":"Milledgeville"}},{"key":"11069","name":"Weedin Robert M.","location":{"formattedAddress":"Seattle, WA, United States","coordinates":[47.60358,-122.32945],"country":"United States","state":"Washington","city":"Seattle"}},{"key":"11070","name":"Harrison Bernard Hove","location":{"formattedAddress":"Houston, TX, United States","coordinates":[29.76059,-95.36968],"country":"United States","state":"Texas","city":"Houston"}},{"key":"11071","name":"Sarauw Arthur S.","location":{"formattedAddress":"Jamaica, NY, United States","coordinates":[40.7018,-73.80853],"country":"United States","state":"New York","city":"Jamaica"}},{"key":"11072","name":"Moehring Herman D.","location":{"formattedAddress":"East Tawas, MI, United States","coordinates":[44.2792,-83.49157],"country":"United States","state":"Michigan","city":"East Tawas"}},{"key":"11073","name":"Clayton Thomas David","location":{"formattedAddress":"Smyrna, DE, United States","coordinates":[39.30045,-75.60692],"country":"United States","state":"Delaware","city":"Smyrna"}},{"key":"11075","name":"Alston Charles","location":{"formattedAddress":"Savannah, GA, United States","coordinates":[32.08091,-81.09119],"country":"United States","state":"Georgia","city":"Savannah"}},{"key":"11083","name":"Crampton Benjamin P.","location":{"formattedAddress":"Harrisburg, PA, United States","coordinates":[40.25987,-76.88223],"country":"United States","state":"Pennsylvania","city":"Harrisburg"}},{"key":"11084","name":"Bacon Robert John","location":{"formattedAddress":"Evanston, IL, United States","coordinates":[42.05702,-87.68645],"country":"United States","state":"Illinois","city":"Evanston"}},{"key":"11087","name":"Cotton J. A.","location":{"formattedAddress":"Memphis, TN, United States","coordinates":[35.14977,-90.04926],"country":"United States","state":"Tennessee","city":"Memphis"}},{"key":"11148","name":"Williams Daniel Barclay","location":{"formattedAddress":"Richmond, VA, United States","coordinates":[37.5407,-77.43365],"country":"United States","state":"Virginia","city":"Richmond"}},{"key":"11197","name":"Shaffer Carl Wilberforce","location":{"formattedAddress":"Philadelphia, PA, United States","coordinates":[39.95223,-75.16218],"country":"United States","state":"Pennsylvania","city":"Philadelphia"}},{"key":"11222","name":"Dansby William N.","location":{"formattedAddress":"Tuscaloosa, AL, United States","coordinates":[33.21043,-87.56625],"country":"United States","state":"Alabama","city":"Tuscaloosa"}},{"key":"11225","name":"Ballard Billy Ray","location":{"formattedAddress":"Arcadia, LA, United States","coordinates":[32.54943,-92.92126],"country":"United States","state":"Louisiana","city":"Arcadia"}},{"key":"11232","name":"Watkins T. H.","location":{"formattedAddress":"Atlantic City, NJ, United States","coordinates":[39.3628799,-74.42638],"country":"United States","state":"New Jersey","city":"Atlantic City"}},{"key":"11239","name":"Bates J. Edward","location":{"formattedAddress":"Milroy, PA, United States","coordinates":[40.71335,-77.58898],"country":"United States","state":"Pennsylvania","city":"Milroy"}},{"key":"11273","name":"Brain Norbert G.","location":{"formattedAddress":"New York, NY, United States","coordinates":[40.71455,-74.00714],"country":"United States","state":"New York","city":"New York"}},{"key":"11274","name":"Gill Jerry M.","location":{"formattedAddress":"Bogue Chitto, MS, United States","coordinates":[31.43836,-90.44918],"country":"United States","state":"Mississippi","city":"Bogue Chitto"}},{"key":"11299","name":"Primus Jay Hugh","location":{"formattedAddress":"Floral City, FL, United States","coordinates":[28.74761,-82.29791],"country":"United States","state":"Florida","city":"Floral City"}},{"key":"11300","name":"Scott John Washington","location":{"formattedAddress":"Pensacola, FL, United States","coordinates":[30.42085,-87.21723],"country":"United States","state":"Florida","city":"Pensacola"}},{"key":"11301","name":"Ford Walter T.","location":{"formattedAddress":"Fort Valley, GA, United States","coordinates":[32.5539,-83.88864],"country":"United States","state":"Georgia","city":"Fort Valley"}},{"key":"11345","name":"Butler Bruce Nathaniel","location":{"formattedAddress":"Silver Spring, MD, United States","coordinates":[38.99693,-77.02914],"country":"United States","state":"Maryland","city":"Silver Spring"}},{"key":"11347","name":"Nelson James D.","location":{"formattedAddress":"Philadelphia, PA, United States","coordinates":[39.95223,-75.16218],"country":"United States","state":"Pennsylvania","city":"Philadelphia"}},{"key":"11348","name":"Green S. S.","location":{"formattedAddress":"Sedalia, MO, United States","coordinates":[38.71078,-93.22806],"country":"United States","state":"Missouri","city":"Sedalia"}},{"key":"11349","name":"Bobb Joseph M.","location":{"formattedAddress":"Bloomington, IN, United States","coordinates":[39.1666,-86.5348],"country":"United States","state":"Indiana","city":"Bloomington"}},{"key":"11350","name":"Polk S. W.","location":{"formattedAddress":"Yazoo City, MS, United States","coordinates":[32.84784,-90.41513],"country":"United States","state":"Mississippi","city":"Yazoo City"}},{"key":"11351","name":"Wallace Jesse Etta","location":{"formattedAddress":"Calvert, TX, United States","coordinates":[30.97769,-96.67359],"country":"United States","state":"Texas","city":"Calvert"}},{"key":"11352","name":"Ellis Leander T.","location":{"formattedAddress":"Laurel, MS, United States","coordinates":[31.69682,-89.13518],"country":"United States","state":"Mississippi","city":"Laurel"}},{"key":"11353","name":"Taylor George T.","location":{"formattedAddress":"Hampton, VA, United States","coordinates":[37.02779,-76.34512],"country":"United States","state":"Virginia","city":"Hampton"}},{"key":"11400","name":"Saddler William Nathaniel","location":{"formattedAddress":"Kimball, WV, United States","coordinates":[37.42638,-81.50716],"country":"United States","state":"West Virginia","city":"Kimball"}},{"key":"11402","name":"Bookhardt Alfred L.","location":{"formattedAddress":"New Smyrna Beach, FL, United States","coordinates":[29.02717,-80.92303],"country":"United States","state":"Florida","city":"New Smyrna Beach"}},{"key":"11403","name":"Golden Howard Atwater","location":{"formattedAddress":"Jackson, TN, United States","coordinates":[35.6139,-88.8194],"country":"United States","state":"Tennessee","city":"Jackson"}},{"key":"11405","name":"Williams Addie Beatrice","location":{"formattedAddress":"Richmond, VA, United States","coordinates":[37.5407,-77.43365],"country":"United States","state":"Virginia","city":"Richmond"}},{"key":"11406","name":"Washington Henry M.","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"11419","name":"Young J. O.","location":{"formattedAddress":"Chattanooga, TN, United States","coordinates":[35.04672,-85.30947],"country":"United States","state":"Tennessee","city":"Chattanooga"}},{"key":"11420","name":"Mitchell Iverson Othello","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"11468","name":"Burnette Robert E.","location":{"formattedAddress":"Maywood, IL, United States","coordinates":[41.88779,-87.83921],"country":"United States","state":"Illinois","city":"Maywood"}},{"key":"11469","name":"Greene Ralph E.","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"11490","name":"Young J. S.","location":{"formattedAddress":"Lake City, FL, United States","coordinates":[30.19053,-82.63712],"country":"United States","state":"Florida","city":"Lake City"}},{"key":"11540","name":"Henry James Franklin","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"11541","name":"Watts William","location":{"formattedAddress":"Houston, TX, United States","coordinates":[29.76059,-95.36968],"country":"United States","state":"Texas","city":"Houston"}},{"key":"11544","name":"Sunday Edward Julian","location":{"formattedAddress":"Pensacola, FL, United States","coordinates":[30.42085,-87.21723],"country":"United States","state":"Florida","city":"Pensacola"}},{"key":"11547","name":"Hazard Fred S.","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"11590","name":"Chikosi Chakanyuka","location":{"formattedAddress":"Mutare, Zimbabwe","coordinates":[-18.95725,32.65991],"country":"Zimbabwe","state":null,"city":"Mutare"}},{"key":"11631","name":"Davis Emile Moores","location":{"formattedAddress":"Gary, IN, United States","coordinates":[41.60371,-87.33717],"country":"United States","state":"Indiana","city":"Gary"}},{"key":"11633","name":"Johnson Alfred G.","location":{"formattedAddress":"Charleston, SC, United States","coordinates":[32.78115,-79.93161],"country":"United States","state":"South Carolina","city":"Charleston"}},{"key":"11634","name":"Robbins Herbert","location":{"formattedAddress":"Philadelphia, PA, United States","coordinates":[39.95223,-75.16218],"country":"United States","state":"Pennsylvania","city":"Philadelphia"}},{"key":"11703","name":"Coleman William H.","location":{"formattedAddress":"New York, NY, United States","coordinates":[40.71455,-74.00714],"country":"United States","state":"New York","city":"New York"}},{"key":"11716","name":"Callahan Samuel P.","location":{"formattedAddress":"Gary, WV, United States","coordinates":[37.36623,-81.55198],"country":"United States","state":"West Virginia","city":"Gary"}},{"key":"11757","name":"Jackson Caryl","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"11758","name":"Corbin Percy Casino","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"11759","name":"Williams Anderson J.","location":{"formattedAddress":"Pittsburgh, PA, United States","coordinates":[40.43851,-79.99734],"country":"United States","state":"Pennsylvania","city":"Pittsburgh"}},{"key":"11806","name":"Douglas Gregory Edward","location":{"formattedAddress":"New Rochelle, NY, United States","coordinates":[40.92011,-73.78694],"country":"United States","state":"New York","city":"New Rochelle"}},{"key":"11866","name":"Puryear Frank","location":{"formattedAddress":"Nashville, TN, United States","coordinates":[36.16785,-86.77816],"country":"United States","state":"Tennessee","city":"Nashville"}},{"key":"11867","name":"Bell W. J. T.","location":{"formattedAddress":"Lebanon, TN, United States","coordinates":[36.20787,-86.28952],"country":"United States","state":"Tennessee","city":"Lebanon"}},{"key":"11869","name":"Holness Mavis G.","location":{"formattedAddress":"St Elizabeth, Jamaica","coordinates":[18.0293,-77.86145],"country":"Jamaica","state":null,"city":null}},{"key":"11889","name":"Johnson Samuel T.","location":{"formattedAddress":"Memphis, TN, United States","coordinates":[35.14977,-90.04926],"country":"United States","state":"Tennessee","city":"Memphis"}},{"key":"11915","name":"Lafayette Albert Simms","location":{"formattedAddress":"Savannah, GA, United States","coordinates":[32.08091,-81.09119],"country":"United States","state":"Georgia","city":"Savannah"}},{"key":"11916","name":"McLaughlin Durnell","location":{"formattedAddress":"Fort Valley, GA, United States","coordinates":[32.5539,-83.88864],"country":"United States","state":"Georgia","city":"Fort Valley"}},{"key":"11917","name":"Ross William A. J.","location":{"formattedAddress":"Detroit, MI, United States","coordinates":[42.33168,-83.048],"country":"United States","state":"Michigan","city":"Detroit"}},{"key":"11919","name":"Hunter Marion","location":{"formattedAddress":"Galveston, TX, United States","coordinates":[29.29533,-94.80791],"country":"United States","state":"Texas","city":"Galveston"}},{"key":"11920","name":"Culver Oneil","location":{"formattedAddress":"Abbeville, AL, United States","coordinates":[31.57164,-85.25093],"country":"United States","state":"Alabama","city":"Abbeville"}},{"key":"11954","name":"Duncan Julius","location":{"formattedAddress":"New York, NY, United States","coordinates":[40.71455,-74.00714],"country":"United States","state":"New York","city":"New York"}},{"key":"11980","name":"Wilson Edward LeRoy","location":{"formattedAddress":"Baltimore, MD, United States","coordinates":[39.29058,-76.60926],"country":"United States","state":"Maryland","city":"Baltimore"}},{"key":"12087","name":"Bright Cornelius Edison","location":{"formattedAddress":"Jacksonville, FL, United States","coordinates":[30.33147,-81.65622],"country":"United States","state":"Florida","city":"Jacksonville"}},{"key":"12088","name":"Sherman Bernadette Elaine","location":{"formattedAddress":"Chicago, IL, United States","coordinates":[41.88425,-87.63245],"country":"United States","state":"Illinois","city":"Chicago"}},{"key":"12091","name":"Umble M. V.","location":{"formattedAddress":"Bon Aqua, TN, United States","coordinates":[35.95342,-87.3274],"country":"United States","state":"Tennessee","city":"Bon Aqua"}},{"key":"12130","name":"Ford J. William","location":{"formattedAddress":"Williamsport, PA, United States","coordinates":[41.24094,-77.00141],"country":"United States","state":"Pennsylvania","city":"Williamsport"}},{"key":"12131","name":"Berry William LeRoy","location":{"formattedAddress":"Newport, RI, United States","coordinates":[41.49224,-71.31124],"country":"United States","state":"Rhode Island","city":"Newport"}},{"key":"12164","name":"Langford Edgar A.","location":{"formattedAddress":"Metropolis, IL, United States","coordinates":[37.15154,-88.73141],"country":"United States","state":"Illinois","city":"Metropolis"}},{"key":"12217","name":"Trigg Kermit Martin","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"12240","name":"Roberts Vernel Joseph","location":{"formattedAddress":"Galveston, TX, United States","coordinates":[29.29533,-94.80791],"country":"United States","state":"Texas","city":"Galveston"}},{"key":"12255","name":"Sherman Alonzo","location":{"formattedAddress":"Brookland Ave, Albany, NY 12203, United States","coordinates":[42.67029,-73.82714],"country":"United States","state":"New York","city":"Albany"}},{"key":"12283","name":"Quinn Charles Eddie","location":{"formattedAddress":"Meridian, MS, United States","coordinates":[32.36509,-88.70308],"country":"United States","state":"Mississippi","city":"Meridian"}},{"key":"12324","name":"Wayne Lewis Leroy","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"12372","name":"Glover John W.","location":{"formattedAddress":"White Plains, NY, United States","coordinates":[41.03379,-73.76344],"country":"United States","state":"New York","city":"White Plains"}},{"key":"12415","name":"Jenkins Sidney B.","location":{"formattedAddress":"Somerville, NJ, United States","coordinates":[40.57071,-74.61939],"country":"United States","state":"New Jersey","city":"Somerville"}},{"key":"12426","name":"McCarthy Lorenzo Thomas","location":{"formattedAddress":"Birmingham, AL, United States","coordinates":[33.52068,-86.81176],"country":"United States","state":"Alabama","city":"Birmingham"}},{"key":"12427","name":"Smith Sidney Elmer","location":{"formattedAddress":"Houston, TX, United States","coordinates":[29.76059,-95.36968],"country":"United States","state":"Texas","city":"Houston"}},{"key":"12430","name":"Wilson Woodrow","location":{"formattedAddress":"Philadelphia, PA, United States","coordinates":[39.95223,-75.16218],"country":"United States","state":"Pennsylvania","city":"Philadelphia"}},{"key":"12437","name":"Price Vincent Jarone","location":{"formattedAddress":"Los Angeles, CA, United States","coordinates":[34.0534899,-118.24532],"country":"United States","state":"California","city":"Los Angeles"}},{"key":"12440","name":"Weaver Clarence A.","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"12441","name":"Christian Eugene E.","location":{"formattedAddress":"New York, NY, United States","coordinates":[40.71455,-74.00714],"country":"United States","state":"New York","city":"New York"}},{"key":"12457","name":"Anderson Elmer A.","location":{"formattedAddress":"High Point, NC, United States","coordinates":[35.95536,-80.0052],"country":"United States","state":"North Carolina","city":"High Point"}},{"key":"12459","name":"Pope Henry","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"12471","name":"Sykes Melba","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"12510","name":"Resnick Dennis","location":{"formattedAddress":"Bayonne, NJ, United States","coordinates":[40.66874,-74.11749],"country":"United States","state":"New Jersey","city":"Bayonne"}},{"key":"12511","name":"Morton W. R.","location":{"formattedAddress":"Centerville, TX, United States","coordinates":[31.25799,-95.9781],"country":"United States","state":"Texas","city":"Centerville"}},{"key":"12512","name":"Lloyd Matilda","location":{"formattedAddress":"Nashville, TN, United States","coordinates":[36.16785,-86.77816],"country":"United States","state":"Tennessee","city":"Nashville"}},{"key":"12521","name":"Beckett George N.","location":{"formattedAddress":"Woodbury, NJ, United States","coordinates":[39.83883,-75.15464],"country":"United States","state":"New Jersey","city":"Woodbury"}},{"key":"12524","name":"White Sol","location":{"formattedAddress":"Beaumont, TX, United States","coordinates":[30.08616,-94.10135],"country":"United States","state":"Texas","city":"Beaumont"}},{"key":"12526","name":"Buckingham DeWitt A.","location":{"formattedAddress":"Meridian, MS, United States","coordinates":[32.36509,-88.70308],"country":"United States","state":"Mississippi","city":"Meridian"}},{"key":"12528","name":"Ryan Harvey E.","location":{"formattedAddress":"Williamsville, IL, United States","coordinates":[39.95412,-89.5475],"country":"United States","state":"Illinois","city":"Williamsville"}},{"key":"12529","name":"Willis Charles E.","location":{"formattedAddress":"Wilmington, NC, United States","coordinates":[34.23497,-77.946],"country":"United States","state":"North Carolina","city":"Wilmington"}},{"key":"12533","name":"Timus William Albert","location":{"formattedAddress":"Atlantic City, NJ, United States","coordinates":[39.3628799,-74.42638],"country":"United States","state":"New Jersey","city":"Atlantic City"}},{"key":"12600","name":"Russell Warren Monroe","location":{"formattedAddress":"Columbia, SC, United States","coordinates":[33.99882,-81.04537],"country":"United States","state":"South Carolina","city":"Columbia"}},{"key":"12601","name":"Veitch F. G.","location":{"formattedAddress":"Alexandria, Beckford Kraal, Jamaica","coordinates":[18.08395,-77.31448],"country":"Jamaica","state":null,"city":"Beckford Kraal"}},{"key":"12602","name":"Brooks Henry Leslie","location":{"formattedAddress":"Hopkinsville, KY, United States","coordinates":[36.86728,-87.4877],"country":"United States","state":"Kentucky","city":"Hopkinsville"}},{"key":"12607","name":"Rachels Andre Weston","location":{"formattedAddress":"Los Angeles, CA, United States","coordinates":[34.0534899,-118.24532],"country":"United States","state":"California","city":"Los Angeles"}},{"key":"12623","name":"Fernandes Francis B.","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"12625","name":"Tiller Moses M.","location":{"formattedAddress":"Athens, GA, United States","coordinates":[33.95813,-83.37326],"country":"United States","state":"Georgia","city":"Athens"}},{"key":"12626","name":"Clark Lemuel Berrian","location":{"formattedAddress":"Ocala, FL, United States","coordinates":[29.18776,-82.14041],"country":"United States","state":"Florida","city":"Ocala"}},{"key":"12627","name":"Mason Aric P.","location":{"formattedAddress":"Giddings, TX, United States","coordinates":[30.1826,-96.9374],"country":"United States","state":"Texas","city":"Giddings"}},{"key":"12628","name":"Turner Anita","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"12631","name":"Kendrick Curtis","location":{"formattedAddress":"Magnolia, AR, United States","coordinates":[33.26751,-93.24086],"country":"United States","state":"Arkansas","city":"Magnolia"}},{"key":"12632","name":"Saffold Oscar Elmwood","location":{"formattedAddress":"Cleveland, OH, United States","coordinates":[41.50473,-81.69075],"country":"United States","state":"Ohio","city":"Cleveland"}},{"key":"12633","name":"Wharton Kenneth","location":{"formattedAddress":"Lebanon, TN, United States","coordinates":[36.20787,-86.28952],"country":"United States","state":"Tennessee","city":"Lebanon"}},{"key":"12634","name":"Duncan Walter William","location":{"formattedAddress":"Dallas, TX, United States","coordinates":[32.77816,-96.7954],"country":"United States","state":"Texas","city":"Dallas"}},{"key":"12635","name":"Craig Joyce M.","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"12658","name":"Parker William E.","location":{"formattedAddress":"Windsor, NC, United States","coordinates":[35.99355,-76.94249],"country":"United States","state":"North Carolina","city":"Windsor"}},{"key":"12659","name":"Stokes Joseph H.","location":{"formattedAddress":"Boston, MA, United States","coordinates":[42.35866,-71.05675],"country":"United States","state":"Massachusetts","city":"Boston"}},{"key":"12660","name":"Allen James Franklin","location":{"formattedAddress":"Charlottesville, VA, United States","coordinates":[38.03213,-78.47756],"country":"United States","state":"Virginia","city":"Charlottesville"}},{"key":"12662","name":"Perry Mildred C.","location":{"formattedAddress":"Savannah, GA, United States","coordinates":[32.08091,-81.09119],"country":"United States","state":"Georgia","city":"Savannah"}},{"key":"12691","name":"McKenna Dwight L.","location":{"formattedAddress":"New Orleans, LA, United States","coordinates":[29.9537,-90.07775],"country":"United States","state":"Louisiana","city":"New Orleans"}},{"key":"12692","name":"Boush Oliver Wynn","location":{"formattedAddress":"Portsmouth, VA, United States","coordinates":[36.83274,-76.29771],"country":"United States","state":"Virginia","city":"Portsmouth"}},{"key":"12710","name":"Lipsett Percival Crafton","location":{"formattedAddress":"New York, NY, United States","coordinates":[40.71455,-74.00714],"country":"United States","state":"New York","city":"New York"}},{"key":"12711","name":"Preston William","location":{"formattedAddress":"Roanoke, VA, United States","coordinates":[37.27152,-79.94057],"country":"United States","state":"Virginia","city":"Roanoke"}},{"key":"12712","name":"Jones James Bernard","location":{"formattedAddress":"North Augusta, SC, United States","coordinates":[33.49578,-81.97009],"country":"United States","state":"South Carolina","city":"North Augusta"}},{"key":"12731","name":"Ponder Kenneth G.","location":{"formattedAddress":"Longview, TX, United States","coordinates":[32.50064,-94.74061],"country":"United States","state":"Texas","city":"Longview"}},{"key":"12767","name":"McIntosh John R.","location":{"formattedAddress":"La Habra, CA, United States","coordinates":[33.93187,-117.94407],"country":"United States","state":"California","city":"La Habra"}},{"key":"12806","name":"Kalow W. G.","location":{"formattedAddress":"Hard Times Rd, Merryville, LA 70653, United States","coordinates":[30.62778,-93.61455],"country":"United States","state":"Louisiana","city":"Merryville"}},{"key":"12842","name":"Harris Sandy Russell","location":{"formattedAddress":"Griffin, GA, United States","coordinates":[33.24711,-84.2636],"country":"United States","state":"Georgia","city":"Griffin"}},{"key":"12850","name":"Smith William R.","location":{"formattedAddress":"Petersburg, VA, United States","coordinates":[37.22816,-77.40348],"country":"United States","state":"Virginia","city":"Petersburg"}},{"key":"12851","name":"Smith Myrtle A.","location":{"formattedAddress":"Denver, CO, United States","coordinates":[39.74001,-104.99202],"country":"United States","state":"Colorado","city":"Denver"}},{"key":"12852","name":"Turpin Charles Lewis","location":{"formattedAddress":"Flint, MI, United States","coordinates":[43.01144,-83.68679],"country":"United States","state":"Michigan","city":"Flint"}},{"key":"12853","name":"Wallace Clarence E.","location":{"formattedAddress":"New Orleans, LA, United States","coordinates":[29.9537,-90.07775],"country":"United States","state":"Louisiana","city":"New Orleans"}},{"key":"12854","name":"Farmer Cecil J.","location":{"formattedAddress":"Linstead, Jamaica","coordinates":[18.13694,-77.03179],"country":"Jamaica","state":null,"city":"Linstead"}},{"key":"12878","name":"Washington B. E.","location":{"formattedAddress":"Sibley, Natchez, MS, United States","coordinates":[31.37823,-91.396],"country":"United States","state":"Mississippi","city":"Natchez"}},{"key":"12879","name":"Clarke Milton","location":{"formattedAddress":"Tyler, TX, United States","coordinates":[32.34763,-95.2943],"country":"United States","state":"Texas","city":"Tyler"}},{"key":"12880","name":"Allen Albert H.","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"12881","name":"Kaplan Arnold R.","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"12927","name":"Smith Jerome A.","location":{"formattedAddress":"Kingston, Jamaica","coordinates":[17.97094,-76.78827],"country":"Jamaica","state":null,"city":"Kingston"}},{"key":"12928","name":"McKay S. Seth","location":{"formattedAddress":"Laufenburg Ln, Highland, WI 53543, United States","coordinates":[43.03064,-90.4042],"country":"United States","state":"Wisconsin","city":"Highland"}},{"key":"12937","name":"Ewald Eric J. P.","location":{"formattedAddress":"Syosset, NY, United States","coordinates":[40.82745,-73.49544],"country":"United States","state":"New York","city":"Syosset"}},{"key":"12997","name":"Tolbert Isaac S.","location":{"formattedAddress":"Nashville, TN, United States","coordinates":[36.16785,-86.77816],"country":"United States","state":"Tennessee","city":"Nashville"}},{"key":"12998","name":"Fletcher Gorham Cornelius","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"13006","name":"Green John Franklin","location":{"formattedAddress":"Grand Junction, CO, United States","coordinates":[39.06879,-108.56445],"country":"United States","state":"Colorado","city":"Grand Junction"}},{"key":"13010","name":"Belton Jean Ann","location":{"formattedAddress":"Chesapeake, VA, United States","coordinates":[36.71429,-76.24779],"country":"United States","state":"Virginia","city":"Chesapeake"}},{"key":"13011","name":"Bulkley E. D.","location":{"formattedAddress":"Orangeburg, SC, United States","coordinates":[33.48935,-80.86472],"country":"United States","state":"South Carolina","city":"Orangeburg"}},{"key":"13012","name":"Jackson Andrew L.","location":{"formattedAddress":"Steelton, PA, United States","coordinates":[40.23542,-76.84176],"country":"United States","state":"Pennsylvania","city":"Steelton"}},{"key":"13040","name":"Howard Mattie E.","location":{"formattedAddress":"Tullahoma, TN, United States","coordinates":[35.3624,-86.21201],"country":"United States","state":"Tennessee","city":"Tullahoma"}},{"key":"13041","name":"Faust Lula Clementine","location":{"formattedAddress":"Texarkana, TX, United States","coordinates":[33.42558,-94.04825],"country":"United States","state":"Texas","city":"Texarkana"}},{"key":"13042","name":"Davis A. E.","location":{"formattedAddress":"Montgomery, AL, United States","coordinates":[32.38015,-86.30008],"country":"United States","state":"Alabama","city":"Montgomery"}},{"key":"13046","name":"Robinson H. E.","location":{"formattedAddress":"Cincinnati, OH, United States","coordinates":[39.10713,-84.50413],"country":"United States","state":"Ohio","city":"Cincinnati"}},{"key":"13058","name":"Neal Aliman B.","location":{"formattedAddress":"Quincy, FL, United States","coordinates":[30.58814,-84.58093],"country":"United States","state":"Florida","city":"Quincy"}},{"key":"13092","name":"Blake A. W.","location":{"formattedAddress":"Plant City, FL, United States","coordinates":[28.01732,-82.12539],"country":"United States","state":"Florida","city":"Plant City"}},{"key":"13096","name":"Banner W. M.","location":{"formattedAddress":"Johnson City, TN, United States","coordinates":[36.32008,-82.34519],"country":"United States","state":"Tennessee","city":"Johnson City"}},{"key":"13097","name":"McLaurin A. F.","location":{"formattedAddress":"Greensboro, NC, United States","coordinates":[36.06908,-79.79503],"country":"United States","state":"North Carolina","city":"Greensboro"}},{"key":"13126","name":"Clark Peter W.","location":{"formattedAddress":"Marianna, AR, United States","coordinates":[34.77396,-90.7667],"country":"United States","state":"Arkansas","city":"Marianna"}},{"key":"13162","name":"Ballou Edgar Sampson","location":{"formattedAddress":"Jacksonville, FL, United States","coordinates":[30.33147,-81.65622],"country":"United States","state":"Florida","city":"Jacksonville"}},{"key":"13163","name":"Credge Annie Denton","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"13164","name":"Jackson John Henry","location":{"formattedAddress":"Lexington, KY, United States","coordinates":[38.0486,-84.50032],"country":"United States","state":"Kentucky","city":"Lexington"}},{"key":"13167","name":"Powell Vernon H.","location":{"formattedAddress":"Shreveport, LA, United States","coordinates":[32.51487,-93.74689],"country":"United States","state":"Louisiana","city":"Shreveport"}},{"key":"13168","name":"Carr Andrew Jackson","location":{"formattedAddress":"Birmingham, AL, United States","coordinates":[33.52068,-86.81176],"country":"United States","state":"Alabama","city":"Birmingham"}},{"key":"13169","name":"Pryor Chester Cornelius","location":{"formattedAddress":"Cincinnati, OH, United States","coordinates":[39.10713,-84.50413],"country":"United States","state":"Ohio","city":"Cincinnati"}},{"key":"13170","name":"Stinson Joseph M.","location":{"formattedAddress":"Hartwell, GA, United States","coordinates":[34.35347,-82.93228],"country":"United States","state":"Georgia","city":"Hartwell"}},{"key":"13171","name":"Toppin Kenneth Lester","location":{"formattedAddress":"New York, NY, United States","coordinates":[40.71455,-74.00714],"country":"United States","state":"New York","city":"New York"}},{"key":"13172","name":"Wiley L. D.","location":{"formattedAddress":"Widener, AR, United States","coordinates":[35.0238,-90.68425],"country":"United States","state":"Arkansas","city":"Widener"}},{"key":"13223","name":"Marrow Adolph Alexander","location":{"formattedAddress":"Morristown, NJ, United States","coordinates":[40.79352,-74.47774],"country":"United States","state":"New Jersey","city":"Morristown"}},{"key":"13224","name":"Chatman Alfred L.","location":{"formattedAddress":"Baton Rouge, LA, United States","coordinates":[30.44335,-91.18664],"country":"United States","state":"Louisiana","city":"Baton Rouge"}},{"key":"13225","name":"Edelin Kenneth Carlton","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"13246","name":"Nelson Marlene","location":{"formattedAddress":"Atlantic City, NJ, United States","coordinates":[39.3628799,-74.42638],"country":"United States","state":"New Jersey","city":"Atlantic City"}},{"key":"13264","name":"Jacobs Harold J.","location":{"formattedAddress":"New York, NY, United States","coordinates":[40.71455,-74.00714],"country":"United States","state":"New York","city":"New York"}},{"key":"13265","name":"Perkins Bernard","location":{"formattedAddress":"Helena, AR, United States","coordinates":[34.52867,-90.59123],"country":"United States","state":"Arkansas","city":"Helena"}},{"key":"13267","name":"Dailey Warren Bertrard","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"13269","name":"Campbell Samuel S.","location":{"formattedAddress":"Jacksonville, FL, United States","coordinates":[30.33147,-81.65622],"country":"United States","state":"Florida","city":"Jacksonville"}},{"key":"13284","name":"Brown Samuel","location":{"formattedAddress":"Des Moines, IA, United States","coordinates":[41.58982,-93.61538],"country":"United States","state":"Iowa","city":"Des Moines"}},{"key":"13285","name":"Phillips Clyde W.","location":{"formattedAddress":"Chicago, IL, United States","coordinates":[41.88425,-87.63245],"country":"United States","state":"Illinois","city":"Chicago"}},{"key":"13286","name":"Terry William Henry","location":{"formattedAddress":"Philadelphia, PA, United States","coordinates":[39.95223,-75.16218],"country":"United States","state":"Pennsylvania","city":"Philadelphia"}},{"key":"13328","name":"Amonitti George J.","location":{"formattedAddress":"Philadelphia, PA, United States","coordinates":[39.95223,-75.16218],"country":"United States","state":"Pennsylvania","city":"Philadelphia"}},{"key":"13338","name":"Braunfeld Jonathan C.","location":{"formattedAddress":"Brooklyn, NY, United States","coordinates":[40.69246,-73.99036],"country":"United States","state":"New York","city":"Brooklyn"}},{"key":"13339","name":"Russell Carrie N.","location":{"formattedAddress":"Tulsa, OK, United States","coordinates":[36.1501,-95.99352],"country":"United States","state":"Oklahoma","city":"Tulsa"}},{"key":"13341","name":"Freeman Garman P.","location":{"formattedAddress":"Brinkley, AR, United States","coordinates":[34.86739,-91.18848],"country":"United States","state":"Arkansas","city":"Brinkley"}},{"key":"13347","name":"Balakhani Mehdi","location":{"formattedAddress":"Tehran, Iran","coordinates":[35.68878,51.41503],"country":"Iran","state":null,"city":"Tehran"}},{"key":"13356","name":"Dockery Robert Wyatt","location":{"formattedAddress":"Statesville, NC, United States","coordinates":[35.78589,-80.88899],"country":"United States","state":"North Carolina","city":"Statesville"}},{"key":"13417","name":"Gordon R. A.","location":{"formattedAddress":"Port Gibson, MS, United States","coordinates":[31.96,-90.98211],"country":"United States","state":"Mississippi","city":"Port Gibson"}},{"key":"13418","name":"Jett Emmett J.","location":{"formattedAddress":"Detroit, MI, United States","coordinates":[42.33168,-83.048],"country":"United States","state":"Michigan","city":"Detroit"}},{"key":"13432","name":"Evans Lenore Ina","location":{"formattedAddress":"Chicago, IL, United States","coordinates":[41.88425,-87.63245],"country":"United States","state":"Illinois","city":"Chicago"}},{"key":"13448","name":"Alexander Girardeau","location":{"formattedAddress":"Brooklyn, NY, United States","coordinates":[40.69246,-73.99036],"country":"United States","state":"New York","city":"Brooklyn"}},{"key":"13501","name":"Stain Stanley","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"13514","name":"Fobbs Denard M.","location":{"formattedAddress":"Houston, TX, United States","coordinates":[29.76059,-95.36968],"country":"United States","state":"Texas","city":"Houston"}},{"key":"13529","name":"Jefferson Donzleigh H.","location":{"formattedAddress":"Nashville, TN, United States","coordinates":[36.16785,-86.77816],"country":"United States","state":"Tennessee","city":"Nashville"}},{"key":"13530","name":"Vick Robert Elliott","location":{"formattedAddress":"Wilson, NC, United States","coordinates":[35.72197,-77.91638],"country":"United States","state":"North Carolina","city":"Wilson"}},{"key":"13531","name":"Scher Richard","location":{"formattedAddress":"Brooklyn, NY, United States","coordinates":[40.69246,-73.99036],"country":"United States","state":"New York","city":"Brooklyn"}},{"key":"13533","name":"Corbin Eustace Elsworth","location":{"formattedAddress":"Mamaroneck, NY, United States","coordinates":[40.94889,-73.73569],"country":"United States","state":"New York","city":"Mamaroneck"}},{"key":"13534","name":"Shivers Reuben Edward","location":{"formattedAddress":"Belleville, IL, United States","coordinates":[38.51242,-89.98423],"country":"United States","state":"Illinois","city":"Belleville"}},{"key":"13535","name":"Barron Eusebius Marion","location":{"formattedAddress":"Nashville, TN, United States","coordinates":[36.16785,-86.77816],"country":"United States","state":"Tennessee","city":"Nashville"}},{"key":"13536","name":"Evans James A.","location":{"formattedAddress":"Columbus, MS, United States","coordinates":[33.49504,-88.4288],"country":"United States","state":"Mississippi","city":"Columbus"}},{"key":"13584","name":"Henderson Forrester Cicero","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"13609","name":"Scott William D.","location":{"formattedAddress":"AL, United States","coordinates":[32.38015,-86.30008],"country":"United States","state":"Alabama","city":null}},{"key":"13610","name":"Gray Roberta","location":{"formattedAddress":"Memphis, TN, United States","coordinates":[35.14977,-90.04926],"country":"United States","state":"Tennessee","city":"Memphis"}},{"key":"13611","name":"Harper William Edwin","location":{"formattedAddress":"Atlanta, GA, United States","coordinates":[33.74832,-84.39111],"country":"United States","state":"Georgia","city":"Atlanta"}},{"key":"13612","name":"De Leon Ramon","location":{"formattedAddress":"Los Fresnos, TX, United States","coordinates":[26.07172,-97.477],"country":"United States","state":"Texas","city":"Los Fresnos"}},{"key":"13613","name":"Frasier O. B.","location":{"formattedAddress":"Manning, SC, United States","coordinates":[33.6952,-80.21134],"country":"United States","state":"South Carolina","city":"Manning"}},{"key":"13631","name":"Hazelton Rhoda Browne","location":{"formattedAddress":"Camden, NJ, United States","coordinates":[39.94526,-75.11913],"country":"United States","state":"New Jersey","city":"Camden"}},{"key":"13632","name":"Caldwell Esly S.","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"13669","name":"Jenkins Robert J.","location":{"formattedAddress":"Orangeburg, SC, United States","coordinates":[33.48935,-80.86472],"country":"United States","state":"South Carolina","city":"Orangeburg"}},{"key":"13670","name":"Grossman Nathan","location":{"formattedAddress":"Worcester, MA, United States","coordinates":[42.26341,-71.80219],"country":"United States","state":"Massachusetts","city":"Worcester"}},{"key":"13671","name":"Jones Caesar N.","location":{"formattedAddress":"Philadelphia, PA, United States","coordinates":[39.95223,-75.16218],"country":"United States","state":"Pennsylvania","city":"Philadelphia"}},{"key":"13672","name":"Durette J. S.","location":{"formattedAddress":"Ruckersville, GA, United States","coordinates":[34.16487,-82.78822],"country":"United States","state":"Georgia","city":"Ruckersville"}},{"key":"13673","name":"McDew Burroughs M.","location":{"formattedAddress":"McDew Rd, Hazlehurst, GA 31539, United States","coordinates":[31.81993,-82.70717],"country":"United States","state":"Georgia","city":"Hazlehurst"}},{"key":"13674","name":"Ricafort Enrico Inarda","location":{"formattedAddress":"Nashville, TN, United States","coordinates":[36.16785,-86.77816],"country":"United States","state":"Tennessee","city":"Nashville"}},{"key":"13680","name":"Francois Howard J.","location":{"formattedAddress":"Port Arthur, TX, United States","coordinates":[29.89941,-93.92949],"country":"United States","state":"Texas","city":"Port Arthur"}},{"key":"13682","name":"Wilder Jean M.","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"13683","name":"Bass Frederick E.","location":{"formattedAddress":"Brooklyn, NY, United States","coordinates":[40.69246,-73.99036],"country":"United States","state":"New York","city":"Brooklyn"}},{"key":"13685","name":"Block Walter B.","location":{"formattedAddress":"Meridian, MS, United States","coordinates":[32.36509,-88.70308],"country":"United States","state":"Mississippi","city":"Meridian"}},{"key":"13686","name":"Taylor Oliver","location":{"formattedAddress":"Atlanta, GA, United States","coordinates":[33.74832,-84.39111],"country":"United States","state":"Georgia","city":"Atlanta"}},{"key":"13687","name":"Friedenthal Aaron L.","location":{"formattedAddress":"New York, NY, United States","coordinates":[40.71455,-74.00714],"country":"United States","state":"New York","city":"New York"}},{"key":"13688","name":"Rachels Anthony Walton","location":{"formattedAddress":"Los Angeles, CA, United States","coordinates":[34.0534899,-118.24532],"country":"United States","state":"California","city":"Los Angeles"}},{"key":"13690","name":"Newell John","location":{"formattedAddress":"Charenton, LA, United States","coordinates":[29.88311,-91.52399],"country":"United States","state":"Louisiana","city":"Charenton"}},{"key":"13719","name":"Allen Alvin Mathews","location":{"formattedAddress":"Washington, DC, United States","coordinates":[38.89037,-77.03196],"country":"United States","state":"District of Columbia","city":"Washington"}},{"key":"13720","name":"Murray Robert Lambert","location":{"formattedAddress":"New York, NY, United States","coordinates":[40.71455,-74.00714],"country":"United States","state":"New York","city":"New York"}},{"key":"13721","name":"Withers Lucius","location":{"formattedAddress":"Biltmore Forest, NC, United States","coordinates":[35.53317,-82.52795],"country":"United States","state":"North Carolina","city":"Biltmore Forest"}},{"key":"13723","name":"Clairborne Ada Wallace","location":{"formattedAddress":"Oklahoma City, OK, United States","coordinates":[35.47204,-97.52107],"country":"United States","state":"Oklahoma","city":"Oklahoma City"}},{"key":"13754","name":"Gordon Theodore Scott","location":{"formattedAddress":"Philadelphia, PA, United States","coordinates":[39.95223,-75.16218],"country":"United States","state":"Pennsylvania","city":"Philadelphia"}},{"key":"13755","name":"Savage Edward Warren","location":{"formattedAddress":"Macon, GA, United States","coordinates":[32.83999,-83.62808],"country":"United States","state":"Georgia","city":"Macon"}},{"key":"13756","name":"Burney William Warren","location":{"formattedAddress":"Wichita, KS, United States","coordinates":[37.68698,-97.33558],"country":"United States","state":"Kansas","city":"Wichita"}},{"key":"13761","name":"McFadden Frederick C.","location":{"formattedAddress":"Jamaica, NY, United States","coordinates":[40.7018,-73.80853],"country":"United States","state":"New York","city":"Jamaica"}}]
+[
+  {
+    "key" : "10001",
+    "name" : "Cade A. E.",
+    "location" : {
+      "formattedAddress" : "Camden, AR, United States",
+      "coordinates" : [
+        33.58699,
+        -92.82957
+      ],
+      "country" : "United States",
+      "state" : "Arkansas",
+      "city" : "Camden"
+    }
+  },
+  {
+    "key" : "10002",
+    "name" : "Williams Lawrence A.",
+    "location" : {
+      "formattedAddress" : "St Louis, MO, United States",
+      "coordinates" : [
+        38.62775,
+        -90.19956
+      ],
+      "country" : "United States",
+      "state" : "Missouri",
+      "city" : "St Louis"
+    }
+  },
+  {
+    "key" : "10003",
+    "name" : "Durrah Frederick Davis",
+    "location" : {
+      "formattedAddress" : "Plainfield, NJ, United States",
+      "coordinates" : [
+        40.61781,
+        -74.41748
+      ],
+      "country" : "United States",
+      "state" : "New Jersey",
+      "city" : "Plainfield"
+    }
+  },
+  {
+    "key" : "10004",
+    "name" : "Grose Jerome",
+    "location" : {
+      "formattedAddress" : "Philadelphia, PA, United States",
+      "coordinates" : [
+        39.95223,
+        -75.16218
+      ],
+      "country" : "United States",
+      "state" : "Pennsylvania",
+      "city" : "Philadelphia"
+    }
+  },
+  {
+    "key" : "10005",
+    "name" : "DuVall Byron Vernal",
+    "location" : {
+      "formattedAddress" : "St Louis, MO, United States",
+      "coordinates" : [
+        38.62775,
+        -90.19956
+      ],
+      "country" : "United States",
+      "state" : "Missouri",
+      "city" : "St Louis"
+    }
+  },
+  {
+    "key" : "10008",
+    "name" : "Edwards Mildred Florine",
+    "location" : {
+      "formattedAddress" : "Nashville, TN, United States",
+      "coordinates" : [
+        36.16785,
+        -86.77816
+      ],
+      "country" : "United States",
+      "state" : "Tennessee",
+      "city" : "Nashville"
+    }
+  },
+  {
+    "key" : "10009",
+    "name" : "Seawell L. A.",
+    "location" : {
+      "formattedAddress" : "Topeka, KS, United States",
+      "coordinates" : [
+        39.04928,
+        -95.67118
+      ],
+      "country" : "United States",
+      "state" : "Kansas",
+      "city" : "Topeka"
+    }
+  },
+  {
+    "key" : "10010",
+    "name" : "Chapman Samuel M.",
+    "location" : {
+      "formattedAddress" : "Baton Rouge, LA, United States",
+      "coordinates" : [
+        30.44335,
+        -91.18664
+      ],
+      "country" : "United States",
+      "state" : "Louisiana",
+      "city" : "Baton Rouge"
+    }
+  },
+  {
+    "key" : "10012",
+    "name" : "Brown Grant Gratz",
+    "location" : {
+      "formattedAddress" : "Atchison, KS, United States",
+      "coordinates" : [
+        39.56086,
+        -95.12842
+      ],
+      "country" : "United States",
+      "state" : "Kansas",
+      "city" : "Atchison"
+    }
+  },
+  {
+    "key" : "10013",
+    "name" : "Allen Alphonso T.",
+    "location" : {
+      "formattedAddress" : "Palatka, FL, United States",
+      "coordinates" : [
+        29.64858,
+        -81.63737
+      ],
+      "country" : "United States",
+      "state" : "Florida",
+      "city" : "Palatka"
+    }
+  },
+  {
+    "key" : "10014",
+    "name" : "Keenan R. R.",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "10015",
+    "name" : "Wood Henry Grant",
+    "location" : {
+      "formattedAddress" : "Clarksville, VA, United States",
+      "coordinates" : [
+        36.62435,
+        -78.55712
+      ],
+      "country" : "United States",
+      "state" : "Virginia",
+      "city" : "Clarksville"
+    }
+  },
+  {
+    "key" : "10016",
+    "name" : "Sumpter David F.",
+    "location" : {
+      "formattedAddress" : "Plant City, FL, United States",
+      "coordinates" : [
+        28.01732,
+        -82.12539
+      ],
+      "country" : "United States",
+      "state" : "Florida",
+      "city" : "Plant City"
+    }
+  },
+  {
+    "key" : "10019",
+    "name" : "Wiggins Roland Lee",
+    "location" : {
+      "formattedAddress" : "Columbia, MO, United States",
+      "coordinates" : [
+        38.95222,
+        -92.33416
+      ],
+      "country" : "United States",
+      "state" : "Missouri",
+      "city" : "Columbia"
+    }
+  },
+  {
+    "key" : "10024",
+    "name" : "Tait Noel E. H.",
+    "location" : {
+      "formattedAddress" : "Hyattsville, MD, United States",
+      "coordinates" : [
+        38.95259,
+        -76.9421
+      ],
+      "country" : "United States",
+      "state" : "Maryland",
+      "city" : "Hyattsville"
+    }
+  },
+  {
+    "key" : "10025",
+    "name" : "Davis DeWayne France",
+    "location" : {
+      "formattedAddress" : "Covington, KY, United States",
+      "coordinates" : [
+        39.08398,
+        -84.51027
+      ],
+      "country" : "United States",
+      "state" : "Kentucky",
+      "city" : "Covington"
+    }
+  },
+  {
+    "key" : "10027",
+    "name" : "Proctor Edgar A.",
+    "location" : {
+      "formattedAddress" : "Norfolk, VA, United States",
+      "coordinates" : [
+        36.84682,
+        -76.28506
+      ],
+      "country" : "United States",
+      "state" : "Virginia",
+      "city" : "Norfolk"
+    }
+  },
+  {
+    "key" : "10033",
+    "name" : "Smith Clifford C.",
+    "location" : {
+      "formattedAddress" : "Waterloo, IA, United States",
+      "coordinates" : [
+        42.49329,
+        -92.34195
+      ],
+      "country" : "United States",
+      "state" : "Iowa",
+      "city" : "Waterloo"
+    }
+  },
+  {
+    "key" : "10035",
+    "name" : "Rohrer Kate J.",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "10038",
+    "name" : "Fisher Judith",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "10045",
+    "name" : "Coles Alfred Lee",
+    "location" : {
+      "formattedAddress" : "Morgantown, WV, United States",
+      "coordinates" : [
+        39.63038,
+        -79.95785
+      ],
+      "country" : "United States",
+      "state" : "West Virginia",
+      "city" : "Morgantown"
+    }
+  },
+  {
+    "key" : "10052",
+    "name" : "Carey Albert",
+    "location" : {
+      "formattedAddress" : "Montgomery, AL, United States",
+      "coordinates" : [
+        32.38015,
+        -86.30008
+      ],
+      "country" : "United States",
+      "state" : "Alabama",
+      "city" : "Montgomery"
+    }
+  },
+  {
+    "key" : "10053",
+    "name" : "Lewis Mollie V.",
+    "location" : {
+      "formattedAddress" : "New Orleans, LA, United States",
+      "coordinates" : [
+        29.9537,
+        -90.07775
+      ],
+      "country" : "United States",
+      "state" : "Louisiana",
+      "city" : "New Orleans"
+    }
+  },
+  {
+    "key" : "10054",
+    "name" : "Terry Garland B.",
+    "location" : {
+      "formattedAddress" : "Norfolk, VA, United States",
+      "coordinates" : [
+        36.84682,
+        -76.28506
+      ],
+      "country" : "United States",
+      "state" : "Virginia",
+      "city" : "Norfolk"
+    }
+  },
+  {
+    "key" : "10055",
+    "name" : "Benson Georgia Walker",
+    "location" : {
+      "formattedAddress" : "Jacksonville, FL, United States",
+      "coordinates" : [
+        30.33147,
+        -81.65622
+      ],
+      "country" : "United States",
+      "state" : "Florida",
+      "city" : "Jacksonville"
+    }
+  },
+  {
+    "key" : "10056",
+    "name" : "Lindsay Alvin",
+    "location" : {
+      "formattedAddress" : "Charleston, SC, United States",
+      "coordinates" : [
+        32.78115,
+        -79.93161
+      ],
+      "country" : "United States",
+      "state" : "South Carolina",
+      "city" : "Charleston"
+    }
+  },
+  {
+    "key" : "10058",
+    "name" : "Jackson Victor",
+    "location" : {
+      "formattedAddress" : "Markham, IL, United States",
+      "coordinates" : [
+        41.59263,
+        -87.69421
+      ],
+      "country" : "United States",
+      "state" : "Illinois",
+      "city" : "Markham"
+    }
+  },
+  {
+    "key" : "10061",
+    "name" : "Douglass Henry Francis",
+    "location" : {
+      "formattedAddress" : "Baltimore, MD, United States",
+      "coordinates" : [
+        39.29058,
+        -76.60926
+      ],
+      "country" : "United States",
+      "state" : "Maryland",
+      "city" : "Baltimore"
+    }
+  },
+  {
+    "key" : "10062",
+    "name" : "Street Kenneth Anthony",
+    "location" : {
+      "formattedAddress" : "St Louis, MO, United States",
+      "coordinates" : [
+        38.62775,
+        -90.19956
+      ],
+      "country" : "United States",
+      "state" : "Missouri",
+      "city" : "St Louis"
+    }
+  },
+  {
+    "key" : "10064",
+    "name" : "Thomas Albert Daniel",
+    "location" : {
+      "formattedAddress" : "Whistler, Mobile, AL, United States",
+      "coordinates" : [
+        30.75552,
+        -88.10398
+      ],
+      "country" : "United States",
+      "state" : "Alabama",
+      "city" : "Mobile"
+    }
+  },
+  {
+    "key" : "10066",
+    "name" : "Smith Elliott Reginald",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "10067",
+    "name" : "Freeman E. Lamar",
+    "location" : {
+      "formattedAddress" : "Athens, GA, United States",
+      "coordinates" : [
+        33.95813,
+        -83.37326
+      ],
+      "country" : "United States",
+      "state" : "Georgia",
+      "city" : "Athens"
+    }
+  },
+  {
+    "key" : "10071",
+    "name" : "Baucom Baron Von",
+    "location" : {
+      "formattedAddress" : "Kansas City, MO, United States",
+      "coordinates" : [
+        39.10345,
+        -94.58311
+      ],
+      "country" : "United States",
+      "state" : "Missouri",
+      "city" : "Kansas City"
+    }
+  },
+  {
+    "key" : "10075",
+    "name" : "Harris William Willis",
+    "location" : {
+      "formattedAddress" : "Jersey City, NJ, United States",
+      "coordinates" : [
+        40.71748,
+        -74.04385
+      ],
+      "country" : "United States",
+      "state" : "New Jersey",
+      "city" : "Jersey City"
+    }
+  },
+  {
+    "key" : "10076",
+    "name" : "Bryant Bernard E.",
+    "location" : {
+      "formattedAddress" : "Boston, MA, United States",
+      "coordinates" : [
+        42.35866,
+        -71.05675
+      ],
+      "country" : "United States",
+      "state" : "Massachusetts",
+      "city" : "Boston"
+    }
+  },
+  {
+    "key" : "10079",
+    "name" : "Neal Ronald Brian",
+    "location" : {
+      "formattedAddress" : "Chicago, IL, United States",
+      "coordinates" : [
+        41.88425,
+        -87.63245
+      ],
+      "country" : "United States",
+      "state" : "Illinois",
+      "city" : "Chicago"
+    }
+  },
+  {
+    "key" : "10080",
+    "name" : "Garrett Frederick J.",
+    "location" : {
+      "formattedAddress" : "Norfolk, VA, United States",
+      "coordinates" : [
+        36.84682,
+        -76.28506
+      ],
+      "country" : "United States",
+      "state" : "Virginia",
+      "city" : "Norfolk"
+    }
+  },
+  {
+    "key" : "10081",
+    "name" : "Chilcoat William J.",
+    "location" : {
+      "formattedAddress" : "Memphis, TN, United States",
+      "coordinates" : [
+        35.14977,
+        -90.04926
+      ],
+      "country" : "United States",
+      "state" : "Tennessee",
+      "city" : "Memphis"
+    }
+  },
+  {
+    "key" : "10082",
+    "name" : "Erwin Herbert J.",
+    "location" : {
+      "formattedAddress" : "Gastonia, NC, United States",
+      "coordinates" : [
+        35.2622,
+        -81.18676
+      ],
+      "country" : "United States",
+      "state" : "North Carolina",
+      "city" : "Gastonia"
+    }
+  },
+  {
+    "key" : "10083",
+    "name" : "Duke Leslie D.",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "10084",
+    "name" : "Brooks Willie",
+    "location" : {
+      "formattedAddress" : "Charleston, SC, United States",
+      "coordinates" : [
+        32.78115,
+        -79.93161
+      ],
+      "country" : "United States",
+      "state" : "South Carolina",
+      "city" : "Charleston"
+    }
+  },
+  {
+    "key" : "10085",
+    "name" : "Shaw Benjamin F.",
+    "location" : {
+      "formattedAddress" : "Pittsburgh, PA, United States",
+      "coordinates" : [
+        40.43851,
+        -79.99734
+      ],
+      "country" : "United States",
+      "state" : "Pennsylvania",
+      "city" : "Pittsburgh"
+    }
+  },
+  {
+    "key" : "10087",
+    "name" : "Larkins Alvin Wayne",
+    "location" : {
+      "formattedAddress" : "Beaumont, TX, United States",
+      "coordinates" : [
+        30.08616,
+        -94.10135
+      ],
+      "country" : "United States",
+      "state" : "Texas",
+      "city" : "Beaumont"
+    }
+  },
+  {
+    "key" : "10089",
+    "name" : "Blaney Lilton D.",
+    "location" : {
+      "formattedAddress" : "Baltimore, MD, United States",
+      "coordinates" : [
+        39.29058,
+        -76.60926
+      ],
+      "country" : "United States",
+      "state" : "Maryland",
+      "city" : "Baltimore"
+    }
+  },
+  {
+    "key" : "10102",
+    "name" : "Laning John T.",
+    "location" : {
+      "formattedAddress" : "Hopewell, NJ, United States",
+      "coordinates" : [
+        40.38805,
+        -74.75812
+      ],
+      "country" : "United States",
+      "state" : "New Jersey",
+      "city" : "Hopewell"
+    }
+  },
+  {
+    "key" : "10103",
+    "name" : "Batipps Percy Oliver",
+    "location" : {
+      "formattedAddress" : "Chester, PA, United States",
+      "coordinates" : [
+        39.84845,
+        -75.35944
+      ],
+      "country" : "United States",
+      "state" : "Pennsylvania",
+      "city" : "Chester"
+    }
+  },
+  {
+    "key" : "10104",
+    "name" : "Clayton Finus Uron",
+    "location" : {
+      "formattedAddress" : "Floyd, VA, United States",
+      "coordinates" : [
+        36.91182,
+        -80.32032
+      ],
+      "country" : "United States",
+      "state" : "Virginia",
+      "city" : "Floyd"
+    }
+  },
+  {
+    "key" : "10105",
+    "name" : "Brown Sterling P.",
+    "location" : {
+      "formattedAddress" : "Atlanta, GA, United States",
+      "coordinates" : [
+        33.74832,
+        -84.39111
+      ],
+      "country" : "United States",
+      "state" : "Georgia",
+      "city" : "Atlanta"
+    }
+  },
+  {
+    "key" : "10107",
+    "name" : "Gilbert Artishia Garcia",
+    "location" : {
+      "formattedAddress" : "Louisville, KY, United States",
+      "coordinates" : [
+        38.25489,
+        -85.76666
+      ],
+      "country" : "United States",
+      "state" : "Kentucky",
+      "city" : "Louisville"
+    }
+  },
+  {
+    "key" : "10108",
+    "name" : "Polk Donald G.",
+    "location" : {
+      "formattedAddress" : "Chicago, IL, United States",
+      "coordinates" : [
+        41.88425,
+        -87.63245
+      ],
+      "country" : "United States",
+      "state" : "Illinois",
+      "city" : "Chicago"
+    }
+  },
+  {
+    "key" : "10109",
+    "name" : "Brown William Leonard",
+    "location" : {
+      "formattedAddress" : "Sumter, SC, United States",
+      "coordinates" : [
+        33.92439,
+        -80.34319
+      ],
+      "country" : "United States",
+      "state" : "South Carolina",
+      "city" : "Sumter"
+    }
+  },
+  {
+    "key" : "10113",
+    "name" : "Petioni Julio A.",
+    "location" : {
+      "formattedAddress" : "New York, NY, United States",
+      "coordinates" : [
+        40.71455,
+        -74.00714
+      ],
+      "country" : "United States",
+      "state" : "New York",
+      "city" : "New York"
+    }
+  },
+  {
+    "key" : "10119",
+    "name" : "Marshall Ernest Jones",
+    "location" : {
+      "formattedAddress" : "Kansas City, MO, United States",
+      "coordinates" : [
+        39.10345,
+        -94.58311
+      ],
+      "country" : "United States",
+      "state" : "Missouri",
+      "city" : "Kansas City"
+    }
+  },
+  {
+    "key" : "10131",
+    "name" : "Higgins Clarence Ronald",
+    "location" : {
+      "formattedAddress" : "Cleveland, OH, United States",
+      "coordinates" : [
+        41.50473,
+        -81.69075
+      ],
+      "country" : "United States",
+      "state" : "Ohio",
+      "city" : "Cleveland"
+    }
+  },
+  {
+    "key" : "10132",
+    "name" : "Charles Lloyd M.",
+    "location" : {
+      "formattedAddress" : "Hyattsville, MD, United States",
+      "coordinates" : [
+        38.95259,
+        -76.9421
+      ],
+      "country" : "United States",
+      "state" : "Maryland",
+      "city" : "Hyattsville"
+    }
+  },
+  {
+    "key" : "10133",
+    "name" : "King John Quill Taylor",
+    "location" : {
+      "formattedAddress" : "Austin, TX, United States",
+      "coordinates" : [
+        30.26759,
+        -97.74299
+      ],
+      "country" : "United States",
+      "state" : "Texas",
+      "city" : "Austin"
+    }
+  },
+  {
+    "key" : "10137",
+    "name" : "Lane Francis Burleson",
+    "location" : {
+      "formattedAddress" : "Jackson, TN, United States",
+      "coordinates" : [
+        35.6139,
+        -88.8194
+      ],
+      "country" : "United States",
+      "state" : "Tennessee",
+      "city" : "Jackson"
+    }
+  },
+  {
+    "key" : "10142",
+    "name" : "Bryant F. H.",
+    "location" : {
+      "formattedAddress" : "Oxford, MS, United States",
+      "coordinates" : [
+        34.36403,
+        -89.51894
+      ],
+      "country" : "United States",
+      "state" : "Mississippi",
+      "city" : "Oxford"
+    }
+  },
+  {
+    "key" : "10144",
+    "name" : "Jones T. Crawford",
+    "location" : {
+      "formattedAddress" : "Perry, GA, United States",
+      "coordinates" : [
+        32.46087,
+        -83.73476
+      ],
+      "country" : "United States",
+      "state" : "Georgia",
+      "city" : "Perry"
+    }
+  },
+  {
+    "key" : "10148",
+    "name" : "Williams Lafayette W.",
+    "location" : {
+      "formattedAddress" : "Valdosta, GA, United States",
+      "coordinates" : [
+        30.83473,
+        -83.28093
+      ],
+      "country" : "United States",
+      "state" : "Georgia",
+      "city" : "Valdosta"
+    }
+  },
+  {
+    "key" : "10150",
+    "name" : "Adams William B.",
+    "location" : {
+      "formattedAddress" : "Clarksville, TN, United States",
+      "coordinates" : [
+        36.53122,
+        -87.35992
+      ],
+      "country" : "United States",
+      "state" : "Tennessee",
+      "city" : "Clarksville"
+    }
+  },
+  {
+    "key" : "10151",
+    "name" : "Harrison Howard Kenneth",
+    "location" : {
+      "formattedAddress" : "Asheville, NC, United States",
+      "coordinates" : [
+        35.59844,
+        -82.55312
+      ],
+      "country" : "United States",
+      "state" : "North Carolina",
+      "city" : "Asheville"
+    }
+  },
+  {
+    "key" : "10154",
+    "name" : "Sandstrom Ray Henry",
+    "location" : {
+      "formattedAddress" : "Takoma Park, MD, United States",
+      "coordinates" : [
+        38.98127,
+        -77.00988
+      ],
+      "country" : "United States",
+      "state" : "Maryland",
+      "city" : "Takoma Park"
+    }
+  },
+  {
+    "key" : "10161",
+    "name" : "Westbrooks Orlando L.",
+    "location" : {
+      "formattedAddress" : "Wadesboro, NC, United States",
+      "coordinates" : [
+        34.96578,
+        -80.07691
+      ],
+      "country" : "United States",
+      "state" : "North Carolina",
+      "city" : "Wadesboro"
+    }
+  },
+  {
+    "key" : "10164",
+    "name" : "Burruss George S.",
+    "location" : {
+      "formattedAddress" : "Martin, GA, United States",
+      "coordinates" : [
+        34.48541,
+        -83.18486
+      ],
+      "country" : "United States",
+      "state" : "Georgia",
+      "city" : "Martin"
+    }
+  },
+  {
+    "key" : "10166",
+    "name" : "Reid Edward J.",
+    "location" : {
+      "formattedAddress" : "Madison, GA, United States",
+      "coordinates" : [
+        33.59588,
+        -83.46774
+      ],
+      "country" : "United States",
+      "state" : "Georgia",
+      "city" : "Madison"
+    }
+  },
+  {
+    "key" : "10171",
+    "name" : "Robinson Luther Wentworth",
+    "location" : {
+      "formattedAddress" : "Remington, VA, United States",
+      "coordinates" : [
+        38.53317,
+        -77.80741
+      ],
+      "country" : "United States",
+      "state" : "Virginia",
+      "city" : "Remington"
+    }
+  },
+  {
+    "key" : "10173",
+    "name" : "Seaton Earle E.",
+    "location" : {
+      "formattedAddress" : "Pembroke, Bermuda",
+      "coordinates" : [
+        32.30105,
+        -64.79621
+      ],
+      "country" : "Bermuda",
+      "state" : null,
+      "city" : null
+    }
+  },
+  {
+    "key" : "10175",
+    "name" : "Green James P.",
+    "location" : {
+      "formattedAddress" : "Henderson, NC, United States",
+      "coordinates" : [
+        36.32993,
+        -78.39868
+      ],
+      "country" : "United States",
+      "state" : "North Carolina",
+      "city" : "Henderson"
+    }
+  },
+  {
+    "key" : "10181",
+    "name" : "Jones James R.",
+    "location" : {
+      "formattedAddress" : "Houston, TX, United States",
+      "coordinates" : [
+        29.76059,
+        -95.36968
+      ],
+      "country" : "United States",
+      "state" : "Texas",
+      "city" : "Houston"
+    }
+  },
+  {
+    "key" : "10187",
+    "name" : "Ford Florence T.",
+    "location" : {
+      "formattedAddress" : "Vicksburg, MS, United States",
+      "coordinates" : [
+        32.35004,
+        -90.88155
+      ],
+      "country" : "United States",
+      "state" : "Mississippi",
+      "city" : "Vicksburg"
+    }
+  },
+  {
+    "key" : "10192",
+    "name" : "Sanford Johnson W.",
+    "location" : {
+      "formattedAddress" : "Oklahoma City, OK, United States",
+      "coordinates" : [
+        35.47204,
+        -97.52107
+      ],
+      "country" : "United States",
+      "state" : "Oklahoma",
+      "city" : "Oklahoma City"
+    }
+  },
+  {
+    "key" : "10197",
+    "name" : "Bowling E. W.",
+    "location" : {
+      "formattedAddress" : "Nashville, TN, United States",
+      "coordinates" : [
+        36.16785,
+        -86.77816
+      ],
+      "country" : "United States",
+      "state" : "Tennessee",
+      "city" : "Nashville"
+    }
+  },
+  {
+    "key" : "10200",
+    "name" : "Pierre Samuel Madden",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "10201",
+    "name" : "Carter John",
+    "location" : {
+      "formattedAddress" : "Winston-Salem, NC, United States",
+      "coordinates" : [
+        36.10002,
+        -80.24116
+      ],
+      "country" : "United States",
+      "state" : "North Carolina",
+      "city" : "Winston-Salem"
+    }
+  },
+  {
+    "key" : "10202",
+    "name" : "Allen James Calvin",
+    "location" : {
+      "formattedAddress" : "Eastville Station, Cape Charles, VA, United States",
+      "coordinates" : [
+        37.34743,
+        -75.93143
+      ],
+      "country" : "United States",
+      "state" : "Virginia",
+      "city" : "Cape Charles"
+    }
+  },
+  {
+    "key" : "10204",
+    "name" : "Monroe George Elmer",
+    "location" : {
+      "formattedAddress" : "Boston, MA, United States",
+      "coordinates" : [
+        42.35866,
+        -71.05675
+      ],
+      "country" : "United States",
+      "state" : "Massachusetts",
+      "city" : "Boston"
+    }
+  },
+  {
+    "key" : "10205",
+    "name" : "Burke Denzer",
+    "location" : {
+      "formattedAddress" : "Atlanta, GA, United States",
+      "coordinates" : [
+        33.74832,
+        -84.39111
+      ],
+      "country" : "United States",
+      "state" : "Georgia",
+      "city" : "Atlanta"
+    }
+  },
+  {
+    "key" : "10208",
+    "name" : "Hudson Henry Claude",
+    "location" : {
+      "formattedAddress" : "Alexandria, LA, United States",
+      "coordinates" : [
+        31.31266,
+        -92.44568
+      ],
+      "country" : "United States",
+      "state" : "Louisiana",
+      "city" : "Alexandria"
+    }
+  },
+  {
+    "key" : "10215",
+    "name" : "Simms Earl Sebran",
+    "location" : {
+      "formattedAddress" : "Pocahontas, VA, United States",
+      "coordinates" : [
+        37.30422,
+        -81.34077
+      ],
+      "country" : "United States",
+      "state" : "Virginia",
+      "city" : "Pocahontas"
+    }
+  },
+  {
+    "key" : "10218",
+    "name" : "Slowe William Myers",
+    "location" : {
+      "formattedAddress" : "Philadelphia, PA, United States",
+      "coordinates" : [
+        39.95223,
+        -75.16218
+      ],
+      "country" : "United States",
+      "state" : "Pennsylvania",
+      "city" : "Philadelphia"
+    }
+  },
+  {
+    "key" : "10219",
+    "name" : "Porter Jesse Jennings",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "10221",
+    "name" : "Shorter Henry Franklin",
+    "location" : {
+      "formattedAddress" : "Atlanta, GA, United States",
+      "coordinates" : [
+        33.74832,
+        -84.39111
+      ],
+      "country" : "United States",
+      "state" : "Georgia",
+      "city" : "Atlanta"
+    }
+  },
+  {
+    "key" : "10222",
+    "name" : "Raicht Raymond",
+    "location" : {
+      "formattedAddress" : "Marcellus, NY, United States",
+      "coordinates" : [
+        42.98245,
+        -76.34145
+      ],
+      "country" : "United States",
+      "state" : "New York",
+      "city" : "Marcellus"
+    }
+  },
+  {
+    "key" : "10223",
+    "name" : "Buckner George W.",
+    "location" : {
+      "formattedAddress" : "Evansville, IN, United States",
+      "coordinates" : [
+        37.97708,
+        -87.56405
+      ],
+      "country" : "United States",
+      "state" : "Indiana",
+      "city" : "Evansville"
+    }
+  },
+  {
+    "key" : "10255",
+    "name" : "Moore Randall",
+    "location" : {
+      "formattedAddress" : "Asheville, NC, United States",
+      "coordinates" : [
+        35.59844,
+        -82.55312
+      ],
+      "country" : "United States",
+      "state" : "North Carolina",
+      "city" : "Asheville"
+    }
+  },
+  {
+    "key" : "10285",
+    "name" : "Clement Wesley Dobbs",
+    "location" : {
+      "formattedAddress" : "Durham, NC, United States",
+      "coordinates" : [
+        35.99542,
+        -78.89644
+      ],
+      "country" : "United States",
+      "state" : "North Carolina",
+      "city" : "Durham"
+    }
+  },
+  {
+    "key" : "10394",
+    "name" : "Goode H. D.",
+    "location" : {
+      "formattedAddress" : "Pensacola, FL, United States",
+      "coordinates" : [
+        30.42085,
+        -87.21723
+      ],
+      "country" : "United States",
+      "state" : "Florida",
+      "city" : "Pensacola"
+    }
+  },
+  {
+    "key" : "10395",
+    "name" : "Banks George Edward",
+    "location" : {
+      "formattedAddress" : "Greensboro, AL, United States",
+      "coordinates" : [
+        32.70355,
+        -87.59549
+      ],
+      "country" : "United States",
+      "state" : "Alabama",
+      "city" : "Greensboro"
+    }
+  },
+  {
+    "key" : "10396",
+    "name" : "Wood James Herman",
+    "location" : {
+      "formattedAddress" : "Harrisonburg, VA, United States",
+      "coordinates" : [
+        38.45164,
+        -78.8697
+      ],
+      "country" : "United States",
+      "state" : "Virginia",
+      "city" : "Harrisonburg"
+    }
+  },
+  {
+    "key" : "10397",
+    "name" : "Taft George H.",
+    "location" : {
+      "formattedAddress" : "Greenville, NC, United States",
+      "coordinates" : [
+        35.61215,
+        -77.38076
+      ],
+      "country" : "United States",
+      "state" : "North Carolina",
+      "city" : "Greenville"
+    }
+  },
+  {
+    "key" : "10449",
+    "name" : "Miller Claude Louis",
+    "location" : {
+      "formattedAddress" : "Ciudad de Colón, Colón, Panamá",
+      "coordinates" : [
+        9.3617,
+        -79.89965
+      ],
+      "country" : "Panamá",
+      "state" : "Colón",
+      "city" : "Ciudad de Colón"
+    }
+  },
+  {
+    "key" : "10492",
+    "name" : "Garnes Earnest Q.",
+    "location" : {
+      "formattedAddress" : "Circleville, OH, United States",
+      "coordinates" : [
+        39.60092,
+        -82.94192
+      ],
+      "country" : "United States",
+      "state" : "Ohio",
+      "city" : "Circleville"
+    }
+  },
+  {
+    "key" : "10493",
+    "name" : "Clark William Henry",
+    "location" : {
+      "formattedAddress" : "Shreveport, LA, United States",
+      "coordinates" : [
+        32.51487,
+        -93.74689
+      ],
+      "country" : "United States",
+      "state" : "Louisiana",
+      "city" : "Shreveport"
+    }
+  },
+  {
+    "key" : "10520",
+    "name" : "Tucker Marcus O.",
+    "location" : {
+      "formattedAddress" : "Hutchinson, KS, United States",
+      "coordinates" : [
+        38.05725,
+        -97.93268
+      ],
+      "country" : "United States",
+      "state" : "Kansas",
+      "city" : "Hutchinson"
+    }
+  },
+  {
+    "key" : "10534",
+    "name" : "Callahan Henry Richard",
+    "location" : {
+      "formattedAddress" : "Level Land, Iva, SC, United States",
+      "coordinates" : [
+        34.3295,
+        -82.47828
+      ],
+      "country" : "United States",
+      "state" : "South Carolina",
+      "city" : "Iva"
+    }
+  },
+  {
+    "key" : "10535",
+    "name" : "Suggs Haywood W.",
+    "location" : {
+      "formattedAddress" : "Forrest City, AR, United States",
+      "coordinates" : [
+        35.01143,
+        -90.7861999
+      ],
+      "country" : "United States",
+      "state" : "Arkansas",
+      "city" : "Forrest City"
+    }
+  },
+  {
+    "key" : "10536",
+    "name" : "Watkins Robert C.",
+    "location" : {
+      "formattedAddress" : "Cleveland, OH, United States",
+      "coordinates" : [
+        41.50473,
+        -81.69075
+      ],
+      "country" : "United States",
+      "state" : "Ohio",
+      "city" : "Cleveland"
+    }
+  },
+  {
+    "key" : "10551",
+    "name" : "Woods Clarence Charles",
+    "location" : {
+      "formattedAddress" : "Memphis, TN, United States",
+      "coordinates" : [
+        35.14977,
+        -90.04926
+      ],
+      "country" : "United States",
+      "state" : "Tennessee",
+      "city" : "Memphis"
+    }
+  },
+  {
+    "key" : "10623",
+    "name" : "Adams Charles Francis",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "10624",
+    "name" : "Dumas Albert Woods",
+    "location" : {
+      "formattedAddress" : "Natchez, MS, United States",
+      "coordinates" : [
+        31.55922,
+        -91.39821
+      ],
+      "country" : "United States",
+      "state" : "Mississippi",
+      "city" : "Natchez"
+    }
+  },
+  {
+    "key" : "10625",
+    "name" : "Freeman T. J.",
+    "location" : {
+      "formattedAddress" : "Chattanooga, TN, United States",
+      "coordinates" : [
+        35.04672,
+        -85.30947
+      ],
+      "country" : "United States",
+      "state" : "Tennessee",
+      "city" : "Chattanooga"
+    }
+  },
+  {
+    "key" : "10626",
+    "name" : "Rickman Lewis Daniel",
+    "location" : {
+      "formattedAddress" : "Middleport, OH, United States",
+      "coordinates" : [
+        39.00095,
+        -82.04977
+      ],
+      "country" : "United States",
+      "state" : "Ohio",
+      "city" : "Middleport"
+    }
+  },
+  {
+    "key" : "10627",
+    "name" : "Rajan Yasmin A.",
+    "location" : {
+      "formattedAddress" : "Mombasa, Kenya",
+      "coordinates" : [
+        -4.05738,
+        39.66275
+      ],
+      "country" : "Kenya",
+      "state" : null,
+      "city" : "Mombasa"
+    }
+  },
+  {
+    "key" : "10628",
+    "name" : "Tolbert Jesse C.",
+    "location" : {
+      "formattedAddress" : "Detroit, MI, United States",
+      "coordinates" : [
+        42.33168,
+        -83.048
+      ],
+      "country" : "United States",
+      "state" : "Michigan",
+      "city" : "Detroit"
+    }
+  },
+  {
+    "key" : "10651",
+    "name" : "Jackson Cephas G.",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "10652",
+    "name" : "Jordan Ronald Douglas",
+    "location" : {
+      "formattedAddress" : "Pine Bluff, AR, United States",
+      "coordinates" : [
+        34.22354,
+        -92.0034
+      ],
+      "country" : "United States",
+      "state" : "Arkansas",
+      "city" : "Pine Bluff"
+    }
+  },
+  {
+    "key" : "10665",
+    "name" : "Adams Samuel P.",
+    "location" : {
+      "formattedAddress" : "Chicago, IL, United States",
+      "coordinates" : [
+        41.88425,
+        -87.63245
+      ],
+      "country" : "United States",
+      "state" : "Illinois",
+      "city" : "Chicago"
+    }
+  },
+  {
+    "key" : "10669",
+    "name" : "Screen Robert Lewis",
+    "location" : {
+      "formattedAddress" : "Augusta, GA, United States",
+      "coordinates" : [
+        33.4793,
+        -81.97522
+      ],
+      "country" : "United States",
+      "state" : "Georgia",
+      "city" : "Augusta"
+    }
+  },
+  {
+    "key" : "10683",
+    "name" : "Allen Maurice Alonzo",
+    "location" : {
+      "formattedAddress" : "Baltimore, MD, United States",
+      "coordinates" : [
+        39.29058,
+        -76.60926
+      ],
+      "country" : "United States",
+      "state" : "Maryland",
+      "city" : "Baltimore"
+    }
+  },
+  {
+    "key" : "10685",
+    "name" : "Howley Eugene E.",
+    "location" : {
+      "formattedAddress" : "Cambridge, MA, United States",
+      "coordinates" : [
+        42.3668,
+        -71.10602
+      ],
+      "country" : "United States",
+      "state" : "Massachusetts",
+      "city" : "Cambridge"
+    }
+  },
+  {
+    "key" : "10687",
+    "name" : "Kershaw A. J.",
+    "location" : {
+      "formattedAddress" : "Tallahassee, FL, United States",
+      "coordinates" : [
+        30.43977,
+        -84.28065
+      ],
+      "country" : "United States",
+      "state" : "Florida",
+      "city" : "Tallahassee"
+    }
+  },
+  {
+    "key" : "10716",
+    "name" : "Shane Sylvan M.",
+    "location" : {
+      "formattedAddress" : "Baltimore, MD, United States",
+      "coordinates" : [
+        39.29058,
+        -76.60926
+      ],
+      "country" : "United States",
+      "state" : "Maryland",
+      "city" : "Baltimore"
+    }
+  },
+  {
+    "key" : "10718",
+    "name" : "Stevenson Chaplin McCabe",
+    "location" : {
+      "formattedAddress" : "Lexington, KY, United States",
+      "coordinates" : [
+        38.0486,
+        -84.50032
+      ],
+      "country" : "United States",
+      "state" : "Kentucky",
+      "city" : "Lexington"
+    }
+  },
+  {
+    "key" : "10719",
+    "name" : "Thurman Frank S.",
+    "location" : {
+      "formattedAddress" : "Jackson, MI, United States",
+      "coordinates" : [
+        42.24555,
+        -84.4005
+      ],
+      "country" : "United States",
+      "state" : "Michigan",
+      "city" : "Jackson"
+    }
+  },
+  {
+    "key" : "10721",
+    "name" : "Tollett Harrel E.",
+    "location" : {
+      "formattedAddress" : "Muskogee, OK, United States",
+      "coordinates" : [
+        35.74848,
+        -95.36905
+      ],
+      "country" : "United States",
+      "state" : "Oklahoma",
+      "city" : "Muskogee"
+    }
+  },
+  {
+    "key" : "10750",
+    "name" : "Cooper Wellington Watson",
+    "location" : {
+      "formattedAddress" : "Waco, TX, United States",
+      "coordinates" : [
+        31.57182,
+        -97.14951
+      ],
+      "country" : "United States",
+      "state" : "Texas",
+      "city" : "Waco"
+    }
+  },
+  {
+    "key" : "10753",
+    "name" : "Crombie Booker T.",
+    "location" : {
+      "formattedAddress" : "Knoxville, TN, United States",
+      "coordinates" : [
+        35.96068,
+        -83.92103
+      ],
+      "country" : "United States",
+      "state" : "Tennessee",
+      "city" : "Knoxville"
+    }
+  },
+  {
+    "key" : "10754",
+    "name" : "Bowles James Harold",
+    "location" : {
+      "formattedAddress" : "Columbia, VA, United States",
+      "coordinates" : [
+        37.75247,
+        -78.16151
+      ],
+      "country" : "United States",
+      "state" : "Virginia",
+      "city" : "Columbia"
+    }
+  },
+  {
+    "key" : "10755",
+    "name" : "Lee Gladys",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "10760",
+    "name" : "Jones Yolanda I.",
+    "location" : {
+      "formattedAddress" : "Red Bank, NJ, United States",
+      "coordinates" : [
+        40.34921,
+        -74.07014
+      ],
+      "country" : "United States",
+      "state" : "New Jersey",
+      "city" : "Red Bank"
+    }
+  },
+  {
+    "key" : "10761",
+    "name" : "Richardson Robert Maxwell",
+    "location" : {
+      "formattedAddress" : "Cleveland, OH, United States",
+      "coordinates" : [
+        41.50473,
+        -81.69075
+      ],
+      "country" : "United States",
+      "state" : "Ohio",
+      "city" : "Cleveland"
+    }
+  },
+  {
+    "key" : "10784",
+    "name" : "Williams Will L.",
+    "location" : {
+      "formattedAddress" : "Garland, Mobile, AL, United States",
+      "coordinates" : [
+        30.76051,
+        -88.2007
+      ],
+      "country" : "United States",
+      "state" : "Alabama",
+      "city" : "Mobile"
+    }
+  },
+  {
+    "key" : "10785",
+    "name" : "Johnson Jarone William",
+    "location" : {
+      "formattedAddress" : "Mansfield, LA, United States",
+      "coordinates" : [
+        32.03505,
+        -93.71082
+      ],
+      "country" : "United States",
+      "state" : "Louisiana",
+      "city" : "Mansfield"
+    }
+  },
+  {
+    "key" : "10786",
+    "name" : "Rice George",
+    "location" : {
+      "formattedAddress" : "Lexington, KY, United States",
+      "coordinates" : [
+        38.0486,
+        -84.50032
+      ],
+      "country" : "United States",
+      "state" : "Kentucky",
+      "city" : "Lexington"
+    }
+  },
+  {
+    "key" : "10787",
+    "name" : "Davenport Harold Stevenson",
+    "location" : {
+      "formattedAddress" : "Norfolk, VA, United States",
+      "coordinates" : [
+        36.84682,
+        -76.28506
+      ],
+      "country" : "United States",
+      "state" : "Virginia",
+      "city" : "Norfolk"
+    }
+  },
+  {
+    "key" : "10788",
+    "name" : "Ashley William W.",
+    "location" : {
+      "formattedAddress" : "Bayside, NY, United States",
+      "coordinates" : [
+        40.76176,
+        -73.76842
+      ],
+      "country" : "United States",
+      "state" : "New York",
+      "city" : "Bayside"
+    }
+  },
+  {
+    "key" : "10789",
+    "name" : "Bellan Joseph L.",
+    "location" : {
+      "formattedAddress" : "New York, NY, United States",
+      "coordinates" : [
+        40.71455,
+        -74.00714
+      ],
+      "country" : "United States",
+      "state" : "New York",
+      "city" : "New York"
+    }
+  },
+  {
+    "key" : "10837",
+    "name" : "Porter Willis",
+    "location" : {
+      "formattedAddress" : "Waco, TX, United States",
+      "coordinates" : [
+        31.57182,
+        -97.14951
+      ],
+      "country" : "United States",
+      "state" : "Texas",
+      "city" : "Waco"
+    }
+  },
+  {
+    "key" : "10850",
+    "name" : "Prather T. W.",
+    "location" : {
+      "formattedAddress" : "Evanston, IL, United States",
+      "coordinates" : [
+        42.05702,
+        -87.68645
+      ],
+      "country" : "United States",
+      "state" : "Illinois",
+      "city" : "Evanston"
+    }
+  },
+  {
+    "key" : "10851",
+    "name" : "Burns David E.",
+    "location" : {
+      "formattedAddress" : "Nolensville, TN, United States",
+      "coordinates" : [
+        35.95697,
+        -86.67181
+      ],
+      "country" : "United States",
+      "state" : "Tennessee",
+      "city" : "Nolensville"
+    }
+  },
+  {
+    "key" : "10852",
+    "name" : "Harris Percy Gene",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "10853",
+    "name" : "Mitchell Janet L.",
+    "location" : {
+      "formattedAddress" : "Lexington, KY, United States",
+      "coordinates" : [
+        38.0486,
+        -84.50032
+      ],
+      "country" : "United States",
+      "state" : "Kentucky",
+      "city" : "Lexington"
+    }
+  },
+  {
+    "key" : "10854",
+    "name" : "Durham Jacob J.",
+    "location" : {
+      "formattedAddress" : "Columbia, SC, United States",
+      "coordinates" : [
+        33.99882,
+        -81.04537
+      ],
+      "country" : "United States",
+      "state" : "South Carolina",
+      "city" : "Columbia"
+    }
+  },
+  {
+    "key" : "10855",
+    "name" : "Nicholson Arthur",
+    "location" : {
+      "formattedAddress" : "Memphis, TN, United States",
+      "coordinates" : [
+        35.14977,
+        -90.04926
+      ],
+      "country" : "United States",
+      "state" : "Tennessee",
+      "city" : "Memphis"
+    }
+  },
+  {
+    "key" : "10856",
+    "name" : "Logan William J. J.",
+    "location" : {
+      "formattedAddress" : "Belmont, NC, United States",
+      "coordinates" : [
+        35.24431,
+        -81.03809
+      ],
+      "country" : "United States",
+      "state" : "North Carolina",
+      "city" : "Belmont"
+    }
+  },
+  {
+    "key" : "10877",
+    "name" : "Dawson F. E.",
+    "location" : {
+      "formattedAddress" : "Nashville, TN, United States",
+      "coordinates" : [
+        36.16785,
+        -86.77816
+      ],
+      "country" : "United States",
+      "state" : "Tennessee",
+      "city" : "Nashville"
+    }
+  },
+  {
+    "key" : "10883",
+    "name" : "Crawford Roger G.",
+    "location" : {
+      "formattedAddress" : "Detroit, MI, United States",
+      "coordinates" : [
+        42.33168,
+        -83.048
+      ],
+      "country" : "United States",
+      "state" : "Michigan",
+      "city" : "Detroit"
+    }
+  },
+  {
+    "key" : "10923",
+    "name" : "Thomas James E.",
+    "location" : {
+      "formattedAddress" : "Wilmington, NC, United States",
+      "coordinates" : [
+        34.23497,
+        -77.946
+      ],
+      "country" : "United States",
+      "state" : "North Carolina",
+      "city" : "Wilmington"
+    }
+  },
+  {
+    "key" : "10951",
+    "name" : "Beguesse E. Conway",
+    "location" : {
+      "formattedAddress" : "Chicago, IL, United States",
+      "coordinates" : [
+        41.88425,
+        -87.63245
+      ],
+      "country" : "United States",
+      "state" : "Illinois",
+      "city" : "Chicago"
+    }
+  },
+  {
+    "key" : "10971",
+    "name" : "Schechtman Jay C.",
+    "location" : {
+      "formattedAddress" : "Bronx, NY, United States",
+      "coordinates" : [
+        40.82601,
+        -73.92309
+      ],
+      "country" : "United States",
+      "state" : "New York",
+      "city" : "Bronx"
+    }
+  },
+  {
+    "key" : "10972",
+    "name" : "Brooks David D.",
+    "location" : {
+      "formattedAddress" : "Hammond, LA, United States",
+      "coordinates" : [
+        30.50418,
+        -90.45846
+      ],
+      "country" : "United States",
+      "state" : "Louisiana",
+      "city" : "Hammond"
+    }
+  },
+  {
+    "key" : "10974",
+    "name" : "Phillips Charles H.",
+    "location" : {
+      "formattedAddress" : "Milledgeville, GA, United States",
+      "coordinates" : [
+        33.0815,
+        -83.22557
+      ],
+      "country" : "United States",
+      "state" : "Georgia",
+      "city" : "Milledgeville"
+    }
+  },
+  {
+    "key" : "11069",
+    "name" : "Weedin Robert M.",
+    "location" : {
+      "formattedAddress" : "Seattle, WA, United States",
+      "coordinates" : [
+        47.60358,
+        -122.32945
+      ],
+      "country" : "United States",
+      "state" : "Washington",
+      "city" : "Seattle"
+    }
+  },
+  {
+    "key" : "11070",
+    "name" : "Harrison Bernard Hove",
+    "location" : {
+      "formattedAddress" : "Houston, TX, United States",
+      "coordinates" : [
+        29.76059,
+        -95.36968
+      ],
+      "country" : "United States",
+      "state" : "Texas",
+      "city" : "Houston"
+    }
+  },
+  {
+    "key" : "11071",
+    "name" : "Sarauw Arthur S.",
+    "location" : {
+      "formattedAddress" : "Jamaica, NY, United States",
+      "coordinates" : [
+        40.7018,
+        -73.80853
+      ],
+      "country" : "United States",
+      "state" : "New York",
+      "city" : "Jamaica"
+    }
+  },
+  {
+    "key" : "11072",
+    "name" : "Moehring Herman D.",
+    "location" : {
+      "formattedAddress" : "East Tawas, MI, United States",
+      "coordinates" : [
+        44.2792,
+        -83.49157
+      ],
+      "country" : "United States",
+      "state" : "Michigan",
+      "city" : "East Tawas"
+    }
+  },
+  {
+    "key" : "11073",
+    "name" : "Clayton Thomas David",
+    "location" : {
+      "formattedAddress" : "Smyrna, DE, United States",
+      "coordinates" : [
+        39.30045,
+        -75.60692
+      ],
+      "country" : "United States",
+      "state" : "Delaware",
+      "city" : "Smyrna"
+    }
+  },
+  {
+    "key" : "11075",
+    "name" : "Alston Charles",
+    "location" : {
+      "formattedAddress" : "Savannah, GA, United States",
+      "coordinates" : [
+        32.08091,
+        -81.09119
+      ],
+      "country" : "United States",
+      "state" : "Georgia",
+      "city" : "Savannah"
+    }
+  },
+  {
+    "key" : "11083",
+    "name" : "Crampton Benjamin P.",
+    "location" : {
+      "formattedAddress" : "Harrisburg, PA, United States",
+      "coordinates" : [
+        40.25987,
+        -76.88223
+      ],
+      "country" : "United States",
+      "state" : "Pennsylvania",
+      "city" : "Harrisburg"
+    }
+  },
+  {
+    "key" : "11084",
+    "name" : "Bacon Robert John",
+    "location" : {
+      "formattedAddress" : "Evanston, IL, United States",
+      "coordinates" : [
+        42.05702,
+        -87.68645
+      ],
+      "country" : "United States",
+      "state" : "Illinois",
+      "city" : "Evanston"
+    }
+  },
+  {
+    "key" : "11087",
+    "name" : "Cotton J. A.",
+    "location" : {
+      "formattedAddress" : "Memphis, TN, United States",
+      "coordinates" : [
+        35.14977,
+        -90.04926
+      ],
+      "country" : "United States",
+      "state" : "Tennessee",
+      "city" : "Memphis"
+    }
+  },
+  {
+    "key" : "11148",
+    "name" : "Williams Daniel Barclay",
+    "location" : {
+      "formattedAddress" : "Richmond, VA, United States",
+      "coordinates" : [
+        37.5407,
+        -77.43365
+      ],
+      "country" : "United States",
+      "state" : "Virginia",
+      "city" : "Richmond"
+    }
+  },
+  {
+    "key" : "11197",
+    "name" : "Shaffer Carl Wilberforce",
+    "location" : {
+      "formattedAddress" : "Philadelphia, PA, United States",
+      "coordinates" : [
+        39.95223,
+        -75.16218
+      ],
+      "country" : "United States",
+      "state" : "Pennsylvania",
+      "city" : "Philadelphia"
+    }
+  },
+  {
+    "key" : "11222",
+    "name" : "Dansby William N.",
+    "location" : {
+      "formattedAddress" : "Tuscaloosa, AL, United States",
+      "coordinates" : [
+        33.21043,
+        -87.56625
+      ],
+      "country" : "United States",
+      "state" : "Alabama",
+      "city" : "Tuscaloosa"
+    }
+  },
+  {
+    "key" : "11225",
+    "name" : "Ballard Billy Ray",
+    "location" : {
+      "formattedAddress" : "Arcadia, LA, United States",
+      "coordinates" : [
+        32.54943,
+        -92.92126
+      ],
+      "country" : "United States",
+      "state" : "Louisiana",
+      "city" : "Arcadia"
+    }
+  },
+  {
+    "key" : "11232",
+    "name" : "Watkins T. H.",
+    "location" : {
+      "formattedAddress" : "Atlantic City, NJ, United States",
+      "coordinates" : [
+        39.3628799,
+        -74.42638
+      ],
+      "country" : "United States",
+      "state" : "New Jersey",
+      "city" : "Atlantic City"
+    }
+  },
+  {
+    "key" : "11239",
+    "name" : "Bates J. Edward",
+    "location" : {
+      "formattedAddress" : "Milroy, PA, United States",
+      "coordinates" : [
+        40.71335,
+        -77.58898
+      ],
+      "country" : "United States",
+      "state" : "Pennsylvania",
+      "city" : "Milroy"
+    }
+  },
+  {
+    "key" : "11273",
+    "name" : "Brain Norbert G.",
+    "location" : {
+      "formattedAddress" : "New York, NY, United States",
+      "coordinates" : [
+        40.71455,
+        -74.00714
+      ],
+      "country" : "United States",
+      "state" : "New York",
+      "city" : "New York"
+    }
+  },
+  {
+    "key" : "11274",
+    "name" : "Gill Jerry M.",
+    "location" : {
+      "formattedAddress" : "Bogue Chitto, MS, United States",
+      "coordinates" : [
+        31.43836,
+        -90.44918
+      ],
+      "country" : "United States",
+      "state" : "Mississippi",
+      "city" : "Bogue Chitto"
+    }
+  },
+  {
+    "key" : "11299",
+    "name" : "Primus Jay Hugh",
+    "location" : {
+      "formattedAddress" : "Floral City, FL, United States",
+      "coordinates" : [
+        28.74761,
+        -82.29791
+      ],
+      "country" : "United States",
+      "state" : "Florida",
+      "city" : "Floral City"
+    }
+  },
+  {
+    "key" : "11300",
+    "name" : "Scott John Washington",
+    "location" : {
+      "formattedAddress" : "Pensacola, FL, United States",
+      "coordinates" : [
+        30.42085,
+        -87.21723
+      ],
+      "country" : "United States",
+      "state" : "Florida",
+      "city" : "Pensacola"
+    }
+  },
+  {
+    "key" : "11301",
+    "name" : "Ford Walter T.",
+    "location" : {
+      "formattedAddress" : "Fort Valley, GA, United States",
+      "coordinates" : [
+        32.5539,
+        -83.88864
+      ],
+      "country" : "United States",
+      "state" : "Georgia",
+      "city" : "Fort Valley"
+    }
+  },
+  {
+    "key" : "11345",
+    "name" : "Butler Bruce Nathaniel",
+    "location" : {
+      "formattedAddress" : "Silver Spring, MD, United States",
+      "coordinates" : [
+        38.99693,
+        -77.02914
+      ],
+      "country" : "United States",
+      "state" : "Maryland",
+      "city" : "Silver Spring"
+    }
+  },
+  {
+    "key" : "11347",
+    "name" : "Nelson James D.",
+    "location" : {
+      "formattedAddress" : "Philadelphia, PA, United States",
+      "coordinates" : [
+        39.95223,
+        -75.16218
+      ],
+      "country" : "United States",
+      "state" : "Pennsylvania",
+      "city" : "Philadelphia"
+    }
+  },
+  {
+    "key" : "11348",
+    "name" : "Green S. S.",
+    "location" : {
+      "formattedAddress" : "Sedalia, MO, United States",
+      "coordinates" : [
+        38.71078,
+        -93.22806
+      ],
+      "country" : "United States",
+      "state" : "Missouri",
+      "city" : "Sedalia"
+    }
+  },
+  {
+    "key" : "11349",
+    "name" : "Bobb Joseph M.",
+    "location" : {
+      "formattedAddress" : "Bloomington, IN, United States",
+      "coordinates" : [
+        39.1666,
+        -86.5348
+      ],
+      "country" : "United States",
+      "state" : "Indiana",
+      "city" : "Bloomington"
+    }
+  },
+  {
+    "key" : "11350",
+    "name" : "Polk S. W.",
+    "location" : {
+      "formattedAddress" : "Yazoo City, MS, United States",
+      "coordinates" : [
+        32.84784,
+        -90.41513
+      ],
+      "country" : "United States",
+      "state" : "Mississippi",
+      "city" : "Yazoo City"
+    }
+  },
+  {
+    "key" : "11351",
+    "name" : "Wallace Jesse Etta",
+    "location" : {
+      "formattedAddress" : "Calvert, TX, United States",
+      "coordinates" : [
+        30.97769,
+        -96.67359
+      ],
+      "country" : "United States",
+      "state" : "Texas",
+      "city" : "Calvert"
+    }
+  },
+  {
+    "key" : "11352",
+    "name" : "Ellis Leander T.",
+    "location" : {
+      "formattedAddress" : "Laurel, MS, United States",
+      "coordinates" : [
+        31.69682,
+        -89.13518
+      ],
+      "country" : "United States",
+      "state" : "Mississippi",
+      "city" : "Laurel"
+    }
+  },
+  {
+    "key" : "11353",
+    "name" : "Taylor George T.",
+    "location" : {
+      "formattedAddress" : "Hampton, VA, United States",
+      "coordinates" : [
+        37.02779,
+        -76.34512
+      ],
+      "country" : "United States",
+      "state" : "Virginia",
+      "city" : "Hampton"
+    }
+  },
+  {
+    "key" : "11400",
+    "name" : "Saddler William Nathaniel",
+    "location" : {
+      "formattedAddress" : "Kimball, WV, United States",
+      "coordinates" : [
+        37.42638,
+        -81.50716
+      ],
+      "country" : "United States",
+      "state" : "West Virginia",
+      "city" : "Kimball"
+    }
+  },
+  {
+    "key" : "11402",
+    "name" : "Bookhardt Alfred L.",
+    "location" : {
+      "formattedAddress" : "New Smyrna Beach, FL, United States",
+      "coordinates" : [
+        29.02717,
+        -80.92303
+      ],
+      "country" : "United States",
+      "state" : "Florida",
+      "city" : "New Smyrna Beach"
+    }
+  },
+  {
+    "key" : "11403",
+    "name" : "Golden Howard Atwater",
+    "location" : {
+      "formattedAddress" : "Jackson, TN, United States",
+      "coordinates" : [
+        35.6139,
+        -88.8194
+      ],
+      "country" : "United States",
+      "state" : "Tennessee",
+      "city" : "Jackson"
+    }
+  },
+  {
+    "key" : "11405",
+    "name" : "Williams Addie Beatrice",
+    "location" : {
+      "formattedAddress" : "Richmond, VA, United States",
+      "coordinates" : [
+        37.5407,
+        -77.43365
+      ],
+      "country" : "United States",
+      "state" : "Virginia",
+      "city" : "Richmond"
+    }
+  },
+  {
+    "key" : "11406",
+    "name" : "Washington Henry M.",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "11419",
+    "name" : "Young J. O.",
+    "location" : {
+      "formattedAddress" : "Chattanooga, TN, United States",
+      "coordinates" : [
+        35.04672,
+        -85.30947
+      ],
+      "country" : "United States",
+      "state" : "Tennessee",
+      "city" : "Chattanooga"
+    }
+  },
+  {
+    "key" : "11420",
+    "name" : "Mitchell Iverson Othello",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "11468",
+    "name" : "Burnette Robert E.",
+    "location" : {
+      "formattedAddress" : "Maywood, IL, United States",
+      "coordinates" : [
+        41.88779,
+        -87.83921
+      ],
+      "country" : "United States",
+      "state" : "Illinois",
+      "city" : "Maywood"
+    }
+  },
+  {
+    "key" : "11469",
+    "name" : "Greene Ralph E.",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "11490",
+    "name" : "Young J. S.",
+    "location" : {
+      "formattedAddress" : "Lake City, FL, United States",
+      "coordinates" : [
+        30.19053,
+        -82.63712
+      ],
+      "country" : "United States",
+      "state" : "Florida",
+      "city" : "Lake City"
+    }
+  },
+  {
+    "key" : "11540",
+    "name" : "Henry James Franklin",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "11541",
+    "name" : "Watts William",
+    "location" : {
+      "formattedAddress" : "Houston, TX, United States",
+      "coordinates" : [
+        29.76059,
+        -95.36968
+      ],
+      "country" : "United States",
+      "state" : "Texas",
+      "city" : "Houston"
+    }
+  },
+  {
+    "key" : "11544",
+    "name" : "Sunday Edward Julian",
+    "location" : {
+      "formattedAddress" : "Pensacola, FL, United States",
+      "coordinates" : [
+        30.42085,
+        -87.21723
+      ],
+      "country" : "United States",
+      "state" : "Florida",
+      "city" : "Pensacola"
+    }
+  },
+  {
+    "key" : "11547",
+    "name" : "Hazard Fred S.",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "11590",
+    "name" : "Chikosi Chakanyuka",
+    "location" : {
+      "formattedAddress" : "Mutare, Zimbabwe",
+      "coordinates" : [
+        -18.95725,
+        32.65991
+      ],
+      "country" : "Zimbabwe",
+      "state" : null,
+      "city" : "Mutare"
+    }
+  },
+  {
+    "key" : "11631",
+    "name" : "Davis Emile Moores",
+    "location" : {
+      "formattedAddress" : "Gary, IN, United States",
+      "coordinates" : [
+        41.60371,
+        -87.33717
+      ],
+      "country" : "United States",
+      "state" : "Indiana",
+      "city" : "Gary"
+    }
+  },
+  {
+    "key" : "11633",
+    "name" : "Johnson Alfred G.",
+    "location" : {
+      "formattedAddress" : "Charleston, SC, United States",
+      "coordinates" : [
+        32.78115,
+        -79.93161
+      ],
+      "country" : "United States",
+      "state" : "South Carolina",
+      "city" : "Charleston"
+    }
+  },
+  {
+    "key" : "11634",
+    "name" : "Robbins Herbert",
+    "location" : {
+      "formattedAddress" : "Philadelphia, PA, United States",
+      "coordinates" : [
+        39.95223,
+        -75.16218
+      ],
+      "country" : "United States",
+      "state" : "Pennsylvania",
+      "city" : "Philadelphia"
+    }
+  },
+  {
+    "key" : "11703",
+    "name" : "Coleman William H.",
+    "location" : {
+      "formattedAddress" : "New York, NY, United States",
+      "coordinates" : [
+        40.71455,
+        -74.00714
+      ],
+      "country" : "United States",
+      "state" : "New York",
+      "city" : "New York"
+    }
+  },
+  {
+    "key" : "11716",
+    "name" : "Callahan Samuel P.",
+    "location" : {
+      "formattedAddress" : "Gary, WV, United States",
+      "coordinates" : [
+        37.36623,
+        -81.55198
+      ],
+      "country" : "United States",
+      "state" : "West Virginia",
+      "city" : "Gary"
+    }
+  },
+  {
+    "key" : "11757",
+    "name" : "Jackson Caryl",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "11758",
+    "name" : "Corbin Percy Casino",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "11759",
+    "name" : "Williams Anderson J.",
+    "location" : {
+      "formattedAddress" : "Pittsburgh, PA, United States",
+      "coordinates" : [
+        40.43851,
+        -79.99734
+      ],
+      "country" : "United States",
+      "state" : "Pennsylvania",
+      "city" : "Pittsburgh"
+    }
+  },
+  {
+    "key" : "11806",
+    "name" : "Douglas Gregory Edward",
+    "location" : {
+      "formattedAddress" : "New Rochelle, NY, United States",
+      "coordinates" : [
+        40.92011,
+        -73.78694
+      ],
+      "country" : "United States",
+      "state" : "New York",
+      "city" : "New Rochelle"
+    }
+  },
+  {
+    "key" : "11866",
+    "name" : "Puryear Frank",
+    "location" : {
+      "formattedAddress" : "Nashville, TN, United States",
+      "coordinates" : [
+        36.16785,
+        -86.77816
+      ],
+      "country" : "United States",
+      "state" : "Tennessee",
+      "city" : "Nashville"
+    }
+  },
+  {
+    "key" : "11867",
+    "name" : "Bell W. J. T.",
+    "location" : {
+      "formattedAddress" : "Lebanon, TN, United States",
+      "coordinates" : [
+        36.20787,
+        -86.28952
+      ],
+      "country" : "United States",
+      "state" : "Tennessee",
+      "city" : "Lebanon"
+    }
+  },
+  {
+    "key" : "11869",
+    "name" : "Holness Mavis G.",
+    "location" : {
+      "formattedAddress" : "St Elizabeth, Jamaica",
+      "coordinates" : [
+        18.0293,
+        -77.86145
+      ],
+      "country" : "Jamaica",
+      "state" : null,
+      "city" : null
+    }
+  },
+  {
+    "key" : "11889",
+    "name" : "Johnson Samuel T.",
+    "location" : {
+      "formattedAddress" : "Memphis, TN, United States",
+      "coordinates" : [
+        35.14977,
+        -90.04926
+      ],
+      "country" : "United States",
+      "state" : "Tennessee",
+      "city" : "Memphis"
+    }
+  },
+  {
+    "key" : "11915",
+    "name" : "Lafayette Albert Simms",
+    "location" : {
+      "formattedAddress" : "Savannah, GA, United States",
+      "coordinates" : [
+        32.08091,
+        -81.09119
+      ],
+      "country" : "United States",
+      "state" : "Georgia",
+      "city" : "Savannah"
+    }
+  },
+  {
+    "key" : "11916",
+    "name" : "McLaughlin Durnell",
+    "location" : {
+      "formattedAddress" : "Fort Valley, GA, United States",
+      "coordinates" : [
+        32.5539,
+        -83.88864
+      ],
+      "country" : "United States",
+      "state" : "Georgia",
+      "city" : "Fort Valley"
+    }
+  },
+  {
+    "key" : "11917",
+    "name" : "Ross William A. J.",
+    "location" : {
+      "formattedAddress" : "Detroit, MI, United States",
+      "coordinates" : [
+        42.33168,
+        -83.048
+      ],
+      "country" : "United States",
+      "state" : "Michigan",
+      "city" : "Detroit"
+    }
+  },
+  {
+    "key" : "11919",
+    "name" : "Hunter Marion",
+    "location" : {
+      "formattedAddress" : "Galveston, TX, United States",
+      "coordinates" : [
+        29.29533,
+        -94.80791
+      ],
+      "country" : "United States",
+      "state" : "Texas",
+      "city" : "Galveston"
+    }
+  },
+  {
+    "key" : "11920",
+    "name" : "Culver Oneil",
+    "location" : {
+      "formattedAddress" : "Abbeville, AL, United States",
+      "coordinates" : [
+        31.57164,
+        -85.25093
+      ],
+      "country" : "United States",
+      "state" : "Alabama",
+      "city" : "Abbeville"
+    }
+  },
+  {
+    "key" : "11954",
+    "name" : "Duncan Julius",
+    "location" : {
+      "formattedAddress" : "New York, NY, United States",
+      "coordinates" : [
+        40.71455,
+        -74.00714
+      ],
+      "country" : "United States",
+      "state" : "New York",
+      "city" : "New York"
+    }
+  },
+  {
+    "key" : "11980",
+    "name" : "Wilson Edward LeRoy",
+    "location" : {
+      "formattedAddress" : "Baltimore, MD, United States",
+      "coordinates" : [
+        39.29058,
+        -76.60926
+      ],
+      "country" : "United States",
+      "state" : "Maryland",
+      "city" : "Baltimore"
+    }
+  },
+  {
+    "key" : "12087",
+    "name" : "Bright Cornelius Edison",
+    "location" : {
+      "formattedAddress" : "Jacksonville, FL, United States",
+      "coordinates" : [
+        30.33147,
+        -81.65622
+      ],
+      "country" : "United States",
+      "state" : "Florida",
+      "city" : "Jacksonville"
+    }
+  },
+  {
+    "key" : "12088",
+    "name" : "Sherman Bernadette Elaine",
+    "location" : {
+      "formattedAddress" : "Chicago, IL, United States",
+      "coordinates" : [
+        41.88425,
+        -87.63245
+      ],
+      "country" : "United States",
+      "state" : "Illinois",
+      "city" : "Chicago"
+    }
+  },
+  {
+    "key" : "12091",
+    "name" : "Umble M. V.",
+    "location" : {
+      "formattedAddress" : "Bon Aqua, TN, United States",
+      "coordinates" : [
+        35.95342,
+        -87.3274
+      ],
+      "country" : "United States",
+      "state" : "Tennessee",
+      "city" : "Bon Aqua"
+    }
+  },
+  {
+    "key" : "12130",
+    "name" : "Ford J. William",
+    "location" : {
+      "formattedAddress" : "Williamsport, PA, United States",
+      "coordinates" : [
+        41.24094,
+        -77.00141
+      ],
+      "country" : "United States",
+      "state" : "Pennsylvania",
+      "city" : "Williamsport"
+    }
+  },
+  {
+    "key" : "12131",
+    "name" : "Berry William LeRoy",
+    "location" : {
+      "formattedAddress" : "Newport, RI, United States",
+      "coordinates" : [
+        41.49224,
+        -71.31124
+      ],
+      "country" : "United States",
+      "state" : "Rhode Island",
+      "city" : "Newport"
+    }
+  },
+  {
+    "key" : "12164",
+    "name" : "Langford Edgar A.",
+    "location" : {
+      "formattedAddress" : "Metropolis, IL, United States",
+      "coordinates" : [
+        37.15154,
+        -88.73141
+      ],
+      "country" : "United States",
+      "state" : "Illinois",
+      "city" : "Metropolis"
+    }
+  },
+  {
+    "key" : "12217",
+    "name" : "Trigg Kermit Martin",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "12240",
+    "name" : "Roberts Vernel Joseph",
+    "location" : {
+      "formattedAddress" : "Galveston, TX, United States",
+      "coordinates" : [
+        29.29533,
+        -94.80791
+      ],
+      "country" : "United States",
+      "state" : "Texas",
+      "city" : "Galveston"
+    }
+  },
+  {
+    "key" : "12255",
+    "name" : "Sherman Alonzo",
+    "location" : {
+      "formattedAddress" : "Brookland Ave, Albany, NY 12203, United States",
+      "coordinates" : [
+        42.67029,
+        -73.82714
+      ],
+      "country" : "United States",
+      "state" : "New York",
+      "city" : "Albany"
+    }
+  },
+  {
+    "key" : "12283",
+    "name" : "Quinn Charles Eddie",
+    "location" : {
+      "formattedAddress" : "Meridian, MS, United States",
+      "coordinates" : [
+        32.36509,
+        -88.70308
+      ],
+      "country" : "United States",
+      "state" : "Mississippi",
+      "city" : "Meridian"
+    }
+  },
+  {
+    "key" : "12324",
+    "name" : "Wayne Lewis Leroy",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "12372",
+    "name" : "Glover John W.",
+    "location" : {
+      "formattedAddress" : "White Plains, NY, United States",
+      "coordinates" : [
+        41.03379,
+        -73.76344
+      ],
+      "country" : "United States",
+      "state" : "New York",
+      "city" : "White Plains"
+    }
+  },
+  {
+    "key" : "12415",
+    "name" : "Jenkins Sidney B.",
+    "location" : {
+      "formattedAddress" : "Somerville, NJ, United States",
+      "coordinates" : [
+        40.57071,
+        -74.61939
+      ],
+      "country" : "United States",
+      "state" : "New Jersey",
+      "city" : "Somerville"
+    }
+  },
+  {
+    "key" : "12426",
+    "name" : "McCarthy Lorenzo Thomas",
+    "location" : {
+      "formattedAddress" : "Birmingham, AL, United States",
+      "coordinates" : [
+        33.52068,
+        -86.81176
+      ],
+      "country" : "United States",
+      "state" : "Alabama",
+      "city" : "Birmingham"
+    }
+  },
+  {
+    "key" : "12427",
+    "name" : "Smith Sidney Elmer",
+    "location" : {
+      "formattedAddress" : "Houston, TX, United States",
+      "coordinates" : [
+        29.76059,
+        -95.36968
+      ],
+      "country" : "United States",
+      "state" : "Texas",
+      "city" : "Houston"
+    }
+  },
+  {
+    "key" : "12430",
+    "name" : "Wilson Woodrow",
+    "location" : {
+      "formattedAddress" : "Philadelphia, PA, United States",
+      "coordinates" : [
+        39.95223,
+        -75.16218
+      ],
+      "country" : "United States",
+      "state" : "Pennsylvania",
+      "city" : "Philadelphia"
+    }
+  },
+  {
+    "key" : "12437",
+    "name" : "Price Vincent Jarone",
+    "location" : {
+      "formattedAddress" : "Los Angeles, CA, United States",
+      "coordinates" : [
+        34.0534899,
+        -118.24532
+      ],
+      "country" : "United States",
+      "state" : "California",
+      "city" : "Los Angeles"
+    }
+  },
+  {
+    "key" : "12440",
+    "name" : "Weaver Clarence A.",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "12441",
+    "name" : "Christian Eugene E.",
+    "location" : {
+      "formattedAddress" : "New York, NY, United States",
+      "coordinates" : [
+        40.71455,
+        -74.00714
+      ],
+      "country" : "United States",
+      "state" : "New York",
+      "city" : "New York"
+    }
+  },
+  {
+    "key" : "12457",
+    "name" : "Anderson Elmer A.",
+    "location" : {
+      "formattedAddress" : "High Point, NC, United States",
+      "coordinates" : [
+        35.95536,
+        -80.0052
+      ],
+      "country" : "United States",
+      "state" : "North Carolina",
+      "city" : "High Point"
+    }
+  },
+  {
+    "key" : "12459",
+    "name" : "Pope Henry",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "12471",
+    "name" : "Sykes Melba",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "12510",
+    "name" : "Resnick Dennis",
+    "location" : {
+      "formattedAddress" : "Bayonne, NJ, United States",
+      "coordinates" : [
+        40.66874,
+        -74.11749
+      ],
+      "country" : "United States",
+      "state" : "New Jersey",
+      "city" : "Bayonne"
+    }
+  },
+  {
+    "key" : "12511",
+    "name" : "Morton W. R.",
+    "location" : {
+      "formattedAddress" : "Centerville, TX, United States",
+      "coordinates" : [
+        31.25799,
+        -95.9781
+      ],
+      "country" : "United States",
+      "state" : "Texas",
+      "city" : "Centerville"
+    }
+  },
+  {
+    "key" : "12512",
+    "name" : "Lloyd Matilda",
+    "location" : {
+      "formattedAddress" : "Nashville, TN, United States",
+      "coordinates" : [
+        36.16785,
+        -86.77816
+      ],
+      "country" : "United States",
+      "state" : "Tennessee",
+      "city" : "Nashville"
+    }
+  },
+  {
+    "key" : "12521",
+    "name" : "Beckett George N.",
+    "location" : {
+      "formattedAddress" : "Woodbury, NJ, United States",
+      "coordinates" : [
+        39.83883,
+        -75.15464
+      ],
+      "country" : "United States",
+      "state" : "New Jersey",
+      "city" : "Woodbury"
+    }
+  },
+  {
+    "key" : "12524",
+    "name" : "White Sol",
+    "location" : {
+      "formattedAddress" : "Beaumont, TX, United States",
+      "coordinates" : [
+        30.08616,
+        -94.10135
+      ],
+      "country" : "United States",
+      "state" : "Texas",
+      "city" : "Beaumont"
+    }
+  },
+  {
+    "key" : "12526",
+    "name" : "Buckingham DeWitt A.",
+    "location" : {
+      "formattedAddress" : "Meridian, MS, United States",
+      "coordinates" : [
+        32.36509,
+        -88.70308
+      ],
+      "country" : "United States",
+      "state" : "Mississippi",
+      "city" : "Meridian"
+    }
+  },
+  {
+    "key" : "12528",
+    "name" : "Ryan Harvey E.",
+    "location" : {
+      "formattedAddress" : "Williamsville, IL, United States",
+      "coordinates" : [
+        39.95412,
+        -89.5475
+      ],
+      "country" : "United States",
+      "state" : "Illinois",
+      "city" : "Williamsville"
+    }
+  },
+  {
+    "key" : "12529",
+    "name" : "Willis Charles E.",
+    "location" : {
+      "formattedAddress" : "Wilmington, NC, United States",
+      "coordinates" : [
+        34.23497,
+        -77.946
+      ],
+      "country" : "United States",
+      "state" : "North Carolina",
+      "city" : "Wilmington"
+    }
+  },
+  {
+    "key" : "12533",
+    "name" : "Timus William Albert",
+    "location" : {
+      "formattedAddress" : "Atlantic City, NJ, United States",
+      "coordinates" : [
+        39.3628799,
+        -74.42638
+      ],
+      "country" : "United States",
+      "state" : "New Jersey",
+      "city" : "Atlantic City"
+    }
+  },
+  {
+    "key" : "12600",
+    "name" : "Russell Warren Monroe",
+    "location" : {
+      "formattedAddress" : "Columbia, SC, United States",
+      "coordinates" : [
+        33.99882,
+        -81.04537
+      ],
+      "country" : "United States",
+      "state" : "South Carolina",
+      "city" : "Columbia"
+    }
+  },
+  {
+    "key" : "12601",
+    "name" : "Veitch F. G.",
+    "location" : {
+      "formattedAddress" : "Alexandria, Beckford Kraal, Jamaica",
+      "coordinates" : [
+        18.08395,
+        -77.31448
+      ],
+      "country" : "Jamaica",
+      "state" : null,
+      "city" : "Beckford Kraal"
+    }
+  },
+  {
+    "key" : "12602",
+    "name" : "Brooks Henry Leslie",
+    "location" : {
+      "formattedAddress" : "Hopkinsville, KY, United States",
+      "coordinates" : [
+        36.86728,
+        -87.4877
+      ],
+      "country" : "United States",
+      "state" : "Kentucky",
+      "city" : "Hopkinsville"
+    }
+  },
+  {
+    "key" : "12607",
+    "name" : "Rachels Andre Weston",
+    "location" : {
+      "formattedAddress" : "Los Angeles, CA, United States",
+      "coordinates" : [
+        34.0534899,
+        -118.24532
+      ],
+      "country" : "United States",
+      "state" : "California",
+      "city" : "Los Angeles"
+    }
+  },
+  {
+    "key" : "12623",
+    "name" : "Fernandes Francis B.",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "12625",
+    "name" : "Tiller Moses M.",
+    "location" : {
+      "formattedAddress" : "Athens, GA, United States",
+      "coordinates" : [
+        33.95813,
+        -83.37326
+      ],
+      "country" : "United States",
+      "state" : "Georgia",
+      "city" : "Athens"
+    }
+  },
+  {
+    "key" : "12626",
+    "name" : "Clark Lemuel Berrian",
+    "location" : {
+      "formattedAddress" : "Ocala, FL, United States",
+      "coordinates" : [
+        29.18776,
+        -82.14041
+      ],
+      "country" : "United States",
+      "state" : "Florida",
+      "city" : "Ocala"
+    }
+  },
+  {
+    "key" : "12627",
+    "name" : "Mason Aric P.",
+    "location" : {
+      "formattedAddress" : "Giddings, TX, United States",
+      "coordinates" : [
+        30.1826,
+        -96.9374
+      ],
+      "country" : "United States",
+      "state" : "Texas",
+      "city" : "Giddings"
+    }
+  },
+  {
+    "key" : "12628",
+    "name" : "Turner Anita",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "12631",
+    "name" : "Kendrick Curtis",
+    "location" : {
+      "formattedAddress" : "Magnolia, AR, United States",
+      "coordinates" : [
+        33.26751,
+        -93.24086
+      ],
+      "country" : "United States",
+      "state" : "Arkansas",
+      "city" : "Magnolia"
+    }
+  },
+  {
+    "key" : "12632",
+    "name" : "Saffold Oscar Elmwood",
+    "location" : {
+      "formattedAddress" : "Cleveland, OH, United States",
+      "coordinates" : [
+        41.50473,
+        -81.69075
+      ],
+      "country" : "United States",
+      "state" : "Ohio",
+      "city" : "Cleveland"
+    }
+  },
+  {
+    "key" : "12633",
+    "name" : "Wharton Kenneth",
+    "location" : {
+      "formattedAddress" : "Lebanon, TN, United States",
+      "coordinates" : [
+        36.20787,
+        -86.28952
+      ],
+      "country" : "United States",
+      "state" : "Tennessee",
+      "city" : "Lebanon"
+    }
+  },
+  {
+    "key" : "12634",
+    "name" : "Duncan Walter William",
+    "location" : {
+      "formattedAddress" : "Dallas, TX, United States",
+      "coordinates" : [
+        32.77816,
+        -96.7954
+      ],
+      "country" : "United States",
+      "state" : "Texas",
+      "city" : "Dallas"
+    }
+  },
+  {
+    "key" : "12635",
+    "name" : "Craig Joyce M.",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "12658",
+    "name" : "Parker William E.",
+    "location" : {
+      "formattedAddress" : "Windsor, NC, United States",
+      "coordinates" : [
+        35.99355,
+        -76.94249
+      ],
+      "country" : "United States",
+      "state" : "North Carolina",
+      "city" : "Windsor"
+    }
+  },
+  {
+    "key" : "12659",
+    "name" : "Stokes Joseph H.",
+    "location" : {
+      "formattedAddress" : "Boston, MA, United States",
+      "coordinates" : [
+        42.35866,
+        -71.05675
+      ],
+      "country" : "United States",
+      "state" : "Massachusetts",
+      "city" : "Boston"
+    }
+  },
+  {
+    "key" : "12660",
+    "name" : "Allen James Franklin",
+    "location" : {
+      "formattedAddress" : "Charlottesville, VA, United States",
+      "coordinates" : [
+        38.03213,
+        -78.47756
+      ],
+      "country" : "United States",
+      "state" : "Virginia",
+      "city" : "Charlottesville"
+    }
+  },
+  {
+    "key" : "12662",
+    "name" : "Perry Mildred C.",
+    "location" : {
+      "formattedAddress" : "Savannah, GA, United States",
+      "coordinates" : [
+        32.08091,
+        -81.09119
+      ],
+      "country" : "United States",
+      "state" : "Georgia",
+      "city" : "Savannah"
+    }
+  },
+  {
+    "key" : "12691",
+    "name" : "McKenna Dwight L.",
+    "location" : {
+      "formattedAddress" : "New Orleans, LA, United States",
+      "coordinates" : [
+        29.9537,
+        -90.07775
+      ],
+      "country" : "United States",
+      "state" : "Louisiana",
+      "city" : "New Orleans"
+    }
+  },
+  {
+    "key" : "12692",
+    "name" : "Boush Oliver Wynn",
+    "location" : {
+      "formattedAddress" : "Portsmouth, VA, United States",
+      "coordinates" : [
+        36.83274,
+        -76.29771
+      ],
+      "country" : "United States",
+      "state" : "Virginia",
+      "city" : "Portsmouth"
+    }
+  },
+  {
+    "key" : "12710",
+    "name" : "Lipsett Percival Crafton",
+    "location" : {
+      "formattedAddress" : "New York, NY, United States",
+      "coordinates" : [
+        40.71455,
+        -74.00714
+      ],
+      "country" : "United States",
+      "state" : "New York",
+      "city" : "New York"
+    }
+  },
+  {
+    "key" : "12711",
+    "name" : "Preston William",
+    "location" : {
+      "formattedAddress" : "Roanoke, VA, United States",
+      "coordinates" : [
+        37.27152,
+        -79.94057
+      ],
+      "country" : "United States",
+      "state" : "Virginia",
+      "city" : "Roanoke"
+    }
+  },
+  {
+    "key" : "12712",
+    "name" : "Jones James Bernard",
+    "location" : {
+      "formattedAddress" : "North Augusta, SC, United States",
+      "coordinates" : [
+        33.49578,
+        -81.97009
+      ],
+      "country" : "United States",
+      "state" : "South Carolina",
+      "city" : "North Augusta"
+    }
+  },
+  {
+    "key" : "12731",
+    "name" : "Ponder Kenneth G.",
+    "location" : {
+      "formattedAddress" : "Longview, TX, United States",
+      "coordinates" : [
+        32.50064,
+        -94.74061
+      ],
+      "country" : "United States",
+      "state" : "Texas",
+      "city" : "Longview"
+    }
+  },
+  {
+    "key" : "12767",
+    "name" : "McIntosh John R.",
+    "location" : {
+      "formattedAddress" : "La Habra, CA, United States",
+      "coordinates" : [
+        33.93187,
+        -117.94407
+      ],
+      "country" : "United States",
+      "state" : "California",
+      "city" : "La Habra"
+    }
+  },
+  {
+    "key" : "12806",
+    "name" : "Kalow W. G.",
+    "location" : {
+      "formattedAddress" : "Hard Times Rd, Merryville, LA 70653, United States",
+      "coordinates" : [
+        30.62778,
+        -93.61455
+      ],
+      "country" : "United States",
+      "state" : "Louisiana",
+      "city" : "Merryville"
+    }
+  },
+  {
+    "key" : "12842",
+    "name" : "Harris Sandy Russell",
+    "location" : {
+      "formattedAddress" : "Griffin, GA, United States",
+      "coordinates" : [
+        33.24711,
+        -84.2636
+      ],
+      "country" : "United States",
+      "state" : "Georgia",
+      "city" : "Griffin"
+    }
+  },
+  {
+    "key" : "12850",
+    "name" : "Smith William R.",
+    "location" : {
+      "formattedAddress" : "Petersburg, VA, United States",
+      "coordinates" : [
+        37.22816,
+        -77.40348
+      ],
+      "country" : "United States",
+      "state" : "Virginia",
+      "city" : "Petersburg"
+    }
+  },
+  {
+    "key" : "12851",
+    "name" : "Smith Myrtle A.",
+    "location" : {
+      "formattedAddress" : "Denver, CO, United States",
+      "coordinates" : [
+        39.74001,
+        -104.99202
+      ],
+      "country" : "United States",
+      "state" : "Colorado",
+      "city" : "Denver"
+    }
+  },
+  {
+    "key" : "12852",
+    "name" : "Turpin Charles Lewis",
+    "location" : {
+      "formattedAddress" : "Flint, MI, United States",
+      "coordinates" : [
+        43.01144,
+        -83.68679
+      ],
+      "country" : "United States",
+      "state" : "Michigan",
+      "city" : "Flint"
+    }
+  },
+  {
+    "key" : "12853",
+    "name" : "Wallace Clarence E.",
+    "location" : {
+      "formattedAddress" : "New Orleans, LA, United States",
+      "coordinates" : [
+        29.9537,
+        -90.07775
+      ],
+      "country" : "United States",
+      "state" : "Louisiana",
+      "city" : "New Orleans"
+    }
+  },
+  {
+    "key" : "12854",
+    "name" : "Farmer Cecil J.",
+    "location" : {
+      "formattedAddress" : "Linstead, Jamaica",
+      "coordinates" : [
+        18.13694,
+        -77.03179
+      ],
+      "country" : "Jamaica",
+      "state" : null,
+      "city" : "Linstead"
+    }
+  },
+  {
+    "key" : "12878",
+    "name" : "Washington B. E.",
+    "location" : {
+      "formattedAddress" : "Sibley, Natchez, MS, United States",
+      "coordinates" : [
+        31.37823,
+        -91.396
+      ],
+      "country" : "United States",
+      "state" : "Mississippi",
+      "city" : "Natchez"
+    }
+  },
+  {
+    "key" : "12879",
+    "name" : "Clarke Milton",
+    "location" : {
+      "formattedAddress" : "Tyler, TX, United States",
+      "coordinates" : [
+        32.34763,
+        -95.2943
+      ],
+      "country" : "United States",
+      "state" : "Texas",
+      "city" : "Tyler"
+    }
+  },
+  {
+    "key" : "12880",
+    "name" : "Allen Albert H.",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "12881",
+    "name" : "Kaplan Arnold R.",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "12927",
+    "name" : "Smith Jerome A.",
+    "location" : {
+      "formattedAddress" : "Kingston, Jamaica",
+      "coordinates" : [
+        17.97094,
+        -76.78827
+      ],
+      "country" : "Jamaica",
+      "state" : null,
+      "city" : "Kingston"
+    }
+  },
+  {
+    "key" : "12928",
+    "name" : "McKay S. Seth",
+    "location" : {
+      "formattedAddress" : "Laufenburg Ln, Highland, WI 53543, United States",
+      "coordinates" : [
+        43.03064,
+        -90.4042
+      ],
+      "country" : "United States",
+      "state" : "Wisconsin",
+      "city" : "Highland"
+    }
+  },
+  {
+    "key" : "12937",
+    "name" : "Ewald Eric J. P.",
+    "location" : {
+      "formattedAddress" : "Syosset, NY, United States",
+      "coordinates" : [
+        40.82745,
+        -73.49544
+      ],
+      "country" : "United States",
+      "state" : "New York",
+      "city" : "Syosset"
+    }
+  },
+  {
+    "key" : "12997",
+    "name" : "Tolbert Isaac S.",
+    "location" : {
+      "formattedAddress" : "Nashville, TN, United States",
+      "coordinates" : [
+        36.16785,
+        -86.77816
+      ],
+      "country" : "United States",
+      "state" : "Tennessee",
+      "city" : "Nashville"
+    }
+  },
+  {
+    "key" : "12998",
+    "name" : "Fletcher Gorham Cornelius",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "13006",
+    "name" : "Green John Franklin",
+    "location" : {
+      "formattedAddress" : "Grand Junction, CO, United States",
+      "coordinates" : [
+        39.06879,
+        -108.56445
+      ],
+      "country" : "United States",
+      "state" : "Colorado",
+      "city" : "Grand Junction"
+    }
+  },
+  {
+    "key" : "13010",
+    "name" : "Belton Jean Ann",
+    "location" : {
+      "formattedAddress" : "Chesapeake, VA, United States",
+      "coordinates" : [
+        36.71429,
+        -76.24779
+      ],
+      "country" : "United States",
+      "state" : "Virginia",
+      "city" : "Chesapeake"
+    }
+  },
+  {
+    "key" : "13011",
+    "name" : "Bulkley E. D.",
+    "location" : {
+      "formattedAddress" : "Orangeburg, SC, United States",
+      "coordinates" : [
+        33.48935,
+        -80.86472
+      ],
+      "country" : "United States",
+      "state" : "South Carolina",
+      "city" : "Orangeburg"
+    }
+  },
+  {
+    "key" : "13012",
+    "name" : "Jackson Andrew L.",
+    "location" : {
+      "formattedAddress" : "Steelton, PA, United States",
+      "coordinates" : [
+        40.23542,
+        -76.84176
+      ],
+      "country" : "United States",
+      "state" : "Pennsylvania",
+      "city" : "Steelton"
+    }
+  },
+  {
+    "key" : "13040",
+    "name" : "Howard Mattie E.",
+    "location" : {
+      "formattedAddress" : "Tullahoma, TN, United States",
+      "coordinates" : [
+        35.3624,
+        -86.21201
+      ],
+      "country" : "United States",
+      "state" : "Tennessee",
+      "city" : "Tullahoma"
+    }
+  },
+  {
+    "key" : "13041",
+    "name" : "Faust Lula Clementine",
+    "location" : {
+      "formattedAddress" : "Texarkana, TX, United States",
+      "coordinates" : [
+        33.42558,
+        -94.04825
+      ],
+      "country" : "United States",
+      "state" : "Texas",
+      "city" : "Texarkana"
+    }
+  },
+  {
+    "key" : "13042",
+    "name" : "Davis A. E.",
+    "location" : {
+      "formattedAddress" : "Montgomery, AL, United States",
+      "coordinates" : [
+        32.38015,
+        -86.30008
+      ],
+      "country" : "United States",
+      "state" : "Alabama",
+      "city" : "Montgomery"
+    }
+  },
+  {
+    "key" : "13046",
+    "name" : "Robinson H. E.",
+    "location" : {
+      "formattedAddress" : "Cincinnati, OH, United States",
+      "coordinates" : [
+        39.10713,
+        -84.50413
+      ],
+      "country" : "United States",
+      "state" : "Ohio",
+      "city" : "Cincinnati"
+    }
+  },
+  {
+    "key" : "13058",
+    "name" : "Neal Aliman B.",
+    "location" : {
+      "formattedAddress" : "Quincy, FL, United States",
+      "coordinates" : [
+        30.58814,
+        -84.58093
+      ],
+      "country" : "United States",
+      "state" : "Florida",
+      "city" : "Quincy"
+    }
+  },
+  {
+    "key" : "13092",
+    "name" : "Blake A. W.",
+    "location" : {
+      "formattedAddress" : "Plant City, FL, United States",
+      "coordinates" : [
+        28.01732,
+        -82.12539
+      ],
+      "country" : "United States",
+      "state" : "Florida",
+      "city" : "Plant City"
+    }
+  },
+  {
+    "key" : "13096",
+    "name" : "Banner W. M.",
+    "location" : {
+      "formattedAddress" : "Johnson City, TN, United States",
+      "coordinates" : [
+        36.32008,
+        -82.34519
+      ],
+      "country" : "United States",
+      "state" : "Tennessee",
+      "city" : "Johnson City"
+    }
+  },
+  {
+    "key" : "13097",
+    "name" : "McLaurin A. F.",
+    "location" : {
+      "formattedAddress" : "Greensboro, NC, United States",
+      "coordinates" : [
+        36.06908,
+        -79.79503
+      ],
+      "country" : "United States",
+      "state" : "North Carolina",
+      "city" : "Greensboro"
+    }
+  },
+  {
+    "key" : "13126",
+    "name" : "Clark Peter W.",
+    "location" : {
+      "formattedAddress" : "Marianna, AR, United States",
+      "coordinates" : [
+        34.77396,
+        -90.7667
+      ],
+      "country" : "United States",
+      "state" : "Arkansas",
+      "city" : "Marianna"
+    }
+  },
+  {
+    "key" : "13162",
+    "name" : "Ballou Edgar Sampson",
+    "location" : {
+      "formattedAddress" : "Jacksonville, FL, United States",
+      "coordinates" : [
+        30.33147,
+        -81.65622
+      ],
+      "country" : "United States",
+      "state" : "Florida",
+      "city" : "Jacksonville"
+    }
+  },
+  {
+    "key" : "13163",
+    "name" : "Credge Annie Denton",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "13164",
+    "name" : "Jackson John Henry",
+    "location" : {
+      "formattedAddress" : "Lexington, KY, United States",
+      "coordinates" : [
+        38.0486,
+        -84.50032
+      ],
+      "country" : "United States",
+      "state" : "Kentucky",
+      "city" : "Lexington"
+    }
+  },
+  {
+    "key" : "13167",
+    "name" : "Powell Vernon H.",
+    "location" : {
+      "formattedAddress" : "Shreveport, LA, United States",
+      "coordinates" : [
+        32.51487,
+        -93.74689
+      ],
+      "country" : "United States",
+      "state" : "Louisiana",
+      "city" : "Shreveport"
+    }
+  },
+  {
+    "key" : "13168",
+    "name" : "Carr Andrew Jackson",
+    "location" : {
+      "formattedAddress" : "Birmingham, AL, United States",
+      "coordinates" : [
+        33.52068,
+        -86.81176
+      ],
+      "country" : "United States",
+      "state" : "Alabama",
+      "city" : "Birmingham"
+    }
+  },
+  {
+    "key" : "13169",
+    "name" : "Pryor Chester Cornelius",
+    "location" : {
+      "formattedAddress" : "Cincinnati, OH, United States",
+      "coordinates" : [
+        39.10713,
+        -84.50413
+      ],
+      "country" : "United States",
+      "state" : "Ohio",
+      "city" : "Cincinnati"
+    }
+  },
+  {
+    "key" : "13170",
+    "name" : "Stinson Joseph M.",
+    "location" : {
+      "formattedAddress" : "Hartwell, GA, United States",
+      "coordinates" : [
+        34.35347,
+        -82.93228
+      ],
+      "country" : "United States",
+      "state" : "Georgia",
+      "city" : "Hartwell"
+    }
+  },
+  {
+    "key" : "13171",
+    "name" : "Toppin Kenneth Lester",
+    "location" : {
+      "formattedAddress" : "New York, NY, United States",
+      "coordinates" : [
+        40.71455,
+        -74.00714
+      ],
+      "country" : "United States",
+      "state" : "New York",
+      "city" : "New York"
+    }
+  },
+  {
+    "key" : "13172",
+    "name" : "Wiley L. D.",
+    "location" : {
+      "formattedAddress" : "Widener, AR, United States",
+      "coordinates" : [
+        35.0238,
+        -90.68425
+      ],
+      "country" : "United States",
+      "state" : "Arkansas",
+      "city" : "Widener"
+    }
+  },
+  {
+    "key" : "13223",
+    "name" : "Marrow Adolph Alexander",
+    "location" : {
+      "formattedAddress" : "Morristown, NJ, United States",
+      "coordinates" : [
+        40.79352,
+        -74.47774
+      ],
+      "country" : "United States",
+      "state" : "New Jersey",
+      "city" : "Morristown"
+    }
+  },
+  {
+    "key" : "13224",
+    "name" : "Chatman Alfred L.",
+    "location" : {
+      "formattedAddress" : "Baton Rouge, LA, United States",
+      "coordinates" : [
+        30.44335,
+        -91.18664
+      ],
+      "country" : "United States",
+      "state" : "Louisiana",
+      "city" : "Baton Rouge"
+    }
+  },
+  {
+    "key" : "13225",
+    "name" : "Edelin Kenneth Carlton",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "13246",
+    "name" : "Nelson Marlene",
+    "location" : {
+      "formattedAddress" : "Atlantic City, NJ, United States",
+      "coordinates" : [
+        39.3628799,
+        -74.42638
+      ],
+      "country" : "United States",
+      "state" : "New Jersey",
+      "city" : "Atlantic City"
+    }
+  },
+  {
+    "key" : "13264",
+    "name" : "Jacobs Harold J.",
+    "location" : {
+      "formattedAddress" : "New York, NY, United States",
+      "coordinates" : [
+        40.71455,
+        -74.00714
+      ],
+      "country" : "United States",
+      "state" : "New York",
+      "city" : "New York"
+    }
+  },
+  {
+    "key" : "13265",
+    "name" : "Perkins Bernard",
+    "location" : {
+      "formattedAddress" : "Helena, AR, United States",
+      "coordinates" : [
+        34.52867,
+        -90.59123
+      ],
+      "country" : "United States",
+      "state" : "Arkansas",
+      "city" : "Helena"
+    }
+  },
+  {
+    "key" : "13267",
+    "name" : "Dailey Warren Bertrard",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "13269",
+    "name" : "Campbell Samuel S.",
+    "location" : {
+      "formattedAddress" : "Jacksonville, FL, United States",
+      "coordinates" : [
+        30.33147,
+        -81.65622
+      ],
+      "country" : "United States",
+      "state" : "Florida",
+      "city" : "Jacksonville"
+    }
+  },
+  {
+    "key" : "13284",
+    "name" : "Brown Samuel",
+    "location" : {
+      "formattedAddress" : "Des Moines, IA, United States",
+      "coordinates" : [
+        41.58982,
+        -93.61538
+      ],
+      "country" : "United States",
+      "state" : "Iowa",
+      "city" : "Des Moines"
+    }
+  },
+  {
+    "key" : "13285",
+    "name" : "Phillips Clyde W.",
+    "location" : {
+      "formattedAddress" : "Chicago, IL, United States",
+      "coordinates" : [
+        41.88425,
+        -87.63245
+      ],
+      "country" : "United States",
+      "state" : "Illinois",
+      "city" : "Chicago"
+    }
+  },
+  {
+    "key" : "13286",
+    "name" : "Terry William Henry",
+    "location" : {
+      "formattedAddress" : "Philadelphia, PA, United States",
+      "coordinates" : [
+        39.95223,
+        -75.16218
+      ],
+      "country" : "United States",
+      "state" : "Pennsylvania",
+      "city" : "Philadelphia"
+    }
+  },
+  {
+    "key" : "13328",
+    "name" : "Amonitti George J.",
+    "location" : {
+      "formattedAddress" : "Philadelphia, PA, United States",
+      "coordinates" : [
+        39.95223,
+        -75.16218
+      ],
+      "country" : "United States",
+      "state" : "Pennsylvania",
+      "city" : "Philadelphia"
+    }
+  },
+  {
+    "key" : "13338",
+    "name" : "Braunfeld Jonathan C.",
+    "location" : {
+      "formattedAddress" : "Brooklyn, NY, United States",
+      "coordinates" : [
+        40.69246,
+        -73.99036
+      ],
+      "country" : "United States",
+      "state" : "New York",
+      "city" : "Brooklyn"
+    }
+  },
+  {
+    "key" : "13339",
+    "name" : "Russell Carrie N.",
+    "location" : {
+      "formattedAddress" : "Tulsa, OK, United States",
+      "coordinates" : [
+        36.1501,
+        -95.99352
+      ],
+      "country" : "United States",
+      "state" : "Oklahoma",
+      "city" : "Tulsa"
+    }
+  },
+  {
+    "key" : "13341",
+    "name" : "Freeman Garman P.",
+    "location" : {
+      "formattedAddress" : "Brinkley, AR, United States",
+      "coordinates" : [
+        34.86739,
+        -91.18848
+      ],
+      "country" : "United States",
+      "state" : "Arkansas",
+      "city" : "Brinkley"
+    }
+  },
+  {
+    "key" : "13347",
+    "name" : "Balakhani Mehdi",
+    "location" : {
+      "formattedAddress" : "Tehran, Iran",
+      "coordinates" : [
+        35.68878,
+        51.41503
+      ],
+      "country" : "Iran",
+      "state" : null,
+      "city" : "Tehran"
+    }
+  },
+  {
+    "key" : "13356",
+    "name" : "Dockery Robert Wyatt",
+    "location" : {
+      "formattedAddress" : "Statesville, NC, United States",
+      "coordinates" : [
+        35.78589,
+        -80.88899
+      ],
+      "country" : "United States",
+      "state" : "North Carolina",
+      "city" : "Statesville"
+    }
+  },
+  {
+    "key" : "13417",
+    "name" : "Gordon R. A.",
+    "location" : {
+      "formattedAddress" : "Port Gibson, MS, United States",
+      "coordinates" : [
+        31.96,
+        -90.98211
+      ],
+      "country" : "United States",
+      "state" : "Mississippi",
+      "city" : "Port Gibson"
+    }
+  },
+  {
+    "key" : "13418",
+    "name" : "Jett Emmett J.",
+    "location" : {
+      "formattedAddress" : "Detroit, MI, United States",
+      "coordinates" : [
+        42.33168,
+        -83.048
+      ],
+      "country" : "United States",
+      "state" : "Michigan",
+      "city" : "Detroit"
+    }
+  },
+  {
+    "key" : "13432",
+    "name" : "Evans Lenore Ina",
+    "location" : {
+      "formattedAddress" : "Chicago, IL, United States",
+      "coordinates" : [
+        41.88425,
+        -87.63245
+      ],
+      "country" : "United States",
+      "state" : "Illinois",
+      "city" : "Chicago"
+    }
+  },
+  {
+    "key" : "13448",
+    "name" : "Alexander Girardeau",
+    "location" : {
+      "formattedAddress" : "Brooklyn, NY, United States",
+      "coordinates" : [
+        40.69246,
+        -73.99036
+      ],
+      "country" : "United States",
+      "state" : "New York",
+      "city" : "Brooklyn"
+    }
+  },
+  {
+    "key" : "13501",
+    "name" : "Stain Stanley",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "13514",
+    "name" : "Fobbs Denard M.",
+    "location" : {
+      "formattedAddress" : "Houston, TX, United States",
+      "coordinates" : [
+        29.76059,
+        -95.36968
+      ],
+      "country" : "United States",
+      "state" : "Texas",
+      "city" : "Houston"
+    }
+  },
+  {
+    "key" : "13529",
+    "name" : "Jefferson Donzleigh H.",
+    "location" : {
+      "formattedAddress" : "Nashville, TN, United States",
+      "coordinates" : [
+        36.16785,
+        -86.77816
+      ],
+      "country" : "United States",
+      "state" : "Tennessee",
+      "city" : "Nashville"
+    }
+  },
+  {
+    "key" : "13530",
+    "name" : "Vick Robert Elliott",
+    "location" : {
+      "formattedAddress" : "Wilson, NC, United States",
+      "coordinates" : [
+        35.72197,
+        -77.91638
+      ],
+      "country" : "United States",
+      "state" : "North Carolina",
+      "city" : "Wilson"
+    }
+  },
+  {
+    "key" : "13531",
+    "name" : "Scher Richard",
+    "location" : {
+      "formattedAddress" : "Brooklyn, NY, United States",
+      "coordinates" : [
+        40.69246,
+        -73.99036
+      ],
+      "country" : "United States",
+      "state" : "New York",
+      "city" : "Brooklyn"
+    }
+  },
+  {
+    "key" : "13533",
+    "name" : "Corbin Eustace Elsworth",
+    "location" : {
+      "formattedAddress" : "Mamaroneck, NY, United States",
+      "coordinates" : [
+        40.94889,
+        -73.73569
+      ],
+      "country" : "United States",
+      "state" : "New York",
+      "city" : "Mamaroneck"
+    }
+  },
+  {
+    "key" : "13534",
+    "name" : "Shivers Reuben Edward",
+    "location" : {
+      "formattedAddress" : "Belleville, IL, United States",
+      "coordinates" : [
+        38.51242,
+        -89.98423
+      ],
+      "country" : "United States",
+      "state" : "Illinois",
+      "city" : "Belleville"
+    }
+  },
+  {
+    "key" : "13535",
+    "name" : "Barron Eusebius Marion",
+    "location" : {
+      "formattedAddress" : "Nashville, TN, United States",
+      "coordinates" : [
+        36.16785,
+        -86.77816
+      ],
+      "country" : "United States",
+      "state" : "Tennessee",
+      "city" : "Nashville"
+    }
+  },
+  {
+    "key" : "13536",
+    "name" : "Evans James A.",
+    "location" : {
+      "formattedAddress" : "Columbus, MS, United States",
+      "coordinates" : [
+        33.49504,
+        -88.4288
+      ],
+      "country" : "United States",
+      "state" : "Mississippi",
+      "city" : "Columbus"
+    }
+  },
+  {
+    "key" : "13584",
+    "name" : "Henderson Forrester Cicero",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "13609",
+    "name" : "Scott William D.",
+    "location" : {
+      "formattedAddress" : "AL, United States",
+      "coordinates" : [
+        32.38015,
+        -86.30008
+      ],
+      "country" : "United States",
+      "state" : "Alabama",
+      "city" : null
+    }
+  },
+  {
+    "key" : "13610",
+    "name" : "Gray Roberta",
+    "location" : {
+      "formattedAddress" : "Memphis, TN, United States",
+      "coordinates" : [
+        35.14977,
+        -90.04926
+      ],
+      "country" : "United States",
+      "state" : "Tennessee",
+      "city" : "Memphis"
+    }
+  },
+  {
+    "key" : "13611",
+    "name" : "Harper William Edwin",
+    "location" : {
+      "formattedAddress" : "Atlanta, GA, United States",
+      "coordinates" : [
+        33.74832,
+        -84.39111
+      ],
+      "country" : "United States",
+      "state" : "Georgia",
+      "city" : "Atlanta"
+    }
+  },
+  {
+    "key" : "13612",
+    "name" : "De Leon Ramon",
+    "location" : {
+      "formattedAddress" : "Los Fresnos, TX, United States",
+      "coordinates" : [
+        26.07172,
+        -97.477
+      ],
+      "country" : "United States",
+      "state" : "Texas",
+      "city" : "Los Fresnos"
+    }
+  },
+  {
+    "key" : "13613",
+    "name" : "Frasier O. B.",
+    "location" : {
+      "formattedAddress" : "Manning, SC, United States",
+      "coordinates" : [
+        33.6952,
+        -80.21134
+      ],
+      "country" : "United States",
+      "state" : "South Carolina",
+      "city" : "Manning"
+    }
+  },
+  {
+    "key" : "13631",
+    "name" : "Hazelton Rhoda Browne",
+    "location" : {
+      "formattedAddress" : "Camden, NJ, United States",
+      "coordinates" : [
+        39.94526,
+        -75.11913
+      ],
+      "country" : "United States",
+      "state" : "New Jersey",
+      "city" : "Camden"
+    }
+  },
+  {
+    "key" : "13632",
+    "name" : "Caldwell Esly S.",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "13669",
+    "name" : "Jenkins Robert J.",
+    "location" : {
+      "formattedAddress" : "Orangeburg, SC, United States",
+      "coordinates" : [
+        33.48935,
+        -80.86472
+      ],
+      "country" : "United States",
+      "state" : "South Carolina",
+      "city" : "Orangeburg"
+    }
+  },
+  {
+    "key" : "13670",
+    "name" : "Grossman Nathan",
+    "location" : {
+      "formattedAddress" : "Worcester, MA, United States",
+      "coordinates" : [
+        42.26341,
+        -71.80219
+      ],
+      "country" : "United States",
+      "state" : "Massachusetts",
+      "city" : "Worcester"
+    }
+  },
+  {
+    "key" : "13671",
+    "name" : "Jones Caesar N.",
+    "location" : {
+      "formattedAddress" : "Philadelphia, PA, United States",
+      "coordinates" : [
+        39.95223,
+        -75.16218
+      ],
+      "country" : "United States",
+      "state" : "Pennsylvania",
+      "city" : "Philadelphia"
+    }
+  },
+  {
+    "key" : "13672",
+    "name" : "Durette J. S.",
+    "location" : {
+      "formattedAddress" : "Ruckersville, GA, United States",
+      "coordinates" : [
+        34.16487,
+        -82.78822
+      ],
+      "country" : "United States",
+      "state" : "Georgia",
+      "city" : "Ruckersville"
+    }
+  },
+  {
+    "key" : "13673",
+    "name" : "McDew Burroughs M.",
+    "location" : {
+      "formattedAddress" : "McDew Rd, Hazlehurst, GA 31539, United States",
+      "coordinates" : [
+        31.81993,
+        -82.70717
+      ],
+      "country" : "United States",
+      "state" : "Georgia",
+      "city" : "Hazlehurst"
+    }
+  },
+  {
+    "key" : "13674",
+    "name" : "Ricafort Enrico Inarda",
+    "location" : {
+      "formattedAddress" : "Nashville, TN, United States",
+      "coordinates" : [
+        36.16785,
+        -86.77816
+      ],
+      "country" : "United States",
+      "state" : "Tennessee",
+      "city" : "Nashville"
+    }
+  },
+  {
+    "key" : "13680",
+    "name" : "Francois Howard J.",
+    "location" : {
+      "formattedAddress" : "Port Arthur, TX, United States",
+      "coordinates" : [
+        29.89941,
+        -93.92949
+      ],
+      "country" : "United States",
+      "state" : "Texas",
+      "city" : "Port Arthur"
+    }
+  },
+  {
+    "key" : "13682",
+    "name" : "Wilder Jean M.",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "13683",
+    "name" : "Bass Frederick E.",
+    "location" : {
+      "formattedAddress" : "Brooklyn, NY, United States",
+      "coordinates" : [
+        40.69246,
+        -73.99036
+      ],
+      "country" : "United States",
+      "state" : "New York",
+      "city" : "Brooklyn"
+    }
+  },
+  {
+    "key" : "13685",
+    "name" : "Block Walter B.",
+    "location" : {
+      "formattedAddress" : "Meridian, MS, United States",
+      "coordinates" : [
+        32.36509,
+        -88.70308
+      ],
+      "country" : "United States",
+      "state" : "Mississippi",
+      "city" : "Meridian"
+    }
+  },
+  {
+    "key" : "13686",
+    "name" : "Taylor Oliver",
+    "location" : {
+      "formattedAddress" : "Atlanta, GA, United States",
+      "coordinates" : [
+        33.74832,
+        -84.39111
+      ],
+      "country" : "United States",
+      "state" : "Georgia",
+      "city" : "Atlanta"
+    }
+  },
+  {
+    "key" : "13687",
+    "name" : "Friedenthal Aaron L.",
+    "location" : {
+      "formattedAddress" : "New York, NY, United States",
+      "coordinates" : [
+        40.71455,
+        -74.00714
+      ],
+      "country" : "United States",
+      "state" : "New York",
+      "city" : "New York"
+    }
+  },
+  {
+    "key" : "13688",
+    "name" : "Rachels Anthony Walton",
+    "location" : {
+      "formattedAddress" : "Los Angeles, CA, United States",
+      "coordinates" : [
+        34.0534899,
+        -118.24532
+      ],
+      "country" : "United States",
+      "state" : "California",
+      "city" : "Los Angeles"
+    }
+  },
+  {
+    "key" : "13690",
+    "name" : "Newell John",
+    "location" : {
+      "formattedAddress" : "Charenton, LA, United States",
+      "coordinates" : [
+        29.88311,
+        -91.52399
+      ],
+      "country" : "United States",
+      "state" : "Louisiana",
+      "city" : "Charenton"
+    }
+  },
+  {
+    "key" : "13719",
+    "name" : "Allen Alvin Mathews",
+    "location" : {
+      "formattedAddress" : "Washington, DC, United States",
+      "coordinates" : [
+        38.89037,
+        -77.03196
+      ],
+      "country" : "United States",
+      "state" : "District of Columbia",
+      "city" : "Washington"
+    }
+  },
+  {
+    "key" : "13720",
+    "name" : "Murray Robert Lambert",
+    "location" : {
+      "formattedAddress" : "New York, NY, United States",
+      "coordinates" : [
+        40.71455,
+        -74.00714
+      ],
+      "country" : "United States",
+      "state" : "New York",
+      "city" : "New York"
+    }
+  },
+  {
+    "key" : "13721",
+    "name" : "Withers Lucius",
+    "location" : {
+      "formattedAddress" : "Biltmore Forest, NC, United States",
+      "coordinates" : [
+        35.53317,
+        -82.52795
+      ],
+      "country" : "United States",
+      "state" : "North Carolina",
+      "city" : "Biltmore Forest"
+    }
+  },
+  {
+    "key" : "13723",
+    "name" : "Clairborne Ada Wallace",
+    "location" : {
+      "formattedAddress" : "Oklahoma City, OK, United States",
+      "coordinates" : [
+        35.47204,
+        -97.52107
+      ],
+      "country" : "United States",
+      "state" : "Oklahoma",
+      "city" : "Oklahoma City"
+    }
+  },
+  {
+    "key" : "13754",
+    "name" : "Gordon Theodore Scott",
+    "location" : {
+      "formattedAddress" : "Philadelphia, PA, United States",
+      "coordinates" : [
+        39.95223,
+        -75.16218
+      ],
+      "country" : "United States",
+      "state" : "Pennsylvania",
+      "city" : "Philadelphia"
+    }
+  },
+  {
+    "key" : "13755",
+    "name" : "Savage Edward Warren",
+    "location" : {
+      "formattedAddress" : "Macon, GA, United States",
+      "coordinates" : [
+        32.83999,
+        -83.62808
+      ],
+      "country" : "United States",
+      "state" : "Georgia",
+      "city" : "Macon"
+    }
+  },
+  {
+    "key" : "13756",
+    "name" : "Burney William Warren",
+    "location" : {
+      "formattedAddress" : "Wichita, KS, United States",
+      "coordinates" : [
+        37.68698,
+        -97.33558
+      ],
+      "country" : "United States",
+      "state" : "Kansas",
+      "city" : "Wichita"
+    }
+  },
+  {
+    "key" : "13761",
+    "name" : "McFadden Frederick C.",
+    "location" : {
+      "formattedAddress" : "Jamaica, NY, United States",
+      "coordinates" : [
+        40.7018,
+        -73.80853
+      ],
+      "country" : "United States",
+      "state" : "New York",
+      "city" : "Jamaica"
+    }
+  }
+]

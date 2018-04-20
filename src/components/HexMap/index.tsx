@@ -39,7 +39,7 @@ export default class HexMap extends React.Component <Props, State> {
 
         this.state = {
             featureCollection: worldGeoJson,
-            projection: geoEquirectangular().scale(200).translate([(width - 75) / 2, height / 2])
+            projection: geoEquirectangular().scale(200).translate([(width + 0) / 2, height / 2])
         }
     }
 
