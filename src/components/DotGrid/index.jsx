@@ -1,8 +1,11 @@
 import * as React from 'react'
 import * as d3 from 'd3'
-import { Sprite, Stage, Graphics } from 'react-pixi-fiber';
+import { Sprite, Stage, Graphics, ParticleContainer } from 'react-pixi-fiber';
 import test from '../../images/test.png';
 import d3LayoutGrid from './d3LayoutGrid';
+import GridLayout from './GridLayout.jsx';
+import Test from './Test.jsx';
+import _groupBy from 'lodash.groupby';
 
 import styled from 'styled-components'
 import Datamap from 'datamaps'
@@ -19,54 +22,45 @@ const MapContainer = styled.div`
     width: 100%;
 `
 
-function gridLayout(points, pointWidth, gridWidth) {
-    const pointHeight = pointWidth * 2;
-    const pointsPerRow = Math.floor(gridWidth / pointWidth * 2);
-    const numRows = points.length / pointsPerRow;
-  
-    return points.map((point, i) => {
-        return (
-            // <Dot
-            //     x={pointWidth * 2 * (i % pointsPerRow) + pointWidth}
-            //     y={pointHeight * Math.floor(i / pointsPerRow)}
-            //     radius={pointWidth}
-            //     fill={0xFFFF00}
-            //     key={i}
-            // />
-            <Sprite
-                x={pointWidth * 2 * (i % pointsPerRow) + pointWidth}
-                y={pointHeight * Math.floor(i / pointsPerRow)}
-                height={pointWidth}
-                width={pointWidth}
-                fill={0xFFFF00}
-                texture={PIXI.Texture.fromImage(dot)}
-                key={i}
-                interactive={true}
-                click={() => console.log('clicked sprite')}
-            />
-          );
-    });
-}
+const HEIGHT = 450;
+const WIDTH = 600;
 
 export default class Map extends React.Component {
     constructor (props) {
         super (props)
+
+        this.state = {
+            groupValue: 'name'
+        }
     }
     render () {
+        console.log('render');
         const pointWidth = 20;
         const width = window.innerWidth;
 
-        const points = gridLayout(doctors, pointWidth, 200);
+        const groups = _groupBy(doctors, (doctor) => doctor[this.state.groupValue]);
+        console.log(groups);
+        const groupedPoints = Object.keys(groups).map((key, index) => {
+            return (
+                <GridLayout
+                    points={groups[key]}
+                    pointWidth={pointWidth}
+                    gridWidth={100}
+                    keyValue={key}
+                    groupIndex={index}
+                />
+            );
+        });
 
-        console.log(points)
+        console.log(groupedPoints);
 
         return (
             <Stage
-                width={window.innerWidth}
                 height={window.innerHeight}
-                options={{ backgroundColor: 0x10bb99 }}
+                width={window.innerWidth}
+                // onClick={() => this.setState({ groupValue: 'value' })}
             >
-                {points}
+                <Test />
             </Stage>
         )
     }
