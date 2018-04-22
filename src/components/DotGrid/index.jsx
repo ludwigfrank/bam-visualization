@@ -22,8 +22,8 @@ const MapContainer = styled.div`
     width: 100%;
 `
 
-const HEIGHT = window.innerHeight / 2;
-const WIDTH = window.innerWidth / 2;
+const HEIGHT = window.innerHeight * 0.8;
+const WIDTH = window.innerWidth * 0.8;
 const OPTIONS = {
     backgroundColor: 0xf5f5f5
 };
