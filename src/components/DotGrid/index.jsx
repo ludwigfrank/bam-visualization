@@ -24,6 +24,9 @@ const MapContainer = styled.div`
 
 const HEIGHT = window.innerHeight / 2;
 const WIDTH = window.innerWidth / 2;
+const OPTIONS = {
+    backgroundColor: 0xf5f5f5
+};
 
 export default class Map extends React.Component {
     constructor (props) {
@@ -58,11 +61,14 @@ export default class Map extends React.Component {
         console.log(groupedPoints);
 
         return (
-            <div>
+            <div style={{
+                border: '2px solid red',
+            }}>
                 <Stage
                     height={HEIGHT}
                     width={WIDTH}
                     interactiveChildren
+                    options={OPTIONS}
                     // onClick={() => this.setState({ groupValue: 'value' })}
                 >
                     <DotGrid

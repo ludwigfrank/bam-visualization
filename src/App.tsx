@@ -1,6 +1,6 @@
 import * as React from 'react'
 // import HexMap from './components/HexMap'
-import DotGrid from './components/DotGrid/index.jsx'
+import Physicians from './pages/Physicians.jsx'
 import './App.css'
 
 class App extends React.Component {
@@ -8,7 +8,7 @@ class App extends React.Component {
         return (
             <div className="App">
                 {/* <HexMap /> */}
-                <DotGrid />
+                <Physicians />
             </div>
         )
     }

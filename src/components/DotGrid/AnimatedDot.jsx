@@ -21,22 +21,22 @@ export default class AnimatedDot extends Component {
 
         this.state = {
             counter: 0,
-            scale: new Animated.ValueXY({ x: 1, y: 1 }),
+            scale: new Animated.ValueXY({ x: 0.4, y: 0.4 }),
             rotation: new Animated.Value(0),
             position: new Animated.ValueXY({ x: props.x, y: props.y })
         };
     }
 
     shrink = () => {
-        Animated.spring(this.state.scale, { toValue: { x: 1, y: 1 } }).start();
+        Animated.spring(this.state.scale, { toValue: { x: 0.4, y: 0.4 } }).start();
         Animated.spring(this.state.rotation, { toValue: 0 }).start();
         Animated.spring(this.state.position, { toValue: { x: this.props.x, y: this.props.y } }).start();
     };
 
     grow = () => {
-        Animated.spring(this.state.scale, { toValue: { x: 8, y: 8 } }).start();
+        Animated.spring(this.state.scale, { toValue: { x: 1, y: 1 } }).start();
         Animated.spring(this.state.rotation, { toValue: 1 }).start();
-        Animated.spring(this.state.position, { toValue: { x: window.innerWidth / 2, y: window.innerHeight / 2 + 100 * this.state.counter} }).start();
+        Animated.spring(this.state.position, { toValue: { x: window.innerWidth / 4, y: window.innerHeight / 4 + 100 * this.state.counter} }).start();
     };
 
     render() {
