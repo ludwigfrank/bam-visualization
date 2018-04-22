@@ -32,6 +32,10 @@ export default class DotGrid extends Component {
                     gridWidth={this.props.gridWidth}
                     points={this.props.points}
                     groupIndex={this.props.groupIndex}
+                    pointerdown={() => console.log('dot grid')}
+                    mousedown={() => console.log('dot grid')}
+                    onClick={() => console.log('dot grid')}
+                    animationCallback={this.props.animationCallback}
                 />
             );
         });

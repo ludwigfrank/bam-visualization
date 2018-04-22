@@ -22,8 +22,8 @@ const MapContainer = styled.div`
     width: 100%;
 `
 
-const HEIGHT = window.innerHeight;
-const WIDTH = window.innerWidth;
+const HEIGHT = window.innerHeight / 2;
+const WIDTH = window.innerWidth / 2;
 
 export default class Map extends React.Component {
     constructor (props) {
@@ -32,6 +32,9 @@ export default class Map extends React.Component {
         this.state = {
             groupValue: 'name'
         }
+    }
+    animationCallback(callback) {
+        console.log(callback);
     }
     render () {
         console.log('render');
@@ -55,18 +58,33 @@ export default class Map extends React.Component {
         console.log(groupedPoints);
 
         return (
-            <Stage
-                height={HEIGHT}
-                width={WIDTH}
-                // onClick={() => this.setState({ groupValue: 'value' })}
-            >
-                <DotGrid
-                    pointWidth={30}
-                    gridWidth={WIDTH}
-                    points={[1,2,3,4,5]}
-                    groupIndex={0}
-                />
-            </Stage>
+            <div>
+                <Stage
+                    height={HEIGHT}
+                    width={WIDTH}
+                    interactiveChildren
+                    // onClick={() => this.setState({ groupValue: 'value' })}
+                >
+                    <DotGrid
+                        pointWidth={30}
+                        gridWidth={WIDTH}
+                        points={doctors}
+                        groupIndex={0}
+                        interactive
+                        pointerdown={() => console.log('dot grid')}
+                        onClick={() => console.log('dot grid')}
+                        animationCallback={this.animationCallback}
+                    />
+                </Stage>
+                <button
+                    onClick={() => {
+                        console.log('clicked button');
+                        this.animationCallback();
+                    }}
+                >
+                    {'button'}
+                </button>
+            </div>
         )
     }
 }
