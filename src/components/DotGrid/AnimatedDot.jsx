@@ -18,27 +18,27 @@ const OPTIONS = {
 
 const AnimatedSprite = Animated.createAnimatedComponent(Sprite);
 
-export default class App extends Component {
+export default class AnimatedDot extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
             scale: new Animated.ValueXY({ x: 1, y: 1 }),
             rotation: new Animated.Value(0),
-            position: new Animated.ValueXY({ x: WIDTH / 2, y: HEIGHT / 2 })
+            position: new Animated.ValueXY({ x: props.x, y: props.y })
         };
     }
 
     shrink = () => {
         Animated.spring(this.state.scale, { toValue: { x: 1, y: 1 } }).start();
         Animated.spring(this.state.rotation, { toValue: 0 }).start();
-        Animated.spring(this.state.position, { toValue: { x: 300, y: 300 } }).start();
+        Animated.spring(this.state.position, { toValue: { x: this.props.x, y: this.props.y } }).start();
     };
 
     grow = () => {
         Animated.spring(this.state.scale, { toValue: { x: 8, y: 8 } }).start();
         Animated.spring(this.state.rotation, { toValue: 1 }).start();
-        Animated.spring(this.state.position, { toValue: { x: 100, y: 100 } }).start();
+        Animated.spring(this.state.position, { toValue: { x: window.innerWidth / 2, y: window.innerHeight / 2 } }).start();
     };
 
     render() {

@@ -4,7 +4,7 @@ import { Sprite, Stage, Graphics, ParticleContainer } from 'react-pixi-fiber';
 import test from '../../images/test.png';
 import d3LayoutGrid from './d3LayoutGrid';
 import GridLayout from './GridLayout.jsx';
-import Test from './Test.jsx';
+import DotGrid from './DotGrid.jsx';
 import _groupBy from 'lodash.groupby';
 
 import styled from 'styled-components'
@@ -22,8 +22,8 @@ const MapContainer = styled.div`
     width: 100%;
 `
 
-const HEIGHT = 450;
-const WIDTH = 600;
+const HEIGHT = window.innerHeight;
+const WIDTH = window.innerWidth;
 
 export default class Map extends React.Component {
     constructor (props) {
@@ -56,11 +56,16 @@ export default class Map extends React.Component {
 
         return (
             <Stage
-                height={window.innerHeight}
-                width={window.innerWidth}
+                height={HEIGHT}
+                width={WIDTH}
                 // onClick={() => this.setState({ groupValue: 'value' })}
             >
-                <Test />
+                <DotGrid
+                    pointWidth={30}
+                    gridWidth={WIDTH}
+                    points={[1,2,3,4,5]}
+                    groupIndex={0}
+                />
             </Stage>
         )
     }
