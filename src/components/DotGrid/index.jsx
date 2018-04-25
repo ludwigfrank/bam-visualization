@@ -36,6 +36,9 @@ export default class Map extends React.Component {
             groupValue: 'name'
         }
     }
+    shouldComponentUpdate() {
+        return false;
+    }
     animationCallback(callback) {
         console.log(callback);
     }
@@ -67,7 +70,6 @@ export default class Map extends React.Component {
                 <Stage
                     height={HEIGHT}
                     width={WIDTH}
-                    interactiveChildren
                     options={OPTIONS}
                     // onClick={() => this.setState({ groupValue: 'value' })}
                 >

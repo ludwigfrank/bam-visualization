@@ -95,7 +95,7 @@ export default class HexMap extends React.Component <Props, State> {
             featureCollection: usJson
         })
         this.drawGeo(usJson).catch(e => {
-            console.log(e)
+            // console.log(e)
         })
     }
 

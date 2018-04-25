@@ -21,30 +21,36 @@ export default class AnimatedDot extends Component {
 
         this.state = {
             counter: 0,
-            scale: new Animated.ValueXY({ x: 0.4, y: 0.4 }),
+            // scale: new Animated.ValueXY({ x: 0.4, y: 0.4 }),
             rotation: new Animated.Value(0),
             position: new Animated.ValueXY({ x: props.x, y: props.y })
         };
     }
-
+    shouldComponentUpdate() {
+        this.grow();
+        return false;
+    }
+    componentDidMount() {
+        this.props.triggerAnimation(this.grow);
+    }
     shrink = () => {
-        Animated.spring(this.state.scale, { toValue: { x: 0.4, y: 0.4 } }).start();
-        Animated.spring(this.state.rotation, { toValue: 0 }).start();
-        Animated.spring(this.state.position, { toValue: { x: this.props.x, y: this.props.y } }).start();
-    };
-
+        // Animated.timing(this.state.scale, { toValue: { x: 0.4, y: 0.4 }, duration: 500 }).start();
+        Animated.timing(this.state.rotation, { toValue: 0, duration: 500 }).start();
+        Animated.timing(this.state.position, { toValue: { x: this.props.x, y: this.props.y }, duration: 500 }).start();
+    }
     grow = () => {
-        Animated.spring(this.state.scale, { toValue: { x: 1, y: 1 } }).start();
-        Animated.spring(this.state.rotation, { toValue: 1 }).start();
-        Animated.spring(this.state.position, { toValue: { x: window.innerWidth / 4, y: window.innerHeight / 4 + 100 * this.state.counter} }).start();
-    };
-
+        // Animated.timing(this.state.scale, { toValue: { x: 1, y: 1 }, duration: 500 }).start();
+        Animated.timing(this.state.rotation, { toValue: 0, duration: 500 }).start();
+        Animated.timing(this.state.position, { toValue: { x: window.innerWidth / 4, y: window.innerHeight / 4 + 100 * this.state.counter}, duration: 500 }).start();
+    }
     render() {
         return (
             <AnimatedSprite
                 anchor={CENTER}
                 cursor="pointer"
                 interactive
+                pointerover={() => null}
+                pointerout={() => null}
                 pointerdown={this.grow}
                 pointerup={this.shrink}
                 position={this.state.position}
@@ -52,10 +58,9 @@ export default class AnimatedDot extends Component {
                     inputRange: [0, 1],
                     outputRange: [0, Math.PI * 2]
                 })}
-                scale={this.state.scale}
+                // scale={this.state.scale}
                 texture={PIXI.Texture.fromImage(dot)}
                 buttonMode
-                animationCallback={this.props.animationCallback(this.grow)}
             />
         );
     }

@@ -51,7 +51,7 @@ export default class GridLayout extends React.Component {
         const pointsPerRow = Math.floor(this.props.gridWidth / this.props.pointWidth * 2);
         const numRows = this.props.points.length / pointsPerRow;
 
-        console.log(this.props.points);
+        // console.log(this.props.points);
 
         const particleSprites = this.props.points.map((point, i) => {
             const AnimatedSprite = Animated.createAnimatedComponent(Sprite);
