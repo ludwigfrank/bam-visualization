@@ -3,7 +3,7 @@ import * as React from 'react'
 import Select from 'react-select';
 import 'react-select/dist/react-select.css';
 
-export default class Sidebar extends React.Component {
+export default class SelectInput extends React.Component {
     constructor (props) {
         super (props);
         this.state = {
@@ -19,8 +19,8 @@ export default class Sidebar extends React.Component {
         return (
             <Select
                 name="form-field-name"
-                value={selectedOption}
-                wrapperStyle={wrapperStyle}
+                value={this.props.selectedOption}
+                wrapperStyle={this.props.wrapperStyle}
                 onChange={this.handleSelectChange}
                 options={this.props.option}
             />

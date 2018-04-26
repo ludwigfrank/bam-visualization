@@ -1,8 +1,9 @@
 import * as React from 'react'
 // import HexMap from './components/HexMap'
 // import Physicians from './pages/Physicians.jsx'
-import Header from './components/Header.jsx'
-import Sidebar from './components/Sidebar.jsx'
+// import Header from './components/Header.jsx'
+import DropdownBar from './components/DropdownBar.jsx'
+// import Sidebar from './components/Sidebar.jsx'
 import './App.css'
 
 class App extends React.Component {
@@ -11,8 +12,9 @@ class App extends React.Component {
             <div className="App">
                 {/* <HexMap /> */}
                 {/* <Physicians /> */}
-                <Header />
-                <Sidebar showBackButton={true} />
+                {/* <Header /> */}
+                {/* <Sidebar showBackButton={true} /> */}
+                <DropdownBar showBackButton={true} />
             </div>
         )
     }
