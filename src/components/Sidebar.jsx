@@ -28,7 +28,7 @@ const BackButton = styled.div`
         background-color: white;
         // border: 2px solid gray;
         border-radius: 100%;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px, rgba(0, 0, 0, 0.05) 0px 2px 3px;
         content: '<';
         height: 30px;
         left: 0;
@@ -50,6 +50,7 @@ const SidebarContent = styled.div`
     width: 100%;
 
     .Select-control {
+        border: none;
         height: 25px;
     }
     .Select-input {
@@ -62,7 +63,7 @@ const SidebarContent = styled.div`
 const AddDataButton = styled.button`
     background-color: orange;
     bottom: 0;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px, rgba(0, 0, 0, 0.05) 0px 2px 3px;
     border: none;
     border-radius: 2px;
     color: white;
@@ -100,12 +101,12 @@ const AddDataButton = styled.button`
         const { selectedOption } = this.state;
 
         const wrapperStyle = {
-            boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)',
+            boxShadow: 'rgba(0, 0, 0, 0.1) 0px 2px 6px, rgba(0, 0, 0, 0.05) 0px 2px 3px',
             borderRadius: '4px',
             display: 'inline-block',
             margin: '0 10px',
             minWidth: '110px',
-            top: '8px'
+            top: '6px'
         };
 
         return (
