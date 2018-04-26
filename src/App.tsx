@@ -1,6 +1,7 @@
 import * as React from 'react'
 // import HexMap from './components/HexMap'
-import Physicians from './pages/Physicians.jsx'
+// import Physicians from './pages/Physicians.jsx'
+import Sidebar from './components/Sidebar.jsx'
 import './App.css'
 
 class App extends React.Component {
@@ -8,7 +9,8 @@ class App extends React.Component {
         return (
             <div className="App">
                 {/* <HexMap /> */}
-                <Physicians />
+                {/* <Physicians /> */}
+                <Sidebar />
             </div>
         )
     }
