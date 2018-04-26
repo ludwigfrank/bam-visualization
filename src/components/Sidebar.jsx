@@ -57,7 +57,8 @@ export default class Sidebar extends React.Component {
     constructor (props) {
         super (props);
         this.state = {
-            expanded: false
+            expanded: false,
+            selectedOption: ''
         }
 
         this.hideSidebar = this.hideSidebar.bind(this);
@@ -69,7 +70,12 @@ export default class Sidebar extends React.Component {
     addMissingData() {
         console.log('add missing data');
     }
+    handleSelectChange = (selectedOption) => {
+        this.setState({ selectedOption });
+        console.log(`Selected: ${selectedOption.label}`);
+    }
     render () {
+        const { selectedOption } = this.state;
         return (
             <SidebarContainer expanded={this.state.expanded}>
                 <BackButton
@@ -83,6 +89,15 @@ export default class Sidebar extends React.Component {
                     <div>
                         {'dental medicine students at all institutions who came from Virginia between 1860 and 1980. I want to see Physicians who are female & male.'}
                     </div>
+                    <Select
+                        name="form-field-name"
+                        value={selectedOption}
+                        onChange={this.handleSelectChange}
+                        options={[
+                        { value: 'one', label: 'One' },
+                        { value: 'two', label: 'Two' },
+                        ]}
+                />
                 </SidebarContent>
 
                 <AddDataButton
