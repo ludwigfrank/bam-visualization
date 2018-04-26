@@ -2,8 +2,13 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'plex-regular';
+    src: url('./fonts/plex/IBM-Plex-Sans/fonts/complete/otf/IBMPlexSans-Regular.otf');
+}
+
 body {
-    font-family: sans-serif;
+    font-family: 'plex-regular', Fallback, sans-serif;
     height: 100%;
     margin: 0;
     overflow: hidden;
