@@ -5,18 +5,19 @@ import Select from 'react-select';
 import 'react-select/dist/react-select.css';
 
 const SidebarContainer = styled.div`
-    border-right: 2px solid gray;
+    border-right: 1px solid gray;
     background-color: white;
     height: 100%;
     left: 0;
+    line-height: 1.5em;
     position: absolute;
     top: 0;
     transform: ${props => props.expanded ? 'translate(20%)' : 'translate(0%)'};
     transition: transform 1s;
-    width: 300px;
+    width: 350px;
 `;
 const BackButton = styled.div`
-    border: 2px solid red;
+    // border: 2px solid red;
     line-height: 34px;
     padding-left: 45px;
     position: relative;
@@ -38,13 +39,25 @@ const BackButton = styled.div`
     }
 `;
 const SidebarContent = styled.div`
-    border: 2px solid red;
+    // border: 2px solid red;
     position: absolute;
     left: 0;
+
+    text-align: left;
     top: 50%;
     transform: translate(0, -50%);
     width: 100%;
-`  
+
+    .Select-control {
+        height: 25px;
+    }
+    .Select-input {
+        height: 25px;
+    }
+    .Select-placeholder {
+        line-height: 24px;
+    }
+`;
 const AddDataButton = styled.button`
     background-color: orange;
     bottom: 0;
@@ -83,6 +96,15 @@ const AddDataButton = styled.button`
     }
     render () {
         const { selectedOption } = this.state;
+
+        const wrapperStyle = {
+            boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)',
+            display: 'inline-block',
+            margin: '0 10px',
+            minWidth: '110px',
+            top: '8px'
+        };
+
         return (
             <SidebarContainer expanded={this.state.expanded}>
                 <BackButton
@@ -96,10 +118,7 @@ const AddDataButton = styled.button`
                     <Select
                         name="form-field-name"
                         value={selectedOption}
-                        wrapperStyle={{
-                            display: 'inline-block',
-                            minWidth: '110px'
-                        }}
+                        wrapperStyle={wrapperStyle}
                         onChange={this.handleSelectChange}
                         options={[
                             { value: 'dentalMedicine', label: 'dental medicine' },
@@ -110,10 +129,7 @@ const AddDataButton = styled.button`
                     <Select
                         name="form-field-name"
                         value={selectedOption}
-                        wrapperStyle={{
-                            display: 'inline-block',
-                            minWidth: '110px'
-                        }}
+                        wrapperStyle={wrapperStyle}
                         onChange={this.handleSelectChange}
                         options={[
                             { value: 'allInstitutions', label: 'all institutions' },
@@ -124,10 +140,7 @@ const AddDataButton = styled.button`
                     <Select
                         name="form-field-name"
                         value={selectedOption}
-                        wrapperStyle={{
-                            display: 'inline-block',
-                            minWidth: '110px'
-                        }}
+                        wrapperStyle={wrapperStyle}
                         onChange={this.handleSelectChange}
                         options={[
                             { value: 'virginia ', label: 'Virginia ' },
@@ -138,10 +151,7 @@ const AddDataButton = styled.button`
                     <Select
                         name="form-field-name"
                         value={selectedOption}
-                        wrapperStyle={{
-                            display: 'inline-block',
-                            minWidth: '110px'
-                        }}
+                        wrapperStyle={wrapperStyle}
                         onChange={this.handleSelectChange}
                         options={[
                             { value: '1860', label: '1860' },
@@ -152,10 +162,7 @@ const AddDataButton = styled.button`
                     <Select
                         name="form-field-name"
                         value={selectedOption}
-                        wrapperStyle={{
-                            display: 'inline-block',
-                            minWidth: '110px'
-                        }}
+                        wrapperStyle={wrapperStyle}
                         onChange={this.handleSelectChange}
                         options={[
                             { value: '1980', label: '1980' },
@@ -168,15 +175,12 @@ const AddDataButton = styled.button`
                     <Select
                         name="form-field-name"
                         value={selectedOption}
-                        wrapperStyle={{
-                            display: 'inline-block',
-                            minWidth: '110px'
-                        }}
+                        wrapperStyle={wrapperStyle}
                         onChange={this.handleSelectChange}
                         options={[
                             { value: 'female', label: 'female' },
                             { value: 'male', label: 'male' },
-                            { value: 'femaleMale', label: 'female male' }
+                            { value: 'femaleMale', label: 'female & male' }
                         ]}
                     />
                     {'.'}
