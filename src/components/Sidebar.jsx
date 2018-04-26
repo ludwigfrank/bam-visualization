@@ -18,6 +18,7 @@ const SidebarContainer = styled.div`
 `;
 const BackButton = styled.div`
     // border: 2px solid red;
+    cursor: pointer;
     line-height: 34px;
     padding-left: 45px;
     position: relative;
@@ -65,6 +66,7 @@ const AddDataButton = styled.button`
     border: none;
     border-radius: 2px;
     color: white;
+    cursor: pointer;
     font-size: 16px;
     left: 50%;
     padding: 10px 0;
@@ -99,6 +101,7 @@ const AddDataButton = styled.button`
 
         const wrapperStyle = {
             boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)',
+            borderRadius: '4px',
             display: 'inline-block',
             margin: '0 10px',
             minWidth: '110px',
