@@ -57,7 +57,9 @@ const SidebarContent = styled.div`
         height: 25px;
     }
     .Select-placeholder {
-        line-height: 24px;
+        color: black;
+        font-family: 'plex-semibold';
+        line-height: 26px;
     }
 `;
 const AddDataButton = styled.button`

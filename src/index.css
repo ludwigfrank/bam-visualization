@@ -6,6 +6,10 @@
     font-family: 'plex-regular';
     src: url('./fonts/plex/IBM-Plex-Sans/fonts/complete/otf/IBMPlexSans-Regular.otf');
 }
+@font-face {
+    font-family: 'plex-semibold';
+    src: url('./fonts/plex/IBM-Plex-Sans/fonts/complete/otf/IBMPlexSans-SemiBold.otf');
+}
 
 body {
     font-family: 'plex-regular', Fallback, sans-serif;
