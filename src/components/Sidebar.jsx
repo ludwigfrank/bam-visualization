@@ -5,7 +5,7 @@ import Select from 'react-select';
 import 'react-select/dist/react-select.css';
 
 const SidebarContainer = styled.div`
-    border-right: 1px solid gray;
+    border-right: 1px solid lightgray;
     background-color: white;
     height: 100%;
     left: 0;
@@ -19,7 +19,7 @@ const SidebarContainer = styled.div`
 const BackButton = styled.div`
     // border: 2px solid red;
     cursor: pointer;
-    line-height: 34px;
+    line-height: 32px;
     padding-left: 45px;
     position: relative;
     text-align: left;
@@ -45,8 +45,7 @@ const SidebarContent = styled.div`
     left: 0;
 
     text-align: left;
-    top: 50%;
-    transform: translate(0, -50%);
+    top: 20%;
     width: 100%;
 
     .Select-control {
@@ -67,7 +66,7 @@ const AddDataButton = styled.button`
     bottom: 0;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px, rgba(0, 0, 0, 0.05) 0px 2px 3px;
     border: none;
-    border-radius: 2px;
+    border-radius: 4px;
     color: white;
     cursor: pointer;
     font-size: 16px;
@@ -113,11 +112,15 @@ const AddDataButton = styled.button`
 
         return (
             <SidebarContainer expanded={this.state.expanded}>
-                <BackButton
-                    onClick={this.hideSidebar}
-                >
-                    {'Back to map'}
-                </BackButton>
+                {
+                    this.props.showBackButton && (
+                        <BackButton
+                            onClick={this.hideSidebar}
+                        >
+                            {'Back to map'}
+                        </BackButton>
+                    )
+                }
                 
                 <SidebarContent>
                     {'I want to see'}

@@ -10,7 +10,7 @@ class App extends React.Component {
             <div className="App">
                 {/* <HexMap /> */}
                 {/* <Physicians /> */}
-                <Sidebar />
+                <Sidebar showBackButton={true} />
             </div>
         )
     }
