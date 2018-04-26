@@ -19,7 +19,6 @@ const BackButton = styled.div`
     border: 2px solid red;
     padding-top: 10px;
     position: relative;
-    margin-left: 100px;
 
     &::before {
         background-color: white;
@@ -29,11 +28,20 @@ const BackButton = styled.div`
         content: '<';
         height: 30px;
         left: 0;
-        position: absolute;
+        line-height: 28px;
         top: 0;
+        position: absolute;
         width: 30px;
     }
 `;
+const SidebarContent = styled.div`
+    border: 2px solid red;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100%;
+`  
 const AddDataButton = styled.button`
     background-color: orange;
     bottom: 0;
@@ -41,19 +49,14 @@ const AddDataButton = styled.button`
     border: none;
     border-radius: 2px;
     color: white;
+    font-size: 16px;
+    left: 50%;
     position: absolute;
-    right: 0;
+    transform: translate(-50%, 0);
+    width: 150px;
 `;
 
-const SidebarContent = styled.div`
-    border: 2px solid red;
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    right: 0;
-`;
-
-export default class Sidebar extends React.Component {
+    export default class Sidebar extends React.Component {
     constructor (props) {
         super (props);
         this.state = {
@@ -86,18 +89,72 @@ export default class Sidebar extends React.Component {
                 
                 <SidebarContent>
                     {'I want to see'}
-                    <div>
-                        {'dental medicine students at all institutions who came from Virginia between 1860 and 1980. I want to see Physicians who are female & male.'}
-                    </div>
-                    <Select
-                        name="form-field-name"
-                        value={selectedOption}
-                        onChange={this.handleSelectChange}
-                        options={[
-                        { value: 'one', label: 'One' },
-                        { value: 'two', label: 'Two' },
-                        ]}
-                />
+                    <span>
+                        <Select
+                            name="form-field-name"
+                            value={selectedOption}
+                            onChange={this.handleSelectChange}
+                            options={[
+                                { value: 'dentalMedicine', label: 'dental medicine' },
+                                { value: 'physician', label: 'physician' },
+                            ]}
+                        />
+                        {'students at'}
+                        <Select
+                            name="form-field-name"
+                            value={selectedOption}
+                            onChange={this.handleSelectChange}
+                            options={[
+                                { value: 'allInstitutions', label: 'all institutions' },
+                                { value: 'havard', label: 'havard' },
+                            ]}
+                        />
+                        {'who came from'}
+                        <Select
+                            name="form-field-name"
+                            value={selectedOption}
+                            onChange={this.handleSelectChange}
+                            options={[
+                                { value: 'virginia ', label: 'Virginia ' },
+                                { value: 'newYork', label: 'New York' },
+                            ]}
+                        />
+                        {'between'}
+                        <Select
+                            name="form-field-name"
+                            value={selectedOption}
+                            onChange={this.handleSelectChange}
+                            options={[
+                                { value: '1860', label: '1860' },
+                                { value: '1861', label: '1861' },
+                            ]}
+                        />
+                        {'and'}
+                        <Select
+                            name="form-field-name"
+                            value={selectedOption}
+                            onChange={this.handleSelectChange}
+                            options={[
+                                { value: '1980', label: '1980' },
+                                { value: '1981', label: '1981' },
+                            ]}
+                        />
+                        {'.'}
+                        {'I want to see'}
+                        {'who are'}
+                        <Select
+                            name="form-field-name"
+                            value={selectedOption}
+                            onChange={this.handleSelectChange}
+                            options={[
+                                { value: 'female', label: 'female' },
+                                { value: 'male', label: 'male' },
+                                { value: 'femaleMale', label: 'female male' }
+                            ]}
+                        />
+                        {'.'}
+                    </span>
+
                 </SidebarContent>
 
                 <AddDataButton
