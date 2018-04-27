@@ -5,7 +5,8 @@ import {
 
 interface Props {
     featureCollection: ExtendedFeatureCollection<ExtendedFeature<GeoGeometryObjects, any>>
-    projection: GeoProjection
+    projection: GeoProjection,
+    dimensions: [number, number]
 }
 
 interface State {
@@ -19,17 +20,18 @@ export default class Map extends React.Component <Props, State> {
     }
 
     render () {
-        const { featureCollection, projection } = this.props
+        const { featureCollection, projection, dimensions } = this.props
         const pathGenerator: any = geoPath().projection(projection)
 
         const countries = featureCollection.features.map((d: any, i) => (
             <path
                 key={i}
                 d={pathGenerator(d)}
+                style={{ fill: '#f8f4f9' }}
             />
         ))
         return (
-            <svg id={'map'} style={{ zIndex: 400 }}>
+            <svg id={'map'} style={{ width: dimensions[0], height: dimensions[1] }}>
                 {countries}
             </svg>
         )

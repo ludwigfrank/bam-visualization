@@ -1,19 +1,16 @@
 import * as React from 'react'
 import styled from 'styled-components'
 import {
-    geoAlbers,
+    geoEquirectangular,
     GeoProjection,
-    ExtendedFeatureCollection, ExtendedFeature, GeoGeometryObjects
+    ExtendedFeatureCollection, ExtendedFeature
 } from 'd3-geo'
-import { Hexbin, hexbin as d3Hexbin } from 'd3-hexbin'
 // import { polygonContains as d3PolygonContains } from 'd3-polygon'
-import usJson from '../../data/us-states.json'
+import worldGeoJson from '../../data/world.json'
 import * as topojson from 'topojson-client'
-import { MultiPolygon, Polygon } from 'geojson'
-import { DataPoint } from '../../types'
-import { calculatePointGrid, getPointsInPolygon, renderHexagons, getParsedFeature } from './util'
-
 import Map from './Map'
+import HexagonMap from './HexagonMap'
+import { MultiPolygon, Polygon } from 'geojson'
 
 const Canvas = styled.svg`
     height: 100vh;
@@ -27,25 +24,12 @@ interface Props {
 }
 
 interface State {
-    featureCollection: ExtendedFeatureCollection<ExtendedFeature<GeoGeometryObjects, any>>
+    featureCollection: ExtendedFeatureCollection<ExtendedFeature<Polygon | MultiPolygon, any>>
     projection: GeoProjection
-    pointGrid: Array<DataPoint>
 }
 
 const width = window.innerWidth
 const height = window.innerHeight
-const cols = 273
-const hexDistance = width / cols
-const hexRadius = hexDistance / .5
-
-const hexBin: Hexbin<DataPoint> = d3Hexbin<DataPoint>()
-    .radius(hexRadius)
-    .x(function(d: any) { return d.x })
-    .y(function(d: any) { return d.y })
-
-interface FeatureProperties {
-    name: string
-}
 
 export default class HexMap extends React.Component <Props, State> {
     canvas: HTMLElement
@@ -54,9 +38,8 @@ export default class HexMap extends React.Component <Props, State> {
         super(props)
 
         this.state = {
-            featureCollection: usJson,
-            projection: geoAlbers().scale(800).translate([(width - 75) / 2, height / 2]),
-            pointGrid: calculatePointGrid(cols, width, height)
+            featureCollection: worldGeoJson,
+            projection: geoEquirectangular().scale(200).translate([(width + 0) / 2, height / 2])
         }
     }
 
@@ -68,43 +51,13 @@ export default class HexMap extends React.Component <Props, State> {
         return topojson.feature(data, data.objects.usa)
     }
 
-    renderFeature = (feature: ExtendedFeature<any, FeatureProperties>, geoProjection: GeoProjection) => {
-        const { projection, pointGrid } = this.state
-        const name = feature.properties.name
-
-        const logPoly = (polygon: any) => {
-            const pointsInPolygon = getPointsInPolygon(pointGrid, polygon, {name})
-            renderHexagons(pointsInPolygon, this.canvas, hexBin, {name})
-        }
-
-        getParsedFeature(feature, projection, logPoly)
-    }
-
-    drawGeo = async (data: ExtendedFeatureCollection<ExtendedFeature<Polygon | MultiPolygon, FeatureProperties>>) => {
-        let i = 0
-
-        setInterval(() => {
-            if (i < data.features.length) {this.renderFeature(data.features[i], this.state.projection)}
-            i++
-            }, 0.1
-        )
-    }
-
-    componentDidMount() {
-        this.setState({
-            featureCollection: usJson
-        })
-        this.drawGeo(usJson).catch(e => {
-            // console.log(e)
-        })
-    }
-
     render () {
         const { featureCollection, projection } = this.state
 
         return (
             <Canvas id={'map'} innerRef={element => this.canvas = element}>
-                <Map projection={projection} featureCollection={featureCollection} />
+                <Map projection={projection} featureCollection={featureCollection} dimensions={[width, height]}/>
+                <HexagonMap projection={projection} featureCollection={featureCollection} dimensions={[width, height]}/>
             </Canvas>
         )
     }
