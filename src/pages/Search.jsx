@@ -1,7 +1,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 import SearchBar from '../components/SearchBar';
-import SearchDotGrid from '../components/SearchDotGrid';
+// import SearchDotGrid from '../components/SearchDotGrid';
 import DropdownBar from '../components/DropdownBar.jsx';
 
 const SearchPage = styled.div`
@@ -20,11 +20,25 @@ export default class Search extends React.Component {
         };
     }
     render() {
+        const dropdownOptions = [
+            [
+                { value: 'dentalMedicine', label: 'dental medicine' },
+                { value: 'physician', label: 'physician' },
+            ],
+            [
+                { value: 'dentalMedicine', label: 'dental medicine' },
+                { value: 'physician', label: 'physician' },
+            ],
+            [
+                { value: 'dentalMedicine', label: 'dental medicine' },
+                { value: 'physician', label: 'physician' },
+            ]
+        ];
         return (
             <SearchPage>
                <SearchBar />
-               <DropdownBar />
-               <SearchDotGrid />
+               <DropdownBar options={dropdownOptions}/>
+               {/* <SearchDotGrid /> */}
             </SearchPage>
         )
     }

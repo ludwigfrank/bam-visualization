@@ -51,7 +51,7 @@ export default class SearchDotGrid extends React.Component {
         this.app = new PIXI.Application(dotContainerDimension.width - 3, dotContainerDimension.height - 3, {backgroundColor : 0xffffff});
         this.pixiCanvas.appendChild(this.app.view);
         this.pixiCanvas.interactive = true;
-        this.pixiCanvas.interactiveChildren = true;
+        this.app.interactive = true;
         this.app.start();
         
         var sprites = new PIXI.particles.ParticleContainer(amountDots, {
@@ -78,24 +78,27 @@ export default class SearchDotGrid extends React.Component {
             dotSprite.buttonMode = true;
 
             dotSprite.on('mousedown', (event) => {
-                console.log(index);
+                console.log('interactive');
+            });
+            dotSprite.on('pointerdown', (event) => {
+                console.log('interactive');
+            });
+            dotSprite.on('mousedown', (event) => {
+                console.log('interactive');
+            });
+            dotSprite.on('click', (event) => {
+                console.log('interactive');
             });
 
-            dotSprite.tint = Math.random() * 0xff000;
+            dotSprite.tint = 0xff9900;
+            dotSprite.alpha = Math.random();
         
             // set the anchor point so the texture is centerd on the sprite
             dotSprite.anchor.set(0.5);
-            // different this.dots, different sizes
-            // dotSprite.scale.set(0.8 + Math.random() * 0.3);
-            dotSprite.scale.set(1);
+            dotSprite.scale.set(0.8);
 
-            // positioning scatter them all
-            // dotSprite.x = Math.random() * this.app.screen.width;
-            // dotSprite.y = Math.random() * this.app.screen.height;
             dotSprite.x = this.gridPositions[index].x;
             dotSprite.y = this.gridPositions[index].y;
-
-            // dotSprite.tint = Math.random() * 0x808080;
         
             // create a random direction in radians
             dotSprite.direction = Math.random() * Math.PI * 2;
@@ -115,6 +118,14 @@ export default class SearchDotGrid extends React.Component {
     componentWillUnmount() {
         this.app.stop();
     }
+    updatePointPosition = () => {
+        console.log('update position');
+        for (let index = 0; index < this.dots.length; index += 1) {
+            const dotSprite = this.dots[index];
+            dotSprite.x += 50;
+            dotSprite.y += 50;
+        }
+    }
     animateSprites = () => {
         // create a bounding box for margots
         var dotSpriteBoundsPadding = 100;
@@ -131,7 +142,7 @@ export default class SearchDotGrid extends React.Component {
             // iterate through the sprites and update their position
             for (let index = 0; index < this.dots.length; index += 1) {
         
-                var dotSprite = this.dots[index];
+                const dotSprite = this.dots[index];
                 // dotSprite.scale.y = 0.95 + Math.sin(tick + dotSprite.offset) * 0.05;
                 dotSprite.direction += dotSprite.turningSpeed * 0.01;
                 dotSprite.x += Math.sin(dotSprite.direction) * (dotSprite.speed * dotSprite.scale.y);
@@ -164,6 +175,7 @@ export default class SearchDotGrid extends React.Component {
             <DotContainer
                 id={'dot-container'}
                 // onClick={this.animateSprites}
+                // onClick={this.updatePointPosition}
             >
                 <div ref={(thisDiv) => {component.pixiCanvas = thisDiv}} />
             </DotContainer>

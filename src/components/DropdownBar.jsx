@@ -6,6 +6,7 @@ import SelectInput from './SelectInput.jsx'
 const ProjectTitleContainer = styled.div`
     border: 2px solid red;
     display: flex;
+    justify-content: space-evenly;
     width: 100%;
 `;
 
@@ -16,33 +17,6 @@ export default class DropdownBar extends React.Component {
         }
     }
     render () {
-        const options = [
-            [
-                { value: 'dentalMedicine', label: 'dental medicine' },
-                { value: 'physician', label: 'physician' },
-            ],
-            [
-                { value: 'dentalMedicine', label: 'dental medicine' },
-                { value: 'physician', label: 'physician' },
-            ],
-            [
-                { value: 'dentalMedicine', label: 'dental medicine' },
-                { value: 'physician', label: 'physician' },
-            ],
-            [
-                { value: 'dentalMedicine', label: 'dental medicine' },
-                { value: 'physician', label: 'physician' },
-            ],
-            [
-                { value: 'dentalMedicine', label: 'dental medicine' },
-                { value: 'physician', label: 'physician' },
-            ],
-            [
-                { value: 'dentalMedicine', label: 'dental medicine' },
-                { value: 'physician', label: 'physician' },
-            ]
-        ];
-
         const wrapperStyle = {
             boxShadow: 'rgba(0, 0, 0, 0.1) 0px 2px 6px, rgba(0, 0, 0, 0.05) 0px 2px 3px',
             borderRadius: '4px',
@@ -54,7 +28,7 @@ export default class DropdownBar extends React.Component {
         return (
             <ProjectTitleContainer>
                 {
-                    options.map((option, index) => {
+                    this.props.options.map((option, index) => {
                         return (
                             <SelectInput
                                 name="form-field-name"

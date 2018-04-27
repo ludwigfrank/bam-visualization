@@ -16,13 +16,14 @@ export default class SelectInput extends React.Component {
     }
     render () {
         const { selectedOption } = this.state;
+        console.log(this.props);
         return (
             <Select
                 name="form-field-name"
-                value={this.props.selectedOption}
+                value={selectedOption}
                 wrapperStyle={this.props.wrapperStyle}
                 onChange={this.handleSelectChange}
-                options={this.props.option}
+                options={this.props.options}
             />
         );
     }

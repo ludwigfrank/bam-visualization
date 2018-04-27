@@ -47,6 +47,21 @@ export default class Explore extends React.Component {
                 buttonCallback: () => this.handleView
             }
         ];
+
+        const dropdownOptions = [
+            [
+                { value: 'dentalMedicine', label: 'dental medicine' },
+                { value: 'physician', label: 'physician' },
+            ],
+            [
+                { value: 'dentalMedicine', label: 'dental medicine' },
+                { value: 'physician', label: 'physician' },
+            ],
+            [
+                { value: 'dentalMedicine', label: 'dental medicine' },
+                { value: 'physician', label: 'physician' },
+            ]
+        ];
         return (
             <div>
                 <Sidebar
@@ -83,16 +98,16 @@ export default class Explore extends React.Component {
                 </Sidebar>
 
                 <ExploreContainer mapView={this.state.mapView}>
-                    <DropdownBar />
+                    <DropdownBar options={dropdownOptions} />
                     <HelpButton />
                     {/* <Map /> */}
-                    {
+                    {/* {
                         this.state.mapView ? (
                             <HexMap />
                         ) : (
                             <div>{'points physicians'}</div>
                         )
-                    }
+                    } */}
                 </ExploreContainer>
             </div>
         );
