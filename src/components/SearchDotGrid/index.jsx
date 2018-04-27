@@ -5,16 +5,16 @@ import _groupBy from 'lodash.groupby';
 import styled from 'styled-components'
 
 import doctors from './doctors.js';
-import dot from '../../images/test.png'
+import dot from '../../images/doctor-dot.png'
 
 const DotContainer = styled.div`
     background-color: lightblue;
     border: 2px solid red;
     bottom: 0;
-    height: 100%;
+    height: 80%;
     position: absolute;
     width: 100%;
-`
+`;
 
 export default class SearchDotGrid extends React.Component {
     constructor (props) {
@@ -27,28 +27,10 @@ export default class SearchDotGrid extends React.Component {
         return false;
     }
     componentDidMount() {
-        // Initilize pixi canvas
-        // this.app = new PIXI.Application(window.innerWidth, window.innerHeight);
-        // this.pixiCanvas.appendChild(this.app.view);
-        // this.app.start();
-        
-        // this.dotSprite = PIXI.Sprite.fromImage(dot);
-        // this.dotSprite.x = this.app.screen.width / 2;
-        // this.dotSprite.y = this.app.screen.height / 2;
-        // this.app.stage.addChild(this.dotSprite);
-
-        // animate sprites
-        // this.app.ticker.add((delta) => {
-        //     // just for fun, let's rotate mr rabbit a little
-        //     // delta is 1 if running at 100% performance
-        //     // creates frame-independent transformation
-        //     this.dotSprite.rotation += 0.1 * delta;
-        // });
-
         const dotContainer = document.getElementById('dot-container');
         const dotContainerDimension = dotContainer.getBoundingClientRect();
 
-        this.app = new PIXI.Application(dotContainerDimension.width, dotContainerDimension.height);
+        this.app = new PIXI.Application(dotContainerDimension.width - 3, dotContainerDimension.height - 3, {backgroundColor : 0xffffff});
         this.pixiCanvas.appendChild(this.app.view);
         this.app.start();
         
@@ -63,37 +45,31 @@ export default class SearchDotGrid extends React.Component {
         
         // create an array to store all the sprites
         this.dots = [];
-        
         this.totalSprites = this.app.renderer instanceof PIXI.WebGLRenderer ? 1000 : 100;
         
         for (let index = 0; index < this.totalSprites; index += 1) {
-        
             // create a new Sprite
             const dotSprite = PIXI.Sprite.fromImage(dot);
-        
-            dotSprite.tint = Math.random() * 0xE8D4CD;
+            dotSprite.tint = Math.random() * 0xff000;
         
             // set the anchor point so the texture is centerd on the sprite
             dotSprite.anchor.set(0.5);
-        
             // different this.dots, different sizes
-            dotSprite.scale.set(0.8 + Math.random() * 0.3);
-        
-            // scatter them all
+            // dotSprite.scale.set(0.8 + Math.random() * 0.3);
+            dotSprite.scale.set(0.8);
+
+            // positioning scatter them all
             dotSprite.x = Math.random() * this.app.screen.width;
             dotSprite.y = Math.random() * this.app.screen.height;
-        
-            dotSprite.tint = Math.random() * 0x808080;
+
+            // dotSprite.tint = Math.random() * 0x808080;
         
             // create a random direction in radians
             dotSprite.direction = Math.random() * Math.PI * 2;
-        
             // this number will be used to modify the direction of the sprite over time
             dotSprite.turningSpeed = Math.random() - 0.8;
-        
             // create a random speed between 0 - 2, and these this.dots are slooww
             dotSprite.speed = (2 + Math.random() * 2) * 0.2;
-        
             dotSprite.offset = Math.random() * 100;
         
             // finally we push the dotSprite into the this.dots array so it it can be easily accessed later
@@ -123,7 +99,7 @@ export default class SearchDotGrid extends React.Component {
             for (let index = 0; index < this.dots.length; index += 1) {
         
                 var dotSprite = this.dots[index];
-                dotSprite.scale.y = 0.95 + Math.sin(tick + dotSprite.offset) * 0.05;
+                // dotSprite.scale.y = 0.95 + Math.sin(tick + dotSprite.offset) * 0.05;
                 dotSprite.direction += dotSprite.turningSpeed * 0.01;
                 dotSprite.x += Math.sin(dotSprite.direction) * (dotSprite.speed * dotSprite.scale.y);
                 dotSprite.y += Math.cos(dotSprite.direction) * (dotSprite.speed * dotSprite.scale.y);
