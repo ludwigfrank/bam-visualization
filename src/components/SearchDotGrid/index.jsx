@@ -26,15 +26,33 @@ export default class SearchDotGrid extends React.Component {
     shouldComponentUpdate() {
         return false;
     }
+    getGridPositions(pointSize, gridWidth, totalPoints, groupIndex) {
+        const pointDimension = pointSize;
+        const pointsPerRow = Math.floor(gridWidth / pointDimension);
+        const numRows = totalPoints / pointsPerRow;
+
+        const dotPositions = [];
+        for (let index = 0; index < totalPoints; index++) {
+            const groupPadding = pointDimension + gridWidth * 5 * groupIndex;
+            const xPosition = pointDimension * (index % pointsPerRow) + groupPadding;
+            const yPosition = pointDimension * Math.floor(index / pointsPerRow);
+
+            dotPositions.push({ x: xPosition, y: yPosition });
+        }
+
+        return dotPositions;
+    }
     componentDidMount() {
         const dotContainer = document.getElementById('dot-container');
         const dotContainerDimension = dotContainer.getBoundingClientRect();
+
+        const amountDots = 1000;
 
         this.app = new PIXI.Application(dotContainerDimension.width - 3, dotContainerDimension.height - 3, {backgroundColor : 0xffffff});
         this.pixiCanvas.appendChild(this.app.view);
         this.app.start();
         
-        var sprites = new PIXI.particles.ParticleContainer(1000, {
+        var sprites = new PIXI.particles.ParticleContainer(amountDots, {
             scale: true,
             position: true,
             rotation: true,
@@ -45,8 +63,10 @@ export default class SearchDotGrid extends React.Component {
         
         // create an array to store all the sprites
         this.dots = [];
-        this.totalSprites = this.app.renderer instanceof PIXI.WebGLRenderer ? 1000 : 100;
+        this.totalSprites = this.app.renderer instanceof PIXI.WebGLRenderer ? amountDots : 100;
         
+        this.gridPositions = this.getGridPositions(50, dotContainerDimension.width, amountDots, 0); // pointSize, gridWidth, totalPoints, groupIdex
+
         for (let index = 0; index < this.totalSprites; index += 1) {
             // create a new Sprite
             const dotSprite = PIXI.Sprite.fromImage(dot);
@@ -56,11 +76,13 @@ export default class SearchDotGrid extends React.Component {
             dotSprite.anchor.set(0.5);
             // different this.dots, different sizes
             // dotSprite.scale.set(0.8 + Math.random() * 0.3);
-            dotSprite.scale.set(0.8);
+            dotSprite.scale.set(1);
 
             // positioning scatter them all
-            dotSprite.x = Math.random() * this.app.screen.width;
-            dotSprite.y = Math.random() * this.app.screen.height;
+            // dotSprite.x = Math.random() * this.app.screen.width;
+            // dotSprite.y = Math.random() * this.app.screen.height;
+            dotSprite.x = this.gridPositions[index].x;
+            dotSprite.y = this.gridPositions[index].y;
 
             // dotSprite.tint = Math.random() * 0x808080;
         
