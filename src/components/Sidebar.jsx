@@ -1,5 +1,6 @@
 import * as React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const SidebarContainer = styled.div`
     border-right: ${props => props.border ? '1px solid lightgray' : 'none'};
@@ -42,9 +43,10 @@ const SidebarHeader = styled.h2`
 `;
 const SidebarContent = styled.div`
     // border: 2px solid red;
+    padding: 0 7% 0 5%;
     position: absolute;
     left: 0;
-
+    line-height: 1.7em;
     text-align: left;
     top: 20%;
     width: 100%;
@@ -63,8 +65,8 @@ const SidebarContent = styled.div`
     }
 `;
 const SidebarButtons = styled.div`
-    border: 2px solid red;
-    bottom: 40px;
+    // border: 2px solid red;
+    bottom: 25px;
     left: 50%;
     position: absolute;
     transform: translate(-50%, 0);
@@ -78,8 +80,14 @@ const SidebarButton = styled.button`
     color: ${props => props.filled ? 'white' : 'black'};
     cursor: pointer;
     font-size: 16px;
+    margin-bottom: 20px;
     padding: 10px 0;
     width: 100%;
+
+    a {
+        color: ${props => props.filled ? 'white' : 'black'};
+        text-decoration: none;
+    }
 `;
 
     export default class Sidebar extends React.Component {
@@ -140,7 +148,7 @@ const SidebarButton = styled.button`
                                     key={`sidebarButton-${index}`}
                                     filled={button.filled}
                                 >
-                                    {button.label}
+                                    <Link to={button.src}>{button.label}</Link>
                                 </SidebarButton>
                             );
                         })

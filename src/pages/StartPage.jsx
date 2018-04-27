@@ -13,12 +13,12 @@ export default class StartPage extends React.Component {
         const sidebarButtons = [
             {
                 label: 'I want to contribute',
-                src: '/',
+                src: '/contribute',
                 filled: true
             },
             {
                 label: 'I want to explore',
-                src: '/',
+                src: '/explore',
                 filled: false
             }
         ];

@@ -1,11 +1,11 @@
 import * as React from 'react'
 import styled from 'styled-components'
 import SearchBar from '../components/SearchBar';
-import DotGrid from '../components/DotGrid';
+import SearchDotGrid from '../components/SearchDotGrid';
 import DropdownBar from '../components/DropdownBar.jsx';
 
 const SearchPage = styled.div`
-    border: 3px solid green;
+    // border: 3px solid green;
     bottom: 0;
     height: calc(100% - 50px);
     position: absolute;
@@ -24,7 +24,7 @@ export default class Search extends React.Component {
             <SearchPage>
                <SearchBar />
                <DropdownBar />
-               <DotGrid />
+               <SearchDotGrid />
             </SearchPage>
         )
     }

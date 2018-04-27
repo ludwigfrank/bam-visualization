@@ -16,7 +16,7 @@ const HeaderContainer = styled.div`
 const ProjectTitle = styled.div`
     font-family: 'plex-semibold';
     font-size: 18px;
-    left: 0;
+    left: 20px;
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
@@ -32,7 +32,7 @@ const MenuItems = styled.ul`
     margin: 0;
     padding: 0;
     position: absolute;
-    right: 0;
+    right: 20px;
     top: 50%;
     transform: translate(0, -50%);
 

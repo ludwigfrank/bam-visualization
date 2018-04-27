@@ -1,5 +1,6 @@
 import * as React from 'react'
 import styled from 'styled-components'
+import HelpButton from '../components/HelpButton';
 
 
 const SearchBarContainer = styled.div`
@@ -17,6 +18,7 @@ export default class SearchBar extends React.Component {
         return (
             <SearchBarContainer>
                 {'search bar container'}
+                <HelpButton />
             </SearchBarContainer>
         );
     }
