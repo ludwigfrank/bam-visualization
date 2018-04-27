@@ -3,6 +3,7 @@ import * as d3 from 'd3'
 import * as PIXI from 'pixi.js'
 import _groupBy from 'lodash.groupby';
 import styled from 'styled-components'
+import Animated from 'animated';
 
 import doctors from './doctors.js';
 import dot from '../../images/doctor-dot.png'
@@ -21,7 +22,10 @@ export default class SearchDotGrid extends React.Component {
         super (props)
 
         this.state = {
-        }
+            // scale: new Animated.ValueXY({ x: 0.4, y: 0.4 }),
+            rotation: new Animated.Value(0),
+            position: new Animated.ValueXY({ x: props.x, y: props.y })
+        };
     }
     shouldComponentUpdate() {
         return false;
@@ -41,6 +45,11 @@ export default class SearchDotGrid extends React.Component {
         }
 
         return dotPositions;
+    }
+    grow = () => {
+        // Animated.timing(this.state.scale, { toValue: { x: 1, y: 1 }, duration: 500 }).start();
+        Animated.timing(this.state.rotation, { toValue: 0, duration: 500 }).start();
+        Animated.timing(this.state.position, { toValue: { x: window.innerWidth / 4, y: window.innerHeight / 4 + 100 * this.state.counter}, duration: 500 }).start();
     }
     componentDidMount() {
         const dotContainer = document.getElementById('dot-container');
@@ -69,7 +78,9 @@ export default class SearchDotGrid extends React.Component {
         this.dots = [];
         this.totalSprites = this.app.renderer instanceof PIXI.WebGLRenderer ? amountDots : 100;
         
-        this.gridPositions = this.getGridPositions(50, dotContainerDimension.width, amountDots, 0); // pointSize, gridWidth, totalPoints, groupIdex
+        this.gridPositions = this.getGridPositions(
+            50, dotContainerDimension.width, amountDots, 0
+        ); // pointSize, gridWidth, totalPoints, groupIdex
 
         for (let index = 0; index < this.totalSprites; index += 1) {
             // create a new Sprite
