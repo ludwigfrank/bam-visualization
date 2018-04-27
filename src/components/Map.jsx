@@ -7,7 +7,7 @@ const MapContainer = styled.div`
     right: 0;
     position: absolute;
     top: 0;
-    width: 70%;
+    width: 75%;
 `;
 
 export default class Map extends React.Component {

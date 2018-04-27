@@ -5,7 +5,6 @@ import SelectInput from './SelectInput.jsx'
 import HelpButton from './HelpButton';
 import WorldButton from './WorldButton';
 
-
 const ProjectTitleContainer = styled.div`
     border: 2px solid red;
     display: flex;
