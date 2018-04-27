@@ -10,11 +10,8 @@ class App extends React.Component {
             <div className="App">
                 <Header />
                 <Main />
-                {/* <HexMap /> */}
                 {/* <Physicians /> */}
-                {/* <Sidebar showBackButton={true} /> */}
                 {/* <SidebarList showBackButton={true} /> */}
-                {/* <DropdownBar showBackButton={true} /> */}
             </div>
         )
     }

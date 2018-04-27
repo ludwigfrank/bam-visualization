@@ -63,7 +63,7 @@ const SidebarContent = styled.div`
 `;
 const AddDataButton = styled.button`
     background-color: orange;
-    bottom: 0;
+    bottom: 40px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px, rgba(0, 0, 0, 0.05) 0px 2px 3px;
     border: none;
     border-radius: 4px;

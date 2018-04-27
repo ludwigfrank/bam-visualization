@@ -5,7 +5,7 @@ import Sidebar from '../components/Sidebar';
 import HelpButton from '../components/HelpButton';
 import DropdownBar from '../components/DropdownBar.jsx';
 import HexMap from '../components/HexMap';
-import Map from '../components/Map.jsx';
+// import Map from '../components/Map.jsx';
 
 const ExploreContainer = styled.div`
     border: 2px solid red;
@@ -34,13 +34,13 @@ export default class Explore extends React.Component {
     render() {
         return (
             <div>
-                <Sidebar border={true} header={'What we know so far.'}>
+                <Sidebar border={true} header={'What we know so far.'} buttonLabel={'I want to add missing data'}>
                     <div>
                         {'In this area we know that out of '}
                         <MarkedText>{'23.401'}</MarkedText>
                         {' physicians there were '}
                         <MarkedText>{'12.587'}</MarkedText>
-                        {' medical students'},
+                        {' medical students '},
                         <MarkedText>{'5.012'}</MarkedText>
                         {' dental medicine students and '}
                         <MarkedText>{'2.345'}</MarkedText>
@@ -66,8 +66,14 @@ export default class Explore extends React.Component {
                 <ExploreContainer mapView={this.state.mapView}>
                     <DropdownBar />
                     <HelpButton />
-                    <Map />
-                    {/* <HexMap /> */}
+                    {/* <Map /> */}
+                    {
+                        this.state.mapView ? (
+                            <HexMap />
+                        ) : (
+                            <div>{'points physicians'}</div>
+                        )
+                    }
                 </ExploreContainer>
             </div>
         );
