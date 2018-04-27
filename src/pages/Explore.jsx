@@ -34,6 +34,19 @@ export default class Explore extends React.Component {
         this.setState({ mapView: !this.state.mapView });
     }
     render() {
+        const sidebarButtons = [
+            {
+                label: 'I want to contribute',
+                src: '/',
+                filled: true
+            },
+            {
+                label: 'I want see the physicians',
+                src: '/',
+                filled: false,
+                clickHandler: () => this.handleView
+            }
+        ];
         return (
             <div>
                 <Sidebar
@@ -42,6 +55,7 @@ export default class Explore extends React.Component {
                     buttonLabel={'I want to add missing data'}
                     showBackButton={!this.state.mapView}
                     backCallback={() => this.handleView}
+                    buttons={sidebarButtons}
                 >
                     <div>
                         {'In this area we know that out of '}
@@ -66,9 +80,6 @@ export default class Explore extends React.Component {
                         <MarkedText>{'2.021'}</MarkedText>
                         {' female physicians.'}
                     </div>
-
-                    <button>{'I want to contribute'}</button>
-                    <button onClick={this.handleView}>{'I want see the physicians'}</button>
                 </Sidebar>
 
                 <ExploreContainer mapView={this.state.mapView}>

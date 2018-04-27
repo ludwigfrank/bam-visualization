@@ -62,20 +62,24 @@ const SidebarContent = styled.div`
         line-height: 26px;
     }
 `;
-const AddDataButton = styled.button`
-    background-color: orange;
+const SidebarButtons = styled.button`
+    border: 2px solid red;
     bottom: 40px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px, rgba(0, 0, 0, 0.05) 0px 2px 3px;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
     left: 50%;
-    padding: 10px 0;
     position: absolute;
     transform: translate(-50%, 0);
     width: 90%;
+`;
+const SidebarButton = styled.button`
+    background-color: ${props => props.filled ? 'orange' : 'white'};
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px, rgba(0, 0, 0, 0.05) 0px 2px 3px;
+    border: none;
+    border-radius: 4px;
+    color: ${props => props.filled ? 'white' : 'black'};
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 0;
+    width: 100%;
 `;
 
     export default class Sidebar extends React.Component {
@@ -127,11 +131,21 @@ const AddDataButton = styled.button`
                     {this.props.children}
                 </SidebarContent>
 
-                <AddDataButton
-                    onClick={this.addMissingData}
-                >
-                    {this.props.buttonLabel}
-                </AddDataButton>
+                <SidebarButtons>
+                    {
+                        this.props.buttons.map((button, index) => {
+                            return (
+                                <SidebarButton
+                                    onClick={this.addMissingData}
+                                    key={`sidebarButton-${index}`}
+                                    filled={button.filled}
+                                >
+                                    {button.label}
+                                </SidebarButton>
+                            );
+                        })
+                    }
+                </SidebarButtons>
             </SidebarContainer>
         );
     }
