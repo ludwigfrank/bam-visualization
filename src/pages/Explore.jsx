@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Sidebar from '../components/Sidebar';
 import DropdownBar from '../components/DropdownBar.jsx';
 import HexMap from '../components/HexMap';
+import SearchDotGrid from '../components/SearchDotGrid';
 // import Map from '../components/Map.jsx';
 
 const ExploreContainer = styled.div`
@@ -76,7 +77,7 @@ export default class Explore extends React.Component {
                         <MarkedText>{'23.401'}</MarkedText>
                         {' physicians there were '}
                         <MarkedText>{'12.587'}</MarkedText>
-                        {' medical students '},
+                        {' medical students, '}
                         <MarkedText>{'5.012'}</MarkedText>
                         {' dental medicine students and '}
                         <MarkedText>{'2.345'}</MarkedText>
@@ -110,6 +111,7 @@ export default class Explore extends React.Component {
                             <div>{'points physicians'}</div>
                         )
                     } */}
+                    <SearchDotGrid />
                 </ExploreContainer>
             </div>
         );
