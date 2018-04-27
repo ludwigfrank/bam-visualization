@@ -13,7 +13,7 @@ const DocumentTileContainer = styled.div`
 const DocumentTile = styled.div`
     border: 2px solid red;
     border-radius: 4px;
-    height: 150px;
+    height: 180px;
     min-width: calc(100% / 6);
     width: calc(100% / 6);
 `;
@@ -23,7 +23,7 @@ const Image = styled.img`
     width: 100%;
 `;
 const Label = styled.div`
-    background-color: lightgray;
+    background-color: ${props => props.color};
     display: inline-block;
 `;
 const Text = styled.div`
@@ -43,40 +43,58 @@ export default class DocumentTiles extends React.Component {
         const documents = [
             {
                 src: './path',
-                text: 'document text',
-                label: 'document label'
+                text: 'Dr. Brown has made it to the top of the professional ladd…',
+                type: 'letter'
+            },
+            {
+                src: './path',
+                text: 'Dr. Brown has made it to the top of the professional ladd…',
+                type: 'magazine'
+            },
+            {
+                src: './path',
+                text: 'Dr. Brown has made it to the top of the professional ladd…',
+                type: 'newsletter'
             },
             {
                 src: './path',
                 text: 'document text',
-                label: 'document label'
+                type: 'newspaper'
             },
             {
                 src: './path',
                 text: 'document text',
-                label: 'document label'
+                type: 'poem'
             },
             {
                 src: './path',
                 text: 'document text',
-                label: 'document label'
+                type: 'manuscript'
             },
             {
                 src: './path',
                 text: 'document text',
-                label: 'document label'
-            },
-            {
-                src: './path',
-                text: 'document text',
-                label: 'document label'
-            },
-            {
-                src: './path',
-                text: 'document text',
-                label: 'document label'
+                type: 'interview'
             }
         ];
+        const highlightColors = {
+            letter: 'pink',
+            newsletter: 'orange',
+            newspaper: 'purple',
+            magazine: 'blue',
+            interview: 'green',
+            poem: 'gray',
+            manuscript: 'lightblue',
+        };
+        const documentsLabels = {
+            letter: 'Letter',
+            newsletter: 'Newsletter',
+            newspaper: 'Newspaper',
+            magazine: 'Magazine Article',
+            interview: 'Interview',
+            poem: 'Poem',
+            manuscript: 'Manuscript'
+        }
         return (
             <DocumentTileContainer>
                 {
@@ -88,7 +106,9 @@ export default class DocumentTiles extends React.Component {
                             >
                                 <Image src={document.src} />
                                 <Text>{document.text}</Text>
-                                <Label>{document.label}</Label>
+                                <Label color={highlightColors[document.type]}>
+                                    {documentsLabels[document.type]}
+                                </Label>
                             </DocumentTile>
                         )
                     })
