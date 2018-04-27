@@ -46,10 +46,12 @@ export default class SearchDotGrid extends React.Component {
         const dotContainer = document.getElementById('dot-container');
         const dotContainerDimension = dotContainer.getBoundingClientRect();
 
-        const amountDots = 1000;
+        const amountDots = 100;
 
         this.app = new PIXI.Application(dotContainerDimension.width - 3, dotContainerDimension.height - 3, {backgroundColor : 0xffffff});
         this.pixiCanvas.appendChild(this.app.view);
+        this.pixiCanvas.interactive = true;
+        this.pixiCanvas.interactiveChildren = true;
         this.app.start();
         
         var sprites = new PIXI.particles.ParticleContainer(amountDots, {
@@ -59,6 +61,8 @@ export default class SearchDotGrid extends React.Component {
             uvs: true,
             alpha: true
         });
+        sprites.interactive = true;
+        sprites.interactiveChildren = true;
         this.app.stage.addChild(sprites);
         
         // create an array to store all the sprites
@@ -70,6 +74,13 @@ export default class SearchDotGrid extends React.Component {
         for (let index = 0; index < this.totalSprites; index += 1) {
             // create a new Sprite
             const dotSprite = PIXI.Sprite.fromImage(dot);
+            dotSprite.interactive = true;
+            dotSprite.buttonMode = true;
+
+            dotSprite.on('mousedown', (event) => {
+                console.log(index);
+            });
+
             dotSprite.tint = Math.random() * 0xff000;
         
             // set the anchor point so the texture is centerd on the sprite
@@ -152,7 +163,7 @@ export default class SearchDotGrid extends React.Component {
         return (
             <DotContainer
                 id={'dot-container'}
-                onClick={this.animateSprites}
+                // onClick={this.animateSprites}
             >
                 <div ref={(thisDiv) => {component.pixiCanvas = thisDiv}} />
             </DotContainer>
