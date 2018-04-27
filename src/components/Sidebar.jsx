@@ -62,7 +62,7 @@ const SidebarContent = styled.div`
         line-height: 26px;
     }
 `;
-const SidebarButtons = styled.button`
+const SidebarButtons = styled.div`
     border: 2px solid red;
     bottom: 40px;
     left: 50%;
@@ -136,7 +136,7 @@ const SidebarButton = styled.button`
                         this.props.buttons.map((button, index) => {
                             return (
                                 <SidebarButton
-                                    onClick={this.addMissingData}
+                                    onClick={button.buttonCallback}
                                     key={`sidebarButton-${index}`}
                                     filled={button.filled}
                                 >

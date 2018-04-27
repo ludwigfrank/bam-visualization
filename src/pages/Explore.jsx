@@ -44,7 +44,7 @@ export default class Explore extends React.Component {
                 label: 'I want see the physicians',
                 src: '/',
                 filled: false,
-                clickHandler: () => this.handleView
+                buttonCallback: () => this.handleView
             }
         ];
         return (
