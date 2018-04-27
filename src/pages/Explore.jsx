@@ -2,7 +2,6 @@ import * as React from 'react';
 import styled from 'styled-components';
 
 import Sidebar from '../components/Sidebar';
-import HelpButton from '../components/HelpButton';
 import DropdownBar from '../components/DropdownBar.jsx';
 import HexMap from '../components/HexMap';
 // import Map from '../components/Map.jsx';
@@ -99,7 +98,6 @@ export default class Explore extends React.Component {
 
                 <ExploreContainer mapView={this.state.mapView}>
                     <DropdownBar options={dropdownOptions} />
-                    <HelpButton />
                     {/* <Map /> */}
                     {/* {
                         this.state.mapView ? (

@@ -2,6 +2,8 @@ import * as React from 'react'
 import styled from 'styled-components'
 
 import SelectInput from './SelectInput.jsx'
+import HelpButton from './HelpButton';
+
 
 const ProjectTitleContainer = styled.div`
     border: 2px solid red;
@@ -40,6 +42,7 @@ export default class DropdownBar extends React.Component {
                         );
                     })
                 }
+                <HelpButton />
             </ProjectTitleContainer>
         );
     }
