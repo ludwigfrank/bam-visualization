@@ -2,6 +2,7 @@ import * as React from 'react'
 import styled from 'styled-components'
 import SearchBar from '../components/SearchBar';
 // import SearchDotGrid from '../components/SearchDotGrid';
+import DocumentTiles from '../components/DocumentTiles';
 import DropdownBar from '../components/DropdownBar.jsx';
 
 const SearchPage = styled.div`
@@ -32,6 +33,18 @@ export default class Search extends React.Component {
             [
                 { value: 'dentalMedicine', label: 'dental medicine' },
                 { value: 'physician', label: 'physician' },
+            ],
+            [
+                { value: 'dentalMedicine', label: 'dental medicine' },
+                { value: 'physician', label: 'physician' },
+            ],
+            [
+                { value: 'dentalMedicine', label: 'dental medicine' },
+                { value: 'physician', label: 'physician' },
+            ],
+            [
+                { value: 'dentalMedicine', label: 'dental medicine' },
+                { value: 'physician', label: 'physician' },
             ]
         ];
         return (
@@ -42,6 +55,7 @@ export default class Search extends React.Component {
                     showHelp
                 />
                {/* <SearchDotGrid /> */}
+               <DocumentTiles />
             </SearchPage>
         )
     }
