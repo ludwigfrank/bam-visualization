@@ -16,13 +16,13 @@ const HelpButtonStyle = styled.div`
         border-radius: 100%;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px, rgba(0, 0, 0, 0.05) 0px 2px 3px;
         content: '?';
-        height: 30px;
+        height: 36px;
         left: 0;
-        line-height: 28px;
+        line-height: 38px;
         text-align: center;
         top: 0;
         position: absolute;
-        width: 30px;
+        width: 36px;
     }
 `;
 

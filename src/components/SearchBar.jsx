@@ -33,6 +33,11 @@ const FormContainer = styled.div`
     top: 50%;
     transform: translate(-50%, -50%);
 `;
+const HelpButtonContainer = styled.div`
+    position: absolute;
+    top: 29%;
+    right: 0;
+`;
 
 export default class SearchBar extends React.Component {
     constructor (props) {
@@ -43,7 +48,6 @@ export default class SearchBar extends React.Component {
     render () {
         return (
             <SearchBarContainer>
-                <HelpButton />
                 <FormContainer>
                     <form>
                         <label>
@@ -56,6 +60,9 @@ export default class SearchBar extends React.Component {
                         </label>
                     </form>
                 </FormContainer>
+                <HelpButtonContainer>
+                    <HelpButton />
+                </HelpButtonContainer>
             </SearchBarContainer>
         );
     }
