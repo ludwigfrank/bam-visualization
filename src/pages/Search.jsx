@@ -1,4 +1,6 @@
 import * as React from 'react'
+import DotGrid from '../components/DotGrid';
+
 
 export default class Search extends React.Component {
     constructor(props) {
@@ -11,6 +13,7 @@ export default class Search extends React.Component {
         return (
             <div>
                {'Search'}
+               <DotGrid />
             </div>
         )
     }

@@ -1,11 +1,8 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
-import Select from 'react-select';
-import 'react-select/dist/react-select.css';
-
 const SidebarContainer = styled.div`
-    border-right: 1px solid lightgray;
+    border-right: ${props => props.border ? '1px solid lightgray' : 'none'};
     background-color: white;
     height: 100%;
     left: 0;
@@ -38,6 +35,9 @@ const BackButton = styled.div`
         position: absolute;
         width: 30px;
     }
+`;
+const SidebarHeader = styled.h2`
+    font-family: plex-semibold;
 `;
 const SidebarContent = styled.div`
     // border: 2px solid red;
@@ -94,13 +94,7 @@ const AddDataButton = styled.button`
     addMissingData() {
         console.log('add missing data');
     }
-    handleSelectChange = (selectedOption) => {
-        this.setState({ selectedOption });
-        console.log(`Selected: ${selectedOption.label}`);
-    }
     render () {
-        const { selectedOption } = this.state;
-
         const wrapperStyle = {
             boxShadow: 'rgba(0, 0, 0, 0.1) 0px 2px 6px, rgba(0, 0, 0, 0.05) 0px 2px 3px',
             borderRadius: '4px',
@@ -111,7 +105,10 @@ const AddDataButton = styled.button`
         };
 
         return (
-            <SidebarContainer expanded={this.state.expanded}>
+            <SidebarContainer
+                border={this.props.border}
+                expanded={this.state.expanded}
+            >
                 {
                     this.props.showBackButton && (
                         <BackButton
@@ -123,83 +120,16 @@ const AddDataButton = styled.button`
                 }
                 
                 <SidebarContent>
-                    {'I want to see'}
-                    <Select
-                        name="form-field-name"
-                        value={selectedOption}
-                        wrapperStyle={wrapperStyle}
-                        onChange={this.handleSelectChange}
-                        options={[
-                            { value: 'dentalMedicine', label: 'dental medicine' },
-                            { value: 'physician', label: 'physician' },
-                        ]}
-                    />
-                    {'students at'}
-                    <Select
-                        name="form-field-name"
-                        value={selectedOption}
-                        wrapperStyle={wrapperStyle}
-                        onChange={this.handleSelectChange}
-                        options={[
-                            { value: 'allInstitutions', label: 'all institutions' },
-                            { value: 'havard', label: 'havard' },
-                        ]}
-                    />
-                    {'who came from'}
-                    <Select
-                        name="form-field-name"
-                        value={selectedOption}
-                        wrapperStyle={wrapperStyle}
-                        onChange={this.handleSelectChange}
-                        options={[
-                            { value: 'virginia ', label: 'Virginia ' },
-                            { value: 'newYork', label: 'New York' },
-                        ]}
-                    />
-                    {'between'}
-                    <Select
-                        name="form-field-name"
-                        value={selectedOption}
-                        wrapperStyle={wrapperStyle}
-                        onChange={this.handleSelectChange}
-                        options={[
-                            { value: '1860', label: '1860' },
-                            { value: '1861', label: '1861' },
-                        ]}
-                    />
-                    {'and'}
-                    <Select
-                        name="form-field-name"
-                        value={selectedOption}
-                        wrapperStyle={wrapperStyle}
-                        onChange={this.handleSelectChange}
-                        options={[
-                            { value: '1980', label: '1980' },
-                            { value: '1981', label: '1981' },
-                        ]}
-                    />
-                    {'.'}
-                    {'I want to see'}
-                    {'who are'}
-                    <Select
-                        name="form-field-name"
-                        value={selectedOption}
-                        wrapperStyle={wrapperStyle}
-                        onChange={this.handleSelectChange}
-                        options={[
-                            { value: 'female', label: 'female' },
-                            { value: 'male', label: 'male' },
-                            { value: 'femaleMale', label: 'female & male' }
-                        ]}
-                    />
-                    {'.'}
-
+                    <SidebarHeader>
+                        {this.props.header}
+                    </SidebarHeader>
+                    {this.props.children}
                 </SidebarContent>
 
                 <AddDataButton
                     onClick={this.addMissingData}
                 >
-                    {'I want to add missing data'}
+                    {this.props.buttonLabel}
                 </AddDataButton>
             </SidebarContainer>
         );

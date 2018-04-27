@@ -44,6 +44,9 @@ const MenuItems = styled.ul`
         text-decoration: none;
     }
 `;
+const ListItem = styled.ul`
+    font-family: ${props => props.isActive ? 'plex-semibold' : 'plex-regular'};
+`;
 
 export default class Header extends React.Component {
     constructor (props) {
@@ -52,17 +55,18 @@ export default class Header extends React.Component {
         }
     }
     render () {
+        console.log(window.location.pathname);
         return (
             <HeaderContainer>
                 <ProjectTitle>
                     <Link to='/'>{'Blacks in American Medizine'}</Link>
                 </ProjectTitle>
                 <MenuItems>
-                    <li><Link to='/about'>{'About'}</Link></li>
-                    <li><Link to='/explore'>{'Explore'}</Link></li>
-                    <li><Link to='/stories'>{'Stories'}</Link></li>
-                    <li><Link to='/search'>{'Search'}</Link></li>
-                    <li><Link to='/contribute'>{'Contribute'}</Link></li>
+                    <ListItem isActive={window.location.pathname === '/about'}><Link to='/about'>{'About'}</Link></ListItem>
+                    <ListItem isActive={window.location.pathname === '/explore'}><Link to='/explore'>{'Explore'}</Link></ListItem>
+                    <ListItem isActive={window.location.pathname === '/stories'}><Link to='/stories'>{'Stories'}</Link></ListItem>
+                    <ListItem isActive={window.location.pathname === '/search'}><Link to='/search'>{'Search'}</Link></ListItem>
+                    <ListItem isActive={window.location.pathname === '/contribute'}><Link to='/contribute'>{'Contribute'}</Link></ListItem>
                 </MenuItems>
             </HeaderContainer>
         );
