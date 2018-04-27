@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const HeaderContainer = styled.div`
@@ -53,13 +54,15 @@ export default class Header extends React.Component {
     render () {
         return (
             <HeaderContainer>
-                <ProjectTitle><a href={'#'}>{'Blacks in American Medizine'}</a></ProjectTitle>
+                <ProjectTitle>
+                    <Link to='/'>{'Blacks in American Medizine'}</Link>
+                </ProjectTitle>
                 <MenuItems>
-                    <li><a href={'#'}>{'About'}</a></li>
-                    <li><a href={'#'}>{'Explore'}</a></li>
-                    <li><a href={'#'}>{'Stories'}</a></li>
-                    <li><a href={'#'}>{'Search'}</a></li>
-                    <li><a href={'#'}>{'Contribute'}</a></li>
+                    <li><Link to='/about'>{'About'}</Link></li>
+                    <li><Link to='/explore'>{'Explore'}</Link></li>
+                    <li><Link to='/stories'>{'Stories'}</Link></li>
+                    <li><Link to='/search'>{'Search'}</Link></li>
+                    <li><Link to='/contribute'>{'Contribute'}</Link></li>
                 </MenuItems>
             </HeaderContainer>
         );
