@@ -37,7 +37,10 @@ export default class Search extends React.Component {
         return (
             <SearchPage>
                <SearchBar />
-               <DropdownBar options={dropdownOptions}/>
+               <DropdownBar
+                    options={dropdownOptions}
+                    showHelp
+                />
                {/* <SearchDotGrid /> */}
             </SearchPage>
         )

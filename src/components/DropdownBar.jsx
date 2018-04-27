@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 import SelectInput from './SelectInput.jsx'
 import HelpButton from './HelpButton';
+import WorldButton from './WorldButton';
 
 
 const ProjectTitleContainer = styled.div`
@@ -30,6 +31,11 @@ export default class DropdownBar extends React.Component {
         return (
             <ProjectTitleContainer>
                 {
+                    this.props.showWorldButton && (
+                        <WorldButton />
+                    )
+                }
+                {
                     this.props.options.map((option, index) => {
                         return (
                             <SelectInput
@@ -42,7 +48,11 @@ export default class DropdownBar extends React.Component {
                         );
                     })
                 }
-                <HelpButton />
+                {
+                    this.props.showHelp && (
+                        <HelpButton />
+                    )
+                }
             </ProjectTitleContainer>
         );
     }

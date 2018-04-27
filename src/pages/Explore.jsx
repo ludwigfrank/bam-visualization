@@ -97,7 +97,11 @@ export default class Explore extends React.Component {
                 </Sidebar>
 
                 <ExploreContainer mapView={this.state.mapView}>
-                    <DropdownBar options={dropdownOptions} />
+                    <DropdownBar
+                        options={dropdownOptions}
+                        showHelp
+                        showWorldButton
+                    />
                     {/* <Map /> */}
                     {/* {
                         this.state.mapView ? (

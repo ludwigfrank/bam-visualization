@@ -16,7 +16,6 @@ export default class SelectInput extends React.Component {
     }
     render () {
         const { selectedOption } = this.state;
-        console.log(this.props);
         return (
             <Select
                 name="form-field-name"
