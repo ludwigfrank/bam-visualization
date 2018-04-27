@@ -11,9 +11,10 @@ const ExploreContainer = styled.div`
     border: 2px solid red;
     height: 100%;
     right: 0;
+    padding-top: 50px;
     position: absolute;
     top: 0;
-    width: 70%;
+    width: 75%;
 `;
 
 const MarkedText = styled.span`
@@ -29,12 +30,19 @@ export default class Explore extends React.Component {
         };
     }
     handleView = () => {
-        this.setState({ mapView: false });
+        console.log('handle explore view');
+        this.setState({ mapView: !this.state.mapView });
     }
     render() {
         return (
             <div>
-                <Sidebar border={true} header={'What we know so far.'} buttonLabel={'I want to add missing data'}>
+                <Sidebar
+                    border={true}
+                    header={'What we know so far.'}
+                    buttonLabel={'I want to add missing data'}
+                    showBackButton={!this.state.mapView}
+                    backCallback={() => this.handleView}
+                >
                     <div>
                         {'In this area we know that out of '}
                         <MarkedText>{'23.401'}</MarkedText>

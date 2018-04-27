@@ -7,11 +7,12 @@ const SidebarContainer = styled.div`
     height: 100%;
     left: 0;
     line-height: 1.5em;
+    padding-top: 50px;
     position: absolute;
     top: 0;
     transform: ${props => props.expanded ? 'translate(20%)' : 'translate(0%)'};
     transition: transform 1s;
-    width: 350px;
+    width: 25%;
 `;
 const BackButton = styled.div`
     // border: 2px solid red;
@@ -112,7 +113,7 @@ const AddDataButton = styled.button`
                 {
                     this.props.showBackButton && (
                         <BackButton
-                            onClick={this.hideSidebar}
+                            onClick={this.props.backCallback()}
                         >
                             {'Back to map'}
                         </BackButton>
