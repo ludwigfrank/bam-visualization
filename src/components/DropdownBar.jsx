@@ -24,8 +24,8 @@ export default class DropdownBar extends React.Component {
             boxShadow: 'rgba(0, 0, 0, 0.1) 0px 2px 6px, rgba(0, 0, 0, 0.05) 0px 2px 3px',
             borderRadius: '4px',
             display: 'inline-block',
-            margin: '0 10px',
-            minWidth: '110px'
+            flex: 1,
+            // margin: '0 10px'
         };
 
         return (
