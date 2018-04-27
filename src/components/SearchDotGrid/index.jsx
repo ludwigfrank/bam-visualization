@@ -45,11 +45,14 @@ export default class SearchDotGrid extends React.Component {
         //     this.dotSprite.rotation += 0.1 * delta;
         // });
 
-        this.app = new PIXI.Application();
+        const dotContainer = document.getElementById('dot-container');
+        const dotContainerDimension = dotContainer.getBoundingClientRect();
+
+        this.app = new PIXI.Application(dotContainerDimension.width, dotContainerDimension.height);
         this.pixiCanvas.appendChild(this.app.view);
         this.app.start();
         
-        var sprites = new PIXI.particles.ParticleContainer(10000, {
+        var sprites = new PIXI.particles.ParticleContainer(1000, {
             scale: true,
             position: true,
             rotation: true,
@@ -59,54 +62,100 @@ export default class SearchDotGrid extends React.Component {
         this.app.stage.addChild(sprites);
         
         // create an array to store all the sprites
-        var maggots = [];
+        this.dots = [];
         
-        var totalSprites = this.app.renderer instanceof PIXI.WebGLRenderer ? 10000 : 100;
+        this.totalSprites = this.app.renderer instanceof PIXI.WebGLRenderer ? 1000 : 100;
         
-        for (var i = 0; i < totalSprites; i++) {
+        for (let index = 0; index < this.totalSprites; index += 1) {
         
             // create a new Sprite
-            var dude = PIXI.Sprite.fromImage(dot);
+            const dotSprite = PIXI.Sprite.fromImage(dot);
         
-            dude.tint = Math.random() * 0xE8D4CD;
+            dotSprite.tint = Math.random() * 0xE8D4CD;
         
             // set the anchor point so the texture is centerd on the sprite
-            dude.anchor.set(0.5);
+            dotSprite.anchor.set(0.5);
         
-            // different maggots, different sizes
-            dude.scale.set(0.8 + Math.random() * 0.3);
+            // different this.dots, different sizes
+            dotSprite.scale.set(0.8 + Math.random() * 0.3);
         
             // scatter them all
-            dude.x = Math.random() * this.app.screen.width;
-            dude.y = Math.random() * this.app.screen.height;
+            dotSprite.x = Math.random() * this.app.screen.width;
+            dotSprite.y = Math.random() * this.app.screen.height;
         
-            dude.tint = Math.random() * 0x808080;
+            dotSprite.tint = Math.random() * 0x808080;
         
             // create a random direction in radians
-            dude.direction = Math.random() * Math.PI * 2;
+            dotSprite.direction = Math.random() * Math.PI * 2;
         
             // this number will be used to modify the direction of the sprite over time
-            dude.turningSpeed = Math.random() - 0.8;
+            dotSprite.turningSpeed = Math.random() - 0.8;
         
-            // create a random speed between 0 - 2, and these maggots are slooww
-            dude.speed = (2 + Math.random() * 2) * 0.2;
+            // create a random speed between 0 - 2, and these this.dots are slooww
+            dotSprite.speed = (2 + Math.random() * 2) * 0.2;
         
-            dude.offset = Math.random() * 100;
+            dotSprite.offset = Math.random() * 100;
         
-            // finally we push the dude into the maggots array so it it can be easily accessed later
-            maggots.push(dude);
+            // finally we push the dotSprite into the this.dots array so it it can be easily accessed later
+            this.dots.push(dotSprite);
         
-            sprites.addChild(dude);
+            sprites.addChild(dotSprite);
         }
-
+        
     }
     componentWillUnmount() {
         this.app.stop();
     }
+    animateSprites = () => {
+        // create a bounding box for margots
+        var dotSpriteBoundsPadding = 100;
+        var dotSpriteBounds = new PIXI.Rectangle(
+            -dotSpriteBoundsPadding,
+            -dotSpriteBoundsPadding,
+            this.app.screen.width + dotSpriteBoundsPadding * 2,
+            this.app.screen.height + dotSpriteBoundsPadding * 2
+        );
+
+        let tick = 0;        
+        this.app.ticker.add(() => {
+        
+            // iterate through the sprites and update their position
+            for (let index = 0; index < this.dots.length; index += 1) {
+        
+                var dotSprite = this.dots[index];
+                dotSprite.scale.y = 0.95 + Math.sin(tick + dotSprite.offset) * 0.05;
+                dotSprite.direction += dotSprite.turningSpeed * 0.01;
+                dotSprite.x += Math.sin(dotSprite.direction) * (dotSprite.speed * dotSprite.scale.y);
+                dotSprite.y += Math.cos(dotSprite.direction) * (dotSprite.speed * dotSprite.scale.y);
+                dotSprite.rotation = -dotSprite.direction + Math.PI;
+        
+                // wrap the this.dots
+                if (dotSprite.x < dotSpriteBounds.x) {
+                    dotSprite.x += dotSpriteBounds.width;
+                }
+                else if (dotSprite.x > dotSpriteBounds.x + dotSpriteBounds.width) {
+                    dotSprite.x -= dotSpriteBounds.width;
+                }
+        
+                if (dotSprite.y < dotSpriteBounds.y) {
+                    dotSprite.y += dotSpriteBounds.height;
+                }
+                else if (dotSprite.y > dotSpriteBounds.y + dotSpriteBounds.height) {
+                    dotSprite.y -= dotSpriteBounds.height;
+                }
+            }
+        
+            // increment the ticker
+            tick += 0.1;
+        });
+    }
     render () {
         let component = this;
         return (
-            <DotContainer>
+            <DotContainer
+                id={'dot-container'}
+                onClick={this.animateSprites}
+            >
                 <div ref={(thisDiv) => {component.pixiCanvas = thisDiv}} />
             </DotContainer>
         )
