@@ -3,7 +3,7 @@ import * as d3 from 'd3'
 import * as PIXI from 'pixi.js'
 import _groupBy from 'lodash.groupby';
 import styled from 'styled-components'
-import Animated from 'animated';
+import TWEEN from '@tweenjs/tween.js'
 
 import doctors from './doctors.js';
 import dot from '../../images/doctor-dot.png'
@@ -17,20 +17,23 @@ const DotContainer = styled.div`
     width: 100%;
 `;
 
+
+function animate() {
+	requestAnimationFrame(animate);
+	TWEEN.update();
+}
+
 export default class SearchDotGrid extends React.Component {
     constructor (props) {
         super (props)
 
         this.state = {
-            // scale: new Animated.ValueXY({ x: 0.4, y: 0.4 }),
-            rotation: new Animated.Value(0),
-            position: new Animated.ValueXY({ x: props.x, y: props.y })
-        };
+        }
     }
     shouldComponentUpdate() {
         return false;
     }
-    getGridPositions(pointSize, gridWidth, totalPoints, groupIndex) {
+    getGridPositions(pointSize, gridWidth, totalPoints,  groupIndex) {
         const pointDimension = pointSize;
         const pointsPerRow = Math.floor(gridWidth / pointDimension);
         const numRows = totalPoints / pointsPerRow;
@@ -45,11 +48,6 @@ export default class SearchDotGrid extends React.Component {
         }
 
         return dotPositions;
-    }
-    grow = () => {
-        // Animated.timing(this.state.scale, { toValue: { x: 1, y: 1 }, duration: 500 }).start();
-        Animated.timing(this.state.rotation, { toValue: 0, duration: 500 }).start();
-        Animated.timing(this.state.position, { toValue: { x: window.innerWidth / 4, y: window.innerHeight / 4 + 100 * this.state.counter}, duration: 500 }).start();
     }
     componentDidMount() {
         const dotContainer = document.getElementById('dot-container');
@@ -108,9 +106,19 @@ export default class SearchDotGrid extends React.Component {
             dotSprite.anchor.set(0.5);
             dotSprite.scale.set(0.8);
 
-            dotSprite.x = this.gridPositions[index].x;
-            dotSprite.y = this.gridPositions[index].y;
-        
+            const position = {x: 0, y: 0}
+            var tween = new TWEEN.Tween(position)
+                .to({ x: this.gridPositions[index].x, y: this.gridPositions[index].y }, 700)
+                .easing(TWEEN.Easing.Quadratic.Out)
+                .delay(500)
+                .start();
+
+            tween.onUpdate(position => {
+                dotSprite.x = position.x;
+                dotSprite.y = position.y;
+            });
+
+            
             // create a random direction in radians
             dotSprite.direction = Math.random() * Math.PI * 2;
             // this number will be used to modify the direction of the sprite over time
@@ -124,6 +132,8 @@ export default class SearchDotGrid extends React.Component {
         
             sprites.addChild(dotSprite);
         }
+
+        animate();
         
     }
     componentWillUnmount() {
@@ -136,6 +146,10 @@ export default class SearchDotGrid extends React.Component {
             dotSprite.x += 50;
             dotSprite.y += 50;
         }
+    }
+    animate = () => {
+        requestAnimationFrame(this.animate);
+        TWEEN.update();
     }
     animateSprites = () => {
         // create a bounding box for margots
