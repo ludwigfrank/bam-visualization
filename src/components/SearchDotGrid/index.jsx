@@ -13,7 +13,7 @@ const DotContainer = styled.div`
     background-color: lightblue;
     border: 2px solid red;
     bottom: 0;
-    height: 80%;
+    height: 90%;
     position: absolute;
     width: 100%;
 `;
@@ -86,7 +86,7 @@ export default class SearchDotGrid extends React.Component {
         this.dots = [];
         this.totalSprites = this.app.renderer instanceof PIXI.WebGLRenderer ? amountDots : gridWidth * 2;
         
-        this.scaleValue = 0.2;
+        this.scaleValue = 0.4;
         this.dotSize = 50 * this.scaleValue;
         this.gridPositions = this.getGridPositions(
             this.dotSize, this.containerDimensions.x, amountDots, 0 // pointSize, gridWidth, totalPoints, groupIdex
@@ -132,14 +132,13 @@ export default class SearchDotGrid extends React.Component {
     handleMouseover(data) {
         // console.log('mouseover');
         // console.log(data.target);
-        data.target.scale.x = 1;
-        data.target.scale.y = 1;
+        data.target.alpha = 1;
+        data.target.tint = 0x000000;
     }
     handleMouseout(data) {
         // console.log('mouseout');
         // console.log(data.currentTarget);
-        data.currentTarget.scale.x = 0.2;
-        data.currentTarget.scale.y = 0.2;
+        data.currentTarget.tint = 0x00ff00;
     }
     handleMousedown(data) {
         // console.log('mousedown');
