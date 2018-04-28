@@ -17,7 +17,6 @@ const ExploreContainer = styled.div`
     top: 0;
     width: 75%;
 `;
-
 const MarkedText = styled.span`
     background-color: ${props => props.color};
 `;
@@ -200,6 +199,25 @@ export default class Explore extends React.Component {
                             <div>{'points physicians'}</div>
                         )
                     } */}
+                    <FilterValuesContainer>
+                        {
+                            this.state.groups
+                                ? Object.keys(this.state.groups).map((key, index) => {
+                                    const group = this.state.groups[key];
+                                    return (
+                                        <FilterValue>
+                                            <div>{group.length}</div>
+                                            <div>{'X %'}</div>
+                                        </FilterValue>
+                                    )
+                                })
+                                : (
+                                    <FilterValue>
+                                        {'All'}    
+                                    </FilterValue>
+                                )
+                        }
+                    </FilterValuesContainer>
                     <SearchDotGrid
                         ref={this.dotGrid}
                         groupsCallback={groups => this.setState({ groups })}
@@ -214,7 +232,11 @@ export default class Explore extends React.Component {
                                         </FilterValue>
                                     )
                                 })
-                                : null
+                                : (
+                                    <FilterValue>
+                                        {'All'}    
+                                    </FilterValue>
+                                )
                         }
                     </FilterValuesContainer>
                     
