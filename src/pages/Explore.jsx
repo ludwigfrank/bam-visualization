@@ -108,7 +108,7 @@ export default class Explore extends React.Component {
                         options={this.state.dropdownOptions}
                         showHelp
                         showWorldButton
-                        selectCallback={() => this.handleSelectChange}
+                        selectCallback={(selectedOption) => this.handleSelectChange(selectedOption)}
                     />
                     {/* <Map /> */}
                     {/* {

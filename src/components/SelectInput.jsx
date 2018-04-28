@@ -10,6 +10,11 @@ export default class SelectInput extends React.Component {
             selectedOption: ''
         }
     }
+    handleChange = (option) => {
+        console.log(option);
+        this.props.selectCallback(option);
+        this.setState({ selectedOption: option });
+    }
     render () {
         const { selectedOption } = this.state;
         return (
@@ -17,7 +22,7 @@ export default class SelectInput extends React.Component {
                 name="form-field-name"
                 value={selectedOption}
                 wrapperStyle={this.props.wrapperStyle}
-                onChange={this.props.selectCallback()}
+                onChange={this.handleChange}
                 options={this.props.options}
             />
         );
