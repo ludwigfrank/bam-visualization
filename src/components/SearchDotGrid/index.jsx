@@ -33,7 +33,7 @@ export default class SearchDotGrid extends React.Component {
     shouldComponentUpdate() {
         return false;
     }
-    getGridPositions(pointSize, gridWidth, totalPoints,  groupIndex) {
+    getGridPositions(pointSize, gridWidth, totalPoints, groupIndex) {
         const pointDimension = pointSize;
         const pointsPerRow = Math.floor(gridWidth / pointDimension);
         const numRows = totalPoints / pointsPerRow;
@@ -42,7 +42,7 @@ export default class SearchDotGrid extends React.Component {
         for (let index = 0; index < totalPoints; index++) {
             const groupPadding = pointDimension + gridWidth * 5 * groupIndex;
             const xPosition = pointDimension * (index % pointsPerRow) + groupPadding;
-            const yPosition = pointDimension * Math.floor(index / pointsPerRow);
+            const yPosition = pointDimension * Math.floor(index / pointsPerRow) + pointDimension;
 
             dotPositions.push({ x: xPosition, y: yPosition });
         }
@@ -53,7 +53,7 @@ export default class SearchDotGrid extends React.Component {
         const dotContainer = document.getElementById('dot-container');
         const dotContainerDimension = dotContainer.getBoundingClientRect();
 
-        const amountDots = 100;
+        const amountDots = 5000;
 
         this.app = new PIXI.Application(dotContainerDimension.width - 3, dotContainerDimension.height - 3, {backgroundColor : 0xffffff});
         this.pixiCanvas.appendChild(this.app.view);
@@ -76,8 +76,9 @@ export default class SearchDotGrid extends React.Component {
         this.dots = [];
         this.totalSprites = this.app.renderer instanceof PIXI.WebGLRenderer ? amountDots : 100;
         
+        const scaleValue = 0.2;
         this.gridPositions = this.getGridPositions(
-            50, dotContainerDimension.width, amountDots, 0
+            50 * scaleValue, dotContainerDimension.width, amountDots, 0
         ); // pointSize, gridWidth, totalPoints, groupIdex
 
         for (let index = 0; index < this.totalSprites; index += 1) {
@@ -104,7 +105,7 @@ export default class SearchDotGrid extends React.Component {
         
             // set the anchor point so the texture is centerd on the sprite
             dotSprite.anchor.set(0.5);
-            dotSprite.scale.set(0.8);
+            dotSprite.scale.set(scaleValue / 1.5);
 
             const position = {x: 0, y: 0}
             var tween = new TWEEN.Tween(position)
