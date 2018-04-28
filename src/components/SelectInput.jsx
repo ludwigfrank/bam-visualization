@@ -12,7 +12,9 @@ export default class SelectInput extends React.Component {
     }
     handleChange = (option) => {
         console.log(option);
-        this.props.selectCallback(option);
+        if (this.props.selectCallback) {
+            this.props.selectCallback(option);
+        }
         this.setState({ selectedOption: option });
     }
     render () {

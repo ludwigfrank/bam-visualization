@@ -21,6 +21,22 @@ const MarkedText = styled.span`
     background-color: pink;
 `;
 
+const FilterButtonContainer = styled.div`
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+`;
+const FilterButton = styled.button`
+    background-color: ${props => props.active ? 'orange' : 'white'};
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    font-size: 18px;
+    padding: 3px 10px;
+    text-align: center;
+`;
+
 export default class Explore extends React.Component {
     constructor(props) {
         super(props);
@@ -42,6 +58,23 @@ export default class Explore extends React.Component {
                     { value: 'name', label: 'name' },
                     { value: 'value', label: 'value' },
                 ]
+            ],
+            filterValues: [
+                {
+                    value: 'name',
+                    buttonLabel: 'Progam',
+                    active: true
+                },
+                {
+                    value: 'value',
+                    buttonLabel: 'Gender',
+                    active: false
+                },
+                {
+                    value: 'institution',
+                    buttonLabel: 'Institution',
+                    active: false
+                }
             ]
         };
     }
@@ -104,12 +137,42 @@ export default class Explore extends React.Component {
                 </Sidebar>
 
                 <ExploreContainer mapView={this.state.mapView}>
-                    <DropdownBar
-                        options={this.state.dropdownOptions}
-                        showHelp
-                        showWorldButton
-                        selectCallback={(selectedOption) => this.handleSelectChange(selectedOption)}
-                    />
+                    {
+                        this.props.showDropdownBar ? (
+                            <DropdownBar
+                                options={this.state.dropdownOptions}
+                                showHelp
+                                showWorldButton
+                                selectCallback={(selectedOption) => this.handleSelectChange(selectedOption)}
+                            />
+                        ) : (
+                            <FilterButtonContainer>
+                                {
+                                    this.state.filterValues.map((filterValue, index) => {
+                                        return (
+                                            <FilterButton
+                                                onClick={() => {
+                                                    const updatedFilterValues = this.state.filterValues;
+                                                    updatedFilterValues[index].active = !updatedFilterValues[index].active
+                                                    this.setState({
+                                                        filterValues: updatedFilterValues
+                                                    });
+
+                                                    console.log(updatedFilterValues[index]);
+                                                    this.handleSelectChange(updatedFilterValues[index])
+                                                }}
+                                                active={filterValue.active}
+                                                key={`filterButton-${index}`}
+                                            >
+                                                {filterValue.buttonLabel}
+                                            </FilterButton>
+                                        );
+                                    })
+                                }
+                            </FilterButtonContainer>
+                        )
+                    }
+                    
                     {/* <Map /> */}
                     {/* {
                         this.state.mapView ? (
