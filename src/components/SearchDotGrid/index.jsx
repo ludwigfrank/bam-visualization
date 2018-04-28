@@ -134,7 +134,6 @@ export default class SearchDotGrid extends React.Component {
     handleMouseover = (data) => {
         // console.log('mouseover');
         // console.log(data.target);
-        data.target.alpha = 1;
         data.target.tint = 0x000000;
 
         this.props.tooltipCallback(true, 'doctor information');
@@ -142,7 +141,7 @@ export default class SearchDotGrid extends React.Component {
     handleMouseout = (data) => {
         // console.log('mouseout');
         // console.log(data.currentTarget);
-        data.currentTarget.tint = 0x00ff00;
+        // data.currentTarget.tint = 0x00ff00;
 
         this.props.tooltipCallback(false, 'empty');
     }
