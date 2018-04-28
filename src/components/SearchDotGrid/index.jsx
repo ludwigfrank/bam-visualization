@@ -41,7 +41,7 @@ export default class SearchDotGrid extends React.Component {
 
         const dotPositions = [];
         for (let index = 0; index < totalPoints; index++) {
-            const groupPadding = 100 * groupIndex;
+            const groupPadding = gridWidth * 2 * groupIndex; // double of the single grid width
             const xPosition = pointDimension * (index % pointsPerRow) + groupPadding;
             const yPosition = pointDimension * Math.floor(index / pointsPerRow) + pointDimension;
 
@@ -81,7 +81,7 @@ export default class SearchDotGrid extends React.Component {
         
         // create an array to store all the sprites
         this.dots = [];
-        this.totalSprites = this.app.renderer instanceof PIXI.WebGLRenderer ? amountDots : 100;
+        this.totalSprites = this.app.renderer instanceof PIXI.WebGLRenderer ? amountDots : gridWidth * 2;
         
         this.scaleValue = 0.2;
         this.dotSize = 50 * this.scaleValue;
@@ -114,8 +114,7 @@ export default class SearchDotGrid extends React.Component {
             dotSprite.tint = 0xff9900;
             dotSprite.alpha = Math.random();
         
-            // set the anchor point so the texture is centerd on the sprite
-            dotSprite.anchor.set(0.5);
+            dotSprite.anchor.set(0.5); // center texture
             dotSprite.scale.set(this.scaleValue / 1.5);
 
             const position = {x: 0, y: 0}
@@ -129,16 +128,7 @@ export default class SearchDotGrid extends React.Component {
                 dotSprite.x = position.x;
                 dotSprite.y = position.y;
             });
-            
-            // create a random direction in radians
-            dotSprite.direction = Math.random() * Math.PI * 2;
-            // this number will be used to modify the direction of the sprite over time
-            dotSprite.turningSpeed = Math.random() - 0.8;
-            // create a random speed between 0 - 2, and these this.dots are slooww
-            dotSprite.speed = (2 + Math.random() * 2) * 0.2;
-            dotSprite.offset = Math.random() * 100;
         
-            // finally we push the dotSprite into the this.dots array so it it can be easily accessed later
             this.dots.push(dotSprite);
         
             sprites.addChild(dotSprite);
@@ -154,7 +144,7 @@ export default class SearchDotGrid extends React.Component {
         console.log('update position');
 
         const groups = _groupBy(doctors, (doctor) => doctor['name']);
-        console.log(groups);
+        // console.log(groups);
         const numberOfGroups = Object.keys(groups).length;
 
         let pointsCounter = 0;
@@ -164,22 +154,15 @@ export default class SearchDotGrid extends React.Component {
 
             const gridPositions = this.getGridPositions(
                 this.dotSize,
-                // this.containerDimensions.x / numberOfGroups,
-                100,
+                this.containerDimensions.x / (numberOfGroups * 2),
                 groupLength,
                 index,
                 numberOfGroups
             );
 
-            console.log('position group');
-            console.log(gridPositions);
-
             // for (let index = 0; index < this.dots.length; index += 1) {
             for (let i = 0; i < groupLength; i += 1) {
                 const dotSprite = this.dots[pointsCounter];
-
-                dotSprite.tint = 0xff0000;
-                dotSprite.alpha = 1;
 
                 const position = {x: dotSprite.x, y: dotSprite.y}
                 const tween = new TWEEN.Tween(position)
