@@ -41,7 +41,7 @@ export default class DropdownBar extends React.Component {
                                 name="form-field-name"
                                 key={`selectInput-${index}`}
                                 wrapperStyle={wrapperStyle}
-                                onChange={this.handleSelectChange}
+                                selectCallback={this.props.selectCallback}
                                 options={option}
                             />
                         );

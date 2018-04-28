@@ -25,13 +25,33 @@ export default class Explore extends React.Component {
     constructor(props) {
         super(props);
 
+        this.dotGrid = React.createRef();
+
         this.state = {
-            mapView: true
+            mapView: true,
+            dropdownOptions: [
+                [
+                    { value: 'name', label: 'name' },
+                    { value: 'value', label: 'value' },
+                ],
+                [
+                    { value: 'name', label: 'name' },
+                    { value: 'value', label: 'value' },
+                ],
+                [
+                    { value: 'name', label: 'name' },
+                    { value: 'value', label: 'value' },
+                ]
+            ]
         };
     }
     handleView = () => {
         console.log('handle explore view');
         this.setState({ mapView: !this.state.mapView });
+    }
+    handleSelectChange = (selectedOption) => {
+        console.log(selectedOption);
+        this.dotGrid.current.updatePointPosition(selectedOption.value);
     }
     render() {
         const sidebarButtons = [
@@ -48,20 +68,6 @@ export default class Explore extends React.Component {
             }
         ];
 
-        const dropdownOptions = [
-            [
-                { value: 'dentalMedicine', label: 'dental medicine' },
-                { value: 'physician', label: 'physician' },
-            ],
-            [
-                { value: 'dentalMedicine', label: 'dental medicine' },
-                { value: 'physician', label: 'physician' },
-            ],
-            [
-                { value: 'dentalMedicine', label: 'dental medicine' },
-                { value: 'physician', label: 'physician' },
-            ]
-        ];
         return (
             <div>
                 <Sidebar
@@ -99,9 +105,10 @@ export default class Explore extends React.Component {
 
                 <ExploreContainer mapView={this.state.mapView}>
                     <DropdownBar
-                        options={dropdownOptions}
+                        options={this.state.dropdownOptions}
                         showHelp
                         showWorldButton
+                        selectCallback={() => this.handleSelectChange}
                     />
                     {/* <Map /> */}
                     {/* {
@@ -111,7 +118,7 @@ export default class Explore extends React.Component {
                             <div>{'points physicians'}</div>
                         )
                     } */}
-                    <SearchDotGrid />
+                    <SearchDotGrid ref={this.dotGrid} />
                 </ExploreContainer>
             </div>
         );

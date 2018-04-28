@@ -130,29 +130,29 @@ export default class SearchDotGrid extends React.Component {
         
     }
     handleMouseover(data) {
-        console.log('mouseover');
-        console.log(data.target);
+        // console.log('mouseover');
+        // console.log(data.target);
         data.target.scale.x = 1;
         data.target.scale.y = 1;
     }
     handleMouseout(data) {
-        console.log('mouseout');
-        console.log(data.currentTarget);
+        // console.log('mouseout');
+        // console.log(data.currentTarget);
         data.currentTarget.scale.x = 0.2;
         data.currentTarget.scale.y = 0.2;
     }
     handleMousedown(data) {
-        console.log('mousedown');
-        console.log(data.target);
-        data.target.tint = 0xff0000;
+        // console.log('mousedown');
+        // console.log(data.target);
+        data.target.tint = 0x0000ff;
     }
     componentWillUnmount() {
         this.app.stop();
     }
-    updatePointPosition = () => {
+    updatePointPosition = (groupingValue) => {
         console.log('update position');
 
-        const groups = _groupBy(doctors, (doctor) => doctor['name']);
+        const groups = _groupBy(doctors, (doctor) => doctor[groupingValue]);
         // console.log(groups);
         const numberOfGroups = Object.keys(groups).length;
 
@@ -201,7 +201,7 @@ export default class SearchDotGrid extends React.Component {
         return (
             <DotContainer
                 id={'dot-container'}
-                onClick={this.updatePointPosition}
+                // onClick={this.updatePointPosition}
             >
                 <div ref={(thisDiv) => {component.pixiCanvas = thisDiv}} />
             </DotContainer>
