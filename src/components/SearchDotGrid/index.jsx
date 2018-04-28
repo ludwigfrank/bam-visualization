@@ -13,7 +13,7 @@ const DotContainer = styled.div`
     background-color: lightblue;
     border: 2px solid red;
     bottom: 0;
-    height: 90%;
+    height: 75%;
     position: absolute;
     width: 100%;
 `;
@@ -98,7 +98,9 @@ export default class SearchDotGrid extends React.Component {
             const dotSprite = PIXI.Sprite.fromImage(dot);
             // dotSprite.tint = chromaColor(0.5);
             dotSprite.tint = 0xff9900;
-            dotSprite.alpha = Math.random();
+            let randomValue = Math.random();
+            const alphaValue = randomValue < 0.2 ? 1 : randomValue;
+            dotSprite.alpha = alphaValue;
         
             dotSprite.anchor.set(0.5); // center texture
             dotSprite.scale.set(this.scaleValue / 1.5);
@@ -152,6 +154,7 @@ export default class SearchDotGrid extends React.Component {
         console.log('update position');
 
         const groups = _groupBy(doctors, (doctor) => doctor[groupingValue]);
+        this.props.groupsCallback(groups);
         // console.log(groups);
         const numberOfGroups = Object.keys(groups).length;
 
@@ -201,7 +204,7 @@ export default class SearchDotGrid extends React.Component {
             <DotContainer
                 id={'dot-container'}
                 // onClick={this.updatePointPosition}
-            >
+            >   
                 <div ref={(thisDiv) => {component.pixiCanvas = thisDiv}} />
             </DotContainer>
         )

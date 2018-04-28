@@ -38,6 +38,14 @@ const FilterButton = styled.button`
     padding: 3px 10px;
     text-align: center;
 `;
+const FilterValuesContainer = styled.div`
+    border: 2px solid orange;
+    display: flex;
+    justify-content: space-around;
+`;
+const FilterValue = styled.div`
+    border: 2px solid green;
+`;
 
 export default class Explore extends React.Component {
     constructor(props) {
@@ -47,6 +55,7 @@ export default class Explore extends React.Component {
 
         this.state = {
             mapView: true,
+            groups: undefined,
             dropdownOptions: [
                 [
                     { value: 'name', label: 'name' },
@@ -87,6 +96,9 @@ export default class Explore extends React.Component {
     handleSelectChange = (selectedOption) => {
         console.log(selectedOption);
         this.dotGrid.current.updatePointPosition(selectedOption.value);
+    }
+    filterValuesContainer = () => {
+        
     }
     render() {
         const sidebarButtons = [
@@ -188,7 +200,24 @@ export default class Explore extends React.Component {
                             <div>{'points physicians'}</div>
                         )
                     } */}
-                    <SearchDotGrid ref={this.dotGrid} />
+                    <SearchDotGrid
+                        ref={this.dotGrid}
+                        groupsCallback={groups => this.setState({ groups })}
+                    />
+                    <FilterValuesContainer>
+                        {
+                            this.state.groups
+                                ? Object.keys(this.state.groups).map((key, index) => {
+                                    return (
+                                        <FilterValue>
+                                            {key}    
+                                        </FilterValue>
+                                    )
+                                })
+                                : null
+                        }
+                    </FilterValuesContainer>
+                    
                 </ExploreContainer>
             </div>
         );
