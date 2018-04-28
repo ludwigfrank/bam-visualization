@@ -64,52 +64,38 @@ export default class SearchDotGrid extends React.Component {
 
         this.app = new PIXI.Application(this.containerDimensions.x, this.containerDimensions.y, {backgroundColor : 0xffffff});
         this.pixiCanvas.appendChild(this.app.view);
-        this.pixiCanvas.interactive = true;
-        this.app.interactive = true;
+        // this.pixiCanvas.interactive = false;
+        // this.app.interactive = false;
         this.app.start();
         
-        var sprites = new PIXI.particles.ParticleContainer(amountDots, {
-            scale: true,
-            position: true,
-            rotation: true,
-            uvs: true,
-            alpha: true
-        });
+        // var sprites = new PIXI.particles.ParticleContainer(amountDots, {
+        //     scale: true,
+        //     position: true,
+        //     rotation: true,
+        //     uvs: true,
+        //     alpha: true
+        // });
+        // var sprites = new PIXI.particles.ParticleContainer(amountDots);
+        var sprites = new PIXI.Container(amountDots);
+    
         sprites.interactive = true;
         sprites.interactiveChildren = true;
         this.app.stage.addChild(sprites);
         
-        // create an array to store all the sprites
+        // store for sprites
         this.dots = [];
         this.totalSprites = this.app.renderer instanceof PIXI.WebGLRenderer ? amountDots : gridWidth * 2;
         
         this.scaleValue = 0.2;
         this.dotSize = 50 * this.scaleValue;
         this.gridPositions = this.getGridPositions(
-            this.dotSize, this.containerDimensions.x, amountDots, 0
-        ); // pointSize, gridWidth, totalPoints, groupIdex
+            this.dotSize, this.containerDimensions.x, amountDots, 0 // pointSize, gridWidth, totalPoints, groupIdex
+        );
 
         const chromaColor = chroma.scale(['white', 'orange']).mode('lab');
 
         for (let index = 0; index < this.totalSprites; index += 1) {
-            // create a new Sprite
             const dotSprite = PIXI.Sprite.fromImage(dot);
-            dotSprite.interactive = true;
-            dotSprite.buttonMode = true;
-
-            dotSprite.on('mousedown', (event) => {
-                console.log('interactive');
-            });
-            dotSprite.on('pointerdown', (event) => {
-                console.log('interactive');
-            });
-            dotSprite.on('mousedown', (event) => {
-                console.log('interactive');
-            });
-            dotSprite.on('click', (event) => {
-                console.log('interactive');
-            });
-
             // dotSprite.tint = chromaColor(0.5);
             dotSprite.tint = 0xff9900;
             dotSprite.alpha = Math.random();
@@ -128,14 +114,24 @@ export default class SearchDotGrid extends React.Component {
                 dotSprite.x = position.x;
                 dotSprite.y = position.y;
             });
-        
+            
+            // Add eventlisteners
+            dotSprite.interactive = true;
+            dotSprite.buttonMode = true;
+            dotSprite.on('mousedown', this.handleClick);
+
             this.dots.push(dotSprite);
-        
             sprites.addChild(dotSprite);
         }
 
         animate();
         
+    }
+    handleClick(data) {
+        console.log('mousedown');
+        console.log(data.target);
+        data.target.scale.x = 1;
+        data.target.scale.y = 1;
     }
     componentWillUnmount() {
         this.app.stop();
@@ -188,6 +184,7 @@ export default class SearchDotGrid extends React.Component {
     }
     render () {
         let component = this;
+        console.log('render');
         return (
             <DotContainer
                 id={'dot-container'}
