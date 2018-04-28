@@ -217,10 +217,11 @@ export default class Explore extends React.Component {
                             this.state.groups
                                 ? Object.keys(this.state.groups).map((key, index) => {
                                     const group = this.state.groups[key];
+                                    const groupPercentage = group.length / this.state.doctorsLength * 100;
                                     return (
                                         <FilterValue>
                                             <div>{group.length}</div>
-                                            <div>{`${group.length / this.state.doctorsLength}%`}</div>
+                                            <div>{`${groupPercentage.toFixed()}%`}</div>
                                         </FilterValue>
                                     )
                                 })
