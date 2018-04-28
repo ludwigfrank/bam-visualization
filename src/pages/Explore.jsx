@@ -6,6 +6,7 @@ import Sidebar from '../components/Sidebar';
 import DropdownBar from '../components/DropdownBar.jsx';
 import HexMap from '../components/HexMap';
 import SearchDotGrid from '../components/SearchDotGrid';
+import Tooltip from '../components/Tooltip.jsx';
 // import Map from '../components/Map.jsx';
 
 const ExploreContainer = styled.div`
@@ -51,10 +52,13 @@ export default class Explore extends React.Component {
         super(props);
 
         this.dotGrid = React.createRef();
+        this.mousePosition = { x: 100, y: 100 },
 
         this.state = {
             mapView: true,
             groups: undefined,
+            showTooltip: false,
+            tooltipContent: '',
             dropdownOptions: [
                 [
                     { value: 'name', label: 'name' },
@@ -96,8 +100,11 @@ export default class Explore extends React.Component {
         console.log(selectedOption);
         this.dotGrid.current.updatePointPosition(selectedOption.value);
     }
-    filterValuesContainer = () => {
-        
+    handleTooltip = (showTooltip, tooltipContent) => {
+        this.setState({
+            showTooltip,
+            tooltipContent
+        });
     }
     render() {
         const sidebarButtons = [
@@ -120,7 +127,9 @@ export default class Explore extends React.Component {
             .mode('lab');
 
         return (
-            <div>
+            <div onMouseMove={e => {
+                this.mousePosition = {x: e.clientX, y: e.clientY};
+            }}>
                 <Sidebar
                     border={true}
                     header={'What we know so far.'}
@@ -221,6 +230,7 @@ export default class Explore extends React.Component {
                     <SearchDotGrid
                         ref={this.dotGrid}
                         groupsCallback={groups => this.setState({ groups })}
+                        tooltipCallback={(showTooltip, content) => this.handleTooltip(showTooltip, content)}
                     />
                     <FilterValuesContainer>
                         {
@@ -239,8 +249,14 @@ export default class Explore extends React.Component {
                                 )
                         }
                     </FilterValuesContainer>
-                    
                 </ExploreContainer>
+                <Tooltip
+                    active={this.state.showTooltip}
+                    position={this.mousePosition}
+                    content={this.state.tooltipContent}
+                >
+                    {this.state.tooltipContent}
+                </Tooltip>
             </div>
         );
     }

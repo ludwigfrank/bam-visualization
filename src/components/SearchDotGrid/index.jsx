@@ -131,18 +131,22 @@ export default class SearchDotGrid extends React.Component {
         animate();
         
     }
-    handleMouseover(data) {
+    handleMouseover = (data) => {
         // console.log('mouseover');
         // console.log(data.target);
         data.target.alpha = 1;
         data.target.tint = 0x000000;
+
+        this.props.tooltipCallback(true, 'doctor information');
     }
-    handleMouseout(data) {
+    handleMouseout = (data) => {
         // console.log('mouseout');
         // console.log(data.currentTarget);
         data.currentTarget.tint = 0x00ff00;
+
+        this.props.tooltipCallback(false, 'empty');
     }
-    handleMousedown(data) {
+    handleMousedown = (data) => {
         // console.log('mousedown');
         // console.log(data.target);
         data.target.tint = 0x0000ff;
