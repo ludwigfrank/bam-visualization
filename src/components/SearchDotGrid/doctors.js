@@ -52,95 +52,95 @@ export default [
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'lel',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'lel',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'lel',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'lel',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'lel',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'lel',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'lel',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'lel',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'lel',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'lel',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'lel',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'lel',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'lel',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'lel',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'lel',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'lel',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'lel',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'lel',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'lel',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'lel',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'lel',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'lel',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'lel',
         value: 'no'
     },
     {

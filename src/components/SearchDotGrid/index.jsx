@@ -34,14 +34,14 @@ export default class SearchDotGrid extends React.Component {
     shouldComponentUpdate() {
         return false;
     }
-    getGridPositions(pointSize, gridWidth, totalPoints, groupIndex) {
+    getGridPositions(pointSize, gridWidth, totalPoints, groupIndex, numberOfGroups) {
         const pointDimension = pointSize;
         const pointsPerRow = Math.floor(gridWidth / pointDimension);
         const numRows = totalPoints / pointsPerRow;
 
         const dotPositions = [];
         for (let index = 0; index < totalPoints; index++) {
-            const groupPadding = pointDimension + gridWidth * 5 * groupIndex;
+            const groupPadding = 100 * groupIndex;
             const xPosition = pointDimension * (index % pointsPerRow) + groupPadding;
             const yPosition = pointDimension * Math.floor(index / pointsPerRow) + pointDimension;
 
@@ -57,7 +57,12 @@ export default class SearchDotGrid extends React.Component {
         // const amountDots = 5000;
         const amountDots = doctors.length;
 
-        this.app = new PIXI.Application(dotContainerDimension.width - 3, dotContainerDimension.height - 3, {backgroundColor : 0xffffff});
+        this.containerDimensions = {
+            x: dotContainerDimension.width - 3,
+            y: dotContainerDimension.height - 3
+        };
+
+        this.app = new PIXI.Application(this.containerDimensions.x, this.containerDimensions.y, {backgroundColor : 0xffffff});
         this.pixiCanvas.appendChild(this.app.view);
         this.pixiCanvas.interactive = true;
         this.app.interactive = true;
@@ -78,9 +83,10 @@ export default class SearchDotGrid extends React.Component {
         this.dots = [];
         this.totalSprites = this.app.renderer instanceof PIXI.WebGLRenderer ? amountDots : 100;
         
-        const scaleValue = 0.2;
+        this.scaleValue = 0.2;
+        this.dotSize = 50 * this.scaleValue;
         this.gridPositions = this.getGridPositions(
-            50 * scaleValue, dotContainerDimension.width, amountDots, 0
+            this.dotSize, this.containerDimensions.x, amountDots, 0
         ); // pointSize, gridWidth, totalPoints, groupIdex
 
         const chromaColor = chroma.scale(['white', 'orange']).mode('lab');
@@ -110,7 +116,7 @@ export default class SearchDotGrid extends React.Component {
         
             // set the anchor point so the texture is centerd on the sprite
             dotSprite.anchor.set(0.5);
-            dotSprite.scale.set(scaleValue / 1.5);
+            dotSprite.scale.set(this.scaleValue / 1.5);
 
             const position = {x: 0, y: 0}
             const tween = new TWEEN.Tween(position)
@@ -149,25 +155,35 @@ export default class SearchDotGrid extends React.Component {
 
         const groups = _groupBy(doctors, (doctor) => doctor['name']);
         console.log(groups);
+        const numberOfGroups = Object.keys(groups).length;
 
-        
         let pointsCounter = 0;
-        const groupedPoints = Object.keys(groups).map((key, index) => {
+        Object.keys(groups).forEach((key, index) => {
             const group = groups[key];
-            console.log(group);
             const groupLength = group.length;
-            console.log(groupLength);
 
             const gridPositions = this.getGridPositions(
-                50 * 0.2, 300, groupLength, index
-            ); // pointSize, gridWidth, totalPoints, groupIdex
-    
+                this.dotSize,
+                // this.containerDimensions.x / numberOfGroups,
+                100,
+                groupLength,
+                index,
+                numberOfGroups
+            );
+
+            console.log('position group');
+            console.log(gridPositions);
+
             // for (let index = 0; index < this.dots.length; index += 1) {
-            for (let index = 0; index < groupLength; index += 1) {
-                const dotSprite = this.dots[index];
+            for (let i = 0; i < groupLength; i += 1) {
+                const dotSprite = this.dots[pointsCounter];
+
+                dotSprite.tint = 0xff0000;
+                dotSprite.alpha = 1;
+
                 const position = {x: dotSprite.x, y: dotSprite.y}
                 const tween = new TWEEN.Tween(position)
-                    .to({ x: gridPositions[index].x, y: gridPositions[index].y }, 700)
+                    .to({ x: gridPositions[i].x, y: gridPositions[i].y }, 700)
                     .easing(TWEEN.Easing.Quadratic.Out)
                     .start();
                 
@@ -175,6 +191,8 @@ export default class SearchDotGrid extends React.Component {
                     dotSprite.x = position.x;
                     dotSprite.y = position.y;
                 });
+
+                pointsCounter += 1;
             }
     
         });
@@ -185,55 +203,11 @@ export default class SearchDotGrid extends React.Component {
         requestAnimationFrame(this.animate);
         TWEEN.update();
     }
-    animateSprites = () => {
-        // create a bounding box for margots
-        var dotSpriteBoundsPadding = 100;
-        var dotSpriteBounds = new PIXI.Rectangle(
-            -dotSpriteBoundsPadding,
-            -dotSpriteBoundsPadding,
-            this.app.screen.width + dotSpriteBoundsPadding * 2,
-            this.app.screen.height + dotSpriteBoundsPadding * 2
-        );
-
-        let tick = 0;        
-        this.app.ticker.add(() => {
-        
-            // iterate through the sprites and update their position
-            for (let index = 0; index < this.dots.length; index += 1) {
-        
-                const dotSprite = this.dots[index];
-                // dotSprite.scale.y = 0.95 + Math.sin(tick + dotSprite.offset) * 0.05;
-                dotSprite.direction += dotSprite.turningSpeed * 0.01;
-                dotSprite.x += Math.sin(dotSprite.direction) * (dotSprite.speed * dotSprite.scale.y);
-                dotSprite.y += Math.cos(dotSprite.direction) * (dotSprite.speed * dotSprite.scale.y);
-                dotSprite.rotation = -dotSprite.direction + Math.PI;
-        
-                // wrap the this.dots
-                if (dotSprite.x < dotSpriteBounds.x) {
-                    dotSprite.x += dotSpriteBounds.width;
-                }
-                else if (dotSprite.x > dotSpriteBounds.x + dotSpriteBounds.width) {
-                    dotSprite.x -= dotSpriteBounds.width;
-                }
-        
-                if (dotSprite.y < dotSpriteBounds.y) {
-                    dotSprite.y += dotSpriteBounds.height;
-                }
-                else if (dotSprite.y > dotSpriteBounds.y + dotSpriteBounds.height) {
-                    dotSprite.y -= dotSpriteBounds.height;
-                }
-            }
-        
-            // increment the ticker
-            tick += 0.1;
-        });
-    }
     render () {
         let component = this;
         return (
             <DotContainer
                 id={'dot-container'}
-                // onClick={this.animateSprites}
                 onClick={this.updatePointPosition}
             >
                 <div ref={(thisDiv) => {component.pixiCanvas = thisDiv}} />
