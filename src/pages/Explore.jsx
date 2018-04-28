@@ -13,7 +13,7 @@ const ExploreContainer = styled.div`
     border: 2px solid red;
     height: 100%;
     right: 0;
-    padding-top: 50px;
+    padding-top: 85px;
     position: absolute;
     top: 0;
     width: 75%;
@@ -34,17 +34,19 @@ const FilterButton = styled.button`
     border: none;
     border-radius: 2px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    font-size: 18px;
+    font-size: 1em;
     padding: 3px 10px;
     text-align: center;
 `;
 const FilterValuesContainer = styled.div`
     border: 2px solid orange;
     display: flex;
+    font-family: plex-semibold;
     justify-content: space-around;
 `;
 const FilterValue = styled.div`
     border: 2px solid green;
+    font-family: plex-semibold;
 `;
 
 export default class Explore extends React.Component {
@@ -57,6 +59,7 @@ export default class Explore extends React.Component {
         this.state = {
             mapView: true,
             groups: undefined,
+            doctorsLength: undefined,
             showTooltip: false,
             tooltipContent: '',
             dropdownOptions: [
@@ -171,6 +174,7 @@ export default class Explore extends React.Component {
                                 showHelp
                                 showWorldButton
                                 selectCallback={(selectedOption) => this.handleSelectChange(selectedOption)}
+                                placeholder={'placeholder'}
                             />
                         ) : (
                             <FilterButtonContainer>
@@ -216,7 +220,7 @@ export default class Explore extends React.Component {
                                     return (
                                         <FilterValue>
                                             <div>{group.length}</div>
-                                            <div>{'X %'}</div>
+                                            <div>{`${group.length / this.state.doctorsLength}%`}</div>
                                         </FilterValue>
                                     )
                                 })
@@ -229,7 +233,7 @@ export default class Explore extends React.Component {
                     </FilterValuesContainer>
                     <SearchDotGrid
                         ref={this.dotGrid}
-                        groupsCallback={groups => this.setState({ groups })}
+                        groupsCallback={(groups, doctorsLength) => this.setState({ groups, doctorsLength })}
                         tooltipCallback={(showTooltip, content) => this.handleTooltip(showTooltip, content)}
                     />
                     <FilterValuesContainer>

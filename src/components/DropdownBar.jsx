@@ -43,6 +43,7 @@ export default class DropdownBar extends React.Component {
                                 wrapperStyle={wrapperStyle}
                                 selectCallback={this.props.selectCallback}
                                 options={option}
+                                placeholder={this.props.placeholder}
                             />
                         );
                     })

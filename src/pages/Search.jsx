@@ -52,6 +52,7 @@ export default class Search extends React.Component {
                <SearchBar />
                <DropdownBar
                     options={dropdownOptions}
+                    placeholder={'placeholder'}
                 />
                {/* <SearchDotGrid /> */}
                <DocumentTiles />

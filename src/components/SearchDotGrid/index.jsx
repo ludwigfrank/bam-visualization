@@ -54,8 +54,8 @@ export default class SearchDotGrid extends React.Component {
         const dotContainer = document.getElementById('dot-container');
         const dotContainerDimension = dotContainer.getBoundingClientRect();
 
-        // const amountDots = 5000;
-        const amountDots = doctors.length;
+        // const this.amountDots = 5000;
+        this.amountDots = doctors.length;
 
         this.containerDimensions = {
             x: dotContainerDimension.width - 3,
@@ -68,15 +68,15 @@ export default class SearchDotGrid extends React.Component {
         // this.app.interactive = false;
         this.app.start();
         
-        // var sprites = new PIXI.particles.ParticleContainer(amountDots, {
+        // var sprites = new PIXI.particles.ParticleContainer(this.amountDots, {
         //     scale: true,
         //     position: true,
         //     rotation: true,
         //     uvs: true,
         //     alpha: true
         // });
-        // var sprites = new PIXI.particles.ParticleContainer(amountDots);
-        var sprites = new PIXI.Container(amountDots);
+        // var sprites = new PIXI.particles.ParticleContainer(this.amountDots);
+        var sprites = new PIXI.Container(this.amountDots);
     
         sprites.interactive = true;
         sprites.interactiveChildren = true;
@@ -84,12 +84,12 @@ export default class SearchDotGrid extends React.Component {
         
         // store for sprites
         this.dots = [];
-        this.totalSprites = this.app.renderer instanceof PIXI.WebGLRenderer ? amountDots : gridWidth * 2;
+        this.totalSprites = this.app.renderer instanceof PIXI.WebGLRenderer ? this.amountDots : gridWidth * 2;
         
         this.scaleValue = 0.4;
         this.dotSize = 50 * this.scaleValue;
         this.gridPositions = this.getGridPositions(
-            this.dotSize, this.containerDimensions.x, amountDots, 0 // pointSize, gridWidth, totalPoints, groupIdex
+            this.dotSize, this.containerDimensions.x, this.amountDots, 0 // pointSize, gridWidth, totalPoints, groupIdex
         );
 
         const chromaColor = chroma.scale(['white', 'orange']).mode('lab');
@@ -157,7 +157,7 @@ export default class SearchDotGrid extends React.Component {
         console.log('update position');
 
         const groups = _groupBy(doctors, (doctor) => doctor[groupingValue]);
-        this.props.groupsCallback(groups);
+        this.props.groupsCallback(groups, this.amountDots);
         // console.log(groups);
         const numberOfGroups = Object.keys(groups).length;
 

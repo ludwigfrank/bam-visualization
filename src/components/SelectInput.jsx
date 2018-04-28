@@ -26,6 +26,7 @@ export default class SelectInput extends React.Component {
                 wrapperStyle={this.props.wrapperStyle}
                 onChange={this.handleChange}
                 options={this.props.options}
+                placeholder={this.props.placeholder}
             />
         );
     }
