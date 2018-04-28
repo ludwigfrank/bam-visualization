@@ -54,7 +54,8 @@ export default class SearchDotGrid extends React.Component {
         const dotContainer = document.getElementById('dot-container');
         const dotContainerDimension = dotContainer.getBoundingClientRect();
 
-        const amountDots = 5000;
+        // const amountDots = 5000;
+        const amountDots = doctors.length;
 
         this.app = new PIXI.Application(dotContainerDimension.width - 3, dotContainerDimension.height - 3, {backgroundColor : 0xffffff});
         this.pixiCanvas.appendChild(this.app.view);
@@ -122,7 +123,6 @@ export default class SearchDotGrid extends React.Component {
                 dotSprite.x = position.x;
                 dotSprite.y = position.y;
             });
-
             
             // create a random direction in radians
             dotSprite.direction = Math.random() * Math.PI * 2;
@@ -146,11 +146,40 @@ export default class SearchDotGrid extends React.Component {
     }
     updatePointPosition = () => {
         console.log('update position');
-        for (let index = 0; index < this.dots.length; index += 1) {
-            const dotSprite = this.dots[index];
-            dotSprite.x += 50;
-            dotSprite.y += 50;
-        }
+
+        const groups = _groupBy(doctors, (doctor) => doctor['name']);
+        console.log(groups);
+
+        
+        let pointsCounter = 0;
+        const groupedPoints = Object.keys(groups).map((key, index) => {
+            const group = groups[key];
+            console.log(group);
+            const groupLength = group.length;
+            console.log(groupLength);
+
+            const gridPositions = this.getGridPositions(
+                50 * 0.2, 300, groupLength, index
+            ); // pointSize, gridWidth, totalPoints, groupIdex
+    
+            // for (let index = 0; index < this.dots.length; index += 1) {
+            for (let index = 0; index < groupLength; index += 1) {
+                const dotSprite = this.dots[index];
+                const position = {x: dotSprite.x, y: dotSprite.y}
+                const tween = new TWEEN.Tween(position)
+                    .to({ x: gridPositions[index].x, y: gridPositions[index].y }, 700)
+                    .easing(TWEEN.Easing.Quadratic.Out)
+                    .start();
+                
+                tween.onUpdate(position => {
+                    dotSprite.x = position.x;
+                    dotSprite.y = position.y;
+                });
+            }
+    
+        });
+        
+        animate();
     }
     animate = () => {
         requestAnimationFrame(this.animate);
@@ -205,7 +234,7 @@ export default class SearchDotGrid extends React.Component {
             <DotContainer
                 id={'dot-container'}
                 // onClick={this.animateSprites}
-                // onClick={this.updatePointPosition}
+                onClick={this.updatePointPosition}
             >
                 <div ref={(thisDiv) => {component.pixiCanvas = thisDiv}} />
             </DotContainer>

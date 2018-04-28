@@ -192,123 +192,123 @@ export default [
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'yay',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'yay',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'yay',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'yay',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'yay',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'yay',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'yay',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'yay',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'yay',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'yay',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'yay',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'yay',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'yay',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'yay',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'yay',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'yay',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'yay',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'yay',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'yay',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'yay',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'yay',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'yay',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'yay',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'yay',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'yay',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'yay',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'yay',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'yay',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'yay',
         value: 'no'
     },
     {
-        name: 'hey',
+        name: 'yay',
         value: 'no'
     },
     {
