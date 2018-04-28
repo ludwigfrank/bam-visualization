@@ -118,7 +118,9 @@ export default class SearchDotGrid extends React.Component {
             // Add eventlisteners
             dotSprite.interactive = true;
             dotSprite.buttonMode = true;
-            dotSprite.on('mousedown', this.handleClick);
+            dotSprite.on('mouseover', this.handleMouseover);
+            dotSprite.on('mouseout', this.handleMouseout);
+            dotSprite.on('mousedown', this.handleMousedown);
 
             this.dots.push(dotSprite);
             sprites.addChild(dotSprite);
@@ -127,11 +129,22 @@ export default class SearchDotGrid extends React.Component {
         animate();
         
     }
-    handleClick(data) {
-        console.log('mousedown');
+    handleMouseover(data) {
+        console.log('mouseover');
         console.log(data.target);
         data.target.scale.x = 1;
         data.target.scale.y = 1;
+    }
+    handleMouseout(data) {
+        console.log('mouseout');
+        console.log(data.currentTarget);
+        data.currentTarget.scale.x = 0.2;
+        data.currentTarget.scale.y = 0.2;
+    }
+    handleMousedown(data) {
+        console.log('mousedown');
+        console.log(data.target);
+        data.target.tint = 0xff0000;
     }
     componentWillUnmount() {
         this.app.stop();
