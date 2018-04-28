@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
+import chroma from 'chroma-js'
 
 import Sidebar from '../components/Sidebar';
 import DropdownBar from '../components/DropdownBar.jsx';
@@ -18,7 +19,7 @@ const ExploreContainer = styled.div`
 `;
 
 const MarkedText = styled.span`
-    background-color: pink;
+    background-color: ${props => props.color};
 `;
 
 const FilterButtonContainer = styled.div`
@@ -28,6 +29,7 @@ const FilterButtonContainer = styled.div`
     width: 100%;
 `;
 const FilterButton = styled.button`
+    color: ${props => props.active ? 'white' : 'black'};
     background-color: ${props => props.active ? 'orange' : 'white'};
     border: none;
     border-radius: 2px;
@@ -101,6 +103,11 @@ export default class Explore extends React.Component {
             }
         ];
 
+        const chromaColor = chroma
+            .scale(['white', 'orange'])
+            .domain([0, 23401])
+            .mode('lab');
+
         return (
             <div>
                 <Sidebar
@@ -113,25 +120,25 @@ export default class Explore extends React.Component {
                 >
                     <div>
                         {'In this area we know that out of '}
-                        <MarkedText>{'23.401'}</MarkedText>
+                        <MarkedText color={chromaColor(23401)}>{'23.401'}</MarkedText>
                         {' physicians there were '}
-                        <MarkedText>{'12.587'}</MarkedText>
+                        <MarkedText color={chromaColor(12587)}>{'12.587'}</MarkedText>
                         {' medical students, '}
-                        <MarkedText>{'5.012'}</MarkedText>
+                        <MarkedText color={chromaColor(5012)}>{'5.012'}</MarkedText>
                         {' dental medicine students and '}
-                        <MarkedText>{'2.345'}</MarkedText>
+                        <MarkedText color={chromaColor(2345)}>{'2.345'}</MarkedText>
                         {' pharmaceutic students who went to '}
-                        <MarkedText>{'14'}</MarkedText>
+                        <MarkedText color={chromaColor(14)}>{'14'}</MarkedText>
                         {' institutions and came from '}
-                        <MarkedText>{'4.233'}</MarkedText>
+                        <MarkedText color={chromaColor(4233)}>{'4.233'}</MarkedText>
                         {' places between '}
-                        <MarkedText>{'1860'}</MarkedText>
+                        <MarkedText color={chromaColor(1860)}>{'1860'}</MarkedText>
                         {' and '}
-                        <MarkedText>{'1980'}</MarkedText>
+                        <MarkedText color={chromaColor(1980)}>{'1980'}</MarkedText>
                         {'. We also know that there were '}
-                        <MarkedText>{'4.301'}</MarkedText>
+                        <MarkedText color={chromaColor(4301)}>{'4.301'}</MarkedText>
                         {' male and '}
-                        <MarkedText>{'2.021'}</MarkedText>
+                        <MarkedText color={chromaColor(2021)}>{'2.021'}</MarkedText>
                         {' female physicians.'}
                     </div>
                 </Sidebar>
