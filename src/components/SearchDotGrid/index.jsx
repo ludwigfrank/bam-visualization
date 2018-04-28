@@ -3,6 +3,7 @@ import * as d3 from 'd3'
 import * as PIXI from 'pixi.js'
 import _groupBy from 'lodash.groupby';
 import styled from 'styled-components'
+import chroma from 'chroma-js'
 import TWEEN from '@tweenjs/tween.js'
 
 import doctors from './doctors.js';
@@ -81,6 +82,8 @@ export default class SearchDotGrid extends React.Component {
             50 * scaleValue, dotContainerDimension.width, amountDots, 0
         ); // pointSize, gridWidth, totalPoints, groupIdex
 
+        const chromaColor = chroma.scale(['white', 'orange']).mode('lab');
+
         for (let index = 0; index < this.totalSprites; index += 1) {
             // create a new Sprite
             const dotSprite = PIXI.Sprite.fromImage(dot);
@@ -100,6 +103,7 @@ export default class SearchDotGrid extends React.Component {
                 console.log('interactive');
             });
 
+            // dotSprite.tint = chromaColor(0.5);
             dotSprite.tint = 0xff9900;
             dotSprite.alpha = Math.random();
         
@@ -108,7 +112,7 @@ export default class SearchDotGrid extends React.Component {
             dotSprite.scale.set(scaleValue / 1.5);
 
             const position = {x: 0, y: 0}
-            var tween = new TWEEN.Tween(position)
+            const tween = new TWEEN.Tween(position)
                 .to({ x: this.gridPositions[index].x, y: this.gridPositions[index].y }, 700)
                 .easing(TWEEN.Easing.Quadratic.Out)
                 .delay(500)
