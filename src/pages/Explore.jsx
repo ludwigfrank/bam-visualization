@@ -83,7 +83,7 @@ export default class Explore extends React.Component {
                     active: true
                 },
                 {
-                    value: 'value',
+                    value: 'sex',
                     buttonLabel: 'Gender',
                     active: false
                 },
@@ -241,9 +241,10 @@ export default class Explore extends React.Component {
                         {
                             this.state.groups
                                 ? Object.keys(this.state.groups).map((key, index) => {
+                                    const value = typeof key !== 'string' || key === '' ? 'no data' : key;
                                     return (
                                         <FilterValue>
-                                            {key}    
+                                            {value}    
                                         </FilterValue>
                                     )
                                 })

@@ -6,7 +6,10 @@ import styled from 'styled-components'
 import chroma from 'chroma-js'
 import TWEEN from '@tweenjs/tween.js'
 
-import doctors from './doctors.js';
+// import doctors from './doctors.js';
+// import doctors from '../../data/doctors-with-location.json';
+import doctors from '../../data/doctorsBiographicalData.json';
+
 import dot from '../../images/doctor-dot.png'
 
 const DotContainer = styled.div`
@@ -51,6 +54,8 @@ export default class SearchDotGrid extends React.Component {
         return dotPositions;
     }
     componentDidMount() {
+        console.log(doctors);
+
         const dotContainer = document.getElementById('dot-container');
         const dotContainerDimension = dotContainer.getBoundingClientRect();
 
