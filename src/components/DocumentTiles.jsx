@@ -1,6 +1,20 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
+import searchImage1 from '../images/search/search-1.png';
+import searchImage2 from '../images/search/search-2.png';
+import searchImage3 from '../images/search/search-3.png';
+import searchImage4 from '../images/search/search-4.png';
+import searchImage5 from '../images/search/search-5.png';
+import searchImage6 from '../images/search/search-6.png';
+import searchImage7 from '../images/search/search-7.png';
+import searchImage8 from '../images/search/search-8.png';
+import searchImage9 from '../images/search/search-9.png';
+import searchImage10 from '../images/search/search-10.png';
+import searchImage11 from '../images/search/search-11.png';
+import searchImage12 from '../images/search/search-12.png';
+
+
 const DocumentTileContainer = styled.div`
     box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px, rgba(0, 0, 0, 0.05) 0px 2px 3px;
     border: 2px solid green;
@@ -42,37 +56,62 @@ export default class DocumentTiles extends React.Component {
     render () {
         const documents = [
             {
-                src: './path',
+                src: searchImage1,
                 text: 'Dr. Brown has made it to the top of the professional ladd…',
                 type: 'letter'
             },
             {
-                src: './path',
+                src: searchImage2,
                 text: 'Dr. Brown has made it to the top of the professional ladd…',
                 type: 'magazine'
             },
             {
-                src: './path',
+                src: searchImage3,
                 text: 'Dr. Brown has made it to the top of the professional ladd…',
                 type: 'newsletter'
             },
             {
-                src: './path',
+                src: searchImage4,
                 text: 'document text',
                 type: 'newspaper'
             },
             {
-                src: './path',
+                src: searchImage5,
                 text: 'document text',
                 type: 'poem'
             },
             {
-                src: './path',
+                src: searchImage6,
                 text: 'document text',
                 type: 'manuscript'
             },
             {
-                src: './path',
+                src: searchImage7,
+                text: 'document text',
+                type: 'interview'
+            },
+            {
+                src: searchImage8,
+                text: 'document text',
+                type: 'interview'
+            },
+            {
+                src: searchImage9,
+                text: 'document text',
+                type: 'interview'
+            },
+            {
+                src: searchImage10,
+                text: 'document text',
+                type: 'interview'
+            },
+            {
+                src: searchImage11,
+                text: 'document text',
+                type: 'interview'
+            },
+            {
+                src: searchImage12,
                 text: 'document text',
                 type: 'interview'
             }
