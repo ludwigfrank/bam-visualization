@@ -2,6 +2,7 @@ import * as React from 'react'
 import styled from 'styled-components'
 
 import PhysicianTile from './PhysicianTile.jsx';
+
 import doctorImage1 from '../images/stories/doctor-1.png';
 import doctorImage2 from '../images/stories/doctor-2.png';
 import doctorImage3 from '../images/stories/doctor-3.png';
