@@ -8,6 +8,7 @@ const SidebarContainer = styled.div`
     height: 100%;
     left: 0;
     line-height: 1.5em;
+    overflow-y: scroll;
     padding-top: 50px;
     position: absolute;
     top: 0;

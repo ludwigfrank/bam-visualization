@@ -1,5 +1,5 @@
 import * as React from 'react'
-// import Sidebar from '../components/Sidebar';
+import Sidebar from '../components/Sidebar';
 import SidebarList from '../components/SidebarList';
 import styled from 'styled-components'
 
@@ -8,6 +8,9 @@ import StoriesTileGrid from '../components/StoriesTileGrid.jsx';
 
 import articleImageSrc from '../images/stories/story-article.png';
 
+const StoriesPage = styled.div`
+    // overflow-y: scroll;
+`;
 const StoriesContainer = styled.div`
     border: 2px solid green;
     height: 100%;
@@ -67,7 +70,7 @@ export default class Stories extends React.Component {
             }
         ];
         return (
-            <div>
+            <StoriesPage>
                {/* <Sidebar
                     border={true}
                     header={'Stories told with the archive'}
@@ -76,7 +79,15 @@ export default class Stories extends React.Component {
                 >
                    {"Lorem ipsum dolor amet disrupt cornhole keytar coloring book umami. Tacos bespoke slow-carb umami humblebrag. Forage actually typewriter pok pok chambray readymade flexitarian. Quinoa hexagon vexillologist small batch, hoodie swag paleo subway tile bespoke. Blog kale chips salvia direct trade shabby chic yr readymade portland ugh gastropub echo park organic chillwave. Roof party 90's tbh cronut, fanny pack keytar subway tile fixie. Single-origin coffee marfa waistcoat +1 leggings hammock."}
                </Sidebar> */}
-               <SidebarList showBackButton={true} />
+               <Sidebar
+                    border={true}
+                    header={'Stories told with the archive'}
+                    buttonLabel={'I want to add missing data'}
+                    buttons={sidebarButtons}
+                >
+                    <SidebarList showBackButton={true} />
+               </Sidebar>
+
                <StoriesContainer>
                     {/* <StoriesContainerInner>
                         <StoriesBar>
@@ -134,7 +145,7 @@ export default class Stories extends React.Component {
                         {' with the New York Police Department. In his thirty years at the hospital he started the Harlem Hospital Bulletin, headed the team that first used chlortetracycline on humans, founded the hospita`s cancer research center, and earned a reputation as an expert on head injuries. He was a Fellow of the American College of Surgeons and the American Medical Association. Lorem ipsum dolor amet disrupt cornhole keytar coloring book umami. Tacos bespoke slow-carb umami humblebrag. Dorothy L. Brown pok pok chambray readymade flexitarian. Quinoa hexagon vexillologist small batch, hoodie swag paleo subway tile bespoke. Blog kale chips salvia direct trade shabby chic yr readymade portland ugh gastropub echo park organic chillwave. Urage actually with cronut, fanny pack keytar subway tile fixie. Single-origin coffee marfa waistcoat +1 leggings hammock. Blog lumbersexual art party etsy meh ennui. Beard put a bird on it succulents bitters hot chicken tattooed biodiesel roof party freegan fam selfies chicharrones hammock pok pok scenester. Jean shorts green juice polaroid roof party helvetica chia cornhole copper mug la croix. Lyft organic cred, skateboard pabst pinterest direct trade pug meh yr brooklyn. Pabst kitsch shoreditch austin hashtag, freegan narwhal gochujang. Lorem ipsum dolor amet disrupt cornhole keytar coloring book umami. Tacos bespoke slow-carb umami humblebrag. Forage actually typewriter pok pok chambray readymade flexitarian. Quinoa hexagon vexillologist small batch, hoodie swag paleo subway tile bespoke. Blog kale chips salvia direct trade shabby chic yr readymade portland ugh gastropub echo park organic chillwave. Roof party 90`s tbh cronut, fanny pack keytar subway tile fixie. Single-origin coffee marfa waistcoat +1 leggings hammock. Blog lumbersexual art party etsy meh ennui. Beard put a bird on it succulents bitters hot chicken tattooed biodiesel roof party freegan fam selfies chicharrones hammock pok pok scenester. Jean shorts green juice polaroid roof party helvetica chia cornhole copper mug la croix. Lyft organic cred, skateboard pabst pinterest direct trade pug meh yr brooklyn. Pabst kitsch shoreditch austin hashtag, freegan narwhal gochujang.'}
                     </div>
                </StoriesContainer>
-            </div>
+            </StoriesPage>
         )
     }
 }

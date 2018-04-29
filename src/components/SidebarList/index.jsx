@@ -3,9 +3,9 @@ import styled from 'styled-components'
 
 const ListContainer = styled.div`
     border: 2px solid red;
-    margin-top: 80px;
+    margin-top: 20px;
     position: relative;
-    width: 30%;
+    width: 100%;
 `;
 const ListRow = styled.div`
     border: 2px solid green;
