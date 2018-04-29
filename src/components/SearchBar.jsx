@@ -56,7 +56,7 @@ export default class SearchBar extends React.Component {
                                 name={'search'}
                                 placeholder={'Enter physician’s name, school, place or search for document content'}
                             />
-                            <input type={'submit'} value={'Seach Archive'} />
+                            <input type={'submit'} value={'Search Archive'} />
                         </label>
                     </form>
                 </FormContainer>

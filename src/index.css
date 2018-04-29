@@ -11,6 +11,10 @@
     src: url('./fonts/plex/IBM-Plex-Sans/fonts/complete/otf/IBMPlexSans-SemiBold.otf');
 }
 
+textarea, input, button {
+    outline: none;
+}
+
 body {
     font-family: 'plex-regular', Fallback, sans-serif;
     height: 100%;
@@ -18,4 +22,5 @@ body {
     overflow: hidden;
     padding: 0;
     width: 100%;
+
 }

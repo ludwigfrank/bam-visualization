@@ -145,7 +145,7 @@ const SidebarButton = styled.button`
                         this.props.buttons.map((button, index) => {
                             return (
                                 <SidebarButton
-                                    onClick={button.buttonCallback}
+                                    // onClick={button.buttonCallback()}
                                     key={`sidebarButton-${index}`}
                                     filled={button.filled}
                                 >

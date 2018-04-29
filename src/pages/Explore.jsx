@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import chroma from 'chroma-js'
 
 import Sidebar from '../components/Sidebar';
+import FilterSidebar from '../components/FilterSidebar';
 import DropdownBar from '../components/DropdownBar.jsx';
 import HexMap from '../components/HexMap';
 import SearchDotGrid from '../components/SearchDotGrid';
@@ -34,6 +35,7 @@ const FilterButton = styled.button`
     border: none;
     border-radius: 2px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    cursor: pointer;
     font-size: 1em;
     padding: 3px 10px;
     text-align: center;
@@ -57,7 +59,7 @@ export default class Explore extends React.Component {
         this.mousePosition = { x: 100, y: 100 },
 
         this.state = {
-            mapView: true,
+            mapView: false,
             groups: undefined,
             doctorsLength: undefined,
             showTooltip: false,
@@ -80,7 +82,7 @@ export default class Explore extends React.Component {
                 {
                     value: 'name',
                     buttonLabel: 'Progam',
-                    active: true
+                    active: false
                 },
                 {
                     value: 'sex',
@@ -117,7 +119,7 @@ export default class Explore extends React.Component {
                 filled: true
             },
             {
-                label: 'I want see the physicians',
+                label: 'I want to see the physicians',
                 src: '/',
                 filled: false,
                 buttonCallback: () => this.handleView
@@ -133,38 +135,49 @@ export default class Explore extends React.Component {
             <div onMouseMove={e => {
                 this.mousePosition = {x: e.clientX, y: e.clientY};
             }}>
-                <Sidebar
-                    border={true}
-                    header={'What we know so far.'}
-                    buttonLabel={'I want to add missing data'}
-                    showBackButton={!this.state.mapView}
-                    backCallback={() => this.handleView}
-                    buttons={sidebarButtons}
-                >
-                    <div>
-                        {'In this area we know that out of '}
-                        <MarkedText color={chromaColor(23401)}>{'23.401'}</MarkedText>
-                        {' physicians there were '}
-                        <MarkedText color={chromaColor(12587)}>{'12.587'}</MarkedText>
-                        {' medical students, '}
-                        <MarkedText color={chromaColor(5012)}>{'5.012'}</MarkedText>
-                        {' dental medicine students and '}
-                        <MarkedText color={chromaColor(2345)}>{'2.345'}</MarkedText>
-                        {' pharmaceutic students who went to '}
-                        <MarkedText color={chromaColor(14)}>{'14'}</MarkedText>
-                        {' institutions and came from '}
-                        <MarkedText color={chromaColor(4233)}>{'4.233'}</MarkedText>
-                        {' places between '}
-                        <MarkedText color={chromaColor(1860)}>{'1860'}</MarkedText>
-                        {' and '}
-                        <MarkedText color={chromaColor(1980)}>{'1980'}</MarkedText>
-                        {'. We also know that there were '}
-                        <MarkedText color={chromaColor(4301)}>{'4.301'}</MarkedText>
-                        {' male and '}
-                        <MarkedText color={chromaColor(2021)}>{'2.021'}</MarkedText>
-                        {' female physicians.'}
-                    </div>
-                </Sidebar>
+                
+                {
+                    this.state.mapView ? (
+                        <Sidebar
+                            border={true}
+                            header={'What we know so far.'}
+                            buttonLabel={'I want to add missing data'}
+                            showBackButton={this.state.mapView}
+                            backCallback={() => this.handleView}
+                            buttons={sidebarButtons}
+                        >
+                            <div>
+                                {'In this area we know that out of '}
+                                <MarkedText color={chromaColor(23401)}>{'23.401'}</MarkedText>
+                                {' physicians there were '}
+                                <MarkedText color={chromaColor(12587)}>{'12.587'}</MarkedText>
+                                {' medical students, '}
+                                <MarkedText color={chromaColor(5012)}>{'5.012'}</MarkedText>
+                                {' dental medicine students and '}
+                                <MarkedText color={chromaColor(2345)}>{'2.345'}</MarkedText>
+                                {' pharmaceutic students who went to '}
+                                <MarkedText color={chromaColor(14)}>{'14'}</MarkedText>
+                                {' institutions and came from '}
+                                <MarkedText color={chromaColor(4233)}>{'4.233'}</MarkedText>
+                                {' places between '}
+                                <MarkedText color={chromaColor(1860)}>{'1860'}</MarkedText>
+                                {' and '}
+                                <MarkedText color={chromaColor(1980)}>{'1980'}</MarkedText>
+                                {'. We also know that there were '}
+                                <MarkedText color={chromaColor(4301)}>{'4.301'}</MarkedText>
+                                {' male and '}
+                                <MarkedText color={chromaColor(2021)}>{'2.021'}</MarkedText>
+                                {' female physicians.'}
+                            </div>
+                            <div onClick={() => this.handleView()}>{'toggle view'}</div>
+                        </Sidebar>
+                    ) : (
+                        <FilterSidebar
+                            backCallback={() => this.handleView}
+                            showBackButton
+                        />
+                    )
+                }
 
                 <ExploreContainer mapView={this.state.mapView}>
                     {
@@ -184,7 +197,13 @@ export default class Explore extends React.Component {
                                             <FilterButton
                                                 onClick={() => {
                                                     const updatedFilterValues = this.state.filterValues;
-                                                    updatedFilterValues[index].active = !updatedFilterValues[index].active
+                                                    updatedFilterValues.forEach((value, i) => {
+                                                        if (index === i) {
+                                                            updatedFilterValues[i].active = true
+                                                        } else {
+                                                            updatedFilterValues[i].active = false
+                                                        }
+                                                    });
                                                     this.setState({
                                                         filterValues: updatedFilterValues
                                                     });
@@ -203,15 +222,6 @@ export default class Explore extends React.Component {
                             </FilterButtonContainer>
                         )
                     }
-                    
-                    {/* <Map /> */}
-                    {/* {
-                        this.state.mapView ? (
-                            <HexMap />
-                        ) : (
-                            <div>{'points physicians'}</div>
-                        )
-                    } */}
                     <FilterValuesContainer>
                         {
                             this.state.groups

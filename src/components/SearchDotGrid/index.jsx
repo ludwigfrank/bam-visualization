@@ -13,7 +13,7 @@ import doctors from '../../data/doctorsBiographicalData.json';
 import dot from '../../images/doctor-dot.png'
 
 const DotContainer = styled.div`
-    background-color: lightblue;
+    background-color: white;
     border: 2px solid red;
     // bottom: 0;
     height: 75%;
@@ -54,7 +54,7 @@ export default class SearchDotGrid extends React.Component {
         return dotPositions;
     }
     componentDidMount() {
-        console.log(doctors);
+        // console.log(doctors);
 
         const dotContainer = document.getElementById('dot-container');
         const dotContainerDimension = dotContainer.getBoundingClientRect();

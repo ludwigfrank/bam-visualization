@@ -10,11 +10,12 @@ const SidebarContainer = styled.div`
     height: 100%;
     left: 0;
     line-height: 1.5em;
+    padding-top: 100px;
     position: absolute;
     top: 0;
     transform: ${props => props.expanded ? 'translate(20%)' : 'translate(0%)'};
     transition: transform 1s;
-    width: 350px;
+    width: 25%;
 `;
 const BackButton = styled.div`
     // border: 2px solid red;
@@ -107,7 +108,8 @@ export default class FilterSidebar extends React.Component {
             display: 'inline-block',
             flex: 1,
             margin: '0 10px',
-            top: '6px'
+            top: '6px',
+            width: '120px'
         };
 
         return (
@@ -177,8 +179,19 @@ export default class FilterSidebar extends React.Component {
                             { value: '1981', label: '1981' },
                         ]}
                     />
-                    {'.'}
-                    {'I want to see'}
+                    {'. '}
+                    {'I want to see '}
+                    <Select
+                        name="form-field-name"
+                        value={selectedOption}
+                        wrapperStyle={wrapperStyle}
+                        onChange={this.handleSelectChange}
+                        options={[
+                            { value: 'female', label: 'female' },
+                            { value: 'male', label: 'male' },
+                            { value: 'femaleMale', label: 'female & male' }
+                        ]}
+                    />
                     {'who are'}
                     <Select
                         name="form-field-name"
