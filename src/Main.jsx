@@ -1,5 +1,16 @@
 import * as React from 'react'
 import { Switch, Route } from 'react-router-dom'
+import { AnimatedSwitch } from 'react-router-transition'
+
+const PageFade = (props) => (
+  <CSSTransition 
+    {...props}
+    classNames="fadeTranslate"
+    timeout={1000}
+    mountOnEnter={true}
+    unmountOnExit={true}
+  />
+)
 
 import StartPage from './pages/StartPage.jsx'
 import About from './pages/About.jsx'
@@ -20,9 +31,15 @@ import Contribute from './pages/Contribute.jsx'
 import MapView from './pages/MapView.jsx'
 import Physicians from './pages/Physicians.jsx'
 
-const Main = () => (
+const Main = (props) => {
+  return (
     <div>
-      <Switch>
+      <AnimatedSwitch
+        atEnter={{ opacity: 0 }}
+        atLeave={{ opacity: 0 }}
+        atActive={{ opacity: 1 }}
+        className={'switch-wrapper'}
+      >
         <Route exact path='/' component={StartPage}/>
         <Route path='/about' component={StartPage}/>
         <Route path='/explore' component={Explore}/>
@@ -32,8 +49,9 @@ const Main = () => (
 
         <Route path='/mapview' component={MapView}/>
         <Route path='/physicians' component={Physicians}/>
-      </Switch>
+      </AnimatedSwitch>
     </div>
-);
+  )
+};
 
 export default Main;
