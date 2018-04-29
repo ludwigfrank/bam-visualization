@@ -22,37 +22,55 @@ export default class Search extends React.Component {
     }
     render() {
         const dropdownOptions = [
-            [
-                { value: 'dentalMedicine', label: 'dental medicine' },
-                { value: 'physician', label: 'physician' },
-            ],
-            [
-                { value: 'dentalMedicine', label: 'dental medicine' },
-                { value: 'physician', label: 'physician' },
-            ],
-            [
-                { value: 'dentalMedicine', label: 'dental medicine' },
-                { value: 'physician', label: 'physician' },
-            ],
-            [
-                { value: 'dentalMedicine', label: 'dental medicine' },
-                { value: 'physician', label: 'physician' },
-            ],
-            [
-                { value: 'dentalMedicine', label: 'dental medicine' },
-                { value: 'physician', label: 'physician' },
-            ],
-            [
-                { value: 'dentalMedicine', label: 'dental medicine' },
-                { value: 'physician', label: 'physician' },
-            ]
+            {
+                options: [
+                    { value: 'dentalMedicine', label: 'dental medicine' },
+                    { value: 'physician', label: 'physician' },
+                ],
+                type: 'Type'
+            },
+            {
+                options: [
+                    { value: 'boston', label: 'Boston' },
+                    { value: 'new-york', label: 'New York' },
+                ],
+                type: 'Place'
+            },
+            {
+                options: [
+                    { value: 'dentalMedicine', label: 'dental medicine' },
+                    { value: 'physician', label: 'physician' },
+                ],
+                type: 'Profession'
+            },
+            {
+                options: [
+                    { value: 'female', label: 'female' },
+                    { value: 'male', label: 'male' },
+                    { value: 'femaleMale', label: 'female & male' },
+                ],
+                type: 'Gender'
+            },
+            {
+                options: [
+                    { value: 'dentalMedicine', label: 'dental medicine' },
+                    { value: 'physician', label: 'physician' },
+                ],
+                type: 'Time'
+            },
+            {
+                options: [
+                    { value: 'dentalMedicine', label: 'dental medicine' },
+                    { value: 'physician', label: 'physician' },
+                ],
+                type: 'Other'
+            },
         ];
         return (
             <SearchPage>
                <SearchBar />
                <DropdownBar
                     options={dropdownOptions}
-                    placeholder={'placeholder'}
                 />
                {/* <SearchDotGrid /> */}
                <DocumentTiles />

@@ -27,6 +27,8 @@ export default class DropdownBar extends React.Component {
             // margin: '0 10px'
         };
 
+        console.log(this.props);
+
         return (
             <ProjectTitleContainer>
                 {
@@ -42,8 +44,8 @@ export default class DropdownBar extends React.Component {
                                 key={`selectInput-${index}`}
                                 wrapperStyle={wrapperStyle}
                                 selectCallback={this.props.selectCallback}
-                                options={option}
-                                placeholder={this.props.placeholder}
+                                options={option.options}
+                                placeholder={option.type}
                             />
                         );
                     })
