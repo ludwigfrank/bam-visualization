@@ -3,6 +3,7 @@ import Sidebar from '../components/Sidebar';
 import styled from 'styled-components'
 
 import PhysicianTileGrid from '../components/PhysicianTileGrid.jsx';
+import StoriesTileGrid from '../components/StoriesTileGrid.jsx';
 
 const StoriesContainer = styled.div`
     border: 2px solid green;
@@ -71,7 +72,7 @@ export default class Stories extends React.Component {
                             </Headline>
                         </StoriesBar>
                         <Content>
-                            <PhysicianTileGrid />
+                            <StoriesTileGrid />
                         </Content>
                     </StoriesContainerInner>
                </StoriesContainer>
