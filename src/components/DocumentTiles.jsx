@@ -27,21 +27,27 @@ const DocumentTileContainer = styled.div`
 const DocumentTile = styled.div`
     border: 2px solid red;
     border-radius: 4px;
-    height: 180px;
+    margin-bottom: 30px;
+    position: relative;
     min-width: calc(100% / 6);
     width: calc(100% / 6);
 `;
 const Image = styled.img`
     border: 2px solid pink;
-    height: 100px;
+    height: auto;
     width: 100%;
-`;
-const Label = styled.div`
-    background-color: ${props => props.color};
-    display: inline-block;
 `;
 const Text = styled.div`
     font-family: plex-semibold;
+    margin-bottom: 25px;
+    padding: 0 5%;
+`;
+const Label = styled.div`
+    background-color: ${props => props.color};
+    bottom: 0;
+    display: inline-block;
+    margin-left: 5%;
+    position: absolute;
 `;
 
 export default class DocumentTiles extends React.Component {
@@ -62,57 +68,57 @@ export default class DocumentTiles extends React.Component {
             },
             {
                 src: searchImage2,
-                text: 'Dr. Brown has made it to the top of the professional ladd…',
+                text: 'Press Release: Outstanding Teacher, Physician, Civic an…',
                 type: 'magazine'
             },
             {
                 src: searchImage3,
-                text: 'Dr. Brown has made it to the top of the professional ladd…',
+                text: 'Poem written about Dorothy Brown by Elizabeth Jackson',
                 type: 'newsletter'
             },
             {
                 src: searchImage4,
-                text: 'document text',
+                text: 'The Great Lie About Interest in the Black and the Poor',
                 type: 'newspaper'
             },
             {
                 src: searchImage5,
-                text: 'document text',
+                text: 'To tell it like it is! Physicians as public servants',
                 type: 'poem'
             },
             {
                 src: searchImage6,
-                text: 'document text',
+                text: 'A Dream in My Heart by Dorothy Brown',
                 type: 'manuscript'
             },
             {
                 src: searchImage7,
-                text: 'document text',
+                text: 'W. Montague Cobb In First Person: An Oral History',
                 type: 'interview'
             },
             {
                 src: searchImage8,
-                text: 'document text',
+                text: 'Publications by Staff Members. Department of…',
                 type: 'interview'
             },
             {
                 src: searchImage9,
-                text: 'document text',
+                text: 'Letter of materials to guide Ken Manning',
                 type: 'interview'
             },
             {
                 src: searchImage10,
-                text: 'document text',
+                text: 'Colloquium on African american history',
                 type: 'interview'
             },
             {
                 src: searchImage11,
-                text: 'document text',
+                text: 'Elite Blacks Recall Segregated Capital',
                 type: 'interview'
             },
             {
                 src: searchImage12,
-                text: 'document text',
+                text: 'Segregated Washington: Memories of Live in the Shadow',
                 type: 'interview'
             }
         ];
