@@ -1,5 +1,6 @@
 import * as React from 'react'
-import Sidebar from '../components/Sidebar';
+// import Sidebar from '../components/Sidebar';
+import SidebarList from '../components/SidebarList';
 import styled from 'styled-components'
 
 import PhysicianTileGrid from '../components/PhysicianTileGrid.jsx';
@@ -46,14 +47,15 @@ export default class Stories extends React.Component {
         ];
         return (
             <div>
-               <Sidebar
+               {/* <Sidebar
                     border={true}
                     header={'Stories told with the archive'}
                     buttonLabel={'I want to add missing data'}
                     buttons={sidebarButtons}
                 >
                    {"Lorem ipsum dolor amet disrupt cornhole keytar coloring book umami. Tacos bespoke slow-carb umami humblebrag. Forage actually typewriter pok pok chambray readymade flexitarian. Quinoa hexagon vexillologist small batch, hoodie swag paleo subway tile bespoke. Blog kale chips salvia direct trade shabby chic yr readymade portland ugh gastropub echo park organic chillwave. Roof party 90's tbh cronut, fanny pack keytar subway tile fixie. Single-origin coffee marfa waistcoat +1 leggings hammock."}
-               </Sidebar>
+               </Sidebar> */}
+               <SidebarList showBackButton={true} />
                <StoriesContainer>
                     <StoriesContainerInner>
                         <StoriesBar>

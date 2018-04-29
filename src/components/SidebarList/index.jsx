@@ -3,8 +3,9 @@ import styled from 'styled-components'
 
 const ListContainer = styled.div`
     border: 2px solid red;
+    margin-top: 80px;
     position: relative;
-    width: 300px;
+    width: 30%;
 `;
 const ListRow = styled.div`
     border: 2px solid green;
@@ -26,7 +27,7 @@ export default class SidebarList extends React.Component {
         this.state = {
         }
     }
-    render () {
+    render() {
         return (
             <ListContainer>
                 <ListRow>
@@ -51,10 +52,53 @@ export default class SidebarList extends React.Component {
                 </ListRow>
                 <ListRow>
                     <RowItemLeft>
-                        {'item left'}
+                        {'Known for'}
                     </RowItemLeft>
                     <RowItemRight>
-                        <div>{'right item'}</div>
+                        <div>{'First African-American surgeon at Harlem Hospital; chairman of the NAACP'}</div>
+                    </RowItemRight>
+                </ListRow>
+                <ListRow>
+                    <RowItemLeft>
+                        {'Medical Education'}
+                    </RowItemLeft>
+                    <RowItemRight>
+                        <div>{'Clark Atlanta University 1908-1911'}</div>
+                        <div>{'Harvard Medical School 1911-1915'}</div>
+                    </RowItemRight>
+                </ListRow>
+                <ListRow>
+                    <RowItemLeft>
+                        {'Geo locations'}
+                    </RowItemLeft>
+                    <RowItemRight>
+                        <div>{'map image'}</div>
+                    </RowItemRight>
+                </ListRow>
+                <ListRow>
+                    <RowItemLeft>
+                        {'Professional Positions'}
+                    </RowItemLeft>
+                    <RowItemRight>
+                        <div>{'Army Medical Corps France 1915-1918'}</div>
+                        <div>{'Private Practice Harlem, New York 1915-1918'}</div>
+                    </RowItemRight>
+                </ListRow>
+                <ListRow>
+                    <RowItemLeft>
+                        {'Related Physicians'}
+                    </RowItemLeft>
+                    <RowItemRight>
+                        <div>{'Dr. Myra Adele Logan'}</div>
+                        <div>{'Dr. Dorothy Lavinia Brown'}</div>
+                    </RowItemRight>
+                </ListRow>
+                <ListRow>
+                    <RowItemLeft>
+                        {'Related Documents'}
+                    </RowItemLeft>
+                    <RowItemRight>
+                        <div>{'Press Release: Outstanding Teacher, Physician, Civic an…'}</div>
                     </RowItemRight>
                 </ListRow>
             </ListContainer>

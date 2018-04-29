@@ -11,6 +11,7 @@ const HelpButtonStyle = styled.div`
     right: 50px;
 
     &::before {
+        backgroundcolor: ${props => props.active ? 'white' : 'black'};
         background-color: ${props => props.active ? 'orange' : 'white'};
         // border: 2px solid gray;
         border-radius: 100%;
