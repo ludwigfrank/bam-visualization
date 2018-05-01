@@ -1,7 +1,8 @@
 import * as React from 'react'
 import styled from 'styled-components'
-
+import { Link } from 'react-router-dom'
 import Select from 'react-select';
+
 import 'react-select/dist/react-select.css';
 
 const SidebarContainer = styled.div`
@@ -10,7 +11,7 @@ const SidebarContainer = styled.div`
     height: 100%;
     left: 0;
     line-height: 1.5em;
-    padding-top: 100px;
+    padding: 80px 1% 0 1%;
     position: absolute;
     top: 0;
     transform: ${props => props.expanded ? 'translate(20%)' : 'translate(0%)'};
@@ -21,6 +22,7 @@ const BackButton = styled.div`
     // border: 2px solid red;
     cursor: pointer;
     line-height: 32px;
+    margin-bottom: 40px;
     padding-left: 45px;
     position: relative;
     text-align: left;
@@ -38,6 +40,11 @@ const BackButton = styled.div`
         top: 0;
         position: absolute;
         width: 30px;
+    }
+    
+    a {
+        color: black;
+        text-decoration: none;
     }
 `;
 const SidebarContent = styled.div`
@@ -64,7 +71,7 @@ const SidebarContent = styled.div`
 `;
 const AddDataButton = styled.button`
     background-color: orange;
-    bottom: 0;
+    bottom: 40px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px, rgba(0, 0, 0, 0.05) 0px 2px 3px;
     border: none;
     border-radius: 4px;
@@ -114,17 +121,16 @@ export default class FilterSidebar extends React.Component {
 
         return (
             <SidebarContainer expanded={this.state.expanded} border>
-                {
-                    this.props.showBackButton && (
-                        <BackButton
-                            onClick={this.hideSidebar}
-                        >
-                            {'Back to map'}
-                        </BackButton>
-                    )
-                }
-                
-                    {'I want to see'}
+                    {
+                        this.props.showBackButton && (
+                            <BackButton
+                                onClick={this.props.backCallback()}
+                            >
+                                <Link to={'/explore'}>{'Back to map'}</Link>
+                            </BackButton>
+                        )
+                    }
+                    <h2>{'I want to see'}</h2>
                     <Select
                         name="form-field-name"
                         value={selectedOption}

@@ -128,7 +128,7 @@ const SidebarButton = styled.button`
                         <BackButton
                             onClick={this.props.backCallback()}
                         >
-                            {'Back to map'}
+                            <Link to={'/explore'}>{'Back to map'}</Link>
                         </BackButton>
                     )
                 }

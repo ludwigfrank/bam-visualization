@@ -120,7 +120,7 @@ export default class Explore extends React.Component {
             },
             {
                 label: 'I want to see the physicians',
-                src: '/',
+                src: '/dots',
                 filled: false,
                 buttonCallback: () => this.handleView
             }
@@ -142,7 +142,6 @@ export default class Explore extends React.Component {
                             border={true}
                             header={'What we know so far.'}
                             buttonLabel={'I want to add missing data'}
-                            showBackButton={this.state.mapView}
                             backCallback={() => this.handleView}
                             buttons={sidebarButtons}
                         >
