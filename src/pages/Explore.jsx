@@ -56,7 +56,7 @@ export default class Explore extends React.Component {
         super(props);
 
         this.dotGrid = React.createRef();
-        this.mousePosition = { x: 100, y: 100 },
+        this.mousePosition = { x: 100, y: 100 };
 
         this.state = {
             mapView: true,

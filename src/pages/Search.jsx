@@ -4,6 +4,7 @@ import SearchBar from '../components/SearchBar';
 import SearchDotGrid from '../components/SearchDotGrid';
 import DocumentTiles from '../components/DocumentTiles';
 import DropdownBar from '../components/DropdownBar.jsx';
+import Tooltip from '../components/Tooltip.jsx';
 
 const SearchPage = styled.div`
     // border: 3px solid green;
@@ -17,9 +18,19 @@ export default class Search extends React.Component {
     constructor(props) {
         super(props);
 
+        this.mousePosition = { x: 100, y: 100 };
+
         this.state = {
-            documentView: false
+            documentView: false,
+            showTooltip: false,
+            tooltipContent: ''
         };
+    }
+    handleTooltip = (showTooltip, tooltipContent) => {
+        this.setState({
+            showTooltip,
+            tooltipContent
+        });
     }
     render() {
         const dropdownOptions = [
@@ -67,8 +78,11 @@ export default class Search extends React.Component {
                 type: 'Other'
             },
         ];
+
         return (
-            <SearchPage>
+            <SearchPage onMouseMove={e => {
+                this.mousePosition = {x: e.clientX, y: e.clientY};
+            }}>
                <SearchBar />
                <DropdownBar
                     options={dropdownOptions}
@@ -78,11 +92,20 @@ export default class Search extends React.Component {
                    this.state.documentView ? (
                         <DocumentTiles />
                    ) : (
-                        <SearchDotGrid
-                            ref={this.dotGrid}
-                            // groupsCallback={(groups, doctorsLength) => this.setState({ groups, doctorsLength })}
-                            // tooltipCallback={(showTooltip, content) => this.handleTooltip(showTooltip, content)}
-                        />
+                        [
+                            <SearchDotGrid
+                                ref={this.dotGrid}
+                                // groupsCallback={(groups, doctorsLength) => this.setState({ groups, doctorsLength })}
+                                tooltipCallback={(showTooltip, content) => this.handleTooltip(showTooltip, content)}
+                            />,
+                            <Tooltip
+                                active={this.state.showTooltip}
+                                position={this.mousePosition}
+                                content={this.state.tooltipContent}
+                            >
+                                {this.state.tooltipContent}
+                            </Tooltip>
+                        ]
                    )
                }
             </SearchPage>
