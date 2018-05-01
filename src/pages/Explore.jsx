@@ -59,7 +59,7 @@ export default class Explore extends React.Component {
         this.mousePosition = { x: 100, y: 100 },
 
         this.state = {
-            mapView: false,
+            mapView: true,
             groups: undefined,
             doctorsLength: undefined,
             showTooltip: false,
@@ -169,7 +169,6 @@ export default class Explore extends React.Component {
                                 <MarkedText color={chromaColor(2021)}>{'2.021'}</MarkedText>
                                 {' female physicians.'}
                             </div>
-                            <div onClick={() => this.handleView()}>{'toggle view'}</div>
                         </Sidebar>
                     ) : (
                         <FilterSidebar
@@ -178,94 +177,103 @@ export default class Explore extends React.Component {
                         />
                     )
                 }
-
-                <ExploreContainer mapView={this.state.mapView}>
-                    {
-                        this.props.showDropdownBar ? (
-                            <DropdownBar
-                                options={this.state.dropdownOptions}
-                                showHelp
-                                showWorldButton
-                                selectCallback={(selectedOption) => this.handleSelectChange(selectedOption)}
-                                placeholder={'placeholder'}
-                            />
-                        ) : (
-                            <FilterButtonContainer>
-                                {
-                                    this.state.filterValues.map((filterValue, index) => {
+                {
+                    this.state.mapView ? (
+                        <ExploreContainer mapView={this.state.mapView}>
+                            <div>{'map view'}</div>
+                        </ExploreContainer>
+                    ) : (
+                        <ExploreContainer mapView={this.state.mapView}>
+                        {
+                            this.props.showDropdownBar ? (
+                                <DropdownBar
+                                    options={this.state.dropdownOptions}
+                                    showHelp
+                                    showWorldButton
+                                    selectCallback={(selectedOption) => this.handleSelectChange(selectedOption)}
+                                    placeholder={'placeholder'}
+                                />
+                            ) : (
+                                <FilterButtonContainer>
+                                    {
+                                        this.state.filterValues.map((filterValue, index) => {
+                                            return (
+                                                <FilterButton
+                                                    onClick={() => {
+                                                        const updatedFilterValues = this.state.filterValues;
+                                                        updatedFilterValues.forEach((value, i) => {
+                                                            if (index === i) {
+                                                                updatedFilterValues[i].active = true
+                                                            } else {
+                                                                updatedFilterValues[i].active = false
+                                                            }
+                                                        });
+                                                        this.setState({
+                                                            filterValues: updatedFilterValues
+                                                        });
+    
+                                                        console.log(updatedFilterValues[index]);
+                                                        this.handleSelectChange(updatedFilterValues[index])
+                                                    }}
+                                                    active={filterValue.active}
+                                                    key={`filterButton-${index}`}
+                                                >
+                                                    {filterValue.buttonLabel}
+                                                </FilterButton>
+                                            );
+                                        })
+                                    }
+                                </FilterButtonContainer>
+                            )
+                        }
+                        <FilterValuesContainer>
+                            {
+                                this.state.groups
+                                    ? Object.keys(this.state.groups).map((key, index) => {
+                                        const group = this.state.groups[key];
+                                        const groupPercentage = group.length / this.state.doctorsLength * 100;
                                         return (
-                                            <FilterButton
-                                                onClick={() => {
-                                                    const updatedFilterValues = this.state.filterValues;
-                                                    updatedFilterValues.forEach((value, i) => {
-                                                        if (index === i) {
-                                                            updatedFilterValues[i].active = true
-                                                        } else {
-                                                            updatedFilterValues[i].active = false
-                                                        }
-                                                    });
-                                                    this.setState({
-                                                        filterValues: updatedFilterValues
-                                                    });
-
-                                                    console.log(updatedFilterValues[index]);
-                                                    this.handleSelectChange(updatedFilterValues[index])
-                                                }}
-                                                active={filterValue.active}
-                                                key={`filterButton-${index}`}
-                                            >
-                                                {filterValue.buttonLabel}
-                                            </FilterButton>
-                                        );
+                                            <FilterValue>
+                                                <div>{group.length}</div>
+                                                <div>{`${groupPercentage.toFixed()}%`}</div>
+                                            </FilterValue>
+                                        )
                                     })
-                                }
-                            </FilterButtonContainer>
-                        )
-                    }
-                    <FilterValuesContainer>
-                        {
-                            this.state.groups
-                                ? Object.keys(this.state.groups).map((key, index) => {
-                                    const group = this.state.groups[key];
-                                    const groupPercentage = group.length / this.state.doctorsLength * 100;
-                                    return (
+                                    : (
                                         <FilterValue>
-                                            <div>{group.length}</div>
-                                            <div>{`${groupPercentage.toFixed()}%`}</div>
+                                            {'All'}    
                                         </FilterValue>
                                     )
-                                })
-                                : (
-                                    <FilterValue>
-                                        {'All'}    
-                                    </FilterValue>
-                                )
-                        }
-                    </FilterValuesContainer>
-                    <SearchDotGrid
-                        ref={this.dotGrid}
-                        groupsCallback={(groups, doctorsLength) => this.setState({ groups, doctorsLength })}
-                        tooltipCallback={(showTooltip, content) => this.handleTooltip(showTooltip, content)}
-                    />
-                    <FilterValuesContainer>
-                        {
-                            this.state.groups
-                                ? Object.keys(this.state.groups).map((key, index) => {
-                                    const value = typeof key !== 'string' || key === '' ? 'no data' : key;
-                                    return (
+                            }
+                        </FilterValuesContainer>
+                        <SearchDotGrid
+                            ref={this.dotGrid}
+                            groupsCallback={(groups, doctorsLength) => this.setState({ groups, doctorsLength })}
+                            tooltipCallback={(showTooltip, content) => this.handleTooltip(showTooltip, content)}
+                        />
+                        <FilterValuesContainer>
+                            {
+                                this.state.groups
+                                    ? Object.keys(this.state.groups).map((key, index) => {
+                                        const value = typeof key !== 'string' || key === '' ? 'no data' : key;
+                                        return (
+                                            <FilterValue>
+                                                {value}    
+                                            </FilterValue>
+                                        )
+                                    })
+                                    : (
                                         <FilterValue>
-                                            {value}    
+                                            {'All'}    
                                         </FilterValue>
                                     )
-                                })
-                                : (
-                                    <FilterValue>
-                                        {'All'}    
-                                    </FilterValue>
-                                )
-                        }
-                    </FilterValuesContainer>
-                </ExploreContainer>
+                            }
+                        </FilterValuesContainer>
+                    </ExploreContainer>
+                    )
+                }
+
+                
                 <Tooltip
                     active={this.state.showTooltip}
                     position={this.mousePosition}
