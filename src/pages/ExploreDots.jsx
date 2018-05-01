@@ -34,7 +34,7 @@ const FilterButton = styled.button`
     background-color: ${props => props.active ? 'orange' : 'white'};
     border: none;
     border-radius: 2px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px, rgba(0, 0, 0, 0.05) 0px 2px 3px;
     cursor: pointer;
     font-size: 1em;
     padding: 3px 10px;
@@ -46,6 +46,16 @@ const FilterValuesContainer = styled.div`
     font-family: plex-semibold;
     justify-content: space-around;
     margin: 10px 0;
+`;
+const FilterValuesContainerBottom = styled.div`
+    display: flex;
+    font-family: plex-semibold;
+    justify-content: space-around;
+    margin: 10px 0;
+    position: absolute;
+    bottom: 30px;
+    position: absolute;
+    width: 100%;
 `;
 const FilterValue = styled.div`
     // border: 2px solid green;
@@ -215,7 +225,7 @@ export default class Explore extends React.Component {
                         groupsCallback={(groups, doctorsLength) => this.setState({ groups, doctorsLength })}
                         tooltipCallback={(showTooltip, content) => this.handleTooltip(showTooltip, content)}
                     />
-                    <FilterValuesContainer>
+                    <FilterValuesContainerBottom>
                         {
                             this.state.groups
                                 ? Object.keys(this.state.groups).map((key, index) => {
@@ -232,7 +242,7 @@ export default class Explore extends React.Component {
                                     </FilterValue>
                                 )
                         }
-                    </FilterValuesContainer>
+                    </FilterValuesContainerBottom>
                 </ExploreContainer>
 
                 <Tooltip
