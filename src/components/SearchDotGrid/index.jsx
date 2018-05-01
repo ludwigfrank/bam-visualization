@@ -14,7 +14,7 @@ import dot from '../../images/doctor-dot.png'
 
 const DotContainer = styled.div`
     background-color: white;
-    border: 2px solid red;
+    // border: 2px solid red;
     // bottom: 0;
     height: 160%;
     // position: absolute;
