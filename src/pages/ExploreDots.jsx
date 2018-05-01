@@ -63,11 +63,11 @@ const FilterValue = styled.div`
     text-align: center;
 `;
 const FilterValueAmount = styled.div`
-    font-size: 17px;
     margin-bottom: 3px;
 `;
 const FilterValuePercentage = styled.div`
     font-family: plex-regular;
+    font-size: 14px;
 `;
 
 export default class Explore extends React.Component {
