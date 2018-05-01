@@ -11,7 +11,7 @@ import Tooltip from '../components/Tooltip.jsx';
 // import Map from '../components/Map.jsx';
 
 const ExploreContainer = styled.div`
-    border: 2px solid red;
+    // border: 2px solid red;
     height: 100%;
     right: 0;
     padding: 70px 3% 30px 3%;
@@ -23,12 +23,11 @@ const MarkedText = styled.span`
     background-color: ${props => props.color};
 `;
 const FilterButtonContainer = styled.div`
-    border: 2px solid red;
+    // border: 2px solid red;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
-    padding: 0 20%;
-    width: 100%;
+    margin: 0 30% 30px 30%;
+    width: 40%;
 `;
 const FilterButton = styled.button`
     color: ${props => props.active ? 'white' : 'black'};
