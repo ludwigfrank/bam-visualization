@@ -2,10 +2,26 @@ import * as React from 'react'
 import ReactDOM from 'react-dom'
 import styled from 'styled-components'
 
-const Wrapper = styled('div').attrs(
+const Wrapper = styled('div')`
+    position: absolute;
+    opacity: 0;
+    background-color: white;
+    box-shadow: ${props => props.theme.shadow[4]};
+    border-radius: 4px;
+    line-height: 16px;
+    padding: 4px 8px;
+    transition: all 0.2s;
+    *:not(:first-child) {
+        margin-left: 4px;
+    }
+`
 
-)`
-    opacity: 1
+const Link = styled('div')`
+    font-size: 13px;
+    text-transform: capitalize;
+    display: inline-block;
+    color: ${props => props.isActive ? props.theme.color.text.primary : props.theme.color.text.secondary};
+    /*font-weight: ${props => props.isActive ? 900 : 500}*/
 `
 
 export default class Menu extends React.Component {
@@ -49,9 +65,9 @@ export default class Menu extends React.Component {
 
         return (
             // eslint-disable-next-line react/jsx-no-bind
-            <span className="button" onMouseDown={onMouseDown} data-active={isActive}>
-                <span className="material-icons">{icon}</span>
-            </span>
+            <Link onMouseDown={onMouseDown} isActive={isActive}>
+                <span className="material-icons">{type.split()[0]}</span>
+            </Link>
         )
     }
 
@@ -65,12 +81,16 @@ export default class Menu extends React.Component {
         const root = window.document.getElementById('root')
 
         return ReactDOM.createPortal(
-            <div className="menu hover-menu" ref={this.props.menuRef}>
+            <Wrapper
+                innerRef={this.props.menuRef}
+            >
                 {this.renderMarkButton('bold', 'format_bold')}
                 {this.renderMarkButton('italic', 'format_italic')}
+{/*
                 {this.renderMarkButton('underlined', 'format_underlined')}
-                {this.renderMarkButton('code', 'code')}
-            </div>,
+*/}
+                {this.renderMarkButton('document', 'format_document')}
+            </Wrapper>,
             root
         )
     }

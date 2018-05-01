@@ -104,11 +104,9 @@ export default class Article extends React.Component <Props, State> {
         const range = selection.getRangeAt(0)
         const rect = range.getBoundingClientRect()
 
-        menu.style = {
-            opacity: 1,
-            top: `${rect.top + window.pageYOffset - menu.offsetHeight}px`,
-            left: `${rect.left + window.pageXOffset - menu.offsetWidth / 2 + rect.width / 2}px`
-        }
+        menu.style.top = `${rect.top + window.pageYOffset - menu.offsetHeight}px`
+        menu.style.left = `${rect.left + window.pageXOffset - menu.offsetWidth / 2 + rect.width / 2}px`
+        menu.style.opacity = 1
     }
 
     render() {
