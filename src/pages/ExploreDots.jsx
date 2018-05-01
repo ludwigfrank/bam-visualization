@@ -14,7 +14,7 @@ const ExploreContainer = styled.div`
     border: 2px solid red;
     height: 100%;
     right: 0;
-    padding-top: 85px;
+    padding: 70px 3% 30px 3%;
     position: absolute;
     top: 0;
     width: 75%;
@@ -22,11 +22,12 @@ const ExploreContainer = styled.div`
 const MarkedText = styled.span`
     background-color: ${props => props.color};
 `;
-
 const FilterButtonContainer = styled.div`
     border: 2px solid red;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 0 20%;
     width: 100%;
 `;
 const FilterButton = styled.button`
@@ -41,14 +42,22 @@ const FilterButton = styled.button`
     text-align: center;
 `;
 const FilterValuesContainer = styled.div`
-    border: 2px solid orange;
+    // border: 2px solid orange;
     display: flex;
     font-family: plex-semibold;
     justify-content: space-around;
+    margin: 10px 0;
 `;
 const FilterValue = styled.div`
-    border: 2px solid green;
+    // border: 2px solid green;
     font-family: plex-semibold;
+    text-align: center;
+`;
+const FilterValueAmount = styled.div`
+    font-size: 18px;
+`;
+const FilterValuePercentage = styled.div`
+    font-family: plex-regular;
 `;
 
 export default class Explore extends React.Component {
@@ -190,8 +199,8 @@ export default class Explore extends React.Component {
                                     const groupPercentage = group.length / this.state.doctorsLength * 100;
                                     return (
                                         <FilterValue>
-                                            <div>{group.length}</div>
-                                            <div>{`${groupPercentage.toFixed()}%`}</div>
+                                            <FilterValueAmount>{group.length}</FilterValueAmount>
+                                            <FilterValuePercentage>{`${groupPercentage.toFixed()}%`}</FilterValuePercentage>
                                         </FilterValue>
                                     )
                                 })
