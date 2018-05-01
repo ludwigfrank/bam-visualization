@@ -14,11 +14,13 @@ import dot from '../../images/doctor-dot.png'
 
 const DotContainer = styled.div`
     background-color: white;
-    border: 2px solid red;
+    // border: 2px solid red;
     // bottom: 0;
-    height: 75%;
+    height: 160%;
     // position: absolute;
-    width: 100%;
+    transform-origin: top left;
+    transform: scale(0.5);
+    width: 200%;
 `;
 
 
@@ -63,8 +65,8 @@ export default class SearchDotGrid extends React.Component {
         this.amountDots = doctors.length;
 
         this.containerDimensions = {
-            x: dotContainerDimension.width - 3,
-            y: dotContainerDimension.height - 3
+            x: dotContainerDimension.width * 2 - 3,
+            y: dotContainerDimension.height * 2 - 3
         };
 
         this.app = new PIXI.Application(this.containerDimensions.x, this.containerDimensions.y, {backgroundColor : 0xffffff});
@@ -91,7 +93,7 @@ export default class SearchDotGrid extends React.Component {
         this.dots = [];
         this.totalSprites = this.app.renderer instanceof PIXI.WebGLRenderer ? this.amountDots : gridWidth * 2;
         
-        this.scaleValue = .7;
+        this.scaleValue = 1;
         this.dotSize = 30 * this.scaleValue;
         this.gridPositions = this.getGridPositions(
             this.dotSize, this.containerDimensions.x, this.amountDots, 0 // pointSize, gridWidth, totalPoints, groupIdex
@@ -125,7 +127,7 @@ export default class SearchDotGrid extends React.Component {
             // Add eventlisteners
             dotSprite.interactive = true;
             dotSprite.buttonMode = true;
-            dotSprite.on('mouseover', this.handleMouseover);
+            dotSprite.on('mouseover', data => this.handleMouseover(data, index));
             dotSprite.on('mouseout', this.handleMouseout);
             dotSprite.on('mousedown', this.handleMousedown);
 
@@ -136,12 +138,12 @@ export default class SearchDotGrid extends React.Component {
         animate();
         
     }
-    handleMouseover = (data) => {
+    handleMouseover = (data, index) => {
         // console.log('mouseover');
         // console.log(data.target);
         data.target.tint = 0x000000;
 
-        this.props.tooltipCallback(true, 'doctor information');
+        this.props.tooltipCallback(true, doctors[index].list.name);
     }
     handleMouseout = (data) => {
         // console.log('mouseout');
@@ -196,7 +198,6 @@ export default class SearchDotGrid extends React.Component {
 
                 pointsCounter += 1;
             }
-    
         });
         
         animate();

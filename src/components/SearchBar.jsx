@@ -4,14 +4,15 @@ import HelpButton from '../components/HelpButton';
 
 
 const SearchBarContainer = styled.div`
-    border: 2px solid blue;
+    // border: 2px solid blue;
     height: 100px;
+    margin-top: 30px;
     position: relative;
     width: 100%;
 
     input[type=text] {
         border: none;
-        border-bottom: 2px solid gray;
+        border-bottom: 1px solid gray;
         font-size: 18px;
         padding: 5px;
         width: 50vw;
@@ -21,6 +22,7 @@ const SearchBarContainer = styled.div`
         border: none;
         border-radius: 4px;
         color: white;
+        cursor: pointer;
         font-size: 16px;
         padding: 10px 30px;
         margin-left: 30px;

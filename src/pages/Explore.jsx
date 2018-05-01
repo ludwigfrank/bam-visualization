@@ -11,7 +11,7 @@ import Tooltip from '../components/Tooltip.jsx';
 // import Map from '../components/Map.jsx';
 
 const ExploreContainer = styled.div`
-    border: 2px solid red;
+    // border: 2px solid red;
     height: 100%;
     right: 0;
     padding-top: 85px;
@@ -24,7 +24,7 @@ const MarkedText = styled.span`
 `;
 
 const FilterButtonContainer = styled.div`
-    border: 2px solid red;
+    // border: 2px solid red;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -120,7 +120,7 @@ export default class Explore extends React.Component {
             },
             {
                 label: 'I want to see the physicians',
-                src: '/',
+                src: '/dots',
                 filled: false,
                 buttonCallback: () => this.handleView
             }
@@ -142,7 +142,6 @@ export default class Explore extends React.Component {
                             border={true}
                             header={'What we know so far.'}
                             buttonLabel={'I want to add missing data'}
-                            showBackButton={this.state.mapView}
                             backCallback={() => this.handleView}
                             buttons={sidebarButtons}
                         >

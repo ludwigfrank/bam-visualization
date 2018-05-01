@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const HeaderContainer = styled.div`
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 1);
     border-bottom: 1px solid lightgray;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px, rgba(0, 0, 0, 0.05) 0px 2px 3px;
     height: 50px;
@@ -37,14 +37,14 @@ const MenuItems = styled.ul`
     transform: translate(0, -50%);
 
     li {
-        margin-right: 20px;
+        margin-right: 25px;
     }
     a {
         color: black;
         text-decoration: none;
     }
 `;
-const ListItem = styled.ul`
+const ListItem = styled.li`
     font-family: ${props => props.isActive ? 'plex-semibold' : 'plex-regular'};
 `;
 

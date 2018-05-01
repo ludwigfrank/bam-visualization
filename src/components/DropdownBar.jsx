@@ -6,9 +6,10 @@ import HelpButton from './HelpButton';
 import WorldButton from './WorldButton';
 
 const ProjectTitleContainer = styled.div`
-    border: 2px solid red;
+    // border: 2px solid red;
     display: flex;
     justify-content: space-evenly;
+    margin: 30px 0 45px 0;
     width: 100%;
 `;
 
@@ -24,7 +25,7 @@ export default class DropdownBar extends React.Component {
             borderRadius: '4px',
             display: 'inline-block',
             flex: 1,
-            // margin: '0 10px'
+            margin: '0 1%'
         };
 
         console.log(this.props);
