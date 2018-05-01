@@ -5,17 +5,16 @@ import Label from '../Text/Label'
 
 const Wrapper = styled('div').attrs({
     style: props => ({
-        transform: `translate(${props.x + 10}px, ${props.y - 100}px)`
+        transform: `translate(${props.x + 25 - window.innerWidth * 0.25}px, ${props.y - 140}px)`
     })
 })`
     position: absolute;
-    // opacity: ${props => (props.x && props.y) ? 1 : 0};
     z-index: 10;
 `
 
 const ItemWrapper = styled('ul')`
     list-style: none;
-    margin: 0 4px;
+    margin: 0px;
 `
 
 const Item = styled('li')`
@@ -36,10 +35,10 @@ export default class Tooltip extends Component {
     }
 
     componentDidMount() {
-        window.addEventListener('mousemove', this.handleMouseMove)
+        window.addEventListener('mousemove', this.onMouseMove)
     }
 
-    handleMouseMove = (e) => {
+    onMouseMove = (e) => {
         this.setState({
             mousePosition: [e.screenX, e.screenY]
         })

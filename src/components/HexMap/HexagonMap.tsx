@@ -129,7 +129,7 @@ interface Bin {
     y: number
 }
 
-export default class HexagonMap extends React.Component <Props, State> {
+export default class HexagonMap extends React.PureComponent <Props, State> {
     constructor(props: Props) {
         super(props)
         this.state = {
