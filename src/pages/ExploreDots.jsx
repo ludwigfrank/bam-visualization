@@ -64,7 +64,7 @@ const FilterValue = styled.div`
 `;
 const FilterValueAmount = styled.div`
     font-size: 17px;
-    margin-bottom: 6px;
+    margin-bottom: 3px;
 `;
 const FilterValuePercentage = styled.div`
     font-family: plex-regular;

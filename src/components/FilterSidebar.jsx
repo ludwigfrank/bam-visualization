@@ -84,6 +84,10 @@ const AddDataButton = styled.button`
     transform: translate(-50%, 0);
     width: 90%;
 `;
+const SidebarHeadline = styled.h2`
+    font-family: plex-semibold;
+    font-size: 16px;
+`;
 
 export default class FilterSidebar extends React.Component {
     constructor (props) {
@@ -118,6 +122,15 @@ export default class FilterSidebar extends React.Component {
             top: '6px',
             width: '120px'
         };
+        const wrapperStyleDate = {
+            boxShadow: 'rgba(0, 0, 0, 0.1) 0px 2px 6px, rgba(0, 0, 0, 0.05) 0px 2px 3px',
+            borderRadius: '4px',
+            display: 'inline-block',
+            flex: 1,
+            margin: '0 10px',
+            top: '6px',
+            width: '80px'
+        };
 
         return (
             <SidebarContainer expanded={this.state.expanded} border>
@@ -130,10 +143,11 @@ export default class FilterSidebar extends React.Component {
                             </BackButton>
                         )
                     }
-                    <h2>{'I want to see'}</h2>
+                    <SidebarHeadline>{'I want to see'}</SidebarHeadline>
                     <Select
                         name="form-field-name"
                         value={selectedOption}
+                        placeholder={'test'}
                         wrapperStyle={wrapperStyle}
                         onChange={this.handleSelectChange}
                         options={[
@@ -145,6 +159,7 @@ export default class FilterSidebar extends React.Component {
                     <Select
                         name="form-field-name"
                         value={selectedOption}
+                        placeholder={'test'}
                         wrapperStyle={wrapperStyle}
                         onChange={this.handleSelectChange}
                         options={[
@@ -156,6 +171,7 @@ export default class FilterSidebar extends React.Component {
                     <Select
                         name="form-field-name"
                         value={selectedOption}
+                        placeholder={'test'}
                         wrapperStyle={wrapperStyle}
                         onChange={this.handleSelectChange}
                         options={[
@@ -167,7 +183,8 @@ export default class FilterSidebar extends React.Component {
                     <Select
                         name="form-field-name"
                         value={selectedOption}
-                        wrapperStyle={wrapperStyle}
+                        placeholder={'test'}
+                        wrapperStyle={wrapperStyleDate}
                         onChange={this.handleSelectChange}
                         options={[
                             { value: '1860', label: '1860' },
@@ -178,7 +195,8 @@ export default class FilterSidebar extends React.Component {
                     <Select
                         name="form-field-name"
                         value={selectedOption}
-                        wrapperStyle={wrapperStyle}
+                        placeholder={'test'}
+                        wrapperStyle={wrapperStyleDate}
                         onChange={this.handleSelectChange}
                         options={[
                             { value: '1980', label: '1980' },
@@ -190,6 +208,7 @@ export default class FilterSidebar extends React.Component {
                     <Select
                         name="form-field-name"
                         value={selectedOption}
+                        placeholder={'test'}
                         wrapperStyle={wrapperStyle}
                         onChange={this.handleSelectChange}
                         options={[
@@ -202,6 +221,7 @@ export default class FilterSidebar extends React.Component {
                     <Select
                         name="form-field-name"
                         value={selectedOption}
+                        placeholder={'test'}
                         wrapperStyle={wrapperStyle}
                         onChange={this.handleSelectChange}
                         options={[
