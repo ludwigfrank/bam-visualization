@@ -118,8 +118,8 @@ export default class FilterSidebar extends React.Component {
             borderRadius: '4px',
             display: 'inline-block',
             flex: 1,
-            margin: '0 10px',
-            top: '6px',
+            margin: '0 0 0 0',
+            top: '12px',
             width: '120px'
         };
         const wrapperStyleDate = {
@@ -127,8 +127,8 @@ export default class FilterSidebar extends React.Component {
             borderRadius: '4px',
             display: 'inline-block',
             flex: 1,
-            margin: '0 10px',
-            top: '6px',
+            margin: '0 0 0 0',
+            top: '12px',
             width: '80px'
         };
 
@@ -143,23 +143,24 @@ export default class FilterSidebar extends React.Component {
                             </BackButton>
                         )
                     }
-                    <SidebarHeadline>{'I want to see'}</SidebarHeadline>
+                    <SidebarHeadline>{'I want to see '}</SidebarHeadline>
                     <Select
                         name="form-field-name"
                         value={selectedOption}
-                        placeholder={'test'}
+                        placeholder={'Profession'}
                         wrapperStyle={wrapperStyle}
                         onChange={this.handleSelectChange}
                         options={[
+                            { value: 'medical', label: 'dental medicine' },
                             { value: 'dentalMedicine', label: 'dental medicine' },
                             { value: 'physician', label: 'physician' },
                         ]}
                     />
-                    {'students at'}
+                    {'  students at  '}
                     <Select
                         name="form-field-name"
                         value={selectedOption}
-                        placeholder={'test'}
+                        placeholder={'University'}
                         wrapperStyle={wrapperStyle}
                         onChange={this.handleSelectChange}
                         options={[
@@ -167,11 +168,11 @@ export default class FilterSidebar extends React.Component {
                             { value: 'havard', label: 'havard' },
                         ]}
                     />
-                    {'who came from'}
+                    {'  who came from  '}
                     <Select
                         name="form-field-name"
                         value={selectedOption}
-                        placeholder={'test'}
+                        placeholder={'Place'}
                         wrapperStyle={wrapperStyle}
                         onChange={this.handleSelectChange}
                         options={[
@@ -179,11 +180,11 @@ export default class FilterSidebar extends React.Component {
                             { value: 'newYork', label: 'New York' },
                         ]}
                     />
-                    {'between'}
+                    {'  between  '}
                     <Select
                         name="form-field-name"
                         value={selectedOption}
-                        placeholder={'test'}
+                        placeholder={'Start'}
                         wrapperStyle={wrapperStyleDate}
                         onChange={this.handleSelectChange}
                         options={[
@@ -191,11 +192,11 @@ export default class FilterSidebar extends React.Component {
                             { value: '1861', label: '1861' },
                         ]}
                     />
-                    {'and'}
+                    {'  and  '}
                     <Select
                         name="form-field-name"
                         value={selectedOption}
-                        placeholder={'test'}
+                        placeholder={'End'}
                         wrapperStyle={wrapperStyleDate}
                         onChange={this.handleSelectChange}
                         options={[
@@ -203,12 +204,13 @@ export default class FilterSidebar extends React.Component {
                             { value: '1981', label: '1981' },
                         ]}
                     />
-                    {'. '}
-                    {'I want to see '}
+                    {'.  '}
+                    <br/>
+                    {'I  want to see physicians who are  '} 
                     <Select
                         name="form-field-name"
                         value={selectedOption}
-                        placeholder={'test'}
+                        placeholder={'Gender'}
                         wrapperStyle={wrapperStyle}
                         onChange={this.handleSelectChange}
                         options={[
@@ -217,20 +219,7 @@ export default class FilterSidebar extends React.Component {
                             { value: 'femaleMale', label: 'female & male' }
                         ]}
                     />
-                    {'who are'}
-                    <Select
-                        name="form-field-name"
-                        value={selectedOption}
-                        placeholder={'test'}
-                        wrapperStyle={wrapperStyle}
-                        onChange={this.handleSelectChange}
-                        options={[
-                            { value: 'female', label: 'female' },
-                            { value: 'male', label: 'male' },
-                            { value: 'femaleMale', label: 'female & male' }
-                        ]}
-                    />
-                    {'.'}
+                    {'.  '}
 
                 <AddDataButton
                     onClick={this.addMissingData}
