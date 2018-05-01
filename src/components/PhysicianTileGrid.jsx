@@ -11,7 +11,7 @@ import doctorImage5 from '../images/stories/doctor-5.png';
 import doctorImage6 from '../images/stories/doctor-6.png';
 
 const PhysicianGridStyle = styled.div`
-    border: 2px solid red;
+    // border: 2px solid red;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

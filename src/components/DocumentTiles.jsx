@@ -17,7 +17,7 @@ import searchImage12 from '../images/search/search-12.png';
 
 const DocumentTileContainer = styled.div`
     box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px, rgba(0, 0, 0, 0.05) 0px 2px 3px;
-    border: 2px solid green;
+    // border: 2px solid green;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -25,15 +25,16 @@ const DocumentTileContainer = styled.div`
     width: 100%;
 `;
 const DocumentTile = styled.div`
-    border: 2px solid red;
+    // border: 2px solid red;
     border-radius: 4px;
     margin-bottom: 30px;
+    padding: 0 0;
     position: relative;
     min-width: calc(100% / 6);
     width: calc(100% / 6);
 `;
 const Image = styled.img`
-    border: 2px solid pink;
+    // border: 2px solid pink;
     height: auto;
     width: 100%;
 `;
@@ -67,9 +68,19 @@ export default class DocumentTiles extends React.Component {
                 type: 'letter'
             },
             {
+                src: searchImage11,
+                text: 'Elite Blacks Recall Segregated Capital',
+                type: 'poem'
+            },
+            {
                 src: searchImage2,
                 text: 'Press Release: Outstanding Teacher, Physician, Civic an…',
                 type: 'magazine'
+            },
+            {
+                src: searchImage10,
+                text: 'Colloquium on African american history',
+                type: 'interview'
             },
             {
                 src: searchImage3,
@@ -104,17 +115,7 @@ export default class DocumentTiles extends React.Component {
             {
                 src: searchImage9,
                 text: 'Letter of materials to guide Ken Manning',
-                type: 'interview'
-            },
-            {
-                src: searchImage10,
-                text: 'Colloquium on African american history',
-                type: 'interview'
-            },
-            {
-                src: searchImage11,
-                text: 'Elite Blacks Recall Segregated Capital',
-                type: 'interview'
+                type: 'manuscript'
             },
             {
                 src: searchImage12,
@@ -136,7 +137,7 @@ export default class DocumentTiles extends React.Component {
             newsletter: 'Newsletter',
             newspaper: 'Newspaper',
             magazine: 'Magazine Article',
-            interview: 'Interview',
+            interview: 'Newsletter',
             poem: 'Poem',
             manuscript: 'Manuscript'
         }

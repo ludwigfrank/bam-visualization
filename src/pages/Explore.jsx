@@ -11,7 +11,7 @@ import Tooltip from '../components/Tooltip.jsx';
 // import Map from '../components/Map.jsx';
 
 const ExploreContainer = styled.div`
-    border: 2px solid red;
+    // border: 2px solid red;
     height: 100%;
     right: 0;
     padding-top: 85px;
@@ -24,7 +24,7 @@ const MarkedText = styled.span`
 `;
 
 const FilterButtonContainer = styled.div`
-    border: 2px solid red;
+    // border: 2px solid red;
     display: flex;
     justify-content: space-between;
     width: 100%;

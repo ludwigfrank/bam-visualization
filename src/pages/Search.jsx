@@ -24,8 +24,8 @@ export default class Search extends React.Component {
         const dropdownOptions = [
             {
                 options: [
-                    { value: 'dentalMedicine', label: 'dental medicine' },
-                    { value: 'physician', label: 'physician' },
+                    { value: 'physicians', label: 'Physicians' },
+                    { value: 'documents', label: 'Documents' },
                 ],
                 type: 'Type'
             },
