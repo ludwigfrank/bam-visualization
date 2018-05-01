@@ -1,7 +1,7 @@
 import { polygonContains as d3PolygonContains } from 'd3-polygon'
 import { DataPoint } from '../../types'
 import { MultiPolygon, Polygon, Position } from 'geojson'
-import { ExtendedFeature, GeoProjection } from 'd3-geo'
+import { ExtendedFeature, ExtendedFeatureCollection, GeoProjection } from 'd3-geo'
 
 export const getPointsInPolygon = (
     points: Array<DataPoint>, polygon: Array<[number, number]>, data: any): Array<DataPoint> => {
@@ -62,5 +62,16 @@ export const getParsedFeature = (
         throw new Error(`The specified feature type is not valid: ${feature.geometry.type}.
                     Make sure the data contains only Polygon or MultiPolygon geometry.`)
     }
+}
 
+export const getFeatureByID = (
+    featureCollection: ExtendedFeatureCollection<ExtendedFeature<Polygon | MultiPolygon, any>>,
+    id: string
+): ExtendedFeature<Polygon | MultiPolygon, any> | undefined => {
+    if (id.length !== 3) { throw new Error(`Invalid id provided ${id}.`) }
+    const parsedId = id.toUpperCase()
+
+    return featureCollection.features.find((feature) => {
+        return feature.id === parsedId
+    })
 }

@@ -3,16 +3,21 @@ import Header from './components/Header.jsx'
 import Main from './Main.jsx'
 
 import './App.css'
+import { ThemeProvider } from 'styled-components'
+import theme from './theme'
+import './lib/css/sanitize.js'
 
 class App extends React.Component {
     render() {
         return (
-            <div className="App">
-                <Header />
-                <Main />
-                {/* <Physicians /> */}
-                {/* <SidebarList showBackButton={true} /> */}
-            </div>
+            <ThemeProvider theme={theme}>
+                <div className="App">
+                    <Header />
+                    <Main />
+                    {/* <Physicians /> */}
+                    {/* <SidebarList showBackButton={true} /> */}
+                </div>
+            </ThemeProvider>
         )
     }
 }

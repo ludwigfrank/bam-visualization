@@ -11,12 +11,11 @@ import { interpolateMagma } from 'd3-scale-chromatic'
 import { getProjectedCoordinates } from './util'
 import { MultiPolygon, Polygon } from 'geojson'
 import { polygonContains } from 'd3-polygon'
-import worldSimple from '../../data/world-simple.json'
 
 const colorScale = scaleSequential(function(t: number) {
-        const tNew = Math.pow(t, 3)
-        return interpolateMagma(tNew)
-}).domain([48, 1])
+    const tNew = Math.pow(t, 2)
+    return interpolateMagma(tNew)
+}).domain([48, -1])
 
 const getHexProperties = (hexColumns: number, dimensions: number[]) => {
     const hexDistance = dimensions[0] / hexColumns
@@ -80,65 +79,132 @@ const parsedPersonData = (persons: Person[], projection: GeoProjection): Person[
     }, [])
 }
 
-const isPointInGeometryCollection = (point: [number, number], mask: [number, number][][]): boolean => {
-    const polygon = mask.find(geometry => {
-        return polygonContains(geometry as [number, number][], point)
+interface MaskPolygonFeature {
+    geometry: [number, number][]
+    countryCode: string
+}
+
+const maskPolygonsFeature = (
+    featureCollection: ExtendedFeatureCollection<ExtendedFeature<Polygon | MultiPolygon, any>>,
+    projection: GeoProjection):
+    MaskPolygonFeature[] => {
+    return featureCollection.features.map((feature: ExtendedFeature<Polygon, any>): MaskPolygonFeature => {
+        const geometry =  feature.geometry.coordinates[0].map((position) => {
+            return projection([position[0], position[1]])
+        }) as [number, number][]
+
+        const countryCode = feature.id as string
+
+        return {
+            geometry,
+            countryCode
+        }
     })
-    return polygon !== undefined
+}
+
+const isPointInGeometryCollection = (point: [number, number], mask: MaskPolygonFeature[]):
+    MaskPolygonFeature | undefined => {
+    return mask.find(polygonFeature => {
+        return polygonContains(polygonFeature.geometry as [number, number][], point)
+    })
 }
 
 interface Props {
     featureCollection: ExtendedFeatureCollection<ExtendedFeature<Polygon | MultiPolygon, any>>
     projection: GeoProjection
     dimensions: [number, number]
+    onHexagonHover: Function
+    onHexagonClick: Function
 }
 
 interface State {
-    hexBinData: Hexbin<DataPoint>
+    hoveredHexagon: Bin | undefined,
+    hoveredCountryId: string | undefined,
+    mousePosition: [number, number]
+}
+
+interface Bin {
+    data: object
+    x: number
+    y: number
 }
 
 export default class HexagonMap extends React.Component <Props, State> {
-
     constructor(props: Props) {
         super(props)
+        this.state = {
+            hoveredHexagon: undefined,
+            hoveredCountryId: undefined,
+            mousePosition: [0, 0]
+        }
+    }
+
+    handleHexagonMouseEnter = (bin: Bin | undefined, maskPolygonFeature?: MaskPolygonFeature) => {
+        this.setState({
+            hoveredCountryId: maskPolygonFeature ? maskPolygonFeature.countryCode : ''
+        })
+
+        this.props.onHexagonHover(bin)
+    }
+
+    handleHexagonClick = (bin: Bin, maskPolygonFeature: MaskPolygonFeature ) => {
+        this.props.onHexagonClick(bin, maskPolygonFeature)
+    }
+
+    shouldComponentUpdate(nextProps: Props, nextState: State) {
+        if (this.props.projection !== nextProps.projection) { return true }
+        if (this.state.hoveredCountryId !== nextState.hoveredCountryId) { return true }
+        return false
+    }
+
+    componentDidMount() {
+        console.log(maskPolygonsFeature(this.props.featureCollection, this.props.projection))
     }
 
     renderHexagons = () => {
-        const columns = 200
+        const hexagonWidth = 10
+        const columns = Math.floor(this.props.dimensions[0] / hexagonWidth)
         const pointGrid = getPointGrid(columns, this.props.dimensions[0], this.props.dimensions[1])
         const hexProperties = getHexProperties(columns, this.props.dimensions)
         const parsedPersons = parsedPersonData(doctorsWithLocation, this.props.projection)
 
         const mergedPoints = pointGrid.concat(parsedPersons)
         const hexBinData = hexProperties.hexBin(mergedPoints)
-        const maskPolygons = worldSimple.geometries.map((geometry: Polygon) => {
-            return geometry.coordinates[0].map(position => {
-                return this.props.projection([position[0], position[1]])
-            })
-        })
 
-        // console.log(maskPolygons)
+        const maskPolygons = maskPolygonsFeature(this.props.featureCollection, this.props.projection)
+
         return (
             <g>
                 {
-                    hexBinData.map((bin, i) => {
-                        const groupSize = bin.filter((b: any) => b.key).length
-                        const fill = groupSize > 0 ? `${colorScale(bin.length)}` : 'rgba(0,0,0,0)'
+                    hexBinData.map((bin: any, i) => {
+                        const maskPolygon = isPointInGeometryCollection([bin.x, bin.y], maskPolygons)
 
-                       if (isPointInGeometryCollection([bin.x, bin.y], maskPolygons) || groupSize > 0) {
-                           return (
-                               <path
-                                   key={i}
-                                   className={`hex ${bin.length}`}
-                                   transform={`translate(${bin.x}, ${bin.y})`}
-                                   style={{ fill: fill,
-                                       stroke: 'rgb(225, 225, 225)', strokeWidth: 1 }}
-                                   d={hexProperties.hexBin.hexagon()}
-                                //    onMouseEnter={() => console.log(bin)}
-                               />
-                           )
-                       }
-                       return
+                        bin = {x: bin.x, y: bin.y,
+                            countryCode: maskPolygon ? maskPolygon.countryCode : undefined,
+                            data: Object.values(bin.filter((b: any) => b.key))}
+
+                        const isDataPoint = bin.data.length > 0
+                        const fill = isDataPoint ? `${colorScale(bin.data.length)}` : 'rgba(225,225,225, 0.3)'
+
+                        if (maskPolygon) {
+                            return (
+                                <path
+                                    key={i}
+                                    className={`hex ${maskPolygon ? maskPolygon.countryCode : ''}`}
+                                    transform={`translate(${bin.x}, ${bin.y})`}
+                                    style={{ fill: fill,
+                                        stroke: 'rgba(255, 255, 255, 1)',
+                                        strokeWidth: 3}}
+                                    d={hexProperties.hexBin.hexagon()}
+                                    onMouseEnter={() => {
+                                        if (isDataPoint) {this.handleHexagonMouseEnter(bin, maskPolygon)} }}
+                                    onMouseLeave={() => {
+                                        if (isDataPoint) {this.handleHexagonMouseEnter(undefined, maskPolygon)}}}
+                                    onClick={() => this.handleHexagonClick(bin, maskPolygon)}
+                                />
+                            )
+                        }
+                        return
                     })
                 }
             </g>
@@ -146,13 +212,16 @@ export default class HexagonMap extends React.Component <Props, State> {
     }
 
     render () {
+        const { dimensions } = this.props
 
         return (
-            <svg>
-                <g>
-                    {this.renderHexagons()}
-                </g>
-            </svg>
+            <div style={{ width: dimensions[0], height: dimensions[1], top: 0, position: 'absolute'}}>
+                <svg style={{ width: '100%', height: '100%'}}>
+                    <g>
+                        {this.renderHexagons()}
+                    </g>
+                </svg>
+            </div>
         )
     }
 }

@@ -1,23 +1,26 @@
 import * as React from 'react'
-import styled from 'styled-components'
 import {
-    geoEquirectangular,
-    GeoProjection,
-    ExtendedFeatureCollection, ExtendedFeature
+    GeoConicProjection,
+    ExtendedFeatureCollection, ExtendedFeature,
+    geoPath, GeoProjection, geoEquirectangular
 } from 'd3-geo'
 // import { polygonContains as d3PolygonContains } from 'd3-polygon'
-import worldGeoJson from '../../data/world.json'
+import worldGeoJson from '../../data/world-simplified-only-polygons.json'
+import worldGeoJsonMulti from '../../data/world-simplified.json'
 import * as topojson from 'topojson-client'
 import Map from './Map'
-import HexagonMap from './HexagonMap'
 import { MultiPolygon, Polygon } from 'geojson'
+import Tooltip from './Tooltip'
+import { getFeatureByID } from './util'
+import HexagonMap from './HexagonMap'
+import Legend from './Legend'
+import MapPath from '../MapPath'
 
-const Canvas = styled.svg`
-    height: 100vh;
-    margin: 0 auto;
-    width: 100vw;
-    border: 1px solid gray; 
-`
+interface Bin {
+    data: object
+    x: number
+    y: number
+}
 
 interface Props {
     country?: string
@@ -25,22 +28,33 @@ interface Props {
 
 interface State {
     featureCollection: ExtendedFeatureCollection<ExtendedFeature<Polygon | MultiPolygon, any>>
-    projection: GeoProjection
+    projection: GeoConicProjection | GeoProjection
+    hoveredHexagon: Bin | undefined
+    focusedCountry: 'World' | 'US'
 }
 
 const width = window.innerWidth
 const height = window.innerHeight
+const baseProjection = geoEquirectangular()
+    .scale(1)
+    .translate([0, 0])
 
 export default class HexMap extends React.Component <Props, State> {
-    canvas: HTMLElement
-
     constructor(props: Props) {
         super(props)
 
         this.state = {
             featureCollection: worldGeoJson,
-            projection: geoEquirectangular().scale(200).translate([(width + 0) / 2, height / 2])
+            projection: geoEquirectangular()
+                .scale(200)
+                .translate([width / 2, height / 2]),
+            hoveredHexagon: undefined,
+            focusedCountry: 'World',
         }
+    }
+
+    get geoPathGenerator () {
+        return geoPath().projection(this.state.projection)
     }
 
     /*
@@ -51,14 +65,70 @@ export default class HexMap extends React.Component <Props, State> {
         return topojson.feature(data, data.objects.usa)
     }
 
+    onHexagonHover = (hexagon: Bin, country: any) => {
+        this.setState({hoveredHexagon: hexagon})
+    }
+
+    onHexagonClick = (hexagon: Bin, country: any) => {
+        console.log(country)
+        const bounds = this.getBounds(country.countryCode)
+        console.log(bounds)
+        this.setState((prevState) => {
+            return {
+                focusedCountry: 'US',
+                projection: geoEquirectangular()
+                    .center([0, 0])
+                    .scale(bounds.scale)
+                    .translate(bounds.transform as [number, number])
+            }
+        })
+    }
+
+    getBounds = (countryCode: string) => {
+        const feature = getFeatureByID(worldGeoJsonMulti, countryCode) as ExtendedFeature<any, any>
+        const bounds = geoPath().projection(baseProjection).bounds(feature)
+
+        const scale  = .7 /
+            Math.max((bounds[1][0] - bounds[0][0]) / width, (bounds[1][1] - bounds[0][1]) / height)
+        const transform  = [(width - scale * (bounds[1][0] + bounds[0][0])) / 2,
+            (height - scale * (bounds[1][1] + bounds[0][1])) / 2]
+
+        return {
+            scale,
+            transform
+        }
+    }
+
     render () {
-        const { featureCollection, projection } = this.state
+        const { featureCollection, projection, hoveredHexagon } = this.state
 
         return (
-            <Canvas id={'map'} innerRef={element => this.canvas = element}>
-                <Map projection={projection} featureCollection={featureCollection} dimensions={[width, height]}/>
-                <HexagonMap projection={projection} featureCollection={featureCollection} dimensions={[width, height]}/>
-            </Canvas>
+            <div
+                id={'map'}
+            >
+                <Legend colorScale={0} />
+                <Tooltip
+                    hoveredHexagon={hoveredHexagon}
+                />
+                <Map
+                    geoPathGenerator={this.geoPathGenerator}
+                    featureCollection={featureCollection}
+                    dimensions={[width, height]}
+                    hoveredHexagon={hoveredHexagon}
+                />
+                <HexagonMap
+                    featureCollection={featureCollection}
+                    projection={projection}
+                    dimensions={[width, height]}
+                    onHexagonHover={this.onHexagonHover}
+                    onHexagonClick={this.onHexagonClick}
+                />
+                <MapPath
+                    projection={projection}
+                    dimensions={[width, height]}
+                    hoveredHexagon={hoveredHexagon}
+                />
+            </div>
         )
     }
 }
