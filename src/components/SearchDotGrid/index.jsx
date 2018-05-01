@@ -127,7 +127,7 @@ export default class SearchDotGrid extends React.Component {
             // Add eventlisteners
             dotSprite.interactive = true;
             dotSprite.buttonMode = true;
-            dotSprite.on('mouseover', this.handleMouseover);
+            dotSprite.on('mouseover', data => this.handleMouseover(data, index));
             dotSprite.on('mouseout', this.handleMouseout);
             dotSprite.on('mousedown', this.handleMousedown);
 
@@ -138,12 +138,12 @@ export default class SearchDotGrid extends React.Component {
         animate();
         
     }
-    handleMouseover = (data) => {
+    handleMouseover = (data, index) => {
         // console.log('mouseover');
         // console.log(data.target);
         data.target.tint = 0x000000;
 
-        this.props.tooltipCallback(true, 'doctor information');
+        this.props.tooltipCallback(true, doctors[index].list.name);
     }
     handleMouseout = (data) => {
         // console.log('mouseout');
@@ -198,7 +198,6 @@ export default class SearchDotGrid extends React.Component {
 
                 pointsCounter += 1;
             }
-    
         });
         
         animate();
