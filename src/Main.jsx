@@ -15,6 +15,7 @@ const PageFade = (props) => (
 import StartPage from './pages/StartPage.jsx'
 import About from './pages/About.jsx'
 import Explore from './pages/Explore.jsx'
+import ExploreDots from './pages/ExploreDots.jsx'
 import Stories from './pages/Stories.jsx'
 import Search from './pages/Search.jsx'
 import Contribute from './pages/Contribute.jsx'
@@ -43,6 +44,7 @@ const Main = (props) => {
         <Route exact path='/' component={StartPage}/>
         <Route path='/about' component={StartPage}/>
         <Route path='/explore' component={Explore}/>
+        <Route path='/dots' component={ExploreDots}/>
         <Route path='/stories' component={Stories}/>
         <Route path='/search' component={Search}/>
         <Route path='/contribute' component={Contribute}/>
