@@ -15,6 +15,7 @@ import { getFeatureByID } from './util'
 import HexagonMap from './HexagonMap'
 import Legend from './Legend'
 import MapPath from '../MapPath'
+import styled from 'styled-components'
 
 interface Bin {
     data: object
@@ -33,13 +34,21 @@ interface State {
     focusedCountry: 'World' | 'US'
 }
 
-const width = window.innerWidth
-const height = window.innerHeight
+const width = window.innerWidth - window.innerWidth * 0.25
+const height = window.innerHeight - 25
 const baseProjection = geoEquirectangular()
     .scale(1)
     .translate([0, 0])
 
-export default class HexMap extends React.Component <Props, State> {
+const Wrapper = styled('div')`
+    right: 0;
+    bottom: 0;
+    width: 75vw;
+    position: absolute;
+    height: calc(100vh - 52px);
+`
+
+export default class HexMap extends React.PureComponent <Props, State> {
     constructor(props: Props) {
         super(props)
 
@@ -103,9 +112,7 @@ export default class HexMap extends React.Component <Props, State> {
         const { featureCollection, projection, hoveredHexagon } = this.state
 
         return (
-            <div
-                id={'map'}
-            >
+            <Wrapper>
                 <Legend colorScale={0} />
                 <Tooltip
                     hoveredHexagon={hoveredHexagon}
@@ -128,7 +135,7 @@ export default class HexMap extends React.Component <Props, State> {
                     dimensions={[width, height]}
                     hoveredHexagon={hoveredHexagon}
                 />
-            </div>
+            </Wrapper>
         )
     }
 }

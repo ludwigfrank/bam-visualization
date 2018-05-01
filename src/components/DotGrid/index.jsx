@@ -8,7 +8,6 @@ import DotGrid from './DotGrid.jsx';
 import _groupBy from 'lodash.groupby';
 
 import styled from 'styled-components'
-import Datamap from 'datamaps'
 import Dot from './Dot.jsx';
 import doctors from './doctors.js';
 
