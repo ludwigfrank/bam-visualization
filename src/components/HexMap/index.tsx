@@ -13,6 +13,8 @@ import { MultiPolygon, Polygon } from 'geojson'
 import Tooltip from './Tooltip'
 import { getFeatureByID } from './util'
 import HexagonMap from './HexagonMap'
+import Legend from './Legend'
+import MapPath from '../MapPath'
 
 interface Bin {
     data: object
@@ -63,13 +65,13 @@ export default class HexMap extends React.Component <Props, State> {
         return topojson.feature(data, data.objects.usa)
     }
 
-    onHexagonHover = (hexagon: Bin) => {
+    onHexagonHover = (hexagon: Bin, country: any) => {
         this.setState({hoveredHexagon: hexagon})
     }
 
     onHexagonClick = (hexagon: Bin, country: any) => {
         console.log(country)
-        const bounds = this.getBounds(country.polygon.countryCode)
+        const bounds = this.getBounds(country.countryCode)
         console.log(bounds)
         this.setState((prevState) => {
             return {
@@ -98,19 +100,21 @@ export default class HexMap extends React.Component <Props, State> {
     }
 
     render () {
-        const { featureCollection, projection } = this.state
+        const { featureCollection, projection, hoveredHexagon } = this.state
 
         return (
             <div
                 id={'map'}
             >
+                <Legend colorScale={0} />
                 <Tooltip
-                    hoveredHexagon={this.state.hoveredHexagon}
+                    hoveredHexagon={hoveredHexagon}
                 />
                 <Map
                     geoPathGenerator={this.geoPathGenerator}
                     featureCollection={featureCollection}
                     dimensions={[width, height]}
+                    hoveredHexagon={hoveredHexagon}
                 />
                 <HexagonMap
                     featureCollection={featureCollection}
@@ -118,6 +122,11 @@ export default class HexMap extends React.Component <Props, State> {
                     dimensions={[width, height]}
                     onHexagonHover={this.onHexagonHover}
                     onHexagonClick={this.onHexagonClick}
+                />
+                <MapPath
+                    projection={projection}
+                    dimensions={[width, height]}
+                    hoveredHexagon={hoveredHexagon}
                 />
             </div>
         )

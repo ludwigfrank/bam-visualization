@@ -13,9 +13,9 @@ import { MultiPolygon, Polygon } from 'geojson'
 import { polygonContains } from 'd3-polygon'
 
 const colorScale = scaleSequential(function(t: number) {
-    const tNew = Math.pow(t, 3)
+    const tNew = Math.pow(t, 2)
     return interpolateMagma(tNew)
-}).domain([48, 1])
+}).domain([48, -1])
 
 const getHexProperties = (hexColumns: number, dimensions: number[]) => {
     const hexDistance = dimensions[0] / hexColumns
@@ -102,14 +102,11 @@ const maskPolygonsFeature = (
     })
 }
 
-const isPointInGeometryCollection = (point: [number, number], mask: MaskPolygonFeature[]): any => {
-    const polygon = mask.find(polygonFeature => {
+const isPointInGeometryCollection = (point: [number, number], mask: MaskPolygonFeature[]):
+    MaskPolygonFeature | undefined => {
+    return mask.find(polygonFeature => {
         return polygonContains(polygonFeature.geometry as [number, number][], point)
     })
-    return {
-        isDefined: polygon !== undefined,
-        polygon: polygon
-    }
 }
 
 interface Props {
@@ -122,6 +119,7 @@ interface Props {
 
 interface State {
     hoveredHexagon: Bin | undefined,
+    hoveredCountryId: string | undefined,
     mousePosition: [number, number]
 }
 
@@ -136,20 +134,26 @@ export default class HexagonMap extends React.Component <Props, State> {
         super(props)
         this.state = {
             hoveredHexagon: undefined,
+            hoveredCountryId: undefined,
             mousePosition: [0, 0]
         }
     }
 
-    handleHexagonMouseEnter = (bin: Bin | undefined) => {
+    handleHexagonMouseEnter = (bin: Bin | undefined, maskPolygonFeature?: MaskPolygonFeature) => {
+        this.setState({
+            hoveredCountryId: maskPolygonFeature ? maskPolygonFeature.countryCode : ''
+        })
+
         this.props.onHexagonHover(bin)
     }
 
-    handleHexagonClick = (bin: Bin, country: any ) => {
-        this.props.onHexagonClick(bin, country)
+    handleHexagonClick = (bin: Bin, maskPolygonFeature: MaskPolygonFeature ) => {
+        this.props.onHexagonClick(bin, maskPolygonFeature)
     }
 
-    shouldComponentUpdate(nextProps: Props) {
+    shouldComponentUpdate(nextProps: Props, nextState: State) {
         if (this.props.projection !== nextProps.projection) { return true }
+        if (this.state.hoveredCountryId !== nextState.hoveredCountryId) { return true }
         return false
     }
 
@@ -173,23 +177,30 @@ export default class HexagonMap extends React.Component <Props, State> {
             <g>
                 {
                     hexBinData.map((bin: any, i) => {
-                        bin = {x: bin.x, y: bin.y,
-                            data: Object.values(bin.filter((b: any) => b.key))}
-                        const isDataPoint = bin.data.length > 0
-                        const fill = isDataPoint ? `${colorScale(bin.data.length)}` : 'rgba(0,0,0,0)'
+                        const maskPolygon = isPointInGeometryCollection([bin.x, bin.y], maskPolygons)
 
-                        const country = isPointInGeometryCollection([bin.x, bin.y], maskPolygons)
-                        if (country.isDefined || isDataPoint) {
+                        bin = {x: bin.x, y: bin.y,
+                            countryCode: maskPolygon ? maskPolygon.countryCode : undefined,
+                            data: Object.values(bin.filter((b: any) => b.key))}
+
+                        const isDataPoint = bin.data.length > 0
+                        const fill = isDataPoint ? `${colorScale(bin.data.length)}` : 'rgba(225,225,225, 0.3)'
+
+                        if (maskPolygon) {
                             return (
                                 <path
                                     key={i}
-                                    className={`hex ${bin.length}`}
+                                    className={`hex ${maskPolygon ? maskPolygon.countryCode : ''}`}
                                     transform={`translate(${bin.x}, ${bin.y})`}
-                                    style={{ fill: fill, stroke: 'rgb(225, 225, 225)', strokeWidth: 1 }}
+                                    style={{ fill: fill,
+                                        stroke: 'rgba(255, 255, 255, 1)',
+                                        strokeWidth: 3}}
                                     d={hexProperties.hexBin.hexagon()}
-                                    onMouseEnter={() => { if (isDataPoint) {this.handleHexagonMouseEnter(bin)} }}
-                                    onMouseLeave={() => { if (isDataPoint) {this.handleHexagonMouseEnter(undefined)}}}
-                                    onClick={() => this.handleHexagonClick(bin, country)}
+                                    onMouseEnter={() => {
+                                        if (isDataPoint) {this.handleHexagonMouseEnter(bin, maskPolygon)} }}
+                                    onMouseLeave={() => {
+                                        if (isDataPoint) {this.handleHexagonMouseEnter(undefined, maskPolygon)}}}
+                                    onClick={() => this.handleHexagonClick(bin, maskPolygon)}
                                 />
                             )
                         }

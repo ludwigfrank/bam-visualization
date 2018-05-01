@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Harvard Medical School",
+        "address":"Boston, GA, USA",
+        "coordinates":[30.79561,-83.7863],
+        "country":"United States",
+        "countryCode":"US",
+        "city":"Boston",
+        "formattedAddress":"Boston, GA, United States"
+    },
+    {
+        "name": "Howard University",
+        "address":"Washington, DC, USA",
+        "coordinates":[38.89037,-77.03196],
+        "country":"United States",
+        "countryCode":"US",
+        "city":"Washington",
+        "formattedAddress":"Washington, DC, United States"
+    }
+]
