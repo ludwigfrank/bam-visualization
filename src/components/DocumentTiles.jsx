@@ -16,7 +16,6 @@ import searchImage12 from '../images/search/search-12.png';
 
 
 const DocumentTileContainer = styled.div`
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px, rgba(0, 0, 0, 0.05) 0px 2px 3px;
     // border: 2px solid green;
     display: flex;
     flex-direction: row;

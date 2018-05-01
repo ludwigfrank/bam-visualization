@@ -1,7 +1,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 import SearchBar from '../components/SearchBar';
-// import SearchDotGrid from '../components/SearchDotGrid';
+import SearchDotGrid from '../components/SearchDotGrid';
 import DocumentTiles from '../components/DocumentTiles';
 import DropdownBar from '../components/DropdownBar.jsx';
 
@@ -18,6 +18,7 @@ export default class Search extends React.Component {
         super(props);
 
         this.state = {
+            documentView: false
         };
     }
     render() {
@@ -71,9 +72,19 @@ export default class Search extends React.Component {
                <SearchBar />
                <DropdownBar
                     options={dropdownOptions}
+                    selectCallback={() => this.setState({ documentView: !this.state.documentView })}
                 />
-               {/* <SearchDotGrid /> */}
-               <DocumentTiles />
+               {
+                   this.state.documentView ? (
+                        <DocumentTiles />
+                   ) : (
+                        <SearchDotGrid
+                            ref={this.dotGrid}
+                            // groupsCallback={(groups, doctorsLength) => this.setState({ groups, doctorsLength })}
+                            // tooltipCallback={(showTooltip, content) => this.handleTooltip(showTooltip, content)}
+                        />
+                   )
+               }
             </SearchPage>
         )
     }
