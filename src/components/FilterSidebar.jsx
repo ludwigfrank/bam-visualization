@@ -214,9 +214,9 @@ export default class FilterSidebar extends React.Component {
                         wrapperStyle={wrapperStyle}
                         onChange={this.handleSelectChange}
                         options={[
+                            { value: 'femaleMale', label: 'female & male' },
                             { value: 'female', label: 'female' },
-                            { value: 'male', label: 'male' },
-                            { value: 'femaleMale', label: 'female & male' }
+                            { value: 'male', label: 'male' }
                         ]}
                     />
                     {'.  '}

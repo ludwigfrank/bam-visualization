@@ -37,7 +37,7 @@ const MenuItems = styled.ul`
     transform: translate(0, -50%);
 
     li {
-        margin-right: 20px;
+        margin-right: 25px;
     }
     a {
         color: black;
