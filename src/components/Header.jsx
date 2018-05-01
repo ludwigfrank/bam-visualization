@@ -44,7 +44,7 @@ const MenuItems = styled.ul`
         text-decoration: none;
     }
 `;
-const ListItem = styled.ul`
+const ListItem = styled.li`
     font-family: ${props => props.isActive ? 'plex-semibold' : 'plex-regular'};
 `;
 
