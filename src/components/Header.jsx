@@ -4,11 +4,10 @@ import styled from 'styled-components'
 
 const HeaderContainer = styled.div`
     background-color: rgba(255, 255, 255, 1);
-    border-bottom: 1px solid lightgray;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px, rgba(0, 0, 0, 0.05) 0px 2px 3px;
+    border-bottom: 1px solid rgba(240, 240, 240, 1);
     height: 50px;
     left: 0;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 999;

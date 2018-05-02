@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import React from "react"
 
 const HeadingOne = styled('h1')`
     font-size: 36px;

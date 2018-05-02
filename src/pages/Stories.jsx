@@ -4,10 +4,13 @@ import SidebarList from '../components/SidebarList';
 import styled from 'styled-components'
 import Article from '../components/Article'
 
+import articleImageSrc from '../images/stories/story-article.png';
 import contributeOverview from '../images/contribute-overview.png';
 
 const StoriesPage = styled.div`
-    // overflow-y: scroll;
+    background-color: ${props => props.overview ? '#1C1C1C' : 'white'};
+    overflow-y: scroll;
+    height: 100%;
 `;
 const StoriesContainer = styled.div`
     background-color: ${props => props.overview ? '#1C1C1C' : 'white'};
@@ -51,8 +54,14 @@ const ArticleImageDescription = styled.div`
 const MarkedText = styled.span`
     background-color: ${props => props.color};
 `;
-const ContributeOverviewContainer = styled.img`
-    margin-top: 50px;
+const ContibuteContainer = styled.img`
+    background-color: ${props => props.color};
+    margin-top: 65px;
+    width: 100%;
+`;
+const ImageWrapper = styled.div`
+    background-color: ${props => props.overview ? '#1C1C1C' : 'white'};
+    height: 100%;
     width: 100%;
 `;
 
@@ -73,10 +82,15 @@ export default class Stories extends React.Component {
             }
         ];
         return (
-            <StoriesPage>
+            <StoriesPage overview={this.state.overview}>
                 {
                     this.state.overview ? (
-                        <ContributeOverviewContainer src={contributeOverview} />
+                        <ImageWrapper overview={this.state.overview}>
+                            <ContibuteContainer
+                                src={contributeOverview}
+                                onClick={() => this.setState({ overview: false })}
+                            />
+                        </ImageWrapper>
                     ) : (
                         <Article />
                     )
