@@ -4,10 +4,11 @@ import SidebarList from '../components/SidebarList';
 import styled from 'styled-components'
 import Article from '../components/Article'
 
-import articleImageSrc from '../images/stories/story-article.png';
+import contributeOverview from '../images/contribute-overview.png';
 
 const StoriesPage = styled.div`
     // overflow-y: scroll;
+    background-color: ${props => props.overview ? '#1C1C1C' : 'white'};
 `;
 const StoriesContainer = styled.div`
     border: 2px solid green;
@@ -51,12 +52,17 @@ const ArticleImageDescription = styled.div`
 const MarkedText = styled.span`
     background-color: ${props => props.color};
 `;
+const ContributeOverviewContainer = styled.img`
+    margin-top: 50px;
+    width: 100%;
+`;
 
 export default class Stories extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = {
+            overview: true
         };
     }
     render() {
@@ -69,7 +75,13 @@ export default class Stories extends React.Component {
         ];
         return (
             <StoriesPage>
-                <Article />
+                {
+                    this.state.overview ? (
+                        <ContributeOverviewContainer src={contributeOverview} />
+                    ) : (
+                        <Article />
+                    )
+                }
             </StoriesPage>
         )
     }
