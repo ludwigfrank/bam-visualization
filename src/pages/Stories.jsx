@@ -7,7 +7,7 @@ import Article from '../components/Article'
 import articleImageSrc from '../images/stories/story-article.png';
 
 const StoriesPage = styled.div`
-    // overflow-y: scroll;
+   overflow-y: scroll;
 `;
 const StoriesContainer = styled.div`
     border: 2px solid green;

@@ -1,6 +1,7 @@
 import * as React from 'react'
 import ReactDOM from 'react-dom'
 import styled from 'styled-components'
+import { Map } from 'immutable'
 
 const Wrapper = styled('div')`
     position: absolute;
@@ -47,7 +48,20 @@ export default class Menu extends React.Component {
     onClickMark(event, type) {
         const { value, onChange } = this.props
         event.preventDefault()
-        const change = value.change().toggleMark(type)
+        let change
+        const randomNumber = Math.floor(Math.random() * 5000)
+        if (type === 'document') {
+            if (value.activeMarks.size < 1) {
+                change = value.change().addMark({type, data: Map({ documentID: randomNumber })})
+                this.props.handleDocumentLinkMutation(randomNumber)
+            } else {
+                const documentID = value.activeMarks.first().data.get('documentID')
+                change = value.change().removeMark({type, data: Map({ documentID: documentID })})
+                this.props.handleDocumentLinkMutation(documentID)
+            }
+        } else {
+            change = value.change().toggleMark({type})
+        }
         onChange(change)
     }
 
@@ -64,9 +78,8 @@ export default class Menu extends React.Component {
         const onMouseDown = event => this.onClickMark(event, type)
 
         return (
-            // eslint-disable-next-line react/jsx-no-bind
             <Link onMouseDown={onMouseDown} isActive={isActive}>
-                <span className="material-icons">{type.split()[0]}</span>
+                {type.split()[0]}
             </Link>
         )
     }
