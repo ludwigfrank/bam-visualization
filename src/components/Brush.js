@@ -39,7 +39,7 @@ class Brush extends Component {
 
         const scale = d3.scale.linear()
             .domain([0, 1]) // [startValue, endValue]
-            .range([0, window.innerWidth])
+            .range([0, this.props.size[0]])
 
         const xAxis = d3.svg.axis()
             .scale(scale);
@@ -59,17 +59,17 @@ class Brush extends Component {
 
         g.selectAll('rect').attr('height', 50)
         g.selectAll('.background')
-            .style({ fill: '#999', visibility: 'visible', opacity: '0.2' })
+            .style({ fill: 'white', visibility: 'visible', opacity: '0.2' })
         g.selectAll('.extent')
-            .style({ fill: 'yellow', visibility: 'visible', opacity: '0.2' })
+            .style({ fill: 'white', visibility: 'visible', opacity: '0' })
         g.selectAll('.resize rect')
-            .style({ fill: '#00f', visibility: 'visible' })
+            .style({ fill: '#000', visibility: 'visible' })
 
         d3.select('path')
             .attr('d', pathString)
             .style({
                 fill: 'none',
-                stroke: '#f00',
+                stroke: '#ff9900',
                 'stroke-width': 2,
                 visibility: 'visible'
             })
@@ -79,8 +79,8 @@ class Brush extends Component {
         return (
             <svg
                 ref={node => this.node = node}
-                width={window.innerWidth}
-                height={50}
+                width={this.props.size[0]}
+                height={this.props.size[1]}
             >
             </svg>
         )

@@ -13,10 +13,11 @@ interface TimeSliderStates {
 }
 
 const Slider = styled.div`
+    border: 1px solid pink;
     bottom: 50px;
-    left: 0;
+    right: 30px;
     position: absolute;
-    z-index: 1;
+    z-index: 999;
 `;
 
 export default class TimeSlider extends React.Component<TimeSliderProps, TimeSliderStates> {
@@ -35,15 +36,17 @@ export default class TimeSlider extends React.Component<TimeSliderProps, TimeSli
         f(msg)
     }
     render() {
+        const sliderWidth = 900;
         const data = this.props.data.map((d, index) => [
-            window.innerWidth / this.props.data.length * index,
+            sliderWidth / this.props.data.length * index,
             Math.floor(Math.random() * 50)
-        ])
+        ]);
+
         return (
             <Slider>
                 <Brush
                     data={data}
-                    size={[window.innerWidth, 200]}
+                    size={[sliderWidth, 50]}
                     brushCallback={(sliderValues: any) => { // tslint:disable-line: no-any
                         this.props.sliderValuesCallback(sliderValues)
                         this.setState({

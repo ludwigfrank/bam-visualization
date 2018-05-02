@@ -44,33 +44,6 @@ export default class Map extends React.Component <Props, State> {
     }
 
     componentDidMount() {
-        // const locationsData = [{
-        //     name: 'Doctor Name 1',
-        //     radius: 5,
-        //     info: 100,
-        //     country: 'USSR',
-        //     fillKey: 'USA',
-        //     latitude: 50.07,
-        //     longitude: 60.43
-        // }, {
-        //     name: 'Doctor Name 2',
-        //     radius: 5,
-        //     info: 100,
-        //     country: 'USSR',
-        //     fillKey: 'FRA',
-        //     latitude: 50.07,
-        //     longitude: 78.43
-
-        // }, {
-        //     name: 'Doctor Name 3',
-        //     radius: 5,
-        //     info: 100,
-        //     country: 'USSR',
-        //     fillKey: 'PAK',
-        //     latitude: 73.482,
-        //     longitude: 54.5854
-        // }]
-
         const locationsData = saturatedLocations.map((location: any, index: number) => { // tslint:disable-line: no-any
             const [latitude, longitude] = location.coordinates
             return {

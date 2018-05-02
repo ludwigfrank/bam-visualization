@@ -13,7 +13,7 @@ import { MultiPolygon, Polygon } from 'geojson'
 import Tooltip from './Tooltip'
 import { getFeatureByID } from './util'
 import HexagonMap from './HexagonMap'
-import Legend from './Legend'
+// import Legend from './Legend'
 import MapPath from '../MapPath'
 import styled from 'styled-components'
 
@@ -113,7 +113,7 @@ export default class HexMap extends React.PureComponent <Props, State> {
 
         return (
             <Wrapper>
-                <Legend colorScale={0} />
+                {/* <Legend colorScale={0} /> */}
                 <Tooltip
                     hoveredHexagon={hoveredHexagon}
                 />
