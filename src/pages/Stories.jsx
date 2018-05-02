@@ -61,7 +61,7 @@ const ContibuteContainer = styled.img`
 `;
 const ImageWrapper = styled.div`
     background-color: ${props => props.overview ? '#1C1C1C' : 'white'};
-    height: 100%;
+    height: 100vh;
     width: 100%;
 `;
 
