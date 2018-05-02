@@ -2,9 +2,21 @@ import * as React from 'react';
 import styled from 'styled-components'
 import Sidebar from '../components/Sidebar';
 import HexMap from '../components/HexMap'
+
 // import TimeSlider from '../components/TimeSlider'
 
 import doctorsData from '../data/doctors-with-location.json'
+import previewVideo from '../images/preview.mp4'
+import poster from '../images/video-poster.png'
+
+const VideoWrapper = styled.div`
+    // border: 2px solid green;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 65%;
+`;
 
 export default class StartPage extends React.Component {
     constructor(props) {
@@ -44,7 +56,7 @@ export default class StartPage extends React.Component {
         return (
             <div>
                <Sidebar
-                    border={true}
+                    border={false}
                     header={'Help us tell the story.'}
                     buttonLabel={'I want to add missing data'}
                     buttons={sidebarButtons}
@@ -64,7 +76,14 @@ export default class StartPage extends React.Component {
                     }}
                     data={doctorsData}
                 /> */}
-               <HexMap />
+               {/* <HexMap /> */}
+
+                <VideoWrapper>
+                    <video width={'100%'} height={'auto'} poster={poster} autoPlay={true}>
+                        <source src={previewVideo} type="video/mp4" />
+                        video-poster
+                    </video>
+                </VideoWrapper>
             </div>
         )
     }
