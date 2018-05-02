@@ -21,6 +21,7 @@ const SidebarContainer = styled.div`
 const BackButton = styled.div`
     // border: 2px solid red;
     cursor: pointer;
+    font-family: plex-semibold;
     line-height: 32px;
     margin-bottom: 40px;
     padding-left: 45px;
@@ -86,8 +87,10 @@ const AddDataButton = styled.button`
 `;
 const SidebarHeadline = styled.h2`
     font-family: plex-semibold;
-    font-size: 16px;
+    font-size: 20px;
+    margin-bottom: 30px;
 `;
+
 
 export default class FilterSidebar extends React.Component {
     constructor (props) {

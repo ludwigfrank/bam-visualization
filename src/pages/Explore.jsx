@@ -254,7 +254,7 @@ export default class Explore extends React.Component {
                             {
                                 this.state.groups
                                     ? Object.keys(this.state.groups).map((key, index) => {
-                                        const value = typeof key !== 'string' || key === '' ? 'no data' : key;
+                                        const value = typeof key !== 'string' || key === '' ? 'unknown' : key;
                                         return (
                                             <FilterValue>
                                                 {value}    

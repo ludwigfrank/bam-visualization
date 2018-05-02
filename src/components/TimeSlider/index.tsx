@@ -13,7 +13,7 @@ interface TimeSliderStates {
 }
 
 const Slider = styled.div`
-    border: 1px solid pink;
+    // border: 1px solid pink;
     bottom: 50px;
     right: 30px;
     position: absolute;
@@ -39,7 +39,8 @@ export default class TimeSlider extends React.Component<TimeSliderProps, TimeSli
         const sliderWidth = 900;
         const data = this.props.data.map((d, index) => [
             sliderWidth / this.props.data.length * index,
-            Math.floor(Math.random() * 50)
+            // Math.floor(Math.random() * 20)
+            10
         ]);
 
         return (

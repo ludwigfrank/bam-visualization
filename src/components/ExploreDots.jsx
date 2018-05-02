@@ -179,7 +179,8 @@ export default class Explore extends React.Component {
                                 })
                                 : (
                                     <FilterValue>
-                                        {'All'}    
+                                        <div>{'1000'}</div>
+                                        <div>{`${1000 / this.state.doctorsLength * 100}%`}</div>  
                                     </FilterValue>
                                 )
                         }
@@ -193,7 +194,7 @@ export default class Explore extends React.Component {
                         {
                             this.state.groups
                                 ? Object.keys(this.state.groups).map((key, index) => {
-                                    const value = typeof key !== 'string' || key === '' ? 'no data' : key;
+                                    const value = typeof key !== 'string' || key === '' ? 'unknown' : key;
                                     return (
                                         <FilterValue>
                                             {value}    

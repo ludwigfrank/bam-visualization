@@ -93,7 +93,7 @@ export default class SearchDotGrid extends React.Component {
         this.dots = [];
         this.totalSprites = this.app.renderer instanceof PIXI.WebGLRenderer ? this.amountDots : gridWidth * 2;
         
-        this.scaleValue = 1;
+        this.scaleValue = 1.6;
         this.dotSize = 30 * this.scaleValue;
         this.gridPositions = this.getGridPositions(
             this.dotSize, this.containerDimensions.x, this.amountDots, 0 // pointSize, gridWidth, totalPoints, groupIdex

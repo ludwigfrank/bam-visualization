@@ -41,6 +41,8 @@ const BackButton = styled.div`
 `;
 const SidebarHeader = styled.h2`
     font-family: plex-semibold;
+    font-size: 20px;
+    margin-bottom: 30px;
 `;
 const SidebarContent = styled.div`
     // border: 2px solid red;
