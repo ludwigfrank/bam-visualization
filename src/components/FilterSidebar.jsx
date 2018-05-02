@@ -11,7 +11,8 @@ const SidebarContainer = styled.div`
     height: 100%;
     left: 0;
     line-height: 1.5em;
-    padding: 80px 1% 0 1%;
+    padding: 80px 50px 0 1%;
+    font-size: 17px;
     position: absolute;
     top: 0;
     transform: ${props => props.expanded ? 'translate(20%)' : 'translate(0%)'};
@@ -132,7 +133,7 @@ export default class FilterSidebar extends React.Component {
             flex: 1,
             margin: '0 0 0 0',
             top: '12px',
-            width: '80px'
+            width: '90px'
         };
 
         return (
@@ -208,6 +209,8 @@ export default class FilterSidebar extends React.Component {
                         ]}
                     />
                     {'.  '}
+                    <br/>
+                    <br/>
                     <br/>
                     {'I  want to see physicians who are  '} 
                     <Select

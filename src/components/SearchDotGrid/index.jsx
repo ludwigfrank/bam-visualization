@@ -47,7 +47,7 @@ export default class SearchDotGrid extends React.Component {
         const dotPositions = [];
         for (let index = 0; index < totalPoints; index++) {
             const groupPadding = gridWidth * groupIndex; // gridWidth * 2 * groupIndex - double of the single grid width
-            const xPosition = pointDimension * (index % pointsPerRow) + groupPadding + (pointSize / 2);
+            const xPosition = pointDimension * (index % pointsPerRow) + groupPadding + (pointSize / 2) + 15;
             const yPosition = pointDimension * Math.floor(index / pointsPerRow) + pointDimension;
 
             dotPositions.push({ x: xPosition, y: yPosition });

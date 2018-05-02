@@ -11,6 +11,7 @@ const SidebarContainer = styled.div`
     overflow-y: scroll;
     padding-top: 50px;
     position: absolute;
+    font-size: 17px;
     top: 0;
     transform: ${props => props.expanded ? 'translate(20%)' : 'translate(0%)'};
     transition: transform 1s;
@@ -46,10 +47,10 @@ const SidebarHeader = styled.h2`
 `;
 const SidebarContent = styled.div`
     // border: 2px solid red;
-    padding: 0 7% 0 5%;
+    padding: 0 50px 0 5%;
     position: absolute;
     left: 0;
-    line-height: 1.7em;
+    line-height: 1.8em;
     text-align: left;
     top: 20%;
     width: 100%;

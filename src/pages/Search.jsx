@@ -6,6 +6,8 @@ import DocumentTiles from '../components/DocumentTiles';
 import DropdownBar from '../components/DropdownBar.jsx';
 import Tooltip from '../components/Tooltip.jsx';
 
+import dotDetailImage from '../images/dot-detail.png';
+
 const SearchPage = styled.div`
     // border: 3px solid green;
     bottom: 0;
@@ -13,6 +15,10 @@ const SearchPage = styled.div`
     position: absolute;
     top: 50px;
     width: 100%;
+`;
+const DotDetailImage = styled.img`
+    // border: 3px solid green;
+    width: 98%;
 `;
 export default class Search extends React.Component {
     constructor(props) {
@@ -23,7 +29,8 @@ export default class Search extends React.Component {
         this.state = {
             documentView: false,
             showTooltip: false,
-            tooltipContent: ''
+            tooltipContent: '',
+            detailtView: false
         };
     }
     handleTooltip = (showTooltip, tooltipContent) => {
@@ -43,6 +50,7 @@ export default class Search extends React.Component {
             },
             {
                 options: [
+                    { value: 'virginia', label: 'Virginia' },
                     { value: 'boston', label: 'Boston' },
                     { value: 'new-york', label: 'New York' },
                 ],
@@ -79,6 +87,8 @@ export default class Search extends React.Component {
             },
         ];
 
+        console.log(this.state.detailtView, this.state.documentView);
+
         return (
             <SearchPage onMouseMove={e => {
                 this.mousePosition = {x: e.clientX, y: e.clientY};
@@ -86,12 +96,24 @@ export default class Search extends React.Component {
                <SearchBar />
                <DropdownBar
                     options={dropdownOptions}
-                    selectCallback={() => this.setState({ documentView: !this.state.documentView })}
+                    selectCallback={(value) => {
+                        const changedValue = value.value;
+                        if (changedValue === 'documents') {
+                            this.setState({ documentView: true });
+                        } else if (changedValue === 'physicians') {
+                            this.setState({ documentView: false });
+                        } else {
+                            this.setState({ detailtView: !this.state.detailtView });
+                        }
+                    }}
                 />
-               {
-                   this.state.documentView ? (
+                {
+                    this.state.documentView && (
                         <DocumentTiles />
-                   ) : (
+                    )
+                }
+                {
+                    (!this.state.documentView && !this.state.detailtView) && (
                         [
                             <SearchDotGrid
                                 ref={this.dotGrid}
@@ -106,7 +128,12 @@ export default class Search extends React.Component {
                                 {this.state.tooltipContent}
                             </Tooltip>
                         ]
-                   )
+                    )
+                }
+               {
+                   this.state.detailtView && !this.state.documentView ? (
+                        <DotDetailImage src={dotDetailImage} />
+                   ) : null
                }
             </SearchPage>
         )
