@@ -8,10 +8,9 @@ import contributeOverview from '../images/contribute-overview.png';
 
 const StoriesPage = styled.div`
     // overflow-y: scroll;
-    background-color: ${props => props.overview ? '#1C1C1C' : 'white'};
 `;
 const StoriesContainer = styled.div`
-    border: 2px solid green;
+    background-color: ${props => props.overview ? '#1C1C1C' : 'white'};
     height: 100%;
     line-height: 1.7em;
     overflow-y: scroll;

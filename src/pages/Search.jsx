@@ -7,6 +7,7 @@ import DropdownBar from '../components/DropdownBar.jsx';
 import Tooltip from '../components/Tooltip.jsx';
 
 import dotDetailImage from '../images/dot-detail.png';
+import doctorStory from '../images/stories/stories-02.png';
 
 const SearchPage = styled.div`
     // border: 3px solid green;
@@ -20,6 +21,10 @@ const DotDetailImage = styled.img`
     // border: 3px solid green;
     width: 98%;
 `;
+// const DoctorStory = styled.img`
+//     // border: 3px solid green;
+//     width: 98%;
+// `;
 export default class Search extends React.Component {
     constructor(props) {
         super(props);
@@ -135,6 +140,8 @@ export default class Search extends React.Component {
                         <DotDetailImage src={dotDetailImage} />
                    ) : null
                }
+                {/* <DotDetailImage src={doctorStory} /> */}
+
             </SearchPage>
         )
     }
