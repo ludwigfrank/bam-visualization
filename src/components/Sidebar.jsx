@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 const SidebarContainer = styled.div`
-    border-right: ${props => props.border ? '1px solid lightgray' : 'none'};
+    border-right: 1px solid ${props => props.theme.color.interface.border};
     background-color: white;
     height: 100%;
     left: 0;
@@ -15,7 +15,7 @@ const SidebarContainer = styled.div`
     top: 0;
     transform: ${props => props.expanded ? 'translate(20%)' : 'translate(0%)'};
     transition: transform 1s;
-    width: 25%;
+    width: 30%;
 `;
 const BackButton = styled.div`
     // border: 2px solid red;
@@ -41,13 +41,14 @@ const BackButton = styled.div`
     }
 `;
 const SidebarHeader = styled.h2`
-    font-family: plex-semibold;
-    font-size: 20px;
+    font-family: 'plex-regular', sans-serif;
+    font-size: 28px;
     margin-bottom: 30px;
+    font-weight: 200;
 `;
 const SidebarContent = styled.div`
     // border: 2px solid red;
-    padding: 0 50px 0 5%;
+    padding: 0 52px;
     position: absolute;
     left: 0;
     line-height: 1.8em;
@@ -71,10 +72,9 @@ const SidebarContent = styled.div`
 const SidebarButtons = styled.div`
     // border: 2px solid red;
     bottom: 25px;
-    left: 50%;
     position: absolute;
-    transform: translate(-50%, 0);
-    width: 90%;
+    width: 100%;
+    padding: 0 52px;
 `;
 const SidebarButton = styled.button`
     background-color: ${props => props.filled ? 'orange' : 'white'};
@@ -135,7 +135,7 @@ const SidebarButton = styled.button`
                         </BackButton>
                     )
                 }
-                
+
                 <SidebarContent>
                     <SidebarHeader>
                         {this.props.header}

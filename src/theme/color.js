@@ -14,5 +14,6 @@ export default {
 
     // These colors are used throughout the UI for backgrounds
     interface: {
+        border: '#e6e8eb'
     }
 }

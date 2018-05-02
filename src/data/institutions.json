@@ -16,5 +16,14 @@
         "countryCode":"US",
         "city":"Washington",
         "formattedAddress":"Washington, DC, United States"
+    },
+    {
+        "name": "Howard University",
+        "address":"Washington, DC, USA",
+        "coordinates":[34.0522, -118.2437],
+        "country":"United States",
+        "countryCode":"US",
+        "city":"Washington",
+        "formattedAddress":"Washington, DC, United States"
     }
 ]

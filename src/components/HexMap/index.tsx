@@ -43,7 +43,7 @@ const baseProjection = geoEquirectangular()
 const Wrapper = styled('div')`
     right: 0;
     bottom: 0;
-    width: 75vw;
+    width: 70vw;
     position: absolute;
     height: calc(100vh - 52px);
 `
@@ -55,8 +55,8 @@ export default class HexMap extends React.PureComponent <Props, State> {
         this.state = {
             featureCollection: worldGeoJson,
             projection: geoEquirectangular()
-                .scale(200)
-                .translate([width / 2, height / 2]),
+                .scale(150)
+                .translate([(width / 2) - 60, height / 2]),
             hoveredHexagon: undefined,
             focusedCountry: 'World',
         }

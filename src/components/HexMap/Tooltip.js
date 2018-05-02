@@ -2,10 +2,11 @@ import React, {Component} from 'react'
 import styled from 'styled-components'
 import Dropdown from '../Dropdown'
 import Label from '../Text/Label'
+import * as ReactDOM from "react-dom";
 
 const Wrapper = styled('div').attrs({
     style: props => ({
-        transform: `translate(${props.x + 25 - window.innerWidth * 0.25}px, ${props.y - 140}px)`
+        transform: `translate(${props.x + 10}px, ${props.y - 100}px)`
     })
 })`
     position: absolute;
@@ -76,14 +77,18 @@ export default class Tooltip extends Component {
         const { hoveredHexagon } = this.props
         const { mousePosition } = this.state
         const data = hoveredHexagon ? hoveredHexagon.data : []
-        return (
+
+        const root = window.document.getElementById('root')
+
+        return ReactDOM.createPortal(
             <Wrapper x={mousePosition[0]} y={mousePosition[1]}>
                 {
                     hoveredHexagon && <Dropdown>
                         {this.renderData(data)}
                     </Dropdown>
                 }
-            </Wrapper>
+            </Wrapper>,
+            root
         )
     }
 }
