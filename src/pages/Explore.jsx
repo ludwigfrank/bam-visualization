@@ -56,7 +56,7 @@ export default class Explore extends React.Component {
         super(props);
 
         this.dotGrid = React.createRef();
-        this.mousePosition = { x: 100, y: 100 },
+        this.mousePosition = { x: 100, y: 100 };
 
         this.state = {
             mapView: true,
@@ -179,7 +179,7 @@ export default class Explore extends React.Component {
                 {
                     this.state.mapView ? (
                         <ExploreContainer mapView={this.state.mapView}>
-                            <div>{'map view'}</div>
+                            <HexMap />
                         </ExploreContainer>
                     ) : (
                         <ExploreContainer mapView={this.state.mapView}>
@@ -254,7 +254,7 @@ export default class Explore extends React.Component {
                             {
                                 this.state.groups
                                     ? Object.keys(this.state.groups).map((key, index) => {
-                                        const value = typeof key !== 'string' || key === '' ? 'no data' : key;
+                                        const value = typeof key !== 'string' || key === '' ? 'unknown' : key;
                                         return (
                                             <FilterValue>
                                                 {value}    

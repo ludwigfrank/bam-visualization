@@ -36,7 +36,7 @@ const MenuItems = styled.ul`
     transform: translate(0, -50%);
 
     li {
-        margin-right: 25px;
+        margin-right: 30px;
     }
     a {
         color: black;
@@ -61,7 +61,7 @@ export default class Header extends React.Component {
                     <Link to='/'>{'Blacks in American Medizine'}</Link>
                 </ProjectTitle>
                 <MenuItems>
-                    <ListItem isActive={location === '/about'}><Link to='/about'>{'About'}</Link></ListItem>
+                    {/* <ListItem isActive={location === '/about'}><Link to='/about'>{'About'}</Link></ListItem> */}
                     <ListItem isActive={location === '/explore'}><Link to='/explore'>{'Explore'}</Link></ListItem>
                     <ListItem isActive={location === '/stories'}><Link to='/stories'>{'Stories'}</Link></ListItem>
                     <ListItem isActive={location === '/search'}><Link to='/search'>{'Search'}</Link></ListItem>

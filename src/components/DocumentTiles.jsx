@@ -123,13 +123,13 @@ export default class DocumentTiles extends React.Component {
             }
         ];
         const highlightColors = {
-            letter: 'pink',
-            newsletter: 'orange',
-            newspaper: 'purple',
-            magazine: 'blue',
-            interview: 'green',
-            poem: 'gray',
-            manuscript: 'lightblue',
+            letter: 'rgba(255, 150, 150, 0.5)',
+            newsletter: 'rgba(255, 150, 0, 0.5)',
+            newspaper: 'rgba(25, 150, 0, 0.5)',
+            magazine: 'rgba(25, 150, 255, 0.5)',
+            interview: 'rgba(100, 10, 255, 0.5)',
+            poem: 'rgba(100, 100, 100, 0.3)',
+            manuscript: 'rgba(200, 10, 300, 0.2)',
         };
         const documentsLabels = {
             letter: 'Letter',
