@@ -31,6 +31,8 @@ import Contribute from './pages/Contribute.jsx'
 // import StoriesView from '../../pages/StoriesView.jsx'
 import MapView from './pages/MapView.jsx'
 import Physicians from './pages/Physicians.jsx'
+import DetailView from './pages/DetailView.jsx';
+import DocumentDetail from './pages/DocumentDetail.jsx';
 
 const Main = (props) => {
   return (
@@ -46,6 +48,8 @@ const Main = (props) => {
         <Route path='/explore' component={Explore}/>
         <Route path='/dots' component={ExploreDots}/>
         <Route path='/stories' component={Stories}/>
+        <Route path='/detail' component={DetailView}/>
+        <Route path='/document' component={DocumentDetail}/>
         <Route path='/search' component={Search}/>
         <Route path='/contribute' component={Contribute}/>
 
