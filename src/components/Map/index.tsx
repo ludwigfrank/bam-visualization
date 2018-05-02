@@ -166,10 +166,12 @@ export default class Map extends React.Component <Props, State> {
 
     render () {
         return (
-            <MapContainer
-                id={'world-map'}
-                innerRef={element => this.mapContainer = element}
-            />
+            <div>
+                <MapContainer
+                    id={'world-map'}
+                    innerRef={element => this.mapContainer = element}
+                />
+            </div>
         )
     }
 }
