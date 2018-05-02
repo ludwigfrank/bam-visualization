@@ -63,7 +63,7 @@ export default class MapPath extends React.Component <Props, State> {
                                 key={institution.name}
                                 className={`path`}
                                 style={{ fill: 'none',
-                                    stroke: 'rgba(155, 155, 225, 0.5)',
+                                    stroke: 'rgba(50, 50, 225, 0.7)',
                                     strokeWidth: Math.random() * 10}}
                                 d={arc}
                             />

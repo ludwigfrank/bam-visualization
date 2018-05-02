@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const HeaderContainer = styled.div`
     background-color: rgba(255, 255, 255, 1);
-    border-bottom: 1px solid rgba(240, 240, 240, 1);
+    border-bottom: 1px solid ${props => props.theme.color.interface.border};
     height: 50px;
     left: 0;
     position: fixed;

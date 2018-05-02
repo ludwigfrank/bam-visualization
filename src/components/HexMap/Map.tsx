@@ -25,7 +25,7 @@ export default class Map extends React.PureComponent <Props, State> {
 
         const countries = featureCollection.features.map((d: any, i) => {
             const fill = hoveredHexagon
-                ? hoveredHexagon.countryCode === d.id ? '#c9c7d4' : '#fff'
+                ? hoveredHexagon.countryCode === d.id ? '#ebe7eb' : '#fff'
                 : '#faf6fb'
             return (
                 <path

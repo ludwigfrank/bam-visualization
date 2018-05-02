@@ -212,7 +212,7 @@ export default class FilterSidebar extends React.Component {
                     <br/>
                     <br/>
                     <br/>
-                    {'I  want to see physicians who are  '} 
+                    {'I  want to see physicians who are  '}
                     <Select
                         name="form-field-name"
                         value={selectedOption}

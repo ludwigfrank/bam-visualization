@@ -1,4 +1,4 @@
-import * as React from 'react';
+ import * as React from 'react';
 import styled from 'styled-components';
 import chroma from 'chroma-js'
 
@@ -180,7 +180,7 @@ export default class Explore extends React.Component {
                                 : (
                                     <FilterValue>
                                         <div>{'1000'}</div>
-                                        <div>{`${1000 / this.state.doctorsLength * 100}%`}</div>  
+                                        <div>{`${1000 / this.state.doctorsLength * 100}%`}</div>
                                     </FilterValue>
                                 )
                         }
@@ -197,19 +197,19 @@ export default class Explore extends React.Component {
                                     const value = typeof key !== 'string' || key === '' ? 'unknown' : key;
                                     return (
                                         <FilterValue>
-                                            {value}    
+                                            {value}
                                         </FilterValue>
                                     )
                                 })
                                 : (
                                     <FilterValue>
-                                        {'All'}    
+                                        {'All'}
                                     </FilterValue>
                                 )
                         }
                     </FilterValuesContainer>
                 </ExploreContainer>
-                
+
                 <Tooltip
                     active={this.state.showTooltip}
                     position={this.mousePosition}
