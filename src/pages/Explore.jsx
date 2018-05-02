@@ -179,7 +179,7 @@ export default class Explore extends React.Component {
                 {
                     this.state.mapView ? (
                         <ExploreContainer mapView={this.state.mapView}>
-                            <div>{'map view'}</div>
+                            <HexMap />
                         </ExploreContainer>
                     ) : (
                         <ExploreContainer mapView={this.state.mapView}>
